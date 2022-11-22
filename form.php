@@ -23,6 +23,6 @@ $asunto = 'Contacto sitio web';
 //funcion mail (obligacion)
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header('Location:exito.html')
+header('Location:exito.html');
 
 ?>
