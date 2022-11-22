@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS bootstrap (se pone antes del link de css que vincula a las paginas entre sí) -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="form.style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="speaker-header">
+        <h1>¡Hagamos una colaboración!</h1>
+        <h2>Somos Jóvenes en Acción 🗣❤️🌎 red formada por jóvenes y para jóvenes.</h2>
+        <h3>Nuestro objetivo es generar un espacio para visibilizar a jóvenes de Iberoamérica, entrevistamos a aquellos que demuestren un compromiso con proyectos de activismo que cumplen como soluciones a los Objetivos de Desarrollo Sostenible. De esta forma, informamos sobre problemáticas actuales y las soluciones brindadas por la juventud de habla hispana, además, ¡aportamos herramientas de acción!</h3>
+    </header>
+
+    <form action="form.php" method="POST" class="speaker-form">
+        <div class="form-row">
+            <label for="full-name">Nombre</label>
+            <input class="text" type="text" id="full-name" name="name">
+        </div>
+
+        <div class="from-row">
+            <label class= "direction"for="email">Dirección de mail</label>
+            <input class="text" type="text" id="email" name="email" placeholder="tu-correo@correo.com">
+        </div>
+
+        <fieldset class="legacy-form-row">
+            <legend class="option">¿Cómo te gustaría Colaborar?</legend>
+            <input id="talk-type-1" name="talk-type" type="radio" value="insta"/>
+            <label for="talk-type-1" class="radio-label">VIVO en Instagram</label>
+            <input id="talk-type-2" name="talk-type" type="radio" value="colaboracion"/>
+            <label for="talk-type-2" class="radio-label">Asociación/Colaboración en un proyecto o campaña</label>
+            <input id="talk-type-1" name="talk-type" type="radio" value="reportaje"/>
+            <label for="talk-type-1" class="radio-label">Reportaje/Prensa</label>
+            <input id="talk-type-1" name="talk-type" type="radio" value="otro"/>
+            <label for="talk-type-1" class="radio-label">Otro</label>
+        </fieldset>
+
+
+        <div class="form-row">
+            <label for="abstract">Si quieres, adjunta tus redes sociales abajo (Instagram / Facebook / Twitter):</label>
+            <textarea id="abstract" name="redesSociales" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
+            <div class="instructions"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="abstract">¿Qué es lo que haces? / ¿Cuál es tu proyecto?</label>
+            <textarea id="abstract" name="queHaces" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
+            <div class="instructions"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="abstract">¿De qué forma crees que podemos colaborar mejor?</label>
+            <textarea id="abstract" name="colaborar" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
+            <div class="instructions"></div>
+        </div>
+
+        <div class="form-row">
+            <label for="abstract">¿Algún otro comentario o información?</label>
+            <textarea id="abstract" name="otroComentario" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
+            <div class="instructions"></div>
+        </div>
+
+
+        <div class="form-row">
+            <button>Enviar</button>
+        </div>
+
+    </form>
+
+    <!-- libreria sweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Scrip bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+        </script>
+
+</body>
+</html>
