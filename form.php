@@ -10,11 +10,11 @@ $otro =  $_POST['otroComentario'];
 
 $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
 $mensaje .= "su correo es " .$email . "\r\n";
-$mensaje .= "Asunto " .$colaborar . "\r\n";
+/* $mensaje .= "Asunto " .$colaborar . "\r\n";
 $mensaje .= "Redes sociales " .$redes . "\r\n";
 $mensaje .= "que haces " .$quehaces . "\r\n";
 $mensaje .= "Colaboraciones " .$colaborar . "\r\n";
-$mensaje .= "otros " .$otro . "\r\n";
+$mensaje .= "otros " .$otro . "\r\n"; */
 $mensaje .= "Enviado el " .date('d/m/Y',time());
 
 $para = 'gisebag@gmail.com';

@@ -1,3 +1,3 @@
-setTimeout(function() {
+/* setTimeout(function() {
     window.location.replace("index.html");
-}, 2000);
+}, 2000); */
