@@ -1,3 +1,3 @@
 setTimeout(function() {
-    window.location.replace("form.html");
+    window.location.replace("index.html");
 }, 2000);
