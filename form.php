@@ -3,7 +3,6 @@
 $nombre =  $_POST['name'];
 $email =  $_POST['email'];
 $colaborar =  $_POST['talk'];
-$redes =  $_POST['redesSociales'];
 $quehaces =  $_POST['queHaces'];
 $colaborar =  $_POST['colaborar'];
 $otro =  $_POST['otroComentario'];
