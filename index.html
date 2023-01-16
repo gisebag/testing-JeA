@@ -1,89 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jóvenes en Acción</title>
+    <link rel="shortcut icon" href="./img/logo-JEA-1.png">
+
     <!-- CSS bootstrap (se pone antes del link de css que vincula a las paginas entre sí) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    
-    <link rel="stylesheet" href="form.style.css">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <header class="speaker-header">
-        <h1>¡Hagamos una colaboración!</h1>
-        <h2>Somos Jóvenes en Acción 🗣❤️🌎 red formada por jóvenes y para jóvenes.</h2>
-        <h3>Nuestro objetivo es generar un espacio para visibilizar a jóvenes de Iberoamérica, entrevistamos a aquellos que demuestren un compromiso con proyectos de activismo que cumplen como soluciones a los Objetivos de Desarrollo Sostenible. De esta forma, informamos sobre problemáticas actuales y las soluciones brindadas por la juventud de habla hispana, además, ¡aportamos herramientas de acción!</h3>
+    <!----------- Barra de navegación ------------->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+    
+                <a class="navbar-brand" href="#"><img class="iconNav" src="./img/logo-JEA-1.png" alt="jea"> Jovenes en
+                    Acción</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse cambioPosicion" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                ¿Qué hacemos?
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Jóvenes Inspiradores</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Organizaciones</a></li>
+                                <li><a class="dropdown-item" href="#">Colaboraciones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">¿Quíenes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">¡Contáctanos!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <form action="https://formsubmit.co/86bc15c9596c9529e34caa720965a3e1" method="POST" class="speaker-form">
-        <div class="form-row">
-            <label for="full-name">Nombre</label>
-            <input class="text" type="text" id="full-name" name="nombre">
+    <!----------- Presentación ------------->
+    <section>
+        <div class=" carrouselJea2">
+            <h1>¡Te damos la bienvenida a <span class="badge bg-secondary">Jóvenes en Acción!</span></h1>
+                <div>
+                    <img src="./img/natalie-pedigo-wJK9eTiEZHY-unsplash.jpg" class="d-block w-50 img-fluid mx-auto d-block carrouselJea" alt="...">
+                </div>
         </div>
+    </section>
 
-        <div class="from-row">
-            <label class= "direction"for="email">Dirección de mail</label>
-            <input class="text" type="text" id="email" name="email de contacto" placeholder="tu-correo@correo.com">
+    <section>
+        <h2>JeA es un espacio creado para:</h2>
+        <div class="container creadoIndex">
+            <div>
+                <img src="" alt="">
+                <h3>Visibilizar</h3>
+                <p></p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Conectar</h3>
+                <p></p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <h3>Accionar</h3>
+                <p></p>
+            </div>
         </div>
-
-        <fieldset class="legacy-form-row">
-            <legend class="option">¿Cómo te gustaría Colaborar?</legend>
-            <input id="ComoColaborar-type-1" name="¿Cómo te gustaría Colaborar?" type="radio" value="VIVO en Instagram"/>
-            <label for="type-1" class="radio-label" name="como te gustaria colaborar">VIVO en Instagram</label>
-            <input id="type-2" name="¿Cómo te gustaría Colaborar?" type="radio" value="Asociación/Colaboración en un proyecto o campaña"/>
-            <label for="type-2" class="radio-label" name="como te gustaria colaborar">Asociación/Colaboración en un proyecto o campaña</label>
-            <input id="type-1" name="¿Cómo te gustaría Colaborar?" type="radio" value="Reportaje/Prensa"/>
-            <label for="type-1" class="radio-label" name="como te gustaria colaborar">Reportaje/Prensa</label>
-            <input id="type-1" name="¿Cómo te gustaría Colaborar?" type="radio" value="Otro"/>
-            <label for="type-1" class="radio-label" name="¿Cómo te gustaría Colaborar?">Otro</label>
-        </fieldset>
+    </section>
 
 
-        <div class="form-row">
-            <label for="abstract">¿Qué es lo que haces? / ¿Cuál es tu proyecto?</label>
-            <textarea id="abstract" name="¿Qué es lo que haces? / ¿Cuál es tu proyecto?" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
-            <div class="instructions"></div>
-        </div>
-
-        <div class="form-row">
-            <label for="abstract">¿De qué forma crees que podemos colaborar mejor?</label>
-            <textarea id="abstract" name="¿De qué forma crees que podemos colaborar mejor?" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
-            <div class="instructions"></div>
-        </div>
-
-        <div class="form-row">
-            <label for="abstract">¿Algún otro comentario o información?</label>
-            <textarea id="abstract" name="¿Algún otro comentario o información?" cols="30" rows="10" placeholder="Tu respuesta"></textarea>
-            <div class="instructions"></div>
-        </div>
-
-
-        <div class="form-row">
-            <button>Enviar</button>
-        </div>
-
-        <input type="hidden" name="_next" value="https://testing-form-jea.netlify.app/">
-        <input type="hidden" name="_template" value="box">
-        
-    </form>
-
-    <!-- libreria sweetAlert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!-- Scrip bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

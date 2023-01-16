@@ -1,0 +1,21 @@
+.cambioPosicion{
+    flex-grow: 0;
+}
+
+.iconNav{
+    width: 70px;
+    height: 70px;
+}
+
+/* .carrouselJea{
+    width: 100%;
+    height: 30%;
+    
+} */
+.carrouselJea2{
+    width: 100%;
+    height: 50%;
+    background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
