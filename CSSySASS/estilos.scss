@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif,'Poppins', sans-serif;
     
-    /* border: coral 2px solid; */
+    border: coral 2px solid;
 }
 
 body{
@@ -278,11 +278,9 @@ header{
 .clickPositivo{
     background-color: #DBF8D7;
     border-radius: 20px;
-    border-radius: 20px;
     padding: 5px 40px;
     font-size: 22px;
     font-weight: 400;
-    
     font-family: 'Poppins', sans-serif;
 }
 .titulo4{
@@ -322,15 +320,16 @@ header{
 
     .cuadroJovenes{
         width: 430px;
-        height: 390px;
-        background-color: rgba(2, 80, 62, 0.8);
-        background: linear-gradient(90deg, rgba(2, 80, 62, 0.8) 1.01%, rgba(217, 217, 217, 0) 83.51%);;
-
+        height: 391px;
+        background: rgb(2,80,62);
+        background: linear-gradient(90deg, rgba(2,80,62,1) 0%, rgba(0,0,0,0.7092086834733893) 75%);
+        
         .titulo1{
             color: #ffffff;
             font-size: 60px;
-            font-weight: 400;
-            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 700;
+            font-family: 'Nunito';
+            padding-top: 40px;
         }
         .inspiran{
             color: #ffffff;
@@ -338,5 +337,50 @@ header{
             font-weight: 200;
             font-family: 'Nunito Sans', sans-serif;
         }
+    }
+}
+
+.contieneTitulo{
+    margin: 0px 150px;
+    margin-top: 50px;
+    .titulo{
+        color: #02503E;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding: 20px;
+        margin: 20px 30px;
+    }
+}
+
+.colorVector{
+    background-color: #EDFEFB;
+    
+}
+
+.clickBtnVerde{
+    background-color: #EDFEFB;
+    border: 3px solid #02503E;
+    border-radius: 25px;
+    color: #02503E;
+    padding: 5px 60px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.imgTarj{
+    width: 300px;
+    height: 400px;
+    
+
+    img{
+        width: 300px;
+        height: 450px;
+        border-radius: 25px;
     }
 }
