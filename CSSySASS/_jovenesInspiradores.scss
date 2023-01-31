@@ -1,0 +1,80 @@
+/* jovenes inspiradores */
+
+.jumbotron2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Jovenes_que_inspiran.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+
+    .cuadroJovenes{
+        width: 430px;
+        height: 391px;
+        background: rgb(2,80,62);
+        background: linear-gradient(90deg, rgba(2,80,62,1) 0%, rgba(0,0,0,0.7092086834733893) 75%);
+        
+        .titulo1{
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: 'Nunito';
+            padding-top: 40px;
+        }
+        .inspiran{
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+}
+
+.contieneTitulo{
+    margin: 0px 150px;
+    margin-top: 50px;
+    .titulo{
+        color: #02503E;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding: 20px;
+        margin: 20px 30px;
+    }
+}
+
+.colorVector{
+    background-color: #EDFEFB;
+    
+}
+
+.clickBtnVerde{
+    background-color: #EDFEFB;
+    border: 3px solid #02503E;
+    border-radius: 25px;
+    color: #02503E;
+    padding: 5px 60px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+
+
+.inspiCard{
+    
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+
+.contieneTarj{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
