@@ -1,4 +1,4 @@
-
+@import "_coloresyTipografias";
 /* Presentacion portada */
 .presentacion{
     width: 100%;
@@ -15,10 +15,10 @@
         height: 600px;
 
         .titulo1{
-            color: #009876;
+            color: $color-green-oscuro;
             font-size: 80px;
             font-weight: 800;
-            font-family: 'Nunito';
+            font-family: $tipografia-nunito;
 
             
         }
@@ -27,8 +27,8 @@
 }
 
 .relleno{
-    background-color: #02503E;
-    color: #f9f9f9;
+    background-color: $color-green-oscuro;
+    color: $color-white;
     padding: 0 15px;
 }
 
@@ -52,7 +52,7 @@
     .textoComplemento{
         font-weight: 400;
         font-size: 20px;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $tipografia-nunito-sans;
     }
     .cajaEspacio{
         padding: 40px 20px;
@@ -64,29 +64,29 @@
     }
     
     .rojo{
-        border: solid #ED1C24 3px;
+        border: solid $color-red-oscuro 3px;
     }
     .verde{
-        border: solid #009876 3px;
+        border: solid $color-green-medio 3px;
     }
     .amarillo{
-        border: solid #FAC313 3px;
+        border: solid $color-yellow-oscuro 3px;
     }
     
     
 }
 
 .titulo2{
-    color: #009876;
+    color: $color-green-medio;
     text-align: center;
     margin-top: 80px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $tipografia-nunito-sans;
     font-weight: 800;
 }
 .titulos3{
-    color: #02503E;
+    color: $color-green-oscuro;
     font-size: 36px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $tipografia-nunito-sans;
     font-weight: 800;
 }
 
@@ -142,19 +142,19 @@
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $tipografia-nunito-sans;
 }
 
 .clickConocenos{
-    background-color: white;
-    color: black;
-    border: 3px solid #009876;
+    background-color: $color-white;
+    color: $color-black;
+    border: 3px solid $color-green-medio;
     border-radius: 25px;
     padding: 5px 40px;
     font-size: 24px;
     font-weight: 400;
     margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $tipografia-poppins;
 }
 
 .divBoton{
@@ -162,7 +162,7 @@
 }
 
 .recuadroVerde{
-    background-color: #02503E;
+    background-color: $color-green-oscuro;
     width: 1276px;
     height: 730px;
     padding-top: 10px;
@@ -173,29 +173,29 @@
         font-size: 20px;
         font-weight: 400;
         padding: 10px;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: $tipografia-nunito-sans;
     }
 
     .card{
         width: 350px;
         height: 380px;
-        border-radius: 15px;
+        border-radius: 25px;
         margin: 20px;
     }
     .card1{
-        background-color: #F6EBC8;
+        background-color: $color-orange-pastel;
     }
     .card2{
-        background-color: #DBF8D7;
+        background-color: $color-green-pastel;
     }
     .card3{
-        background-color: #FDE8E9;
+        background-color: $color-red-pastel;
     }
 }
 
 
 
-.card{
+/* .card{
     width: 340px;
     height: 380px;
     border-radius: 15px;
@@ -208,28 +208,28 @@
     background-color: #DBF8D7;
 }
 .card3{
-    background-color: #FDE8E9;
-}
+    background-color: #FDE8E9; 
+} */
 
 .clickNegativo{
-    background-color: #0000;
-    color: #f9f9f9;
-    border: 3px solid #f9f9f9;
+    background-color: $color-black;
+    color: $color-white;
+    border: 3px solid $color-white;
     border-radius: 25px;
     padding: 5px 40px;
     font-size: 24px;
     font-weight: 400;
     margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $tipografia-poppins;
 }
 .color1{
-    color: #F26123;
+    color: $color-orange-oscuro;
 }
 .color2{
-    color: #02503E;
+    color: $color-green-oscuro;
 }
 .color3{
-    color: #ED1C24;
+    color: $color-red-oscuro;
 }
 
 .ancho{
@@ -237,24 +237,24 @@
 }
 
 .tituloNegativo{
-    color: #f9f9f9;
+    color: $color-white;
     text-align: center;
     margin: 50px 0px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: $tipografia-nunito-sans;
     font-weight: 700;
     font-size: 32px;
 }
 
 .clickPositivo{
-    background-color: #DBF8D7;
+    background-color: $color-green-pastel;
     border-radius: 25px;
     padding: 5px 40px;
     font-size: 22px;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-family: $tipografia-poppins;
 }
 .titulo4{
-    font-family: 'Poppins', sans-serif;
+    font-family: $tipografia-poppins;
     font-weight: 400;
     font-size: 24px;
     margin-top: 10px;

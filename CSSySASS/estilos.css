@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito Sans", sans-serif, "Poppins", sans-serif;
-  border: coral 2px solid;
+  /* border: rgb(159, 14, 96) 2px solid; */
 }
 
 /* navbar */
@@ -14,9 +13,41 @@
   background-color: #EDFEFB;
 }
 
+.nombre {
+  font-weight: bold;
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(10, 10, 10);
+}
+
 .iconNav {
   width: 70px;
   height: 70px;
+}
+
+.nav-color {
+  color: #02503E !important;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-color:hover {
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 3px solid #02503E;
+  padding-bottom: 3px;
+}
+
+.submenu-color {
+  color: #02503E !important;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.submenu-color:hover {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #02503E;
+  color: #f9f9f9 !important;
 }
 
 /* Presentacion portada */
@@ -35,7 +66,7 @@
   height: 600px;
 }
 .presentacion .jumbotron .titulo1 {
-  color: #009876;
+  color: #02503E;
   font-size: 80px;
   font-weight: 800;
   font-family: "Nunito";
@@ -146,8 +177,8 @@
 }
 
 .clickConocenos {
-  background-color: white;
-  color: black;
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
   border: 3px solid #009876;
   border-radius: 25px;
   padding: 5px 40px;
@@ -178,7 +209,7 @@
 .recuadroVerde .card {
   width: 350px;
   height: 380px;
-  border-radius: 15px;
+  border-radius: 25px;
   margin: 20px;
 }
 .recuadroVerde .card1 {
@@ -191,26 +222,23 @@
   background-color: #FDE8E9;
 }
 
-.card {
-  width: 340px;
-  height: 380px;
-  border-radius: 15px;
-}
+/* .card{
+    width: 340px;
+    height: 380px;
+    border-radius: 15px;
 
-.card1 {
-  background-color: #F6EBC8;
 }
-
-.card2 {
-  background-color: #DBF8D7;
+.card1{
+    background-color: #F6EBC8;
 }
-
-.card3 {
-  background-color: #FDE8E9;
+.card2{
+    background-color: #DBF8D7;
 }
-
+.card3{
+    background-color: #FDE8E9; 
+} */
 .clickNegativo {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(10, 10, 10);
   color: #f9f9f9;
   border: 3px solid #f9f9f9;
   border-radius: 25px;
@@ -350,8 +378,9 @@
   margin-bottom: 30px;
 }
 
+/* Rectangle 158 */
 body {
-  background-color: #f9f9f9;
+  background-color: #f8f8f8;
 }
 
 header {

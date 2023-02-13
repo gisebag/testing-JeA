@@ -2,21 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif,'Poppins', sans-serif;
     
-    border: coral 2px solid;
+    
+    /* border: rgb(159, 14, 96) 2px solid; */
 }
 
 @import "_navbar";
 @import "_index";
 @import "_footer";
 @import "_jovenesInspiradores";
+@import "_coloresyTipografias";
 
 
 
 body{
-    background-color: #f9f9f9;
+    background-color: $color-fondo-portada;
 }
 header{
-    background-color: #EDFEFB !important;
+    background-color:$color-green-claro !important;
 }

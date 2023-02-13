@@ -1,14 +1,48 @@
 /* navbar */
+@import "_coloresyTipografias";
+
 .cambioPosicion{
     flex-grow: 0;
     
     .submenu{
-        background-color: #EDFEFB;
+        background-color: $color-green-claro;
     }
 }
 
+.nombre{
+    font-weight: bold;
+    font-family: $tipografia-nunito-sans;
+    color: $color-black;
+}
 
 .iconNav{
     width: 70px;
     height: 70px;
+}
+
+.nav-color{
+    color: $color-green-oscuro !important;
+    font-size: 16px;
+    font-family: $tipografia-poppins;
+}
+
+.nav-color:hover{
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 3px solid $color-green-oscuro;
+    padding-bottom: 3px;
+}
+
+
+.submenu-color{
+    color: $color-green-oscuro !important;
+    font-size: 16px;
+    font-family: $tipografia-poppins;
+}
+
+.submenu-color:hover{
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $color-green-oscuro;
+    color: $color-white !important;
 }
