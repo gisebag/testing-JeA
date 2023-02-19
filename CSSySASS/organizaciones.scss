@@ -1,0 +1,144 @@
+//VARIABLES
+//$color-principal: #ccc;
+
+.jumbotron3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Organizaciones.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+
+    .cuadroJovenes {
+        width: 430px;
+        height: 391px;
+        background: rgb(2, 80, 62);
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: 'Nunito';
+            padding-top: 40px;
+        }
+
+        .inspiran {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+}
+
+.pregunta {
+    font-size: 24px;
+    font-family: 'Poppins'; //ver como llamar a la familia Poppins
+    padding: 80px 0px;
+
+    .boton-pregunta {
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: #DEF1DA;
+        margin: 0px 24px;
+        color: #02503E;
+        font-weight: bold;
+    }
+}
+
+.descripcion {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Nunito';
+    padding: 90px 0px;
+    background-color: #EDFEFB;
+}
+
+@mixin tarjeta_personalizada ($fondo, $color-borde) {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 350px;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    background-color: $fondo;
+    border-radius: 24px;
+    border: 4px solid $color-borde;
+    margin: 12px;
+}
+
+.seccion-tarjetas {
+    .tarjetas {
+        margin: 80px 0px;
+
+        .tarjeta-organizacion1 {
+            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24)
+        }
+
+        .tarjeta-organizacion2 {
+            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E)
+        }
+
+        .tarjeta-organizacion3 {
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313)
+        }
+
+        .tarjeta-organizacion4 {
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313)
+        }
+
+        .tarjeta-organizacion5 {
+            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24)
+        }
+    }
+}
+
+.carousel {
+    background-color: #EDFEFB;
+    padding: 42px 0px;
+
+    .carousel-container {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .carousel-images {
+        display: flex;
+        width: 500%;
+    }
+
+    .carousel-images img {
+        flex-shrink: 0;
+    }
+
+    .carousel-navigation {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .carousel-arrow-left {
+        left: 0;
+    }
+
+    .carousel-arrow-right {
+        right: 0;
+    }
+}
