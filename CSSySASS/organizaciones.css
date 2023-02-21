@@ -50,74 +50,10 @@
   padding: 90px 0px;
   background-color: #EDFEFB;
 }
-
-/* @mixin tarjeta_personalizada ($fondo, $color-borde) {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 350px;
-    max-width: 350px;
-    aspect-ratio: 1 / 1;
-    border-radius: 24px;
-    border: 4px solid $color-borde;
-    margin: 12px;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
+.descripcion h3 {
+  color: #02503E;
 }
 
-@mixin tarjeta_personalizada_hover ($color) {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1 / 1;
-    background-color: $color;
-    border: 4px solid $color;
-    color: white;
-    position: absolute;
-
-    .texto-resaltado {
-        color: $color;
-        background-color: white;
-    }
-}
-
-
-
-@mixin tarjeta_personalizada2 ($color-borde) {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 350px;
-    max-width: 350px;
-    aspect-ratio: 1 / 1;
-    border-radius: 24px;
-    border: 4px solid $color-borde;
-    margin: 12px;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.tarjetas2 {
-    margin: 80px 0px;
-
-    .tarjeta-organizacionA {
-        @include tarjeta_personalizada2($color-borde: #ED1C24);
-
-        .descripcion-tarjeta-organizacionA {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-        }
-
-        .imagen-tarjeta-organizacionA {
-            @include tarjeta_personalizada_hover($color: #FDE8E9);
-        }
-
-        &:hover {
-            ~.imagen-tarjeta-organizacion1 {
-                display: none;
-            }
-        }
-    }
-} */
 .seccion-tarjetas .contenedor-tarjetas {
   margin: 80px 0px;
 }
@@ -156,6 +92,9 @@
   background-color: #ED1C24;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1:hover {
+  border: 4px solid #ED1C24;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas1:hover .tarjeta-imagen {
   opacity: 0;
@@ -199,6 +138,9 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2:hover {
+  border: 4px solid #10936E;
+}
 .seccion-tarjetas .contenedor-tarjetas .tarjetas2:hover .tarjeta-imagen {
   opacity: 0;
 }
@@ -213,7 +155,7 @@
   aspect-ratio: 1/1;
   border-radius: 24px;
   border: 4px solid #FAC313;
-  background-color: #FAC313;
+  background-color: #F26123;
   margin: 12px;
   padding: 0px;
   position: relative;
@@ -227,7 +169,7 @@
   color: white;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta .texto-resaltado {
-  color: #FAC313;
+  color: #F26123;
   background-color: white;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta-imagen {
@@ -237,9 +179,12 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta-descripcion {
-  background-color: #FAC313;
+  background-color: #F26123;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3:hover {
+  border: 4px solid #F26123;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3:hover .tarjeta-imagen {
   opacity: 0;
@@ -255,7 +200,7 @@
   aspect-ratio: 1/1;
   border-radius: 24px;
   border: 4px solid #FAC313;
-  background-color: #FAC313;
+  background-color: #F26123;
   margin: 12px;
   padding: 0px;
   position: relative;
@@ -269,7 +214,7 @@
   color: white;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta .texto-resaltado {
-  color: #FAC313;
+  color: #F26123;
   background-color: white;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta-imagen {
@@ -279,9 +224,12 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta-descripcion {
-  background-color: #FAC313;
+  background-color: #F26123;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4:hover {
+  border: 4px solid #F26123;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4:hover .tarjeta-imagen {
   opacity: 0;
@@ -325,6 +273,9 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5:hover {
+  border: 4px solid #ED1C24;
+}
 .seccion-tarjetas .contenedor-tarjetas .tarjetas5:hover .tarjeta-imagen {
   opacity: 0;
 }
@@ -332,202 +283,6 @@
   opacity: 1;
 }
 
-/* .seccion-tarjetas {
-    .tarjetas {
-        margin: 80px 0px;
-
-        .tarjeta-organizacion1 {
-            @include tarjeta_personalizada($fondo: #ED1C24, $color-borde: #ED1C24);
-
-            .tarjeta-organizacion11 {
-                @include tarjeta_personalizada_hover($color: #ED1C24);
-            }
-
-            &:hover {
-                ~.imagen-tarjeta-organizacion1 {
-                    opacity: 0;
-                    transition: opacity 10s ease;
-                }
-            }
-        }
-
-
-        .imagen-tarjeta-organizacion1 {
-            background-color: #FDE8E9;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 1;
-            transition: opacity 2s ease;
-
-            &:hover {
-                display: none;
-            }
-        }
-
-        .tarjeta-organizacion2 {
-            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
-
-            .tarjeta-organizacion22 {
-                @include tarjeta_personalizada_hover($color: #10936E);
-            }
-        }
-
-        .tarjeta-organizacion3 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            .tarjeta-organizacion33 {
-                @include tarjeta_personalizada_hover($color: #FAC313);
-            }
-        }
-
-        .tarjeta-organizacion4 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            .tarjeta-organizacion44 {
-                @include tarjeta_personalizada_hover($color: #FAC313);
-            }
-        }
-
-        .tarjeta-organizacion5 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            .tarjeta-organizacion55 {
-                @include tarjeta_personalizada_hover($color: #ED1C24);
-            }
-        }
-    }
-} */
-/* .seccion-tarjetas {
-    .tarjetas {
-        margin: 80px 0px;
-
-        .tarjeta-organizacion1 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion11 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion2 {
-            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion22 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion3 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion33 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion4 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion44 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion5 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion55 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion11 {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion1 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion22 {
-            @include tarjeta_personalizada_hover($color: #10936E);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion2 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion33 {
-            @include tarjeta_personalizada_hover($color: #FAC313);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion3 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion44 {
-            @include tarjeta_personalizada_hover($color: #FAC313);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion4 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion55 {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion5 {
-                    display: grid;
-                }
-            }
-        }
-    }
-} */
 .carrusel-div {
   background-color: #EDFEFB;
   position: relative;

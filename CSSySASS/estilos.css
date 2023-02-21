@@ -15,16 +15,30 @@ header {
 }
 
 /* navbar */
-.cambioPosicion {
-  flex-grow: 0;
+.navbar .col {
+  padding: 5px;
 }
-.cambioPosicion .submenu {
-  background-color: #EDFEFB;
-}
-
-.iconNav {
+.navbar .iconNav {
+  object-fit: contain;
   width: 70px;
   height: 70px;
+}
+.navbar .jovenes {
+  font-size: 18px;
+  margin-bottom: -8px;
+}
+.navbar .enaccion {
+  font-size: 18px;
+  margin-top: -8px;
+}
+.navbar .nav-link {
+  color: #02503E;
+}
+.navbar .cambioPosicion {
+  flex-grow: 0;
+}
+.navbar .cambioPosicion .submenu {
+  background-color: #EDFEFB;
 }
 
 /* Presentacion portada */

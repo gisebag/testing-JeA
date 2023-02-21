@@ -53,85 +53,22 @@
     font-family: 'Nunito';
     padding: 90px 0px;
     background-color: #EDFEFB;
-}
 
-/* @mixin tarjeta_personalizada ($fondo, $color-borde) {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 350px;
-    max-width: 350px;
-    aspect-ratio: 1 / 1;
-    border-radius: 24px;
-    border: 4px solid $color-borde;
-    margin: 12px;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-}
-
-@mixin tarjeta_personalizada_hover ($color) {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1 / 1;
-    background-color: $color;
-    border: 4px solid $color;
-    color: white;
-    position: absolute;
-
-    .texto-resaltado {
-        color: $color;
-        background-color: white;
+    h3 {
+        color: #02503E;
     }
 }
 
-
-
-@mixin tarjeta_personalizada2 ($color-borde) {
+//TARJETAS
+@mixin tarjetas_personalizadas ($fondo-principal, $fondo-secundario, $borde-primario, $borde-secundario) {
     min-height: 200px;
     min-width: 200px;
     max-height: 350px;
     max-width: 350px;
     aspect-ratio: 1 / 1;
     border-radius: 24px;
-    border: 4px solid $color-borde;
-    margin: 12px;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.tarjetas2 {
-    margin: 80px 0px;
-        
-    .tarjeta-organizacionA {
-        @include tarjeta_personalizada2($color-borde: #ED1C24);
-
-        .descripcion-tarjeta-organizacionA {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-        }
-
-        .imagen-tarjeta-organizacionA {
-            @include tarjeta_personalizada_hover($color: #FDE8E9);
-        }
-
-        &:hover {
-            ~.imagen-tarjeta-organizacion1 {
-                display: none;
-            }
-        }
-    }
-} */
-
-@mixin tarjetas_personalizadas ($fondo-principal, $color-borde) {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 350px;
-    max-width: 350px;
-    aspect-ratio: 1 / 1;
-    border-radius: 24px;
-    border: 4px solid $color-borde;
-    background-color: $color-borde;
+    border: 4px solid $borde-primario;
+    background-color: $fondo-secundario;
     margin: 12px;
     padding: 0px;
     position: relative;
@@ -145,7 +82,7 @@
         color: white;
 
         .texto-resaltado {
-            color: $color-borde;
+            color: $borde-secundario;
             background-color: white;
         }
     }
@@ -158,12 +95,13 @@
     }
 
     .tarjeta-descripcion {
-        background-color: $color-borde;
+        background-color: $fondo-secundario;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
     }
 
     &:hover {
+        border: 4px solid $borde-secundario;
 
         .tarjeta-imagen {
             opacity: 0;
@@ -180,225 +118,28 @@
         margin: 80px 0px;
 
         .tarjetas1 {
-            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $color-borde: #ED1C24);
+            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $fondo-secundario: #ED1C24, $borde-primario: #ED1C24, $borde-secundario: #ED1C24);
         }
 
         .tarjetas2 {
-            @include tarjetas_personalizadas ($fondo-principal: #DEF1DA, $color-borde: #10936E);
+            @include tarjetas_personalizadas ($fondo-principal: #DEF1DA, $fondo-secundario: #10936E, $borde-primario: #10936E, $borde-secundario: #10936E);
         }
 
         .tarjetas3 {
-            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $color-borde: #FAC313);
+            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $fondo-secundario: #F26123, $borde-primario: #FAC313, $borde-secundario: #F26123);
         }
 
         .tarjetas4 {
-            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $color-borde: #FAC313);
+            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $fondo-secundario: #F26123, $borde-primario: #FAC313, $borde-secundario: #F26123);
         }
 
         .tarjetas5 {
-            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $color-borde: #ED1C24);
+            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $fondo-secundario: #ED1C24, $borde-primario: #ED1C24, $borde-secundario: #ED1C24);
         }
     }
 }
 
-/* .seccion-tarjetas {
-    .tarjetas {
-        margin: 80px 0px;
-
-        .tarjeta-organizacion1 {
-            @include tarjeta_personalizada($fondo: #ED1C24, $color-borde: #ED1C24);
-
-            .tarjeta-organizacion11 {
-                @include tarjeta_personalizada_hover($color: #ED1C24);
-            }
-
-            &:hover {
-                ~.imagen-tarjeta-organizacion1 {
-                    opacity: 0;
-                    transition: opacity 10s ease;
-                }
-            }
-        }
-
-
-        .imagen-tarjeta-organizacion1 {
-            background-color: #FDE8E9;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 1;
-            transition: opacity 2s ease;
-
-            &:hover {
-                display: none;
-            }
-        }
-
-        .tarjeta-organizacion2 {
-            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
-
-            .tarjeta-organizacion22 {
-                @include tarjeta_personalizada_hover($color: #10936E);
-            }
-        }
-
-        .tarjeta-organizacion3 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            .tarjeta-organizacion33 {
-                @include tarjeta_personalizada_hover($color: #FAC313);
-            }
-        }
-
-        .tarjeta-organizacion4 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            .tarjeta-organizacion44 {
-                @include tarjeta_personalizada_hover($color: #FAC313);
-            }
-        }
-
-        .tarjeta-organizacion5 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            .tarjeta-organizacion55 {
-                @include tarjeta_personalizada_hover($color: #ED1C24);
-            }
-        }
-    }
-} */
-
-/* .seccion-tarjetas {
-    .tarjetas {
-        margin: 80px 0px;
-
-        .tarjeta-organizacion1 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion11 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion2 {
-            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion22 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion3 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion33 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion4 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion44 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion5 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion55 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion11 {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion1 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion22 {
-            @include tarjeta_personalizada_hover($color: #10936E);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion2 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion33 {
-            @include tarjeta_personalizada_hover($color: #FAC313);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion3 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion44 {
-            @include tarjeta_personalizada_hover($color: #FAC313);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion4 {
-                    display: grid;
-                }
-            }
-        }
-
-        .tarjeta-organizacion55 {
-            @include tarjeta_personalizada_hover($color: #ED1C24);
-            display: none;
-
-            &:hover {
-                display: none;
-
-                ~.tarjeta-organizacion5 {
-                    display: grid;
-                }
-            }
-        }
-    }
-} */
-
+//CAROUSEL
 .carrusel-div {
     background-color: #EDFEFB;
     position: relative;

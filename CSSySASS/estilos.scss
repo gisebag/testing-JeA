@@ -1,41 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif,'Poppins', sans-serif;
-    
+    font-family: 'Nunito Sans', sans-serif, 'Poppins', sans-serif;
+
     /* border: coral 2px solid; */
 }
 
-body{
+body {
     background-color: #f9f9f9;
 }
-header{
+
+header {
     background-color: #EDFEFB !important;
 }
 
 /* navbar */
-.cambioPosicion{
-    flex-grow: 0;
-    
-    .submenu{
-        background-color: #EDFEFB;
+
+.navbar {
+    .col {
+        padding: 5px;
+    }
+
+    .iconNav {
+        object-fit: contain;
+        width: 70px;
+        height: 70px;
+    }
+
+    .jovenes {
+        font-size: 18px;
+        margin-bottom: -8px;
+    }
+
+    .enaccion {
+        font-size: 18px;
+        margin-top: -8px;
+    }
+
+    .nav-link {
+        color: #02503E;
+    }
+
+    .cambioPosicion {
+        flex-grow: 0;
+
+        .submenu {
+            background-color: #EDFEFB;
+        }
     }
 }
 
 
-.iconNav{
-    width: 70px;
-    height: 70px;
-}
 
 /* Presentacion portada */
-.presentacion{
+.presentacion {
     width: 100%;
     height: auto;
     text-align: center;
-    
-    .jumbotron{
+
+    .jumbotron {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -44,19 +68,19 @@ header{
         background-position: center;
         height: 600px;
 
-        .titulo1{
+        .titulo1 {
             color: #009876;
             font-size: 80px;
             font-weight: bold;
             font-family: 'Nunito Sans', sans-serif;
 
-            
+
         }
     }
-    
+
 }
 
-.relleno{
+.relleno {
     background-color: #02503E;
     color: #f9f9f9;
     padding: 0 15px;
@@ -64,27 +88,28 @@ header{
 
 
 /* seccion 1 del index - espacio JEA */
-.espacio{
+.espacio {
     margin: 10px;
 
-    
 
-    .creadoIndex{
+
+    .creadoIndex {
         display: flex;
         /* justify-content: space-evenly; */
-        justify-content:center;
+        justify-content: center;
         margin-top: 40px;
         text-align: center;
         flex-direction: row;
-        
+
     }
 
-    .textoComplemento{
+    .textoComplemento {
         font-weight: 400;
         font-size: 20px;
         font-family: 'Nunito Sans', sans-serif;
     }
-    .cajaEspacio{
+
+    .cajaEspacio {
         padding: 40px 20px;
         border-radius: 10px;
         font-size: 25px;
@@ -92,35 +117,38 @@ header{
         width: 300px;
         height: 400px;
     }
-    
-    .rojo{
+
+    .rojo {
         border: solid #ED1C24 3px;
     }
-    .verde{
+
+    .verde {
         border: solid #009876 3px;
     }
-    .amarillo{
+
+    .amarillo {
         border: solid #FAC313 3px;
     }
-    
-    
+
+
 }
 
-.titulo2{
+.titulo2 {
     color: #009876;
     text-align: center;
     margin-top: 80px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
 }
-.titulos3{
+
+.titulos3 {
     color: #02503E;
     font-size: 36px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 800;
 }
 
-.pngEspacio{
+.pngEspacio {
     width: 80px;
     height: 80px;
 }
@@ -129,19 +157,19 @@ header{
 
 
 /* seccion SINERGIAS */
-.contieneVectores{
+.contieneVectores {
     display: flex;
     justify-content: center;
     margin: 40px 0px;
 
-    .vectores{
+    .vectores {
         margin: 15px;
     }
-    
+
 }
 
 
-.contieneImg{
+.contieneImg {
     width: 720px;
     height: 430px;
     background-image: url(../img/sobre\ jea.2.jpg);
@@ -149,7 +177,7 @@ header{
     background-size: cover;
     border-radius: 25px;
 
-    .grupoImg{
+    .grupoImg {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -158,24 +186,26 @@ header{
 }
 
 
-.prueb1{
+.prueb1 {
     /* background-color: #ED1C24; */
     width: 100%;
 
 }
-.prueb2{
+
+.prueb2 {
     /* background-color: blueviolet; */
     width: 100%;
     height: 100%;
 }
-.grupoTexto{
+
+.grupoTexto {
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.clickConocenos{
+.clickConocenos {
     background-color: white;
     color: black;
     border: 3px solid #009876;
@@ -187,11 +217,12 @@ header{
     font-family: 'Poppins', sans-serif;
 }
 
-.divBoton{
-    width: 100px;;
+.divBoton {
+    width: 100px;
+    ;
 }
 
-.recuadroVerde{
+.recuadroVerde {
     background-color: #02503E;
     width: 1276px;
     height: 730px;
@@ -199,49 +230,55 @@ header{
     margin: 80px 0;
     border-radius: 25px;
 
-    .recuadroTexto{
+    .recuadroTexto {
         font-size: 20px;
         font-weight: 400;
         padding: 10px;
         font-family: 'Nunito Sans', sans-serif;
     }
 
-    .card{
+    .card {
         width: 350px;
         height: 380px;
         border-radius: 15px;
         margin: 20px;
     }
-    .card1{
+
+    .card1 {
         background-color: #F6EBC8;
     }
-    .card2{
+
+    .card2 {
         background-color: #DBF8D7;
     }
-    .card3{
+
+    .card3 {
         background-color: #FDE8E9;
     }
 }
 
 
 
-.card{
+.card {
     width: 340px;
     height: 380px;
     border-radius: 15px;
-    
+
 }
-.card1{
+
+.card1 {
     background-color: #F6EBC8;
 }
-.card2{
+
+.card2 {
     background-color: #DBF8D7;
 }
-.card3{
+
+.card3 {
     background-color: #FDE8E9;
 }
 
-.clickNegativo{
+.clickNegativo {
     background-color: #0000;
     color: #f9f9f9;
     border: 3px solid #f9f9f9;
@@ -252,21 +289,24 @@ header{
     margin-top: 30px;
     font-family: 'Poppins', sans-serif;
 }
-.color1{
+
+.color1 {
     color: #F26123;
 }
-.color2{
+
+.color2 {
     color: #02503E;
 }
-.color3{
+
+.color3 {
     color: #ED1C24;
 }
 
-.ancho{
+.ancho {
     height: 100px;
 }
 
-.tituloNegativo{
+.tituloNegativo {
     color: #f9f9f9;
     text-align: center;
     margin: 50px 0px;
@@ -275,7 +315,7 @@ header{
     font-size: 32px;
 }
 
-.clickPositivo{
+.clickPositivo {
     background-color: #DBF8D7;
     border-radius: 20px;
     padding: 5px 40px;
@@ -283,33 +323,35 @@ header{
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-.titulo4{
+
+.titulo4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 24px;
     margin-top: 10px;
 }
-.divContactanos{
+
+.divContactanos {
     margin-bottom: 50px;
 }
 
 /* footer */
-.titulo5{
+.titulo5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
 }
 
-.letraFooter{
+.letraFooter {
     font-family: 'Poppins', sans-serif;
-    
+
     font-size: 12px;
 }
 
 
 /* jovenes inspiradores */
 
-.jumbotron2{
+.jumbotron2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,20 +360,21 @@ header{
     background-position: center;
     height: 390px;
 
-    .cuadroJovenes{
+    .cuadroJovenes {
         width: 430px;
         height: 391px;
-        background: rgb(2,80,62);
-        background: linear-gradient(90deg, rgba(2,80,62,1) 0%, rgba(0,0,0,0.7092086834733893) 75%);
-        
-        .titulo1{
+        background: rgb(2, 80, 62);
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
+
+        .titulo1 {
             color: #ffffff;
             font-size: 60px;
             font-weight: 700;
             font-family: 'Nunito';
             padding-top: 40px;
         }
-        .inspiran{
+
+        .inspiran {
             color: #ffffff;
             font-size: 30px;
             font-weight: 200;
@@ -340,10 +383,11 @@ header{
     }
 }
 
-.contieneTitulo{
+.contieneTitulo {
     margin: 0px 150px;
     margin-top: 50px;
-    .titulo{
+
+    .titulo {
         color: #02503E;
         font-family: 'Nunito';
         font-style: normal;
@@ -357,12 +401,12 @@ header{
     }
 }
 
-.colorVector{
+.colorVector {
     background-color: #EDFEFB;
-    
+
 }
 
-.clickBtnVerde{
+.clickBtnVerde {
     background-color: #EDFEFB;
     border: 3px solid #02503E;
     border-radius: 25px;
@@ -373,12 +417,12 @@ header{
     font-family: 'Poppins';
 }
 
-.imgTarj{
+.imgTarj {
     width: 300px;
     height: 400px;
-    
 
-    img{
+
+    img {
         width: 300px;
         height: 450px;
         border-radius: 25px;
