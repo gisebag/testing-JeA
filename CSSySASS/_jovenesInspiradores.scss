@@ -1,4 +1,5 @@
 /* jovenes inspiradores */
+@import "_coloresyTipografias";
 
 .jumbotron2{
     display: flex;
@@ -16,17 +17,17 @@
         background: linear-gradient(90deg, rgba(2,80,62,1) 0%, rgba(0,0,0,0.7092086834733893) 75%);
         
         .titulo1{
-            color: #ffffff;
+            color: $color-white;
             font-size: 60px;
             font-weight: 700;
-            font-family: 'Nunito';
+            font-family: $tipografia-nunito-sans;
             padding-top: 40px;
         }
         .inspiran{
-            color: #ffffff;
+            color: $color-white;
             font-size: 30px;
             font-weight: 200;
-            font-family: 'Nunito Sans', sans-serif;
+            font-family: $tipografia-nunito-sans;
         }
     }
 }
@@ -35,10 +36,10 @@
     margin: 0px 150px;
     margin-top: 50px;
     .titulo{
-        color: #02503E;
-        font-family: 'Nunito';
+        color: $color-green-oscuro;
+        font-family: $tipografia-nunito-sans;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 28px;
         line-height: 38px;
         text-align: center;
@@ -49,19 +50,19 @@
 }
 
 .colorVector{
-    background-color: #EDFEFB;
+    background-color: $color-white;
     
 }
 
 .clickBtnVerde{
-    background-color: #EDFEFB;
-    border: 3px solid #02503E;
+    background-color: $color-white;
+    border: 3px solid $color-green-oscuro;
     border-radius: 25px;
-    color: #02503E;
+    color: $color-green-oscuro;
     padding: 5px 60px;
     font-size: 24px;
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family: $tipografia-poppins;
 }
 
 

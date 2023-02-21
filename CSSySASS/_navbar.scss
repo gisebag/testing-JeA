@@ -26,6 +26,13 @@
     font-family: $tipografia-poppins;
 }
 
+//para hacer efecto de click
+.especial{
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 3px solid $color-green-oscuro;
+    padding-bottom: 3px;
+}
 .nav-color:hover{
     font-weight: bold;
     font-size: 18px;
