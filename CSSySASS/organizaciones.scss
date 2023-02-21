@@ -1,6 +1,3 @@
-//VARIABLES
-//$color-principal: #ccc;
-
 .jumbotron3 {
     display: flex;
     justify-content: center;
@@ -68,6 +65,28 @@
     border-radius: 24px;
     border: 4px solid $color-borde;
     margin: 12px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin tarjeta_personalizada_hover ($color) {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: $color;
+    border: 4px solid $color;
+    color: white;
+    position: absolute;
+
+    .texto-resaltado {
+        color: $color;
+        background-color: white;
+    }
+
+    .bolder {
+        font-weight: bolder;
+    }
 }
 
 .seccion-tarjetas {
@@ -75,70 +94,241 @@
         margin: 80px 0px;
 
         .tarjeta-organizacion1 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24)
+            @include tarjeta_personalizada($fondo: #ED1C24, $color-borde: #ED1C24);
+
+            .tarjeta-organizacion11 {
+                @include tarjeta_personalizada_hover($color: #ED1C24);
+            }
+
+            &:hover {
+                ~.imagen-tarjeta-organizacion1 {
+                    opacity: 0;
+                }
+            }
+        }
+
+
+        .imagen-tarjeta-organizacion1 {
+            background-color: #FDE8E9;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 2s ease;
+
+            &:hover {
+                display: none;
+            }
         }
 
         .tarjeta-organizacion2 {
-            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E)
+            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
+
+            .tarjeta-organizacion22 {
+                @include tarjeta_personalizada_hover($color: #10936E);
+            }
         }
 
         .tarjeta-organizacion3 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313)
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
+
+            .tarjeta-organizacion33 {
+                @include tarjeta_personalizada_hover($color: #FAC313);
+            }
         }
 
         .tarjeta-organizacion4 {
-            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313)
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
+
+            .tarjeta-organizacion44 {
+                @include tarjeta_personalizada_hover($color: #FAC313);
+            }
         }
 
         .tarjeta-organizacion5 {
-            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24)
+            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
+
+            .tarjeta-organizacion55 {
+                @include tarjeta_personalizada_hover($color: #ED1C24);
+            }
         }
     }
 }
 
-.carousel {
+/* .seccion-tarjetas {
+    .tarjetas {
+        margin: 80px 0px;
+
+        .tarjeta-organizacion1 {
+            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion11 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion2 {
+            @include tarjeta_personalizada($fondo: #DEF1DA, $color-borde: #10936E);
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion22 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion3 {
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion33 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion4 {
+            @include tarjeta_personalizada($fondo: #FEF3D0, $color-borde: #FAC313);
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion44 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion5 {
+            @include tarjeta_personalizada($fondo: #FDE8E9, $color-borde: #ED1C24);
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion55 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion11 {
+            @include tarjeta_personalizada_hover($color: #ED1C24);
+            display: none;
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion1 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion22 {
+            @include tarjeta_personalizada_hover($color: #10936E);
+            display: none;
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion2 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion33 {
+            @include tarjeta_personalizada_hover($color: #FAC313);
+            display: none;
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion3 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion44 {
+            @include tarjeta_personalizada_hover($color: #FAC313);
+            display: none;
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion4 {
+                    display: grid;
+                }
+            }
+        }
+
+        .tarjeta-organizacion55 {
+            @include tarjeta_personalizada_hover($color: #ED1C24);
+            display: none;
+
+            &:hover {
+                display: none;
+
+                ~.tarjeta-organizacion5 {
+                    display: grid;
+                }
+            }
+        }
+    }
+} */
+
+.carrusel-div {
     background-color: #EDFEFB;
-    padding: 42px 0px;
+    position: relative;
+    padding: 40px 80px;
 
-    .carousel-container {
-        position: relative;
-        width: 80%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .carousel-images {
+    .carrusel {
         display: flex;
-        width: 500%;
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: 90%;
+
+        .elemento {
+            flex: 1 0 auto;
+            margin: 0 10px;
+            background-color: #ED1C24;
+            border-radius: 16px;
+            width: 300px;
+            height: 200px;
+
+        }
     }
 
-    .carousel-images img {
-        flex-shrink: 0;
+    .carrusel::-webkit-scrollbar {
+        height: 0px;
     }
 
-    .carousel-navigation {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        z-index: 1;
+    .flecha-izquierda {
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 4rem;
+            cursor: pointer;
+        }
     }
 
-    .carousel-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 30px;
-        cursor: pointer;
-    }
+    .flecha-derecha {
 
-    .carousel-arrow-left {
-        left: 0;
-    }
-
-    .carousel-arrow-right {
-        right: 0;
+        img {
+            position: absolute;
+            top: 50%;
+            right: 4rem;
+            cursor: pointer;
+        }
     }
 }
