@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/Organizaciones.jpg);
+    background-image: url(../img/colaboraciones.1.jpg);
     background-size: cover;
     background-position: center;
     height: 390px;
 
     .cuadroColaboraciones {
-        width: 430px;
+        max-width: 430px;
         height: 391px;
         background: rgb(2, 80, 62);
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
@@ -54,10 +54,14 @@
 
         .texto-grande {
             font-size: 48px;
+            letter-spacing: 0.02em;
+            line-height: 32px;
         }
 
         .texto-chico {
             font-size: 24px;
+            letter-spacing: 0.02rem;
+            line-height: 32px;
         }
 
         .cuadro-imagen {
@@ -82,6 +86,7 @@
         font-size: 32px;
         color: #02503E;
         margin-bottom: 48px;
+        line-height: 44px;
     }
 }
 
@@ -99,7 +104,8 @@
         }
 
         .cuadro-grande-der {
-            background-image: url(../img/Organizaciones.jpg);
+            background-image: url(../img/colaboraciones.2.jpg);
+            background-size: cover;
             border-radius: 0px 30px 30px 0px;
         }
     }

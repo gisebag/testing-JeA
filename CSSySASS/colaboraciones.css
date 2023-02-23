@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/Organizaciones.jpg);
+  background-image: url(../img/colaboraciones.1.jpg);
   background-size: cover;
   background-position: center;
   height: 390px;
 }
 .jumbotron4 .cuadroColaboraciones {
-  width: 430px;
+  max-width: 430px;
   height: 391px;
   background: rgb(2, 80, 62);
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(0, 0, 0, 0.7092086835) 75%);
@@ -48,9 +48,13 @@
 }
 .seccion-cuadro-dividido .cuadro-dividido .texto-grande {
   font-size: 48px;
+  letter-spacing: 0.02em;
+  line-height: 32px;
 }
 .seccion-cuadro-dividido .cuadro-dividido .texto-chico {
   font-size: 24px;
+  letter-spacing: 0.02rem;
+  line-height: 32px;
 }
 .seccion-cuadro-dividido .cuadro-dividido .cuadro-imagen {
   background-color: white;
@@ -70,6 +74,7 @@
   font-size: 32px;
   color: #02503E;
   margin-bottom: 48px;
+  line-height: 44px;
 }
 
 .seccion-cuadro-grande-dividido {
@@ -85,7 +90,8 @@
   border-radius: 30px 0px 0px 30px;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-der {
-  background-image: url(../img/Organizaciones.jpg);
+  background-image: url(../img/colaboraciones.2.jpg);
+  background-size: cover;
   border-radius: 0px 30px 30px 0px;
 }
 

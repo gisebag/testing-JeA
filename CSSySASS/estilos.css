@@ -123,8 +123,8 @@ header {
 }
 
 .pngEspacio {
-  width: 80px;
-  height: 80px;
+  width: 221px;
+  height: 221px;
 }
 
 /* seccion SINERGIAS */
@@ -296,12 +296,13 @@ header {
 }
 .col-footer .titulo5, .col-footer-img .titulo5 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 24px;
 }
 .col-footer .letraFooter, .col-footer-img .letraFooter {
   font-family: "Poppins", sans-serif;
-  font-size: 12px;
+  font-weight: 300;
+  font-size: 16px;
 }
 .col-footer .imgFooter svg, .col-footer-img .imgFooter svg {
   margin: 0px 10px;
