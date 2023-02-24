@@ -1,0 +1,136 @@
+.jumbotron5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/talleres.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+
+    .cuadroColaboraciones {
+        max-width: 430px;
+        height: 391px;
+        background: rgb(2, 80, 62);
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: #ffffff;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: 'Nunito';
+            margin: 0px 50px
+        }
+
+        .titulo1b {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    }
+}
+
+.cuadro-dividido {
+    padding: 80px 80px 60px 80px;
+    text-align: center;
+
+    .contenedor-texto {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+
+        strong {
+            color: #009876;
+        }
+    }
+
+    .contenedor-cuadros-divididos {
+        border: 2px solid rgba(91, 186, 71, 0.7);
+        border-radius: 16px;
+        margin-top: 80px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+        .boton-escuelas {
+            color: #5BBA47;
+            border-bottom: 8px solid #5BBA4790;
+        }
+
+        .boton-universidades {
+            color: #F26123;
+            border-bottom: 8px solid #FAC31390;
+        }
+
+        .boton-organizaciones {
+            color: #ED1C24;
+            border-bottom: 8px solid #ED1C2490;
+        }
+    }
+
+    #descripcion {
+        padding: 48px 109px 58px 109px;
+
+        #contenido {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+}
+
+.contenedor-cuadros-textofoto {
+    .texto {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        background-color: rgba(250, 195, 19, 0.2);
+        padding: 84px 38px 84px 78px;
+
+        p
+        strong {
+            color: white;
+            background-color: #F26123;
+        }
+    }
+    .foto {
+        background-image: url(../img/talleres.2.jpg);
+        background-size: cover;
+    }
+}
+
+.pregunta {
+    padding-top: 62px;
+
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    .boton-pregunta {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: #DEF1DA;
+        margin: 24px 0 92px 0;
+        color: #02503E;
+        font-weight: 600;
+    }
+}

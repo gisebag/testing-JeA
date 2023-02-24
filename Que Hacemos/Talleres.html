@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colaboraciones</title>
+    <title>Talleres</title>
     <link rel="shortcut icon" href="../img/logo-JEA-1.png">
 
     <!-- CSS bootstrap (se pone antes del link de css que vincula a las paginas entre sí) -->
@@ -13,7 +13,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../CSSySASS/estilos.css">
-    <link rel="stylesheet" href="../CSSySASS/colaboraciones.css">
+    <link rel="stylesheet" href="../CSSySASS/talleres.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -73,64 +73,65 @@
         </nav>
     </header>
     <!----------- Barra de navegación ------------->
-    <!----------- presentacion colaboraciones ------------->
+    <!----------- presentacion talleres ------------->
     <section class="presentacion">
-        <div class="jumbotron4 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
+        <div class="jumbotron5 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
 
-            <div class="container cuadroColaboraciones position-absolute top-50 start-0 translate-middle-y">
-
-                <h1 class="titulo1">JeA Colaboramos contigo</h1>
-                <h3 class="titulo1b">buscando puntos de encuentro</h3>
-
+            <div class="container cuadroColaboraciones position-absolute top-50 start-0 translate-middle-y row align-items-center">
+                <h1 class="titulo1">Talleres <br>JeA</h1>
             </div>
         </div>
     </section>
-    <!----------- presentacion colaboraciones ------------->
-    <!----------- cuadros divididos ------------->
-    <section class="seccion-cuadro-dividido">
-        <div class="cuadro-dividido row">
-            <div class="cuadro-izq col">
-                <p class="texto-grande">En <strong>JeA</strong> queremos</p>
-                <p class="texto-chico">saber qué requieres para ayudarte a
-                    <strong>construir soluciones</strong> adaptadas a <br>
-                    <strong>tus necesidades</strong>
+    <!----------- presentacion talleres ------------->
+    <!-- cuadro dividido -->
+    <section class="cuadro-dividido">
+        <div class="contenedor-texto">
+            <p>Desde JeA sabemos que para incentivar jóvenes ciudadanos activos primero se requiere formarlos. <br>
+                Por eso ofrecemos talleres/interacciones educativas en las que exponemos <strong>impulsamos:
+                    competencias <br>
+                    interculturales, empatía, consciencia global, curiosidad, proactividad, proyectos, soluciones a los
+                    ODS,
+                    etc.</strong></p>
+        </div>
+        <div class="contenedor-cuadros-divididos">
+            <div class="botones d-flex justify-content-around">
+                <button class="boton-escuelas container" id="escuelas">
+                    Escuelas
+                </button>
+                <button class="boton-universidades container" id="universidades">
+                    Universidades
+                </button>
+                <button class="boton-organizaciones container" id="organizaciones">
+                    Organizaciones
+                </button>
+            </div>
+            <div id="descripcion">
+                <p id="contenido">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan magna vel mauris
+                    blandit, et sagittis elit commodo. </p>
+            </div>
+        </div>
+    </section>
+    <!-- cuadro dividido -->
+    <!-- cuadro dividido 2 -->
+    <section class="contenedor-cuadros-textofoto container-fluid">
+        <div class="row">
+            <div class="texto col-7">
+                <p><strong>Nuestra propuesta se adapta a las necesidades de las instituciones.</strong> ¿Necesitan un
+                    enfoque de orientación
+                    vocacional? ¿Hincapié sobre el bullying? ¿Incentivo para la adquisición de becas/oportunidades?
                 </p>
             </div>
-            <div class="cuadro-der col">
-                <p class="texto-grande">Creamos talleres</p>
-                <p class="texto-chico">para ayudarte a alcanzar las soluciones
-                    <strong>que requieras</strong>
-                </p>
-            </div>
-            <div class="cuadro-imagen d-flex justify-content-center align-items-center">
-                <img src="../img/logo-JEA-1.png" alt="logo JeA" width="150">
-            </div>
-        </div>
-        <div class="texto-debajo-cuadros">
-            <p>Cualquiera sea la problemática que busques resolver o<br>
-                el proyecto en el que quieras participar,<br>
-                <strong>podemos ayudarte</strong>.
-            </p>
-        </div>
-    </section>
-    <!----------- cuadros divididos ------------->
-    <!----------- cuadro grande dividido ------------->
-    <section class="seccion-cuadro-grande-dividido container-fluid">
-        <div class="cuadros-grandes-divididos row">
-            <div class="cuadro-grande-izq col me-4">
-
-            </div>
-            <div class="cuadro-grande-der col">
+            <div class="foto col-5">
 
             </div>
         </div>
     </section>
-    <!----------- cuadro grande dividido ------------->
+    <!-- cuadro dividido 2 -->
     <!----------- pregunta y boton Contacto ------------->
     <section class="pregunta">
-        <div class="text-align-center d-flex justify-content-center align-items-center">
-            <h2 class="pregunta-preboton">¿Como podemos ayudarte?</h2><button
-                class="boton-pregunta">Contáctanos</button>
+        <div class="text-align-center d-flex flex-column align-items-center">
+            <h2 class="pregunta-preboton">Para llegar a un acuerdo sobre lo que buscan y lo que ofrecemos</h2>
+            <button class="boton-pregunta">Contáctanos</button>
         </div>
     </section>
     <!----------- pregunta y boton Contacto ------------->
@@ -212,7 +213,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <script src="../js/colaboraciones.js"></script>
+    <script src="../js/talleres.js"></script>
 </body>
 
 
