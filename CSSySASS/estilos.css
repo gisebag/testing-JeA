@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: rgb(159, 14, 96) 2px solid; */
+  /* border: rgb(159, 14, 96) 2px solid;  */
 }
 
 /* navbar */
@@ -13,18 +13,26 @@
   background-color: #EDFEFB;
 }
 
-.nombre {
-  font-weight: bold;
-  font-family: "Nunito Sans", sans-serif;
-  color: rgb(10, 10, 10);
-}
-
-.iconNav {
+/* .nombre{
+    font-weight: bold;
+    font-family: $tipografia-nunito-sans;
+    color: $color-black;
+} */
+.navbar .iconNav {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 70px;
   height: 70px;
 }
-
-.nav-color {
+.navbar .jovenes {
+  font-size: 18px;
+  margin-bottom: -8px;
+}
+.navbar .enaccion {
+  font-size: 18px;
+  margin-top: -8px;
+}
+.navbar .nav-color {
   color: #02503E !important;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
@@ -32,14 +40,14 @@
 
 .especial {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   border-bottom: 3px solid #02503E;
   padding-bottom: 3px;
 }
 
 .nav-color:hover {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   border-bottom: 3px solid #02503E;
   padding-bottom: 3px;
 }
@@ -52,7 +60,7 @@
 
 .submenu-color:hover {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #02503E;
   color: #f9f9f9 !important;
 }
@@ -76,7 +84,7 @@
   color: #02503E;
   font-size: 80px;
   font-weight: 800;
-  font-family: "Nunito";
+  font-family: "Nunito Sans", sans-serif;
   font-style: normal;
 }
 
@@ -238,21 +246,6 @@
   background-color: #FDE8E9;
 }
 
-/* .card{
-    width: 340px;
-    height: 380px;
-    border-radius: 15px;
-
-}
-.card1{
-    background-color: #F6EBC8;
-}
-.card2{
-    background-color: #DBF8D7;
-}
-.card3{
-    background-color: #FDE8E9; 
-} */
 .clickNegativo {
   background-color: #02503E;
   color: #f9f9f9;
@@ -266,7 +259,7 @@
 }
 
 .clickNegativo:hover {
-  border: 5px solid #f9f9f9;
+  border: 3px solid #f9f9f9;
   font-size: 26px;
   color: #f9f9f9;
 }
@@ -325,17 +318,38 @@
 }
 
 /* footer */
-.titulo5 {
+.col-footer, .col-footer-img {
+  text-align: start;
+}
+.col-footer .pngEspacio, .col-footer-img .pngEspacio {
+  width: 80px;
+  height: 80px;
+}
+.col-footer .titulo5, .col-footer-img .titulo5 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
 }
-
-.letraFooter {
+.col-footer .letraFooter, .col-footer-img .letraFooter {
   font-family: "Poppins", sans-serif;
-  font-size: 12px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.col-footer .imgFooter svg, .col-footer-img .imgFooter svg {
+  margin: 0px 10px;
 }
 
+/* .titulo5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.letraFooter{
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+} */
 /* jovenes inspiradores */
 .jumbotron2 {
   display: flex;
@@ -408,7 +422,139 @@
   margin-bottom: 30px;
 }
 
-/* Rectangle 158 */
+/* hover */
+.photo {
+  width: 200px;
+  height: 250px;
+  border: 2px solid red;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo .imgtarj {
+  width: 100%;
+}
+
+.jumbotron5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/talleres.1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 390px;
+}
+.jumbotron5 .cuadroColaboraciones {
+  max-width: 430px;
+  height: 391px;
+  background: #02503E;
+  background: linear-gradient(90deg, #02503E 0%, rgba(0, 0, 0, 0.7092086835) 75%);
+  text-align: start;
+}
+.jumbotron5 .cuadroColaboraciones .titulo1 {
+  color: #f9f9f9;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Nunito";
+  margin: 0px 50px;
+}
+.jumbotron5 .cuadroColaboraciones .titulo1b {
+  color: #f9f9f9;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.cuadro-dividido {
+  padding: 80px 80px 60px 80px;
+  text-align: center;
+}
+.cuadro-dividido .contenedor-texto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.cuadro-dividido .contenedor-texto strong {
+  color: #009876;
+}
+.cuadro-dividido .contenedor-cuadros-divididos {
+  border: 2px solid #009876;
+  border-radius: 16px;
+  margin-top: 80px;
+}
+.cuadro-dividido .contenedor-cuadros-divididos button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+.cuadro-dividido .contenedor-cuadros-divididos .boton-escuelas {
+  color: #5BBA47;
+  border-bottom: 8px solid rgba(91, 186, 71, 0.5647058824);
+}
+.cuadro-dividido .contenedor-cuadros-divididos .boton-universidades {
+  color: #F26123;
+  border-bottom: 8px solid rgba(250, 195, 19, 0.5647058824);
+}
+.cuadro-dividido .contenedor-cuadros-divididos .boton-organizaciones {
+  color: #ED1C24;
+  border-bottom: 8px solid rgba(237, 28, 36, 0.5647058824);
+}
+.cuadro-dividido #descripcion {
+  padding: 48px 109px 58px 109px;
+}
+.cuadro-dividido #descripcion #contenido {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.contenedor-cuadros-textofoto .texto {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+  background-color: rgba(250, 195, 19, 0.2);
+  padding: 84px 38px 84px 78px;
+}
+.contenedor-cuadros-textofoto .texto p strong {
+  color: #f9f9f9;
+  background-color: #F26123;
+}
+.contenedor-cuadros-textofoto .foto {
+  background-image: url(../img/talleres.2.jpg);
+  background-size: cover;
+}
+
+.pregunta {
+  padding-top: 62px;
+}
+.pregunta .pregunta-preboton {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.pregunta .boton-pregunta {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 14px 80px;
+  border: 0px;
+  border-radius: 100px;
+  background-color: #DBF8D7;
+  margin: 24px 0 92px 0;
+  color: #02503E;
+  font-weight: 600;
+}
+
 body {
   background-color: #f8f8f8;
 }

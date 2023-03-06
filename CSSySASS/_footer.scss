@@ -1,5 +1,34 @@
 /* footer */
-.titulo5{
+
+.col-footer, .col-footer-img {
+    text-align: start;
+
+    .pngEspacio{
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    .titulo5 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .letraFooter {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .imgFooter {
+        svg {
+            margin:0px 10px;
+        }
+    }
+}
+
+/* .titulo5{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -9,4 +38,4 @@
     font-family: 'Poppins', sans-serif;
     
     font-size: 12px;
-}
+} */

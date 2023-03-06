@@ -9,33 +9,48 @@
     }
 }
 
-.nombre{
+/* .nombre{
     font-weight: bold;
     font-family: $tipografia-nunito-sans;
     color: $color-black;
+} */
+
+.navbar{
+    .iconNav{
+        object-fit: contain;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .jovenes {
+        font-size: 18px;
+        margin-bottom: -8px;
+    }
+
+    .enaccion {
+        font-size: 18px;
+        margin-top: -8px;
+    }
+    
+    .nav-color{
+        color: $color-green-oscuro !important;
+        font-size: 16px;
+        font-family: $tipografia-poppins;
+    }
 }
 
-.iconNav{
-    width: 70px;
-    height: 70px;
-}
 
-.nav-color{
-    color: $color-green-oscuro !important;
-    font-size: 16px;
-    font-family: $tipografia-poppins;
-}
 
 //para hacer efecto de click
 .especial{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 3px solid $color-green-oscuro;
     padding-bottom: 3px;
 }
 .nav-color:hover{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     border-bottom: 3px solid $color-green-oscuro;
     padding-bottom: 3px;
 }
@@ -49,7 +64,7 @@
 
 .submenu-color:hover{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     background-color: $color-green-oscuro;
     color: $color-white !important;
 }

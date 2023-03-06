@@ -80,6 +80,17 @@
     margin-bottom: 30px;
 }
 
-/* Rectangle 158 */
+/* hover */
+.photo{
+    width: 200px;
+    height: 250px;
+    border: 2px solid red;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    object-fit: cover;
+    .imgtarj{   
+        width: 100%;
+    }
+}
 
 

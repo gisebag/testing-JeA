@@ -18,7 +18,7 @@
             color: $color-green-oscuro;
             font-size: 80px;
             font-weight: 800;
-            font-family: $tipografia-nunito;
+            font-family: $tipografia-nunito-sans;
             font-style: normal;
             
         }
@@ -202,23 +202,6 @@
 }
 
 
-
-/* .card{
-    width: 340px;
-    height: 380px;
-    border-radius: 15px;
-    
-}
-.card1{
-    background-color: #F6EBC8;
-}
-.card2{
-    background-color: #DBF8D7;
-}
-.card3{
-    background-color: #FDE8E9; 
-} */
-
 .clickNegativo{
     background-color: $color-green-oscuro;
     color: $color-white;
@@ -231,7 +214,7 @@
     font-family: $tipografia-poppins;
 }
 .clickNegativo:hover{
-    border: 5px solid $color-white;
+    border: 3px solid $color-white;
     font-size: 26px;
     color: $color-white;
 }

@@ -1,0 +1,139 @@
+@import "_coloresyTipografias";
+
+
+.jumbotron5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/talleres.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+
+    .cuadroColaboraciones {
+        max-width: 430px;
+        height: 391px;
+        background:$color-green-oscuro;
+        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: $color-white;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $tipografia-nunito;
+            margin: 0px 50px
+        }
+
+        .titulo1b {
+            color: $color-white;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: $tipografia-nunito-sans;
+        }
+    }
+}
+
+.cuadro-dividido {
+    padding: 80px 80px 60px 80px;
+    text-align: center;
+
+    .contenedor-texto {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+
+        strong {
+            color: $color-green-medio;
+        }
+    }
+
+    .contenedor-cuadros-divididos {
+        border: 2px solid $color-green-medio;
+        border-radius: 16px;
+        margin-top: 80px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            font-family: $tipografia-nunito;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 44px;
+        }
+
+        .boton-escuelas {
+            color: #5BBA47;
+            border-bottom: 8px solid #5BBA4790;
+        }
+
+        .boton-universidades {
+            color: $color-orange-oscuro;
+            border-bottom: 8px solid #FAC31390;
+        }
+
+        .boton-organizaciones {
+            color: $color-red-oscuro;
+            border-bottom: 8px solid #ED1C2490;
+        }
+    }
+
+    #descripcion {
+        padding: 48px 109px 58px 109px;
+
+        #contenido {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 36px;
+        }
+    }
+}
+
+.contenedor-cuadros-textofoto {
+    .texto {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        background-color: rgba(250, 195, 19, 0.2);
+        padding: 84px 38px 84px 78px;
+
+        p
+        strong {
+            color: $color-white;
+            background-color: $color-orange-oscuro;
+        }
+    }
+    .foto {
+        background-image: url(../img/talleres.2.jpg);
+        background-size: cover;
+    }
+}
+
+.pregunta {
+    padding-top: 62px;
+
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        font-weight: 400;
+    }
+
+    .boton-pregunta {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: $color-green-pastel;
+        margin: 24px 0 92px 0;
+        color: $color-green-oscuro;
+        font-weight: 600;
+    }
+}
