@@ -96,8 +96,6 @@
 }
 
 
-
-
 /* seccion SINERGIAS */
 .contieneVectores{
     display: flex;
@@ -144,6 +142,7 @@
     padding: 10px;
     font-family: $tipografia-nunito-sans;
     text-align: justify;
+    letter-spacing: 0.5px;
 }
 
 .clickConocenos{
@@ -217,6 +216,7 @@
     border: 3px solid $color-white;
     font-size: 26px;
     color: $color-white;
+    transition: 0.7s;
 }
 .color1{
     color: $color-orange-oscuro;

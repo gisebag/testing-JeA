@@ -1,0 +1,175 @@
+@import "_coloresyTipografias";
+
+.jumbotron3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/organizaciones.1.png);
+    background-size: cover;
+    background-position: center;
+    height: 390px;
+
+    .cuadroJovenes {
+        width: 430px;
+        height: 391px;
+        background: rgb(2, 80, 62);
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(0, 0, 0, 0.7092086834733893) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: $color-white;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $tipografia-nunito;
+            padding-top: 40px;
+        }
+
+        .inspiran {
+            color: $color-white;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: $tipografia-nunito-sans;
+        }
+    }
+}
+
+
+.descripcion {
+    text-align: center;
+    font-size: 24px;
+    font-family: $tipografia-nunito;
+    padding: 90px 0px;
+    background-color: $color-green-claro;
+
+    h3 {
+        color: $color-green-oscuro;
+    }
+}
+
+//TARJETAS
+@mixin tarjetas_personalizadas ($fondo-principal, $fondo-secundario, $borde-primario, $borde-secundario) {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 350px;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+    border: 4px solid $borde-primario;
+    background-color: $fondo-secundario;
+    margin: 12px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+
+    .tarjeta {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        color: $color-white;
+
+        .texto-resaltado {
+            color: $borde-secundario;
+            background-color: $color-white;
+        }
+    }
+
+    .tarjeta-imagen {
+        background-color: $fondo-principal;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+        padding: 95px 75px;
+    }
+
+    .tarjeta-descripcion {
+        background-color: $fondo-secundario;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &:hover {
+        border: 4px solid $borde-secundario;
+
+        .tarjeta-imagen {
+            opacity: 0;
+        }
+
+        .tarjeta-descripcion {
+            opacity: 1;
+        }
+    }
+}
+
+.seccion-tarjetas {
+    .contenedor-tarjetas {
+        margin: 80px 0px;
+
+        .tarjetas1 {
+            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $fondo-secundario: #ED1C24, $borde-primario: #ED1C24, $borde-secundario: #ED1C24);
+        }
+
+        .tarjetas2 {
+            @include tarjetas_personalizadas ($fondo-principal: #DEF1DA, $fondo-secundario: #10936E, $borde-primario: #10936E, $borde-secundario: #10936E);
+        }
+
+        .tarjetas3 {
+            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $fondo-secundario: #F26123, $borde-primario: #FAC313, $borde-secundario: #F26123);
+        }
+
+        .tarjetas4 {
+            @include tarjetas_personalizadas ($fondo-principal: #FEF3D0, $fondo-secundario: #F26123, $borde-primario: #FAC313, $borde-secundario: #F26123);
+        }
+
+        .tarjetas5 {
+            @include tarjetas_personalizadas ($fondo-principal: #FDE8E9, $fondo-secundario: #ED1C24, $borde-primario: #ED1C24, $borde-secundario: #ED1C24);
+        }
+    }
+}
+
+//CAROUSEL
+.carrusel-div {
+    background-color: $color-white;
+    position: relative;
+    padding: 40px 80px;
+
+    .carrusel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        width: 90%;
+
+        .elemento {
+            flex: 1 0 auto;
+            margin: 0 10px;
+            background-color: $color-red-oscuro;
+            border-radius: 16px;
+            width: 300px;
+            height: 200px;
+
+        }
+    }
+
+    .carrusel::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .flecha-izquierda {
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 4rem;
+            cursor: pointer;
+        }
+    }
+
+    .flecha-derecha {
+
+        svg {
+            position: absolute;
+            top: 50%;
+            right: 4rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 /* footer */
-
+@import "_coloresyTipografias";
 .col-footer, .col-footer-img {
     text-align: start;
 
@@ -26,6 +26,11 @@
             margin:0px 10px;
         }
     }
+}
+
+a .pngEspacio{
+    width: 90px;
+    height: 90px;
 }
 
 /* .titulo5{
