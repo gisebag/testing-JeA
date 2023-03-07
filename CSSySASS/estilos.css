@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -336,11 +337,10 @@
   margin: 0px 10px;
 }
 
-a .pngEspacio {
-  width: 90px;
-  height: 90px;
-}
-
+/* a .pngEspacio{
+    width: 90px;
+    height: 90px;
+} */
 /* .titulo5{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -414,28 +414,522 @@ a .pngEspacio {
   font-family: "Poppins", sans-serif;
 }
 
-.inspiCard {
-  padding: 10px;
-  margin: 10px;
-}
-
 .contieneTarj {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  max-width: 1440px;
+  margin: auto;
 }
-
-/* hover */
-.photo {
-  width: 200px;
-  height: 250px;
-  border: 2px solid red;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.contieneTarj .centradoTarjs {
+  margin: 30px 50px;
 }
-.photo .imgtarj {
+.contieneTarj .col-sm-6 {
+  padding: 0px;
+}
+.contieneTarj .inspiCard-1-izq {
+  height: 477px;
+  border-radius: 30px 0px 0px 30px;
+  padding: 32px;
+  margin: 0px 10px;
+  background-color: #FDE8E9;
+}
+.contieneTarj .inspiCard-1-izq .imgTarj-1 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Viviane Ogou.png");
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.contieneTarj .inspiCard-1-izq .tarjeta-descripcion {
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #ED1C24;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 50px 25px;
   width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-1-izq .tarjeta-descripcion .texto-resaltado {
+  font-weight: 600;
+  background-color: white;
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-1-izq .row .divDialogo {
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-1-izq .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-1-izq .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-1-izq .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-1-izq:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-1-izq:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-1-der {
+  height: 477px;
+  border-radius: 0px 30px 30px 0px;
+  padding: 32px 34px 32px 32px;
+  margin: 10px;
+  background-color: #DBF8D7;
+}
+.contieneTarj .inspiCard-1-der .imgTarj-2 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Eyal Weintraub.png");
+  background-size: cover;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+}
+.contieneTarj .inspiCard-1-der .tarjeta-descripcion {
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #02503E;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 60px 30px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-1-der .tarjeta-descripcion .texto-resaltado {
+  font-weight: 700;
+  background-color: white;
+  color: #02503E;
+}
+.contieneTarj .inspiCard-1-der .row .divDialogo {
+  color: #02503E;
+}
+.contieneTarj .inspiCard-1-der .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-1-der .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-1-der .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-1-der:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-1-der:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-2-izq {
+  height: 477px;
+  border-radius: 30px 0px 0px 30px;
+  padding: 32px;
+  margin: 0px 10px;
+  background-color: #F6EBC8;
+}
+.contieneTarj .inspiCard-2-izq .imgTarj-1 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Yael Crupnicoff.png");
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.contieneTarj .inspiCard-2-izq .tarjeta-descripcion {
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #F26123;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 50px 25px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-2-izq .tarjeta-descripcion .texto-resaltado {
+  font-weight: 600;
+  background-color: white;
+  color: #F26123;
+}
+.contieneTarj .inspiCard-2-izq .row .divDialogo {
+  color: #F26123;
+}
+.contieneTarj .inspiCard-2-izq .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-2-izq .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-2-izq .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-2-izq:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-2-izq:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-2-der {
+  height: 477px;
+  border-radius: 0px 30px 30px 0px;
+  padding: 32px 34px 32px 32px;
+  margin: 10px;
+  background-color: #FDE8E9;
+}
+.contieneTarj .inspiCard-2-der .imgTarj-2 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Luisa Romero.png");
+  background-size: cover;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+}
+.contieneTarj .inspiCard-2-der .tarjeta-descripcion {
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #ED1C24;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 60px 30px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-2-der .tarjeta-descripcion .texto-resaltado {
+  font-weight: 700;
+  background-color: white;
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-2-der .row .divDialogo {
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-2-der .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-2-der .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-2-der .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-2-der:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-2-der:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-3-izq {
+  height: 477px;
+  border-radius: 30px 0px 0px 30px;
+  padding: 32px;
+  margin: 0px 10px;
+  background-color: #DBF8D7;
+}
+.contieneTarj .inspiCard-3-izq .imgTarj-1 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Álvaro Carrasco.png");
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.contieneTarj .inspiCard-3-izq .tarjeta-descripcion {
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #02503E;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 50px 25px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-3-izq .tarjeta-descripcion .texto-resaltado {
+  font-weight: 600;
+  background-color: white;
+  color: #02503E;
+}
+.contieneTarj .inspiCard-3-izq .row .divDialogo {
+  color: #02503E;
+}
+.contieneTarj .inspiCard-3-izq .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-3-izq .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-3-izq .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-3-izq:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-3-izq:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-3-der {
+  height: 477px;
+  border-radius: 0px 30px 30px 0px;
+  padding: 32px 34px 32px 32px;
+  margin: 10px;
+  background-color: #F6EBC8;
+}
+.contieneTarj .inspiCard-3-der .imgTarj-2 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Daniela Ancira.png");
+  background-size: cover;
+  border-radius: 0px 20px 20px 0px;
+  position: relative;
+}
+.contieneTarj .inspiCard-3-der .tarjeta-descripcion {
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  background-color: #F26123;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 60px 30px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-3-der .tarjeta-descripcion .texto-resaltado {
+  font-weight: 700;
+  background-color: white;
+  color: #F26123;
+}
+.contieneTarj .inspiCard-3-der .row .divDialogo {
+  color: #F26123;
+}
+.contieneTarj .inspiCard-3-der .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-3-der .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-3-der .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-3-der:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-3-der:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-4-izq {
+  height: 477px;
+  border-radius: 30px 0px 0px 30px;
+  padding: 32px;
+  margin: 0px 10px;
+  background-color: #FDE8E9;
+}
+.contieneTarj .inspiCard-4-izq .imgTarj-1 {
+  height: 300px;
+  width: 325px;
+  background-image: url("../img/Federico López.png");
+  background-size: cover;
+  border-radius: 20px 0px 0px 20px;
+  position: relative;
+}
+.contieneTarj .inspiCard-4-izq .tarjeta-descripcion {
+  color: white;
+  border-radius: 20px 0px 0px 20px;
+  background-color: #ED1C24;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  padding: 50px 25px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-4-izq .tarjeta-descripcion .texto-resaltado {
+  font-weight: 600;
+  background-color: white;
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-4-izq .row .divDialogo {
+  color: #ED1C24;
+}
+.contieneTarj .inspiCard-4-izq .row .divDialogo .dialogoJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+}
+.contieneTarj .inspiCard-4-izq .div-descripcion-logo {
+  margin-top: 32px;
+}
+.contieneTarj .inspiCard-4-izq .div-descripcion-logo .descripcionJoven {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+.contieneTarj .inspiCard-4-izq:hover .tarjeta-descripcion {
+  opacity: 1;
+}
+.contieneTarj .inspiCard-4-izq:hover .pngEspacio {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+.contieneTarj .inspiCard-4-der {
+  height: 477px;
+  border-radius: 0px 30px 30px 0px;
+  padding: 109px 96px 32px 96px;
+  margin: 10px;
+  background-color: #DBF8D7;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out;
+}
+.contieneTarj .inspiCard-4-der .row {
+  height: 100%;
+}
+.contieneTarj .inspiCard-4-der .row .logoEntrevistas {
+  height: 145px;
+  width: 238px;
+}
+.contieneTarj .inspiCard-4-der .row .textEntrevistas {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #02503E;
+  transition: color 0.5s ease-in-out;
+}
+.contieneTarj .inspiCard-4-der .row .clickEntrevistas {
+  padding: 14px 47px;
+  border: 3px solid #02503E;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Poppins";
+  color: #02503E;
+  transition: color border 0.5s ease-in-out;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.contieneTarj .inspiCard-4-der:hover {
+  background-color: #02503E;
+}
+.contieneTarj .inspiCard-4-der:hover .textEntrevistas {
+  color: white;
+}
+.contieneTarj .inspiCard-4-der:hover .clickEntrevistas {
+  color: white;
+  border: 3px solid white;
 }
 
 .jumbotron5 {
