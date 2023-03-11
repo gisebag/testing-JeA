@@ -241,20 +241,8 @@
     font-size: 32px;
 }
 
-.clickPositivo{
-    background-color: $color-green-pastel;
-    border-radius: 25px;
-    padding: 5px 40px;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: $tipografia-poppins;
-}
-.clickPositivo:hover{
-    border: 3px solid $color-green-pastel;
-    background-color: $color-green-pastel;
-    font-size: 24px;
-    color: $color-black;
-}
+//btn contactanos en sass botones
+
 .titulo4{
     font-family: $tipografia-poppins;
     font-weight: 400;

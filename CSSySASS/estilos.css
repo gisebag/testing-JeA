@@ -287,22 +287,6 @@
   font-size: 32px;
 }
 
-.clickPositivo {
-  background-color: #DBF8D7;
-  border-radius: 25px;
-  padding: 5px 40px;
-  font-size: 22px;
-  font-weight: 400;
-  font-family: "Poppins", sans-serif;
-}
-
-.clickPositivo:hover {
-  border: 3px solid #DBF8D7;
-  background-color: #DBF8D7;
-  font-size: 24px;
-  color: rgb(10, 10, 10);
-}
-
 .titulo4 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -1469,6 +1453,147 @@
   top: 50%;
   right: 4rem;
   cursor: pointer;
+}
+
+.clickPositivo {
+  background-color: #DBF8D7;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.clickPositivo:hover {
+  border: 3px solid #DBF8D7;
+  background-color: #DBF8D7;
+  font-size: 24px;
+  color: rgb(10, 10, 10);
+  transition: 0.7s;
+}
+
+.boton-enviar {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 14px 114px;
+  border: 0px;
+  border-radius: 100px;
+  background-color: #DEF1DA;
+  margin-top: 24px;
+  color: #02503E;
+  font-weight: 600;
+}
+
+.contacto-JeA {
+  width: 100%;
+  background-color: #02503E;
+  padding: 80px 0px;
+}
+.contacto-JeA .div-texto {
+  margin: auto;
+  max-width: 800px;
+  min-height: 80px;
+}
+.contacto-JeA .div-texto p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #02503E;
+  padding: 24px 0px;
+}
+.contacto-JeA .div-iconos {
+  margin-top: 55px;
+}
+.contacto-JeA .div-iconos p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin: 15px 0px;
+}
+.contacto-JeA .div-iconos strong {
+  font-weight: bold;
+}
+
+.contenedor-imagen-formulario {
+  padding: 80px;
+}
+.contenedor-imagen-formulario .contenedor-imagen {
+  background-image: url(../img/contacto.1.jpg);
+  background-size: cover;
+  border-radius: 16px;
+  max-height: 750px;
+  margin-right: 50px;
+}
+.contenedor-imagen-formulario .contenedor-formulario {
+  margin-left: 50px;
+}
+.contenedor-imagen-formulario .contenedor-formulario h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #02503E;
+}
+.contenedor-imagen-formulario .contenedor-formulario p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.contenedor-imagen-formulario .contenedor-formulario p,
+.contenedor-imagen-formulario .contenedor-formulario label {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #02503E;
+}
+.contenedor-imagen-formulario .contenedor-formulario input,
+.contenedor-imagen-formulario .contenedor-formulario textarea {
+  background-color: transparent;
+  border: 1px solid #02503E;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 14px;
+  resize: none;
+}
+
+.clickPositivo {
+  background-color: #DBF8D7;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.clickPositivo:hover {
+  border: 3px solid #DBF8D7;
+  background-color: #DBF8D7;
+  font-size: 24px;
+  color: rgb(10, 10, 10);
+  transition: 0.7s;
+}
+
+.boton-enviar {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  padding: 14px 114px;
+  border: 0px;
+  border-radius: 100px;
+  background-color: #DEF1DA;
+  margin-top: 24px;
+  color: #02503E;
+  font-weight: 600;
 }
 
 body {

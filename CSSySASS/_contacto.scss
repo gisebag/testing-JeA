@@ -1,0 +1,99 @@
+@import "_coloresyTipografias";
+@import "_botones";
+
+.contacto-JeA {
+    width: 100%;
+    background-color: $color-green-oscuro;
+    padding: 80px 0px;
+
+    .div-texto {
+        margin: auto;
+        max-width: 800px;
+        min-height: 80px;
+
+
+        p {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 44px;
+            text-align: center;
+            color: $color-green-oscuro;
+            padding: 24px 0px;
+        }
+    }
+
+    .div-iconos {
+        margin-top: 55px;
+
+        p {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 32px;
+            color: white;
+            margin: 15px 0px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}
+
+.contenedor-imagen-formulario {
+    padding: 80px;
+
+    .contenedor-imagen {
+        background-image: url(../img/contacto.1.jpg);
+        background-size: cover;
+        border-radius: 16px;
+        max-height: 750px;
+        margin-right: 50px;
+    }
+
+    .contenedor-formulario {
+        margin-left: 50px;
+
+        h2 {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            color: $color-green-oscuro;
+        }
+
+        p {
+            margin-top: 24px;
+            margin-bottom: 40px;
+        }
+
+        p,
+        label {
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $color-green-oscuro;
+        }
+
+        input,
+        textarea {
+            background-color: transparent;
+            border: 1px solid $color-green-oscuro;
+            font-family: $tipografia-nunito;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 22px;
+            padding: 14px;
+            resize: none; //para bloquear de aumentar tamaño textarea (Mensaje)
+        }
+
+        //el btn enviar esta en _botones.scss
+    }
+}
