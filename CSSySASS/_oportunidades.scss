@@ -1,0 +1,142 @@
+@import "_coloresyTipografias";
+
+
+.jumbotron6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/oportunidades.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+
+    .cuadroColaboraciones {
+        max-width: 530px;
+        height: 370px;
+        background:$color-green-oscuro;
+        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: $color-white;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $tipografia-nunito;
+            margin: 0px 50px
+        }
+
+        /* .titulo1b {
+            color: $color-white;
+            font-size: 30px;
+            font-weight: 200;
+            font-family: $tipografia-nunito-sans;
+        } */
+    }
+}
+
+.becas{
+    /* background-color: beige; */
+    display: flex;
+    margin: 50px 150px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    
+    .fondo-becas{
+        display: flex; //es para poner al lado los @
+        background-color: $color-green-pastel-2;
+        border-radius: 30px;
+
+        .imag-titulos{
+            display: flex;
+            position: relative;
+                        
+            width: 450px;
+            height: 450px;
+            background-image: url(../img/oportunidades.2.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+    
+    
+            .titulo-opo{
+                position: absolute;
+                bottom: -10px;
+    
+                text-align: center;
+                width: 100%;
+                padding:30px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius:30px;
+                
+                height: 100px;
+                color: $color-white;
+                font-size: 26px;
+                font-weight: 600;
+                font-family: $tipografia-nunito;
+                background: linear-gradient(90deg, $color-green-medio 0%, rgba(14, 128, 102, 0.626) 75%);
+            }
+        }
+        
+        .content-texto-becas{
+            border-radius: 30px;
+            background-color: $color-green-pastel-2;
+            width: 750px;
+            height: 450px;
+            
+            
+            .titulo-becas{
+                font-family: $tipografia-nunito;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 60px;
+    
+                background-color: $color-green-medio;
+                color: $color-white;
+                width: 150px;
+                padding: 5px;
+                text-align: center;
+    
+                margin-top: 10px;
+                margin-left: 45px;
+            }
+                
+            .becas-ajuste{
+                display: flex;
+                padding: 10px;
+                
+                
+    
+                    ul{
+                        /* background-color: chartreuse; */
+                        width: 50%;
+                
+                
+                    li{
+                        list-style-type:none;
+                        /* border: 2px solid red; */
+                    
+                    
+        
+                        a{
+                            text-decoration: none;
+                            color: $color-green-oscuro;
+                            font-size: 24px;
+                            font-family: $tipografia-nunito;
+                            font-weight: 400px;
+                            line-height: 36px;
+                            /* background-color: rgba(139, 0, 76, 0.736); */
+                        }
+                    }
+                }
+            
+            }
+                
+            
+            
+            
+            
+        }
+    }
+    
+}

@@ -350,7 +350,7 @@
   width: 430px;
   height: 391px;
   background: rgb(2, 80, 62);
-  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(0, 0, 0, 0.7092086835) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
 }
 .jumbotron2 .cuadroJovenes .titulo1 {
   color: #f9f9f9;
@@ -929,7 +929,7 @@
   max-width: 430px;
   height: 391px;
   background: #02503E;
-  background: linear-gradient(90deg, #02503E 0%, rgba(0, 0, 0, 0.7092086835) 75%);
+  background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
 .jumbotron5 .cuadroColaboraciones .titulo1 {
@@ -1048,7 +1048,7 @@
   max-width: 430px;
   height: 391px;
   background: #02503E;
-  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(0, 0, 0, 0.7092086835) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
 .jumbotron4 .cuadroColaboraciones .titulo1 {
@@ -1163,7 +1163,7 @@
   width: 430px;
   height: 391px;
   background: rgb(2, 80, 62);
-  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(0, 0, 0, 0.7092086835) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
 .jumbotron3 .cuadroJovenes .titulo1 {
@@ -1565,6 +1565,115 @@
   line-height: 22px;
   padding: 14px;
   resize: none;
+}
+
+.jumbotron6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/oportunidades.1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+}
+.jumbotron6 .cuadroColaboraciones {
+  max-width: 530px;
+  height: 370px;
+  background: #02503E;
+  background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
+  text-align: start;
+  /* .titulo1b {
+      color: $color-white;
+      font-size: 30px;
+      font-weight: 200;
+      font-family: $tipografia-nunito-sans;
+  } */
+}
+.jumbotron6 .cuadroColaboraciones .titulo1 {
+  color: #f9f9f9;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Nunito";
+  margin: 0px 50px;
+}
+
+.becas {
+  /* background-color: beige; */
+  display: flex;
+  margin: 50px 150px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+.becas .fondo-becas {
+  display: flex;
+  background-color: #DEF1DA;
+  border-radius: 30px;
+}
+.becas .fondo-becas .imag-titulos {
+  display: flex;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background-image: url(../img/oportunidades.2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+}
+.becas .fondo-becas .imag-titulos .titulo-opo {
+  position: absolute;
+  bottom: -10px;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 100px;
+  color: #f9f9f9;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Nunito";
+  background: linear-gradient(90deg, #009876 0%, rgba(14, 128, 102, 0.626) 75%);
+}
+.becas .fondo-becas .content-texto-becas {
+  border-radius: 30px;
+  background-color: #DEF1DA;
+  width: 750px;
+  height: 450px;
+}
+.becas .fondo-becas .content-texto-becas .titulo-becas {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 60px;
+  background-color: #009876;
+  color: #f9f9f9;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+.becas .fondo-becas .content-texto-becas .becas-ajuste {
+  display: flex;
+  padding: 10px;
+}
+.becas .fondo-becas .content-texto-becas .becas-ajuste ul {
+  /* background-color: chartreuse; */
+  width: 50%;
+}
+.becas .fondo-becas .content-texto-becas .becas-ajuste ul li {
+  list-style-type: none;
+  /* border: 2px solid red; */
+}
+.becas .fondo-becas .content-texto-becas .becas-ajuste ul li a {
+  text-decoration: none;
+  color: #02503E;
+  font-size: 24px;
+  font-family: "Nunito";
+  font-weight: 400px;
+  line-height: 36px;
+  /* background-color: rgba(139, 0, 76, 0.736); */
 }
 
 .clickPositivo {
