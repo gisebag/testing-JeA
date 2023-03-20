@@ -34,3 +34,31 @@
     color: #02503E;
     font-weight: 600;
 }
+
+//Oportunidades
+.btn-flag{
+    background-color: $color-white;
+    border-radius: 25px;
+    border: $color-green-oscuro 2px solid;
+    
+    font-family: $tipografia-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:30px;
+    text-align: center;
+    
+    margin: 15px;
+    display: flex;
+    /* --bs-btn-hover-border-color:none */
+
+    a{
+        color: $color-green-oscuro !important;
+        text-decoration: none;
+        list-style-type:none;
+        
+    }
+}
+
+.btn-flag:hover{
+    border: $color-green-oscuro 2px solid;
+}

@@ -11,7 +11,7 @@
     height: 370px;
 
     .cuadroColaboraciones {
-        max-width: 530px;
+        max-width: 590px;
         height: 370px;
         background:$color-green-oscuro;
         background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
@@ -133,10 +133,118 @@
             }
                 
             
-            
-            
-            
         }
     }
     
+}
+
+.programa{
+    border: 3px solid $color-green-medio;
+    border-radius: 25px;
+    margin: 20px;
+    margin-left: 150px;
+    padding: 20px;
+    width: 1200px;
+    height: 250px;
+    display: flex;
+    
+    
+
+    h3{
+        color: $color-green-medio;
+        /* border: 2px solid greenyellow; */
+        padding: 5%;
+        padding-right:150px;
+    }
+
+    .programa-logos{
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: flex-end;
+        div{
+            
+            /* border: 2px solid red; */
+            padding:10px 30px;
+            
+
+        }
+        .img-especial{
+            background-color: #642869;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .img-programa{
+            width: 160px;
+            height: 100px;
+        }
+        button{
+            display: flex;
+            text-align: center;
+        }
+    }
+}
+
+
+.titulo-flag{
+    margin-top: 125px;
+    margin: 90px;
+    padding:10px 60px;
+    
+    .titulo-voluntariado{
+        font-family: $tipografia-nunito;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 60px;
+    
+        background-color: $color-green-medio;
+        color: $color-white;
+        width: 250px;
+        padding: 5px;
+        text-align: center;
+    
+                margin-top: 10px;
+                margin-left: 110px;
+    }
+    .text-flag{
+
+        font-family: $tipografia-nunito;
+        font-size: 24px;
+        font-weight: 400px;
+        line-height: 32px;
+        border: 2px solid rgb(141, 47, 255);
+        width: 80%;
+        padding: 20px;
+        margin-top: 30px;
+        margin-left: 110px;
+        
+    
+        span{
+            font-weight: 800;
+            color:$color-green-medio;
+            
+        }
+    }
+
+    
+}
+
+.container-group{
+    /* width: 1000px; */ 
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(141, 47, 255);
+    justify-content: center;
+
+    margin: 15px 160px;
+    margin-bottom: 150px;
+    .flag{
+        padding: 20px;
+    }
+}
+
+.img-flag{
+    width: 160px;
+    height: 98px;
+    background-size: cover;
+    background-position: center;
 }

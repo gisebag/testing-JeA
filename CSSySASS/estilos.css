@@ -1484,6 +1484,29 @@
   font-weight: 600;
 }
 
+.btn-flag {
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  border: #02503E 2px solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin: 15px;
+  display: flex;
+  /* --bs-btn-hover-border-color:none */
+}
+.btn-flag a {
+  color: #02503E !important;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.btn-flag:hover {
+  border: #02503E 2px solid;
+}
+
 .contacto-JeA {
   width: 100%;
   background-color: #02503E;
@@ -1577,7 +1600,7 @@
   height: 370px;
 }
 .jumbotron6 .cuadroColaboraciones {
-  max-width: 530px;
+  max-width: 590px;
   height: 370px;
   background: #02503E;
   background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
@@ -1676,6 +1699,99 @@
   /* background-color: rgba(139, 0, 76, 0.736); */
 }
 
+.programa {
+  border: 3px solid #009876;
+  border-radius: 25px;
+  margin: 20px;
+  margin-left: 150px;
+  padding: 20px;
+  width: 1200px;
+  height: 250px;
+  display: flex;
+}
+.programa h3 {
+  color: #009876;
+  /* border: 2px solid greenyellow; */
+  padding: 5%;
+  padding-right: 150px;
+}
+.programa .programa-logos {
+  /* border: 2px solid blue; */
+  display: flex;
+  align-items: flex-end;
+}
+.programa .programa-logos div {
+  /* border: 2px solid red; */
+  padding: 10px 30px;
+}
+.programa .programa-logos .img-especial {
+  background-color: #642869;
+  border-radius: 50%;
+  margin: 10px;
+}
+.programa .programa-logos .img-programa {
+  width: 160px;
+  height: 100px;
+}
+.programa .programa-logos button {
+  display: flex;
+  text-align: center;
+}
+
+.titulo-flag {
+  margin-top: 125px;
+  margin: 90px;
+  padding: 10px 60px;
+}
+.titulo-flag .titulo-voluntariado {
+  font-family: "Nunito";
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 60px;
+  background-color: #009876;
+  color: #f9f9f9;
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 110px;
+}
+.titulo-flag .text-flag {
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 32px;
+  border: 2px solid rgb(141, 47, 255);
+  width: 80%;
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 110px;
+}
+.titulo-flag .text-flag span {
+  font-weight: 800;
+  color: #009876;
+}
+
+.container-group {
+  /* width: 1000px; */
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid rgb(141, 47, 255);
+  justify-content: center;
+  margin: 15px 160px;
+  margin-bottom: 150px;
+}
+.container-group .flag {
+  padding: 20px;
+}
+
+.img-flag {
+  width: 160px;
+  height: 98px;
+  background-size: cover;
+  background-position: center;
+}
+
 .clickPositivo {
   background-color: #DBF8D7;
   border-radius: 25px;
@@ -1703,6 +1819,29 @@
   margin-top: 24px;
   color: #02503E;
   font-weight: 600;
+}
+
+.btn-flag {
+  background-color: #f9f9f9;
+  border-radius: 25px;
+  border: #02503E 2px solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin: 15px;
+  display: flex;
+  /* --bs-btn-hover-border-color:none */
+}
+.btn-flag a {
+  color: #02503E !important;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.btn-flag:hover {
+  border: #02503E 2px solid;
 }
 
 body {
