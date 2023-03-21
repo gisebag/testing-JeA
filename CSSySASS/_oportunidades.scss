@@ -25,12 +25,7 @@
             margin: 0px 50px
         }
 
-        /* .titulo1b {
-            color: $color-white;
-            font-size: 30px;
-            font-weight: 200;
-            font-family: $tipografia-nunito-sans;
-        } */
+        
     }
 }
 
@@ -104,7 +99,6 @@
             .becas-ajuste{
                 display: flex;
                 padding: 10px;
-                
                 
     
                     ul{
@@ -206,12 +200,13 @@
                 margin-left: 110px;
     }
     .text-flag{
+        /* border: 2px solid rgb(141, 47, 255); */
 
         font-family: $tipografia-nunito;
         font-size: 24px;
         font-weight: 400px;
         line-height: 32px;
-        border: 2px solid rgb(141, 47, 255);
+        
         width: 80%;
         padding: 20px;
         margin-top: 30px;
@@ -229,10 +224,11 @@
 }
 
 .container-group{
-    /* width: 1000px; */ 
+    /* border: 2px solid rgb(141, 47, 255); */
+
     display:flex;
     flex-wrap: wrap;
-    border: 2px solid rgb(141, 47, 255);
+    
     justify-content: center;
 
     margin: 15px 160px;
@@ -247,4 +243,201 @@
     height: 98px;
     background-size: cover;
     background-position: center;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1023px){
+    
+    .jumbotron6{
+        width: 360px;
+        height: 240px;
+        background-size: cover;
+        background-position:right;
+
+        .cuadroColaboraciones{
+            height: 80px;
+            text-align: start;
+            width: 360px;
+
+            .titulo1 {
+                margin: 0px;
+                font-size: 24px;
+                line-height: 16px;
+                font-weight: 800;
+            }
+        }
+    }
+
+    .contieneTitulo{
+        width: 320px;
+        
+        h2{ //ver porque no me funciona ajustar
+
+            display: none;
+            /* box-sizing: 0;
+            font-size: 14px !important;
+            font-weight: 400;
+            line-height: 18px;
+            margin: 0; */
+            
+            /* text-align: center; */
+
+        }
+    }
+
+    //becas
+    .becas{
+        margin: 10px;
+        
+        .fondo-becas{
+            flex-direction: column;
+
+            .imag-titulos{
+                width: 350px;
+
+                .titulo-opo{
+                    font-family: $tipografia-poppins;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+        
+            .content-texto-becas{
+                width: 350px;
+                height: 34rem;
+                
+                .titulo-becas{
+                    font-weight: 800;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+                .becas-ajuste{
+                    flex-direction: column;
+
+                    ul {
+                        width: 300px;
+                        
+                    }
+                    ul li a{
+                        
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        margin: 15px 0;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .programa{
+        flex-direction: column;
+
+        border: 3px solid $color-green-medio;
+        border-radius: 25px;
+        margin: 10px;
+        
+        margin-top: 40px;
+        
+        padding: 10px;
+        width: 340px;
+        height: auto;
+        
+        
+        
+    
+        h3{
+            color: $color-green-medio;
+            /* border: 2px solid greenyellow; */
+            padding: 10px;
+            text-align: center;
+            
+        }
+    
+        .programa-logos{
+            /* border: 2px solid blue; */
+            flex-direction: column;
+            align-items:center;
+            div{
+                
+                border: 2px solid red; 
+                padding:15px 10px;
+                
+            } 
+
+            .img-especial{
+                background-color: #642869;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            .img-programa{
+                width: 100px;
+                height: 80px;
+            }
+            button{
+                /* display: flex; */
+                text-align: center;
+                align-content: center;
+            }
+        }
+    }
+    
+    .titulo-flag{
+        flex-direction: column;
+        
+
+        margin-top: 15px;
+        margin: 00px;
+        padding:5px; 
+        
+        .titulo-voluntariado{
+            font-family: $tipografia-nunito;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        
+            background-color: $color-green-medio;
+            color: $color-white;
+            width: 200px;
+            padding: 5px;
+            text-align: center;
+        
+            margin-top:10px;
+            margin-left: 0px;
+        }
+        .text-flag{
+            /* border: 2px solid rgb(141, 47, 255); */
+    
+            font-family: $tipografia-nunito;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            
+            width: 100%;
+            padding: 10px;
+            margin: 0px;
+            
+        
+            span{
+                font-weight: 800;
+                color:$color-green-medio;
+                
+            }
+        }
+    
+        
+    }
+
+
+    .container-group{
+        display: none;
+    }
+
 }

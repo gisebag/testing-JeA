@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: rgb(159, 14, 96) 2px solid;  */
+  /* border: rgb(159, 14, 96) 2px solid; */
 }
 
 /* navbar */
@@ -1507,6 +1507,26 @@
   border: #02503E 2px solid;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  btn-flag {
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    border: #02503E 2px solid;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 15px;
+    display: flex;
+    /* --bs-btn-hover-border-color:none */
+  }
+  btn-flag a {
+    color: #02503E !important;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
 .contacto-JeA {
   width: 100%;
   background-color: #02503E;
@@ -1605,12 +1625,6 @@
   background: #02503E;
   background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
-  /* .titulo1b {
-      color: $color-white;
-      font-size: 30px;
-      font-weight: 200;
-      font-family: $tipografia-nunito-sans;
-  } */
 }
 .jumbotron6 .cuadroColaboraciones .titulo1 {
   color: #f9f9f9;
@@ -1757,11 +1771,11 @@
   margin-left: 110px;
 }
 .titulo-flag .text-flag {
+  /* border: 2px solid rgb(141, 47, 255); */
   font-family: "Nunito";
   font-size: 24px;
   font-weight: 400px;
   line-height: 32px;
-  border: 2px solid rgb(141, 47, 255);
   width: 80%;
   padding: 20px;
   margin-top: 30px;
@@ -1773,10 +1787,9 @@
 }
 
 .container-group {
-  /* width: 1000px; */
+  /* border: 2px solid rgb(141, 47, 255); */
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid rgb(141, 47, 255);
   justify-content: center;
   margin: 15px 160px;
   margin-bottom: 150px;
@@ -1792,6 +1805,152 @@
   background-position: center;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  .jumbotron6 {
+    width: 360px;
+    height: 240px;
+    background-size: cover;
+    background-position: right;
+  }
+  .jumbotron6 .cuadroColaboraciones {
+    height: 80px;
+    text-align: start;
+    width: 360px;
+  }
+  .jumbotron6 .cuadroColaboraciones .titulo1 {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 800;
+  }
+  .contieneTitulo {
+    width: 320px;
+  }
+  .contieneTitulo h2 {
+    display: none;
+    /* box-sizing: 0;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 18px;
+    margin: 0; */
+    /* text-align: center; */
+  }
+  .becas {
+    margin: 10px;
+  }
+  .becas .fondo-becas {
+    flex-direction: column;
+  }
+  .becas .fondo-becas .imag-titulos {
+    width: 350px;
+  }
+  .becas .fondo-becas .imag-titulos .titulo-opo {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .becas .fondo-becas .content-texto-becas {
+    width: 350px;
+    height: 34rem;
+  }
+  .becas .fondo-becas .content-texto-becas .titulo-becas {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .becas .fondo-becas .content-texto-becas .becas-ajuste {
+    flex-direction: column;
+  }
+  .becas .fondo-becas .content-texto-becas .becas-ajuste ul {
+    width: 300px;
+  }
+  .becas .fondo-becas .content-texto-becas .becas-ajuste ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 15px 0;
+  }
+  .programa {
+    flex-direction: column;
+    border: 3px solid #009876;
+    border-radius: 25px;
+    margin: 10px;
+    margin-top: 40px;
+    padding: 10px;
+    width: 340px;
+    height: auto;
+  }
+  .programa h3 {
+    color: #009876;
+    /* border: 2px solid greenyellow; */
+    padding: 10px;
+    text-align: center;
+  }
+  .programa .programa-logos {
+    /* border: 2px solid blue; */
+    flex-direction: column;
+    align-items: center;
+  }
+  .programa .programa-logos div {
+    border: 2px solid red;
+    padding: 15px 10px;
+  }
+  .programa .programa-logos .img-especial {
+    background-color: #642869;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .programa .programa-logos .img-programa {
+    width: 100px;
+    height: 80px;
+  }
+  .programa .programa-logos button {
+    /* display: flex; */
+    text-align: center;
+    align-content: center;
+  }
+  .titulo-flag {
+    flex-direction: column;
+    margin-top: 15px;
+    margin: 0px;
+    padding: 5px;
+  }
+  .titulo-flag .titulo-voluntariado {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #009876;
+    color: #f9f9f9;
+    width: 200px;
+    padding: 5px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .titulo-flag .text-flag {
+    /* border: 2px solid rgb(141, 47, 255); */
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+  }
+  .titulo-flag .text-flag span {
+    font-weight: 800;
+    color: #009876;
+  }
+  .container-group {
+    display: none;
+  }
+}
 .clickPositivo {
   background-color: #DBF8D7;
   border-radius: 25px;
@@ -1844,6 +2003,26 @@
   border: #02503E 2px solid;
 }
 
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  btn-flag {
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    border: #02503E 2px solid;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin: 15px;
+    display: flex;
+    /* --bs-btn-hover-border-color:none */
+  }
+  btn-flag a {
+    color: #02503E !important;
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
 body {
   background-color: #f8f8f8;
 }

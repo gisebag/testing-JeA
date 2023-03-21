@@ -62,3 +62,30 @@
 .btn-flag:hover{
     border: $color-green-oscuro 2px solid;
 }
+
+
+@media only screen and (min-width: 360px) and (max-width: 1023px){
+    btn-flag{
+        background-color: $color-white;
+        border-radius: 25px;
+        border: $color-green-oscuro 2px solid;
+        
+        font-family: $tipografia-poppins;
+        font-weight: 500;
+        font-size: 14px;
+        line-height:20px;
+        text-align: center;
+        
+        margin: 15px;
+        display: flex;
+        /* --bs-btn-hover-border-color:none */
+    
+        a{
+            color: $color-green-oscuro !important;
+            text-decoration: none;
+            list-style-type:none;
+            
+        }
+    }
+
+}
