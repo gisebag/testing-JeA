@@ -15,8 +15,7 @@
 }
 
 .navbar .iconNav {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 70px;
   height: 70px;
 }
@@ -166,8 +165,7 @@
 .contieneImg .grupoImg {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .prueb1 {
@@ -351,12 +349,13 @@
   height: 391px;
   background: rgb(2, 80, 62);
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
+  text-align: start;
 }
 .jumbotron2 .cuadroJovenes .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito";
   padding-top: 40px;
 }
 .jumbotron2 .cuadroJovenes .inspiran {
@@ -371,10 +370,11 @@
   margin-top: 50px;
 }
 .contieneTitulo .titulo {
+  max-width: 844px;
   color: #02503E;
   font-family: "Nunito Sans", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 28px;
   line-height: 38px;
   text-align: center;
@@ -384,18 +384,25 @@
 }
 
 .colorVector {
-  background-color: #f9f9f9;
+  background-color: #EDFEFB;
+  padding: 32px 82px;
 }
 
-.clickBtnVerde {
-  background-color: #f9f9f9;
+.boton-default-sin_fondo {
+  padding: 14px 47px;
   border: 3px solid #02503E;
-  border-radius: 25px;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Poppins";
   color: #02503E;
-  padding: 5px 60px;
-  font-size: 24px;
+  transition: color border 0.5s ease-in-out;
+  font-style: normal;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .contieneTarj {
@@ -412,7 +419,7 @@
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
-  margin: 0px 10px;
+  margin: 10px;
   background-color: #FDE8E9;
 }
 .contieneTarj .inspiCard-1-izq .imgTarj-1 {
@@ -542,7 +549,7 @@
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
-  margin: 0px 10px;
+  margin: 10px;
   background-color: #F6EBC8;
 }
 .contieneTarj .inspiCard-2-izq .imgTarj-1 {
@@ -672,7 +679,7 @@
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
-  margin: 0px 10px;
+  margin: 10px;
   background-color: #DBF8D7;
 }
 .contieneTarj .inspiCard-3-izq .imgTarj-1 {
@@ -802,7 +809,7 @@
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
-  margin: 0px 10px;
+  margin: 10px;
   background-color: #FDE8E9;
 }
 .contieneTarj .inspiCard-4-izq .imgTarj-1 {
@@ -889,29 +896,13 @@
   color: #02503E;
   transition: color 0.5s ease-in-out;
 }
-.contieneTarj .inspiCard-4-der .row .clickEntrevistas {
-  padding: 14px 47px;
-  border: 3px solid #02503E;
-  border-radius: 100px;
-  background-color: transparent;
-  font-family: "Poppins";
-  color: #02503E;
-  transition: color border 0.5s ease-in-out;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
 .contieneTarj .inspiCard-4-der:hover {
   background-color: #02503E;
 }
 .contieneTarj .inspiCard-4-der:hover .textEntrevistas {
   color: white;
 }
-.contieneTarj .inspiCard-4-der:hover .clickEntrevistas {
+.contieneTarj .inspiCard-4-der:hover .boton-default-sin_fondo {
   color: white;
   border: 3px solid white;
 }
@@ -1126,8 +1117,7 @@
   background-color: #DBF8D7;
   border-radius: 30px 0px 0px 30px;
   background-image: url(../img/iconos-colaboraciones.png);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-der {
   background-image: url(../img/colaboraciones.2.jpg);
@@ -2029,4 +2019,6 @@ body {
 
 header {
   background-color: #EDFEFB !important;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
