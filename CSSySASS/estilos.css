@@ -7,14 +7,14 @@
 }
 
 /* navbar */
-.cambioPosicion {
+.cambio-posicion-nav {
   flex-grow: 0;
 }
-.cambioPosicion .submenu {
+.cambio-posicion-nav .submenu {
   background-color: #EDFEFB;
 }
 
-.navbar .iconNav {
+.navbar .icono-nav {
   object-fit: contain;
   width: 70px;
   height: 70px;
@@ -93,7 +93,7 @@
 .espacio {
   margin: 10px;
 }
-.espacio .creadoIndex {
+.espacio .objetivos-div {
   display: flex;
   /* justify-content: space-evenly; */
   justify-content: center;
@@ -101,12 +101,12 @@
   text-align: center;
   flex-direction: row;
 }
-.espacio .textoComplemento {
+.espacio .texto-complemento-objetivos {
   font-weight: 400;
   font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
 }
-.espacio .cajaEspacio {
+.espacio .caja-objetivo {
   padding: 40px 20px;
   border-radius: 10px;
   font-size: 25px;
@@ -139,22 +139,22 @@
   font-weight: 800;
 }
 
-.pngEspacio {
+.imagen-default {
   width: 80px;
   height: 80px;
 }
 
 /* seccion SINERGIAS */
-.contieneVectores {
+.contenedor-vectores {
   display: flex;
   justify-content: center;
   margin: 40px 0px;
 }
-.contieneVectores .vectores {
+.contenedor-vectores .vectores {
   margin: 15px;
 }
 
-.contieneImg {
+.img-conocer-jea {
   width: 720px;
   height: 430px;
   background-image: url(../img/sobre\ jea.2.jpg);
@@ -162,7 +162,7 @@
   background-size: cover;
   border-radius: 25px;
 }
-.contieneImg .grupoImg {
+.img-conocer-jea .grupoImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -179,7 +179,7 @@
   height: 100%;
 }
 
-.grupoTexto {
+.grupo-texto-sobre-jea {
   font-size: 20px;
   font-weight: 700;
   padding: 10px;
@@ -188,7 +188,7 @@
   letter-spacing: 0.5px;
 }
 
-.clickConocenos {
+.boton-conocenos {
   background-color: #f9f9f9;
   color: rgb(10, 10, 10);
   border: 3px solid #02503E;
@@ -200,18 +200,14 @@
   font-family: "Poppins", sans-serif;
 }
 
-.clickConocenos:hover {
+.boton-conocenos:hover {
   background-color: #f9f9f9;
   color: rgb(10, 10, 10);
   border: 4px solid #02503E;
   font-size: 26px;
 }
 
-.divBoton {
-  width: 100px;
-}
-
-.recuadroVerde {
+.recuadro-verde {
   background-color: #02503E;
   width: 1276px;
   height: 730px;
@@ -219,29 +215,29 @@
   margin: 80px 0;
   border-radius: 25px;
 }
-.recuadroVerde .recuadroTexto {
+.recuadro-verde .recuadro-texto {
   font-size: 20px;
   font-weight: 400;
   padding: 10px;
   font-family: "Nunito Sans", sans-serif;
 }
-.recuadroVerde .card {
+.recuadro-verde .card {
   width: 350px;
   height: 380px;
   border-radius: 25px;
   margin: 20px;
 }
-.recuadroVerde .card1 {
+.recuadro-verde .card1 {
   background-color: #F6EBC8;
 }
-.recuadroVerde .card2 {
+.recuadro-verde .card2 {
   background-color: #DBF8D7;
 }
-.recuadroVerde .card3 {
+.recuadro-verde .card3 {
   background-color: #FDE8E9;
 }
 
-.clickNegativo {
+.boton-negativo {
   background-color: #02503E;
   color: #f9f9f9;
   border: 3px solid #f9f9f9;
@@ -253,7 +249,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.clickNegativo:hover {
+.boton-negativo:hover {
   border: 3px solid #f9f9f9;
   font-size: 26px;
   color: #f9f9f9;
@@ -276,7 +272,7 @@
   height: 100px;
 }
 
-.tituloNegativo {
+.titulo-negativo {
   color: #f9f9f9;
   text-align: center;
   margin: 50px 0px;
@@ -292,7 +288,7 @@
   margin-top: 10px;
 }
 
-.divContactanos {
+.div-contactanos {
   margin-bottom: 50px;
   width: 100%;
 }
@@ -301,7 +297,7 @@
 .col-footer, .col-footer-img {
   text-align: start;
 }
-.col-footer .pngEspacio, .col-footer-img .pngEspacio {
+.col-footer .imagen-default, .col-footer-img .imagen-default {
   width: 80px;
   height: 80px;
 }
@@ -310,16 +306,16 @@
   font-weight: 600;
   font-size: 22px;
 }
-.col-footer .letraFooter, .col-footer-img .letraFooter {
+.col-footer .letra-footer, .col-footer-img .letra-footer {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
-.col-footer .imgFooter svg, .col-footer-img .imgFooter svg {
+.col-footer .imagen-footer svg, .col-footer-img .imagen-footer svg {
   margin: 0px 10px;
 }
 
-/* a .pngEspacio{
+/* a .imagen-default{
     width: 90px;
     height: 90px;
 } */
@@ -329,7 +325,7 @@
     font-size: 22px;
 }
 
-.letraFooter{
+.letra-footer{
     font-family: 'Poppins', sans-serif;
 
     font-size: 12px;
@@ -344,32 +340,32 @@
   background-position: center;
   height: 390px;
 }
-.jumbotron2 .cuadroJovenes {
+.jumbotron2 .cuadro-translucido {
   width: 430px;
   height: 391px;
   background: rgb(2, 80, 62);
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
-.jumbotron2 .cuadroJovenes .titulo1 {
+.jumbotron2 .cuadro-translucido .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
   font-family: "Nunito";
   padding-top: 40px;
 }
-.jumbotron2 .cuadroJovenes .inspiran {
+.jumbotron2 .cuadro-translucido .inspiran {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
   font-family: "Nunito Sans", sans-serif;
 }
 
-.contieneTitulo {
+.contenedor-titulo {
   margin: 0px 150px;
   margin-top: 50px;
 }
-.contieneTitulo .titulo {
+.contenedor-titulo .titulo {
   max-width: 844px;
   color: #02503E;
   font-family: "Nunito Sans", sans-serif;
@@ -383,7 +379,7 @@
   margin: 20px 30px;
 }
 
-.colorVector {
+.color-bg-vector {
   background-color: #EDFEFB;
   padding: 32px 82px;
 }
@@ -405,24 +401,24 @@
   text-align: center;
 }
 
-.contieneTarj {
+.contenedor-tarjetas {
   max-width: 1440px;
   margin: auto;
 }
-.contieneTarj .centradoTarjs {
+.contenedor-tarjetas .div-tarjetas-margin {
   margin: 30px 50px;
 }
-.contieneTarj .col-sm-6 {
+.contenedor-tarjetas .col-sm-6 {
   padding: 0px;
 }
-.contieneTarj .inspiCard-1-izq {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
   background-color: #FDE8E9;
 }
-.contieneTarj .inspiCard-1-izq .imgTarj-1 {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-tarjeta-1 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Viviane Ogou.png");
@@ -430,7 +426,7 @@
   border-radius: 20px 0px 0px 20px;
   position: relative;
 }
-.contieneTarj .inspiCard-1-izq .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion {
   color: white;
   border-radius: 20px 0px 0px 20px;
   background-color: #ED1C24;
@@ -447,47 +443,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-1-izq .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-1-izq .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .row .div-dialogo-joven {
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-1-izq .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-1-izq .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-1-izq .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-1-izq:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-1-izq:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-1-der {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der {
   height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
   background-color: #DBF8D7;
 }
-.contieneTarj .inspiCard-1-der .imgTarj-2 {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-tarjeta-2 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Eyal Weintraub.png");
@@ -495,7 +491,7 @@
   border-radius: 0px 20px 20px 0px;
   position: relative;
 }
-.contieneTarj .inspiCard-1-der .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
   color: white;
   border-radius: 0px 20px 20px 0px;
   background-color: #02503E;
@@ -512,47 +508,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-1-der .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
   color: #02503E;
 }
-.contieneTarj .inspiCard-1-der .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven {
   color: #02503E;
 }
-.contieneTarj .inspiCard-1-der .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-1-der .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-1-der .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-1-der:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-1-der:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-2-izq {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
   background-color: #F6EBC8;
 }
-.contieneTarj .inspiCard-2-izq .imgTarj-1 {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Yael Crupnicoff.png");
@@ -560,7 +556,7 @@
   border-radius: 20px 0px 0px 20px;
   position: relative;
 }
-.contieneTarj .inspiCard-2-izq .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion {
   color: white;
   border-radius: 20px 0px 0px 20px;
   background-color: #F26123;
@@ -577,47 +573,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-2-izq .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #F26123;
 }
-.contieneTarj .inspiCard-2-izq .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .row .div-dialogo-joven {
   color: #F26123;
 }
-.contieneTarj .inspiCard-2-izq .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-2-izq .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-2-izq .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-2-izq:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-2-izq:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-2-der {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der {
   height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
   background-color: #FDE8E9;
 }
-.contieneTarj .inspiCard-2-der .imgTarj-2 {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Luisa Romero.png");
@@ -625,7 +621,7 @@
   border-radius: 0px 20px 20px 0px;
   position: relative;
 }
-.contieneTarj .inspiCard-2-der .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
   color: white;
   border-radius: 0px 20px 20px 0px;
   background-color: #ED1C24;
@@ -642,47 +638,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-2-der .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-2-der .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven {
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-2-der .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-2-der .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-2-der .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-2-der:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-2-der:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-3-izq {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
   background-color: #DBF8D7;
 }
-.contieneTarj .inspiCard-3-izq .imgTarj-1 {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-tarjeta-1 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Álvaro Carrasco.png");
@@ -690,7 +686,7 @@
   border-radius: 20px 0px 0px 20px;
   position: relative;
 }
-.contieneTarj .inspiCard-3-izq .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion {
   color: white;
   border-radius: 20px 0px 0px 20px;
   background-color: #02503E;
@@ -707,47 +703,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-3-izq .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #02503E;
 }
-.contieneTarj .inspiCard-3-izq .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .row .div-dialogo-joven {
   color: #02503E;
 }
-.contieneTarj .inspiCard-3-izq .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-3-izq .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-3-izq .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-3-izq:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-3-izq:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-3-der {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der {
   height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
   background-color: #F6EBC8;
 }
-.contieneTarj .inspiCard-3-der .imgTarj-2 {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Daniela Ancira.png");
@@ -755,7 +751,7 @@
   border-radius: 0px 20px 20px 0px;
   position: relative;
 }
-.contieneTarj .inspiCard-3-der .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
   color: white;
   border-radius: 0px 20px 20px 0px;
   background-color: #F26123;
@@ -772,47 +768,47 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-3-der .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
   color: #F26123;
 }
-.contieneTarj .inspiCard-3-der .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven {
   color: #F26123;
 }
-.contieneTarj .inspiCard-3-der .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-3-der .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-3-der .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-3-der:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-3-der:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-4-izq {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
   height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
   background-color: #FDE8E9;
 }
-.contieneTarj .inspiCard-4-izq .imgTarj-1 {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-tarjeta-1 {
   height: 300px;
   width: 325px;
   background-image: url("../img/Federico López.png");
@@ -820,7 +816,7 @@
   border-radius: 20px 0px 0px 20px;
   position: relative;
 }
-.contieneTarj .inspiCard-4-izq .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion {
   color: white;
   border-radius: 20px 0px 0px 20px;
   background-color: #ED1C24;
@@ -837,40 +833,40 @@
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-4-izq .tarjeta-descripcion .texto-resaltado {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-4-izq .row .divDialogo {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .row .div-dialogo-joven {
   color: #ED1C24;
 }
-.contieneTarj .inspiCard-4-izq .row .divDialogo .dialogoJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .row .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
-.contieneTarj .inspiCard-4-izq .div-descripcion-logo {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
   margin-top: 32px;
 }
-.contieneTarj .inspiCard-4-izq .div-descripcion-logo .descripcionJoven {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
-.contieneTarj .inspiCard-4-izq:hover .tarjeta-descripcion {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
-.contieneTarj .inspiCard-4-izq:hover .pngEspacio {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
 }
-.contieneTarj .inspiCard-4-der {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der {
   height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 109px 96px 32px 96px;
@@ -879,14 +875,14 @@
   text-align: center;
   transition: background-color 0.5s ease-in-out;
 }
-.contieneTarj .inspiCard-4-der .row {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row {
   height: 100%;
 }
-.contieneTarj .inspiCard-4-der .row .logoEntrevistas {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row .logo-entrevistas {
   height: 145px;
   width: 238px;
 }
-.contieneTarj .inspiCard-4-der .row .textEntrevistas {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row .texto-entrevistas {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -896,13 +892,13 @@
   color: #02503E;
   transition: color 0.5s ease-in-out;
 }
-.contieneTarj .inspiCard-4-der:hover {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover {
   background-color: #02503E;
 }
-.contieneTarj .inspiCard-4-der:hover .textEntrevistas {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover .texto-entrevistas {
   color: white;
 }
-.contieneTarj .inspiCard-4-der:hover .boton-default-sin_fondo {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover .boton-default-sin_fondo {
   color: white;
   border: 3px solid white;
 }
@@ -916,21 +912,21 @@
   background-position: center;
   height: 390px;
 }
-.jumbotron5 .cuadroColaboraciones {
+.jumbotron5 .cuadro-translucido {
   max-width: 430px;
   height: 391px;
   background: #02503E;
   background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
-.jumbotron5 .cuadroColaboraciones .titulo1 {
+.jumbotron5 .cuadro-translucido .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
   font-family: "Nunito";
   margin: 0px 50px;
 }
-.jumbotron5 .cuadroColaboraciones .titulo1b {
+.jumbotron5 .cuadro-translucido .titulo1b {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
@@ -1035,21 +1031,21 @@
   background-position: center;
   height: 390px;
 }
-.jumbotron4 .cuadroColaboraciones {
+.jumbotron4 .cuadro-translucido {
   max-width: 430px;
   height: 391px;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
-.jumbotron4 .cuadroColaboraciones .titulo1 {
+.jumbotron4 .cuadro-translucido .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
   font-family: "Nunito";
   padding-top: 40px;
 }
-.jumbotron4 .cuadroColaboraciones .titulo1b {
+.jumbotron4 .cuadro-translucido .titulo1b {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
@@ -1149,21 +1145,21 @@
   background-position: center;
   height: 390px;
 }
-.jumbotron3 .cuadroJovenes {
+.jumbotron3 .cuadro-translucido {
   width: 430px;
   height: 391px;
   background: rgb(2, 80, 62);
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
-.jumbotron3 .cuadroJovenes .titulo1 {
+.jumbotron3 .cuadro-translucido .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
   font-family: "Nunito";
   padding-top: 40px;
 }
-.jumbotron3 .cuadroJovenes .inspiran {
+.jumbotron3 .cuadro-translucido .inspiran {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
@@ -1609,14 +1605,14 @@
   background-position: center;
   height: 370px;
 }
-.jumbotron6 .cuadroColaboraciones {
+.jumbotron6 .cuadro-translucido {
   max-width: 590px;
   height: 370px;
   background: #02503E;
   background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
 }
-.jumbotron6 .cuadroColaboraciones .titulo1 {
+.jumbotron6 .cuadro-translucido .titulo1 {
   color: #f9f9f9;
   font-size: 60px;
   font-weight: 700;
@@ -1802,21 +1798,21 @@
     background-size: cover;
     background-position: right;
   }
-  .jumbotron6 .cuadroColaboraciones {
+  .jumbotron6 .cuadro-translucido {
     height: 80px;
     text-align: start;
     width: 360px;
   }
-  .jumbotron6 .cuadroColaboraciones .titulo1 {
+  .jumbotron6 .cuadro-translucido .titulo1 {
     margin: 0px;
     font-size: 24px;
     line-height: 16px;
     font-weight: 800;
   }
-  .contieneTitulo {
+  .contenedor-titulo {
     width: 320px;
   }
-  .contieneTitulo h2 {
+  .contenedor-titulo h2 {
     display: none;
     /* box-sizing: 0;
     font-size: 14px !important;

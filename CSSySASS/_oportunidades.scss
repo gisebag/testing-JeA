@@ -10,7 +10,7 @@
     background-position: center;
     height: 370px;
 
-    .cuadroColaboraciones {
+    .cuadro-translucido {
         max-width: 590px;
         height: 370px;
         background:$color-green-oscuro;
@@ -253,7 +253,7 @@
         background-size: cover;
         background-position:right;
 
-        .cuadroColaboraciones{
+        .cuadro-translucido{
             height: 80px;
             text-align: start;
             width: 360px;
@@ -267,7 +267,7 @@
         }
     }
 
-    .contieneTitulo{
+    .contenedor-titulo{
         width: 320px;
         
         h2{ //ver porque no me funciona ajustar

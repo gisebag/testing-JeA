@@ -39,7 +39,7 @@
 
     
 
-    .creadoIndex{
+    .objetivos-div{
         display: flex;
         /* justify-content: space-evenly; */
         justify-content:center;
@@ -49,12 +49,12 @@
         
     }
 
-    .textoComplemento{
+    .texto-complemento-objetivos{
         font-weight: 400;
         font-size: 20px;
         font-family: $tipografia-nunito-sans;
     }
-    .cajaEspacio{
+    .caja-objetivo{
         padding: 40px 20px;
         border-radius: 10px;
         font-size: 25px;
@@ -90,14 +90,14 @@
     font-weight: 800;
 }
 
-.pngEspacio{
+.imagen-default{
     width: 80px;
     height: 80px;
 }
 
 
 /* seccion SINERGIAS */
-.contieneVectores{
+.contenedor-vectores{
     display: flex;
     justify-content: center;
     margin: 40px 0px;
@@ -109,7 +109,7 @@
 }
 
 
-.contieneImg{
+.img-conocer-jea{
     width: 720px;
     height: 430px;
     background-image: url(../img/sobre\ jea.2.jpg);
@@ -136,7 +136,7 @@
     width: 100%;
     height: 100%;
 }
-.grupoTexto{
+.grupo-texto-sobre-jea{
     font-size: 20px;
     font-weight: 700;
     padding: 10px;
@@ -145,7 +145,7 @@
     letter-spacing: 0.5px;
 }
 
-.clickConocenos{
+.boton-conocenos{
     background-color: $color-white;
     color: $color-black;
     border: 3px solid $color-green-oscuro;
@@ -157,18 +157,14 @@
     font-family: $tipografia-poppins;
 }
 
-.clickConocenos:hover{
+.boton-conocenos:hover{
     background-color: $color-white;
     color: $color-black;
     border: 4px solid $color-green-oscuro;
     font-size: 26px;
 }
 
-.divBoton{
-    width: 100px;;
-}
-
-.recuadroVerde{
+.recuadro-verde{
     background-color: $color-green-oscuro;
     width: 1276px;
     height: 730px;
@@ -176,7 +172,7 @@
     margin: 80px 0;
     border-radius: 25px;
 
-    .recuadroTexto{
+    .recuadro-texto{
         font-size: 20px;
         font-weight: 400;
         padding: 10px;
@@ -201,7 +197,7 @@
 }
 
 
-.clickNegativo{
+.boton-negativo{
     background-color: $color-green-oscuro;
     color: $color-white;
     border: 3px solid $color-white;
@@ -212,7 +208,7 @@
     margin-top: 30px;
     font-family: $tipografia-poppins;
 }
-.clickNegativo:hover{
+.boton-negativo:hover{
     border: 3px solid $color-white;
     font-size: 26px;
     color: $color-white;
@@ -232,7 +228,7 @@
     height: 100px;
 }
 
-.tituloNegativo{
+.titulo-negativo{
     color: $color-white;
     text-align: center;
     margin: 50px 0px;
@@ -249,7 +245,7 @@
     font-size: 24px;
     margin-top: 10px;
 }
-.divContactanos{
+.div-contactanos{
     margin-bottom: 50px;
     width: 100%;
 }

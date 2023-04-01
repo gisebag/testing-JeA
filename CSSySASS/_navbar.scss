@@ -1,7 +1,7 @@
 /* navbar */
 @import "_coloresyTipografias";
 
-.cambioPosicion{
+.cambio-posicion-nav{
     flex-grow: 0;
     
     .submenu{
@@ -11,7 +11,7 @@
 
 .navbar{
     
-    .iconNav{
+    .icono-nav{
         object-fit: contain;
         width: 70px;
         height: 70px;

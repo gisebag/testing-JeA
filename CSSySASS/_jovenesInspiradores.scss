@@ -10,7 +10,7 @@
     background-position: center;
     height: 390px;
 
-    .cuadroJovenes {
+    .cuadro-translucido {
         width: 430px;
         height: 391px;
         background: rgb(2, 80, 62);
@@ -34,7 +34,7 @@
     }
 }
 
-.contieneTitulo {
+.contenedor-titulo {
     margin: 0px 150px;
     margin-top: 50px;
 
@@ -53,7 +53,7 @@
     }
 }
 
-.colorVector {
+.color-bg-vector {
     background-color: $color-green-claro;
     padding: 32px 82px;
 
@@ -84,7 +84,7 @@
     margin: 10px;
     background-color: $color-fondo;
 
-    .imgTarj-1 {
+    .imagen-tarjeta-1 {
         height: 300px;
         width: 325px;
         background-image: url($url-imagen);
@@ -118,10 +118,10 @@
     }
 
     .row {
-        .divDialogo {
+        .div-dialogo-joven {
             color: $color-texto;
 
-            .dialogoJoven {
+            .dialogo-joven {
                 font-family: $tipografia-nunito;
                 font-style: normal;
                 font-weight: 800;
@@ -135,7 +135,7 @@
     .div-descripcion-logo {
         margin-top: 32px;
 
-        .descripcionJoven {
+        .descripcion-joven {
             font-family: 'Nunito';
             font-style: normal;
             font-weight: 400;
@@ -150,7 +150,7 @@
             opacity: 1;
         }
 
-        .pngEspacio {
+        .imagen-default {
             width: 100px;
             height: 100px;
             aspect-ratio: 1 / 1;
@@ -166,7 +166,7 @@
     margin: 10px;
     background-color: $color-fondo;
 
-    .imgTarj-2 {
+    .imagen-tarjeta-2 {
         height: 300px;
         width: 325px;
         background-image: url($url-imagen);
@@ -201,10 +201,10 @@
     }
 
     .row {
-        .divDialogo {
+        .div-dialogo-joven {
             color: $color-texto;
 
-            .dialogoJoven {
+            .dialogo-joven {
                 font-family: $tipografia-nunito;
                 font-style: normal;
                 font-weight: 800;
@@ -218,7 +218,7 @@
     .div-descripcion-logo {
         margin-top: 32px;
 
-        .descripcionJoven {
+        .descripcion-joven {
             font-family: 'Nunito';
             font-style: normal;
             font-weight: 400;
@@ -234,7 +234,7 @@
             opacity: 1;
         }
 
-        .pngEspacio {
+        .imagen-default {
             width: 100px;
             height: 100px;
             aspect-ratio: 1 / 1;
@@ -242,11 +242,11 @@
     }
 }
 
-.contieneTarj {
+.contenedor-tarjetas {
     max-width: 1440px;
     margin: auto;
 
-    .centradoTarjs {
+    .div-tarjetas-margin {
         margin: 30px 50px;
     }
 
@@ -254,35 +254,35 @@
         padding: 0px;
     }
 
-    .inspiCard-1-izq {
+    .tarjeta-joven-inspira-1-izq {
         @include tarjetas_jovenes_izq ($color-fondo: $color-red-pastel, $url-imagen: '../img/Viviane\ Ogou.png', $color-texto: $color-red-oscuro);
     }
 
-    .inspiCard-1-der {
+    .tarjeta-joven-inspira-1-der {
         @include tarjetas_jovenes_der ($color-fondo: $color-green-pastel, $url-imagen: '../img/Eyal Weintraub.png', $color-texto: $color-green-oscuro);
     }
 
-    .inspiCard-2-izq {
+    .tarjeta-joven-inspira-2-izq {
         @include tarjetas_jovenes_izq ($color-fondo: $color-orange-pastel, $url-imagen: '../img/Yael Crupnicoff.png', $color-texto: $color-orange-oscuro);
     }
 
-    .inspiCard-2-der {
+    .tarjeta-joven-inspira-2-der {
         @include tarjetas_jovenes_der ($color-fondo: $color-red-pastel, $url-imagen: '../img/Luisa Romero.png', $color-texto: $color-red-oscuro);
     }
 
-    .inspiCard-3-izq {
+    .tarjeta-joven-inspira-3-izq {
         @include tarjetas_jovenes_izq ($color-fondo: $color-green-pastel, $url-imagen: '../img/Álvaro Carrasco.png', $color-texto: $color-green-oscuro);
     }
 
-    .inspiCard-3-der {
+    .tarjeta-joven-inspira-3-der {
         @include tarjetas_jovenes_der ($color-fondo: $color-orange-pastel, $url-imagen: '../img/Daniela Ancira.png', $color-texto: $color-orange-oscuro);
     }
 
-    .inspiCard-4-izq {
+    .tarjeta-joven-inspira-4-izq {
         @include tarjetas_jovenes_izq ($color-fondo: $color-red-pastel, $url-imagen: '../img/Federico López.png', $color-texto: $color-red-oscuro);
     }
 
-    .inspiCard-4-der {
+    .tarjeta-joven-inspira-4-der {
         height: 477px;
         border-radius: 0px 30px 30px 0px;
         padding: 109px 96px 32px 96px;
@@ -294,12 +294,12 @@
         .row {
             height: 100%;
 
-            .logoEntrevistas {
+            .logo-entrevistas {
                 height: 145px;
                 width: 238px;
             }
 
-            .textEntrevistas {
+            .texto-entrevistas {
                 font-family: 'Poppins';
                 font-style: normal;
                 font-weight: 400;
@@ -314,7 +314,7 @@
         &:hover {
             background-color: $color-green-oscuro;
 
-            .textEntrevistas {
+            .texto-entrevistas {
                 color: white;
             }
 
