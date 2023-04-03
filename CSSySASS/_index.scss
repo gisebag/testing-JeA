@@ -173,13 +173,15 @@
     border-radius: 25px;
 
     .recuadro-texto{
-        font-size: 20px;
-        font-weight: 400;
+        
+        
         padding: 10px;
         font-family: $tipografia-nunito-sans;
     }
 
     .card{
+        font-weight: 400;
+        font-size: 20px;
         width: 350px;
         height: 380px;
         border-radius: 25px;
