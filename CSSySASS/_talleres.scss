@@ -118,6 +118,7 @@
 
 .pregunta {
     padding-top: 62px;
+    text-align: center;
 
     .pregunta-preboton {
         font-size: 24px;
@@ -126,6 +127,7 @@
     }
 
     .boton-pregunta {
+        width: 305px;
         font-size: 24px;
         font-family: $tipografia-poppins;
         padding: 14px 80px;

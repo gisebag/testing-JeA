@@ -15,8 +15,7 @@
 }
 
 .navbar .icono-nav {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 70px;
   height: 70px;
 }
@@ -166,8 +165,7 @@
 .img-conocer-jea .grupoImg {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .prueb1 {
@@ -296,25 +294,43 @@
 }
 
 /* footer */
-.col-footer, .col-footer-img {
+footer .logo-footer {
+  width: 100px;
+  height: 100px;
+}
+footer .col-footer, footer .col-footer-img {
   text-align: start;
 }
-.col-footer .imagen-default, .col-footer-img .imagen-default {
-  width: 80px;
-  height: 80px;
-}
-.col-footer .titulo5, .col-footer-img .titulo5 {
+footer .col-footer .titulo5, footer .col-footer-img .titulo5 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 22px;
 }
-.col-footer .letra-footer, .col-footer-img .letra-footer {
+footer .col-footer .letra-footer, footer .col-footer-img .letra-footer {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 14px;
 }
-.col-footer .imagen-footer svg, .col-footer-img .imagen-footer svg {
-  margin: 0px 10px;
+footer .col-footer .imagen-footer .enlace-imagen-footer, footer .col-footer-img .imagen-footer .enlace-imagen-footer {
+  text-decoration: none;
+}
+footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg {
+  margin: 0px 4px;
+}
+@media only screen and (max-width: 1000px) {
+  footer .logo-footer {
+    width: 60px;
+    height: 60px;
+  }
+  footer .col-footer .titulo5, footer .col-footer-img .titulo5 {
+    font-size: 12px;
+  }
+  footer .col-footer .letra-footer, footer .col-footer-img .letra-footer {
+    font-size: 10px;
+  }
+  footer .col-footer-img .imagen-footer svg {
+    width: 16px;
+  }
 }
 
 /* a .imagen-default{
@@ -1006,6 +1022,7 @@
 
 .pregunta {
   padding-top: 62px;
+  text-align: center;
 }
 .pregunta .pregunta-preboton {
   font-size: 24px;
@@ -1013,6 +1030,7 @@
   font-weight: 400;
 }
 .pregunta .boton-pregunta {
+  width: 305px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   padding: 14px 80px;
@@ -1115,8 +1133,7 @@
   background-color: #DBF8D7;
   border-radius: 30px 0px 0px 30px;
   background-image: url(../img/iconos-colaboraciones.png);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-der {
   background-image: url(../img/colaboraciones.2.jpg);
@@ -1146,29 +1163,77 @@
   background-image: url(../img/organizaciones.1.png);
   background-size: cover;
   background-position: center;
-  height: 390px;
+  height: 494px;
 }
 .jumbotron3 .cuadro-translucido {
-  width: 430px;
-  height: 391px;
+  width: 500px;
+  height: 100%;
   background: rgb(2, 80, 62);
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
-.jumbotron3 .cuadro-translucido .titulo1 {
+.jumbotron3 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
   padding-top: 40px;
+  margin: 0px;
 }
-.jumbotron3 .cuadro-translucido .inspiran {
+.jumbotron3 .cuadro-translucido div .titulo1 {
+  color: #f9f9f9;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+.jumbotron3 .cuadro-translucido div .titulo1 strong {
+  font-weight: 700;
+}
+.jumbotron3 .cuadro-translucido div .inspiran {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
   font-family: "Nunito Sans", sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron3 {
+    height: 240px;
+  }
+  .jumbotron3 .cuadro-translucido {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron3 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+  .jumbotron3 .cuadro-translucido div {
+    margin-left: 8px;
+  }
+  .jumbotron3 .cuadro-translucido div .titulo1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .jumbotron3 .cuadro-translucido div .titulo1 strong {
+    color: #02503E;
+    background-color: #f9f9f9;
+    font-weight: 900;
+  }
+  .jumbotron3 .cuadro-translucido div .inspiran {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
 .descripcion {
   text-align: center;
   font-size: 24px;
@@ -1176,10 +1241,17 @@
   padding: 90px 0px;
   background-color: #EDFEFB;
 }
-.descripcion h3 {
+.descripcion .cuadro-descripcion-pregunta {
+  max-width: 1000px;
+}
+.descripcion .cuadro-descripcion-pregunta h3 {
   color: #02503E;
 }
 
+.seccion-tarjetas {
+  margin: 0px;
+  padding: 0px;
+}
 .seccion-tarjetas .contenedor-tarjetas {
   margin: 80px 0px;
 }
@@ -1215,6 +1287,7 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta-descripcion {
+  font-family: "Nunito";
   background-color: #ED1C24;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -1260,6 +1333,7 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta-descripcion {
+  font-family: "Nunito";
   background-color: #10936E;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -1305,6 +1379,7 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta-descripcion {
+  font-family: "Nunito";
   background-color: #F26123;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -1350,6 +1425,7 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta-descripcion {
+  font-family: "Nunito";
   background-color: #F26123;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -1395,6 +1471,7 @@
   padding: 95px 75px;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta-descripcion {
+  font-family: "Nunito";
   background-color: #ED1C24;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -1419,6 +1496,7 @@
   flex-wrap: nowrap;
   overflow: auto;
   width: 90%;
+  padding: 0px;
 }
 .carrusel-div .carrusel .elemento {
   flex: 1 0 auto;
@@ -1427,6 +1505,9 @@
   border-radius: 16px;
   width: 300px;
   height: 200px;
+}
+.carrusel-div .carrusel .primer-elemento {
+  margin: 0 10px 0 0;
 }
 .carrusel-div .carrusel::-webkit-scrollbar {
   height: 0px;
@@ -1442,6 +1523,14 @@
   top: 50%;
   right: 4rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  .carrusel-div {
+    padding: 40px 0px;
+  }
+  .carrusel-div .flechas {
+    display: none;
+  }
 }
 
 .clickPositivo {
@@ -2129,4 +2218,6 @@ body {
 
 header {
   background-color: #EDFEFB !important;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
