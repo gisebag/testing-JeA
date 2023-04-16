@@ -7,32 +7,92 @@
     background-image: url(../img/organizaciones.1.png);
     background-size: cover;
     background-position: center;
-    height: 390px;
+    height: 494px;
 
     .cuadro-translucido {
-        width: 430px;
-        height: 391px;
+        width: 500px;
+        height: 100%;
         background: rgb(2, 80, 62);
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
+        padding: 88px 32px 88px 82px;
 
-        .titulo1 {
+        .titulo-JeA {
             color: $color-white;
-            font-size: 60px;
-            font-weight: 700;
+            font-size: 64px;
+            font-weight: 800;
             font-family: $tipografia-nunito;
             padding-top: 40px;
+            margin: 0px;
         }
 
-        .inspiran {
-            color: $color-white;
-            font-size: 30px;
-            font-weight: 200;
-            font-family: $tipografia-nunito-sans;
+        div {
+            .titulo1 {
+                color: $color-white;
+                font-size: 52px;
+                font-weight: 700;
+                font-family: $tipografia-nunito;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            .inspiran {
+                color: $color-white;
+                font-size: 30px;
+                font-weight: 200;
+                font-family: $tipografia-nunito-sans;
+            }
         }
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .jumbotron3 {
+        height: 240px;
+
+        .cuadro-translucido {
+            width: 100%;
+            max-width: 800px;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .titulo-JeA {
+                font-size: 28px;
+                font-weight: 800;
+                padding-top: 0px;
+            }
+
+            div {
+                margin-left: 8px;
+
+                .titulo1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+
+                    strong {
+                        color: $color-green-oscuro;
+                        background-color: $color-white;
+                        font-weight: 900;
+                    }
+                }
+
+                .inspiran {
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+
+}
 
 .descripcion {
     text-align: center;
@@ -41,8 +101,12 @@
     padding: 90px 0px;
     background-color: $color-green-claro;
 
-    h3 {
-        color: $color-green-oscuro;
+    .cuadro-descripcion-pregunta {
+        max-width: 1000px;
+
+        h3 {
+            color: $color-green-oscuro;
+        }
     }
 }
 
@@ -82,6 +146,7 @@
     }
 
     .tarjeta-descripcion {
+        font-family: $tipografia-nunito;
         background-color: $fondo-secundario;
         opacity: 0;
         transition: opacity 0.5s ease-in-out;
@@ -101,6 +166,9 @@
 }
 
 .seccion-tarjetas {
+    margin: 0px;
+    padding: 0px;
+
     .contenedor-tarjetas {
         margin: 80px 0px;
 
@@ -137,6 +205,7 @@
         flex-wrap: nowrap;
         overflow: auto;
         width: 90%;
+        padding: 0px;
 
         .elemento {
             flex: 1 0 auto;
@@ -146,6 +215,10 @@
             width: 300px;
             height: 200px;
 
+        }
+
+        .primer-elemento {
+            margin: 0 10px 0 0;
         }
     }
 
@@ -170,6 +243,14 @@
             top: 50%;
             right: 4rem;
             cursor: pointer;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        padding: 40px 0px;
+
+        .flechas {
+            display: none;
         }
     }
 }
