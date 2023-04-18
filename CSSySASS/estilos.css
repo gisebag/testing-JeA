@@ -2201,46 +2201,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #ED1C24;
 }
 
-.cuadro-green-js {
-  background-color: #02503E;
-  width: 80%;
-  height: 250px;
-  display: flex;
-  margin: 50px;
-  border-radius: 25px;
-}
-.cuadro-green-js .contenedor-green {
-  justify-items: center;
-}
-.cuadro-green-js .contenedor-green .historia {
-  color: #f9f9f9;
-  padding: 15px;
-}
+/* .cuadro-green-js {
+    background-color: $color-green-oscuro;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    margin: 50px;
+    border-radius: 25px;
 
+    .contenedor-green {
+
+        justify-items: center;
+
+
+        .historia {
+            color: $color-white;
+            padding: 15px;
+        }
+    }
+} */
 /* ---- */
-.recuadro-pilares h3 {
-  color: #f9f9f9;
-  padding: 20px;
-}
-
-.prueba1 {
-  background-color: #02503E;
-  border-radius: 25px;
-}
-.prueba1 .btn {
-  padding: 14px 80px;
-  border: 0px;
-  border-radius: 100px;
-  background-color: rgb(53, 117, 105) !important;
-  margin: 0px 24px;
-  color: whitesmoke;
-  font-weight: 600;
-}
-.prueba1 h3 {
-  color: #f9f9f9;
-  padding: 20px;
-}
-
+/* .recuadro-pilares {
+    h3 {
+        color: $color-white;
+        padding: 20px;
+    }
+} */
 .recuadro-historia {
   background-color: #02503E;
   border-radius: 16px;
@@ -2282,60 +2268,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 25px;
 }
 
-.contiene-primer-texto {
-  align-items: center;
-  margin-top: 70px;
-  height: 8px;
-}
-
-.primerTexto {
-  color: #f9f9f9;
-  padding: 20px;
-  min-width: 100px;
-}
-
-/* .ajuste{
-        display:flex;
-
-    } */
-.textoExpandir {
-  width: 50%;
-  padding: 15px;
-  color: #f9f9f9;
-}
-
-.tamanio {
-  width: 600px;
-  height: 300px;
-  object-fit: cover;
-  margin: 20px;
-}
-
-.tamanio {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-  margin: 20px;
-}
-
 span {
   color: black;
   font-weight: 600;
   background-color: #f9f9f9;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: inline-block;
-}
-
-.prueba2 {
-  display: flex;
-  width: 100vw;
-  min-height: 250px;
 }
 
 .arrow {
@@ -2344,28 +2280,10 @@ span {
   height: 25px;
 }
 
-.imgAbsoluta {
-  position: relative;
-}
-
-.imgRelative {
-  position: absolute;
-  top: -20px;
-  right: 100px;
-}
-
-.contiene-img2 {
-  width: 50%;
-}
-
 .arrow-up {
   border: none;
   width: 100%;
   background-color: #02503E;
-}
-
-.ajuste {
-  flex-wrap: wrap;
 }
 
 body {
