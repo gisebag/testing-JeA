@@ -121,37 +121,6 @@
     }
 }
 
-/* .cuadro-green-js {
-    background-color: $color-green-oscuro;
-    width: 80%;
-    height: 250px;
-    display: flex;
-    margin: 50px;
-    border-radius: 25px;
-
-    .contenedor-green {
-
-        justify-items: center;
-
-
-        .historia {
-            color: $color-white;
-            padding: 15px;
-        }
-    }
-} */
-
-/* ---- */
-/* .recuadro-pilares {
-    h3 {
-        color: $color-white;
-        padding: 20px;
-    }
-} */
-
-
-
-//JOAQUIN
 .recuadro-historia {
     background-color: $color-green-oscuro;
     border-radius: 16px;
@@ -166,7 +135,13 @@
 
         .texto-historia {
             color: $color-white;
-            min-width: 100px;        
+            min-width: 100px;
+
+            span {
+                color: black;
+                font-weight: 600;
+                background-color: $color-white;
+            }
         }
     
         .boton-default-sin_fondo_invertido {
@@ -195,32 +170,16 @@
     }
 
     .recuadro-no-visible {
-        .arrow {
+        .boton-flecha-arriba {
+            border: none;
+            width: 100%;
             background-color: $color-green-oscuro;
-            width: 25px;
-            height: 25px;
-        
+
+            .img-flecha {
+                background-color: $color-green-oscuro;
+                width: 25px;
+                height: 25px;
+            }
         }
     }
-}
-//JOAQUIN
-
-
-span {
-    color: black;
-    font-weight: 600;
-    background-color: $color-white;
-}
-
-.arrow {
-    background-color: $color-green-oscuro;
-    width: 25px;
-    height: 25px;
-
-}
-
-.arrow-up {
-    border: none;
-    width: 100%;
-    background-color: $color-green-oscuro;
 }
