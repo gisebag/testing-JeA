@@ -2134,6 +2134,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   margin: 30px 60px;
 }
 
+.pilares_historia {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .relleno-green {
   background-color: #02503E;
   color: #f9f9f9;
@@ -2218,6 +2223,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   padding: 20px;
 }
 
+.prueba1 {
+  background-color: #02503E;
+  border-radius: 25px;
+}
 .prueba1 .btn {
   padding: 14px 80px;
   border: 0px;
@@ -2232,9 +2241,45 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   padding: 20px;
 }
 
-.prueba1 {
+.recuadro-historia {
   background-color: #02503E;
-  border-radius: 25px;
+  border-radius: 16px;
+  max-width: 1280px;
+}
+.recuadro-historia .recuadro-texto-historia {
+  margin: 50px;
+}
+.recuadro-historia .recuadro-texto-historia h3 {
+  color: #f9f9f9;
+}
+.recuadro-historia .recuadro-texto-historia .texto-historia {
+  color: #f9f9f9;
+  min-width: 100px;
+}
+.recuadro-historia .recuadro-texto-historia .boton-default-sin_fondo_invertido {
+  padding: 14px 47px;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Poppins";
+  color: #ffffff;
+  transition: color border 0.5s ease-in-out;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.recuadro-historia .recuadro-fotos img {
+  max-width: 500px;
+  border-radius: 16px;
+}
+.recuadro-historia .recuadro-no-visible .arrow {
+  background-color: #02503E;
+  width: 25px;
+  height: 25px;
 }
 
 .contiene-primer-texto {
@@ -2250,9 +2295,9 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 
 /* .ajuste{
-    display:flex;
+        display:flex;
 
-} */
+    } */
 .textoExpandir {
   width: 50%;
   padding: 15px;

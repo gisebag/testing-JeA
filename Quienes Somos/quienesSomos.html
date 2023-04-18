@@ -78,7 +78,7 @@
         </nav>
     </header>
     <!----------- Barra de navegación ------------->
-
+    <main>
     <!----------- presentacion quienes somos ------------->
     <section class="presentacion">
         <div class="jumbotron7 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
@@ -90,14 +90,14 @@
         </div>
     </section>
     <!----------- presentacion quienes somos ------------->
-    <div class="cuadro-translucido">
+    <div>
         <div class="texto-debajo-cuadros">
             <p class="titulo-quienes-somos"><strong>JaA</strong> es una <strong>red formada por y para jóvenes</strong>, 
                 basamos nuestro quehacer en tres pilares fundamentales <br>
             </p>
         </div>
     </div>
-
+    <div class="pilares_historia">
  <!-- pilares -->
     <section class="recuadro-pilares">
         <div class="row align-items-center justify-content-center">
@@ -148,8 +148,33 @@
 
 <!-- cuadro con js explicacion quienes somos -->
 
+<section class="container-fluid row justify-content-center m-0 p-0">
+    <div class="recuadro-historia m-4 p-0">
+        <div class="recuadro-visible d-flex">
+            <div class="recuadro-texto-historia">
+                <h3>Historia</h3>
+                <p class="texto-historia" id="textoHistoria">JeA nació en 2020 a raíz de las Jornadas Iberoamericanas de la Educación Intercultural llevadas a cabo por AFS Programas Interculturales...</p>
+                <button class="boton-default-sin_fondo_invertido" id="btnConocenos">Conoce más</button>
+            </div>
+            <div class="recuadro-fotos">
+                <div id="recuadro-fotos-cerrado" class="">
+                    <img src="../img/creacion.png" alt="Foto Carolina y Delfina" class="foto-caro-delfi">
+                </div>
+                <div id="recuadro-fotos-abierto" class="m-4 d-none">
+                    <img src="../img/creacion.png" alt="Foto Carolina y Delfina" class="foto-caro-delfi m-5 mb-4">
+                    <img src="../img/creacion.2.png" alt="Foto Historia" class="foto-historia m-5 mt-0 mb-0">
+                </div>
+            </div>
+        </div>
+        <div class="recuadro-no-visible p-5 d-none" id="btnFlecha">
+            <button class="arrow-up"><img class="arrow" src="../img/992703.png" alt="flecha regresión recuadro"></button>
+        </div>
+    </div>
 
-<section class="container-fluid">
+</section>
+<br/>
+<br/>
+<!-- <section class="container-fluid">
     <div class="prueba1">
         <h3>Historia</h3>
         <div class="prueba2">
@@ -196,7 +221,7 @@
             <div class="contiene-img2"><img class="tamanio  "  src="../img/creacion.2.png" alt=""></div>
         </section>
     </div>
-</section>
+</section> -->
 
 
 <!-- cuadro con js explicacion quienes somos -->
@@ -207,6 +232,8 @@
             class="boton-pregunta">Contáctanos</button>
     </div>
 </section>
+</div>
+</main>
 
     <!-- Footer -->
     <footer class="bg text-center text-white" style="background-color: #02503E !important;">

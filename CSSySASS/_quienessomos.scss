@@ -1,6 +1,5 @@
 @import "_coloresyTipografias";
 
-
 .jumbotron7 {
     display: flex;
     justify-content: center;
@@ -13,7 +12,7 @@
     .cuadro-translucido {
         max-width: 590px;
         height: 370px;
-        background:$color-green-oscuro;
+        background: $color-green-oscuro;
         background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
 
@@ -25,11 +24,11 @@
             margin: 0px 50px
         }
 
-        
+
     }
 }
 
-.titulo-quienes-somos{
+.titulo-quienes-somos {
     font-family: $tipografia-nunito;
     color: $color-green-oscuro;
     font-size: 36px;
@@ -38,215 +37,285 @@
     margin: 30px 60px;
 }
 
-.relleno-green{
+.pilares_historia {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.relleno-green {
     background-color: $color-green-oscuro;
     color: $color-white;
     padding: 0 15px;
-    
+
 }
-.relleno-yellow{
+
+.relleno-yellow {
     background-color: $color-orange-oscuro;
     color: $color-white;
     padding: 0 15px;
-    
+
 }
-.relleno-red{
+
+.relleno-red {
     background-color: $color-red-oscuro;
     color: $color-white;
     padding: 0 15px;
-    
+
 }
 
-.recuadro-pilares{
+.recuadro-pilares {
     align-items: center;
     margin: 30px;
-    
 
-    .recuadro-texto{
-        
+
+    .recuadro-texto {
+
         font-weight: 400;
         padding: 10px;
         font-family: $tipografia-nunito-sans;
     }
 
-    .card{
+    .card {
         font-size: 18px;
         width: 350px;
         height: 380px;
         border-radius: 25px;
         margin: 20px;
         margin-left: 50px;
-        
+
     }
-    .card-A{
+
+    .card-A {
         background-color: $color-green-pastel;
         border-color: $color-green-pastel;
     }
-    .card-B{
+
+    .card-B {
         background-color: $color-orange-pastel;
         border-color: $color-orange-pastel;
 
     }
-    .card-C{
+
+    .card-C {
         background-color: $color-red-pastel;
         border-color: $color-red-pastel;
     }
 
-    .titulo-pilar{
+    .titulo-pilar {
         font-size: 36px;
         font-family: $tipografia-nunito-sans;
         font-weight: 800;
     }
 
-    .titulo-pilar-1{
-            
+    .titulo-pilar-1 {
+
         color: $color-green-oscuro;
     }
-    .titulo-pilar-2{
+
+    .titulo-pilar-2 {
         color: $color-orange-oscuro;
     }
-    .titulo-pilar-3{
+
+    .titulo-pilar-3 {
         color: $color-red-oscuro;
     }
 }
 
-.cuadro-green-js{
+.cuadro-green-js {
     background-color: $color-green-oscuro;
     width: 80%;
     height: 250px;
     display: flex;
     margin: 50px;
     border-radius: 25px;
-    
-    .contenedor-green{
-        
+
+    .contenedor-green {
+
         justify-items: center;
 
 
-        .historia{
+        .historia {
             color: $color-white;
             padding: 15px;
         }
     }
-    }
+}
 
-    /* ---- */
-.recuadro-pilares {    
-    h3{
+/* ---- */
+.recuadro-pilares {
+    h3 {
         color: $color-white;
         padding: 20px;
     }
 }
 
 .prueba1 {
-    .btn{
+    background-color: $color-green-oscuro;
+    border-radius: 25px;
+
+    .btn {
         padding: 14px 80px;
-            border: 0px;
-            border-radius: 100px;
-            background-color: rgb(53, 117, 105) !important;
-            margin: 0px 24px;
-            color:whitesmoke;
-            font-weight: 600;
+        border: 0px;
+        border-radius: 100px;
+        background-color: rgb(53, 117, 105) !important;
+        margin: 0px 24px;
+        color: whitesmoke;
+        font-weight: 600;
     }
-    
-    h3{
+
+    h3 {
         color: $color-white;
         padding: 20px;
     }
 }
+
+//JOAQUIN
+.recuadro-historia {
+    background-color: $color-green-oscuro;
+    border-radius: 16px;
+    max-width: 1280px;
+
+    .recuadro-texto-historia{
+        margin: 50px;
+
+        h3 {
+            color: $color-white;
+        }
+
+        .texto-historia {
+            color: $color-white;
+            min-width: 100px;        
+        }
     
-    
-    .prueba1{
-        background-color: $color-green-oscuro;
-        border-radius: 25px;
+        .boton-default-sin_fondo_invertido {
+            padding: 14px 47px;
+            border: 3px solid #ffffff;
+            border-radius: 100px;
+            background-color: transparent;
+            font-family: "Poppins";
+            color: #ffffff;
+            transition: color border 0.5s ease-in-out;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
     }
-    
-    .contiene-primer-texto{
-        align-items: center;
-        margin-top: 70px;
-        height: 8px;
+
+    .recuadro-fotos {
+        img {
+            max-width: 500px;
+            border-radius: 16px;
+        }
     }
-    .primerTexto{
-        color:$color-white;
-        padding: 20px;
-        min-width: 100px;
+
+    .recuadro-no-visible {
+        .arrow {
+            background-color: $color-green-oscuro;
+            width: 25px;
+            height: 25px;
         
+        }
     }
-    /* .ajuste{
+}
+//JOAQUIN
+
+.contiene-primer-texto {
+    align-items: center;
+    margin-top: 70px;
+    height: 8px;
+}
+
+.primerTexto {
+    color: $color-white;
+    padding: 20px;
+    min-width: 100px;
+
+}
+
+/* .ajuste{
         display:flex;
     
     } */
-    
-    .textoExpandir{
-        width: 50%;
-        padding: 15px;
-        color:$color-white;
-    }
-    .tamanio{
-        width: 600px;
-        height: 300px;
-        object-fit: cover;
-        margin: 20px;
-    }
-    
-    .tamanio{
-        width: 500px;
-        height: 300px;
-        object-fit: cover;
-        margin: 20px;
-        
-    }
-    span{
-        color:black;
-        font-weight: 600;
-        background-color: $color-white;
-    }
-    
-    .hide{
-        display: none;
-    }
-    
-    .show{
-        display: inline-block;
-    }
-    
-    .prueba2{
-        display: flex;
-        width: 100vw;
-        min-height: 250px;
-    }
-    .arrow{
-        background-color: $color-green-oscuro;
-        width: 25px;
-        height: 25px;
-    
-    }
-    
-    .imgAbsoluta{
-        position: relative;
-    
-    }
-    .imgRelative{
-        position: absolute;
-        top: -20px;
-        right:100px;
-        
-    
-    }
-    
-    .contiene-img2{
-        
-        width: 50%;
-    }
-    
-    .arrow-up{
-        border:none;
-        width: 100%;
-        background-color: $color-green-oscuro;
-    }
-    .ajuste{
-        
-        flex-wrap: wrap;
-        
-        
-    }
+
+.textoExpandir {
+    width: 50%;
+    padding: 15px;
+    color: $color-white;
+}
+
+.tamanio {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.tamanio {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px;
+
+}
+
+span {
+    color: black;
+    font-weight: 600;
+    background-color: $color-white;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.prueba2 {
+    display: flex;
+    width: 100vw;
+    min-height: 250px;
+}
+
+.arrow {
+    background-color: $color-green-oscuro;
+    width: 25px;
+    height: 25px;
+
+}
+
+.imgAbsoluta {
+    position: relative;
+
+}
+
+.imgRelative {
+    position: absolute;
+    top: -20px;
+    right: 100px;
+
+
+}
+
+.contiene-img2 {
+
+    width: 50%;
+}
+
+.arrow-up {
+    border: none;
+    width: 100%;
+    background-color: $color-green-oscuro;
+}
+
+.ajuste {
+
+    flex-wrap: wrap;
+
+
+}
