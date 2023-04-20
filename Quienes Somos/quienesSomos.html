@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&family=Nunito:wght@200;300;400;700&family=Poppins:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;700&family=Nunito:wght@200;300;400;700;800&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
 </head>
@@ -79,120 +79,139 @@
     </header>
     <!----------- Barra de navegación ------------->
     <main>
-    <!----------- presentacion quienes somos ------------->
-    <section class="presentacion">
-        <div class="jumbotron7 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
+        <!----------- presentacion quienes somos ------------->
+        <section class="presentacion">
+            <div class="jumbotron7 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
 
-            <div
-                class="container cuadro-translucido position-absolute top-50 start-0 translate-middle-y row align-items-center">
-                <h1 class="titulo1">Quienes Somos</h1>
+                <div
+                    class="container cuadro-translucido position-absolute top-50 start-0 translate-middle-y row align-items-center">
+                    <h1 class="titulo1">Quienes Somos</h1>
+                </div>
+            </div>
+        </section>
+        <!----------- presentacion quienes somos ------------->
+        <div>
+            <div class="texto-debajo-cuadros">
+                <p class="titulo-quienes-somos"><strong>JaA</strong> es una <strong>red formada por y para
+                        jóvenes</strong>,
+                    basamos nuestro quehacer en tres pilares fundamentales <br>
+                </p>
             </div>
         </div>
-    </section>
-    <!----------- presentacion quienes somos ------------->
-    <div>
-        <div class="texto-debajo-cuadros">
-            <p class="titulo-quienes-somos"><strong>JaA</strong> es una <strong>red formada por y para jóvenes</strong>, 
-                basamos nuestro quehacer en tres pilares fundamentales <br>
-            </p>
-        </div>
-    </div>
-    <div class="pilares_historia">
- <!-- pilares -->
-    <section class="recuadro-pilares">
-        <div class="row align-items-center justify-content-center">
-            <!-- card1 -->
-            <div class="col-sm-4">
-                <div class="card card-A">
-                    <div class="card-body">
-                        <h3 class=" card-title titulo-pilar titulo-pilar-1 text-center ancho ">Misión</h3>
-                        <p class="card-text recuadro-texto"><span class="relleno-green">Crear una red de apoyo entre jóvenes Iberoamericanos</span> para 
-                            despertar conciencia sobre sus problemáticas. Compartir recursos valiosos: soluciones, iniciativas y proyectos. Fomentar intercambios y colaboraciones. </p>
-                        
+        <div class="secciones-pilares_historia">
+            <!-- pilares -->
+            <section class="recuadro-pilares">
+                <div class="row justify-content-around">
+                    <!-- card1 -->
+                    <div class="col-md-4 row justify-content-center">
+                        <div class="card card-A m-2">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-pilar titulo-pilar-1 text-center ancho d-flex align-items-center p-2">Misión</h3>
+                                <p class="card-text recuadro-texto"><span class="relleno-green">Crear una red de apoyo
+                                    entre jóvenes Iberoamericanos</span> para
+                                    despertar conciencia sobre sus problemáticas. Compartir recursos valiosos:
+                                    soluciones, iniciativas y proyectos. Fomentar intercambios y colaboraciones. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card1 -->
+                    <!-- card2 -->
+                    <div class="col-md-4 row justify-content-center">
+                        <div class="card card-B m-2">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-pilar titulo-pilar-2 text-center ancho d-flex align-items-center p-2">Visión</h3>
+                                <p class="card-text recuadro-texto"> <span class="relleno-yellow">Empoderar, inspirar e
+                                    incentivar a jóvenes para que actúen frente a las problemáticas actuales.</span>
+                                    Convertirnos en un portal de referencia y conexión en la difusión de proyectos
+                                    elaborados por la
+                                    juventud en países iberoamericanos.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- card2 -->
+                    <!-- card3 -->
+                    <div class="col-md-4 row justify-content-center">
+                        <div class="card card-C m-2">
+                            <div class="card-body">
+                                <h3 class="card-title titulo-pilar titulo-pilar-3 text-center ancho d-flex align-items-center p-2">Valores</h3>
+                                <p class="card-text recuadro-texto">Interculturalidad, unidad, <span
+                                        class="relleno-red">conexión,</span> conciencia social y ambiental, empatía,
+                                    <span class="relleno-red">voluntad,</span> dinamismo, pensamiento crítico,
+                                    proactividad, curiosidad y <span class="relleno-red">diálogo
+                                        intergeneracional.</span>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- card3 -->
+                </div>
+
+            </section>
+
+            <!-- pilares -->
+
+            <!-- cuadro con js explicacion quienes somos -->
+
+            <section class="container-fluid row justify-content-center m-0 p-0">
+                <div class="recuadro-historia m-4 p-0">
+                    <div class="recuadro-visible d-flex">
+                        <div class="recuadro-texto-historia row align-items-around">
+                            <h3>Historia</h3>
+                            <p class="texto-historia" id="textoHistoria">JeA nació en 2020 a raíz de las Jornadas
+                                Iberoamericanas de la Educación Intercultural llevadas a cabo por AFS Programas
+                                Interculturales...</p>
+                            <button class="boton-default-sin_fondo_invertido" id="btnConocenos">Conoce más</button>
+                        </div>
+                        <div class="recuadro-fotos">
+                            <div id="recuadro-fotos-cerrado" class="">
+                                <img src="../img/creacion.png" alt="Foto Carolina y Delfina" class="foto-caro-delfi">
+                            </div>
+                            <div id="recuadro-fotos-abierto" class="d-none">
+                                <img src="../img/creacion.png" alt="Foto Carolina y Delfina"
+                                    class="foto-caro-delfi m-lg-5 ms-0 pe-2 p-lg-0 mt-5 mb-4">
+                                <img src="../img/creacion.2.png" alt="Foto Historia"
+                                    class="foto-historia m-lg-5 ms-0 pe-2 p-lg-0 mt-5 mb-4">
+                            </div>
+                        </div>
+                        <div class="recuadro-flecha-abajo p-5 m-auto" id="btnFlechaAbajo">
+                            <button class="boton-flecha"><img class="img-flecha" src="../img/flecha-abajo.png"
+                                    alt="flecha apertura recuadro"></button>
+                        </div>
+                    </div>
+                    <div class="recuadro-flecha-arriba p-5 d-none" id="btnFlechaArriba">
+                        <button class="boton-flecha"><img class="img-flecha" src="../img/flecha-arriba.png"
+                                alt="flecha regresión recuadro"></button>
                     </div>
                 </div>
-                
-            </div>
-            <!-- card1 -->
-            <!-- card2 -->
-            <div class="col-sm-4">
-                <div class="card card-B">
-                    <div class="card-body">
-                        <h3 class="card-title titulo-pilar titulo-pilar-2 text-center ancho ">Visión</h3>
-                        <p class="card-text recuadroTexto"> <span class="relleno-yellow">Empoderar, inspirar e incentivar a jóvenes para que actúen frente a las problemáticas actuales.</span> 
-                            Convertirnos en un portal de referencia y conexión en la difusión de proyectos elaborados por la 
-                            juventud en países iberoamericanos.</p>
-                        
-                    </div>
+
+            </section>
+
+<!-- Seccion 'pregunta' igual a la de Organizaciones y Talleres, ver de unificar codigos si se separa de estilos.css que estan en talleres.scss la clase de .pregunta -->
+            <section class="pregunta">
+                <div class="text-align-center d-flex justify-content-center align-items-center container row mx-auto align-items-center">
+                    <h2 class="pregunta-preboton col-lg-6">¿Querés colaborar con nosotros?</h2>
+                    <button class="boton-pregunta col-lg-4">Contáctanos</button>
                 </div>
-                
-            </div>
-            <!-- card2 -->
-            <!-- card3 -->
-            <div class="col-sm-4">
-                <div class="card card-C">
-                    <div class="card-body">
-                        <h3 class="card-title titulo-pilar titulo-pilar-3 text-center ancho ">Valores</h3>
-                        <p class="card-text recuadroTexto">Interculturalidad, unidad, <span class="relleno-red">conexión,</span> conciencia social y ambiental, empatía, <span class="relleno-red">voluntad,</span> dinamismo, pensamiento crítico, proactividad, curiosidad y <span class="relleno-red">diálogo intergeneracional.</span></p>
-                        
-                    </div>
-                </div>
-                
-            </div>
-            <!-- card3 -->
+            </section>
         </div>
-
-    </section>
-
- <!-- pilares -->
-
-<!-- cuadro con js explicacion quienes somos -->
-
-<section class="container-fluid row justify-content-center m-0 p-0">
-    <div class="recuadro-historia m-4 p-0">
-        <div class="recuadro-visible d-flex">
-            <div class="recuadro-texto-historia">
-                <h3>Historia</h3>
-                <p class="texto-historia" id="textoHistoria">JeA nació en 2020 a raíz de las Jornadas Iberoamericanas de la Educación Intercultural llevadas a cabo por AFS Programas Interculturales...</p>
-                <button class="boton-default-sin_fondo_invertido" id="btnConocenos">Conoce más</button>
-            </div>
-            <div class="recuadro-fotos">
-                <div id="recuadro-fotos-cerrado" class="">
-                    <img src="../img/creacion.png" alt="Foto Carolina y Delfina" class="foto-caro-delfi">
-                </div>
-                <div id="recuadro-fotos-abierto" class="m-4 d-none">
-                    <img src="../img/creacion.png" alt="Foto Carolina y Delfina" class="foto-caro-delfi m-5 mb-4">
-                    <img src="../img/creacion.2.png" alt="Foto Historia" class="foto-historia m-5 mt-0 mb-0">
-                </div>
-            </div>
-        </div>
-        <div class="recuadro-no-visible p-5 d-none" id="btnFlecha">
-            <button class="boton-flecha-arriba"><img class="img-flecha" src="../img/992703.png" alt="flecha regresión recuadro"></button>
-        </div>
-    </div>
-
-</section>
-
-<section class="pregunta">
-    <div class="text-align-center d-flex justify-content-center align-items-center">
-        <h2 class="pregunta-preboton">¿Querés colaborar con nosotros?</h2><button
-            class="boton-pregunta">Contáctanos</button>
-    </div>
-</section>
-</div>
-</main>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg text-center text-white" style="background-color: #02503E !important;">
+    <footer class="bg text-center text-white pt-4 p-sm-4" style="background-color: #02503E !important;">
         <!-- Grid container -->
-        <div class="container p-4">
+        <div class="container-fluid">
             <!--Grid row-->
-            <div class="row">
+            <div class="row justify-content-center">
 
                 <!--Grid column-->
-                <div class="col-lg-5 col-md-12 mb-4 mb-md-0 row">
-                    <div class="col-2">
-                        <a href="../index.html"><img class="imagen-default" src="../img/Logo JeA-footer.png"
+                <div class="col-lg-4 col-3 row justify-content-start justify-content-lg-center">
+                    <div class="col-12 col-sm-8 text-start text-lg-center p-0">
+                        <a href="../index.html"><img class="logo-footer" src="../img/Logo JeA-footer.png"
                                 alt="logo"></a>
                     </div>
 
@@ -200,8 +219,8 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-footer col-lg-2 col-md-12 mb-4 mb-md-0 pt-5 me-5">
-                    <h5 class=" titulo5">Novedades</h5>
+                <div class="col-footer col-3 col-lg-2">
+                    <h5 class="titulo5">Novedades</h5>
 
                     <p class="letra-footer">
                         Ingresa a nuestro <br>nuevo blog
@@ -210,8 +229,8 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-footer col-lg-2 col-md-12 mb-4 mb-md-0 pt-5">
-                    <h5 class=" titulo5">Contacto</h5>
+                <div class="col-footer col-3 col-lg-2">
+                    <h5 class="titulo5">Contacto</h5>
 
                     <p class="letra-footer">
                         <a class="text-decoration-none text-white" href="#">info@jea.com</a><br>
@@ -221,11 +240,11 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-footer-img col-lg-2 col-md-12 mb-4 mb-md-0 pt-5">
-                    <h5 class=" titulo5">Síguenos</h5>
+                <div class="col-footer-img col-3 col-lg-2">
+                    <h5 class="titulo5">Síguenos</h5>
 
                     <p class="imagen-footer">
-                        <a href="https://www.tiktok.com/es/">
+                        <a href="https://www.tiktok.com/es/" class="enlace-imagen-footer">
                             <svg width="24" height="30" viewBox="0 0 24 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -233,8 +252,7 @@
                                     fill="white" />
                             </svg>
                         </a>
-
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" class="enlace-imagen-footer">
                             <svg width="34" height="36" viewBox="0 0 34 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -262,7 +280,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-        <script src="../js/quienessomos.js"></script>
+    <script src="../js/quienessomos.js"></script>
 </body>
 
 </html>
