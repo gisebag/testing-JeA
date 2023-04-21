@@ -1578,6 +1578,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #02503E;
   font-weight: 600;
 }
+@media only screen and (max-width: 955px) {
+  .boton-enviar {
+    font-size: 14px;
+    padding: 5px 54px;
+  }
+}
 
 .btn-flag {
   background-color: #f9f9f9;
@@ -1627,6 +1633,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: #02503E;
   padding: 80px 0px;
 }
+@media only screen and (max-width: 768px) {
+  .contacto-JeA {
+    padding: 40px 0px;
+  }
+}
 .contacto-JeA .div-texto {
   margin: auto;
   max-width: 800px;
@@ -1642,8 +1653,33 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #02503E;
   padding: 24px 0px;
 }
+@media only screen and (max-width: 955px) {
+  .contacto-JeA .div-texto p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contacto-JeA .div-texto p {
+    font-size: 20px;
+  }
+}
 .contacto-JeA .div-iconos {
   margin-top: 55px;
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-rrss {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-mail {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-whatsapp {
+    margin-top: 30px;
+  }
 }
 .contacto-JeA .div-iconos p {
   font-family: "Nunito";
@@ -1654,12 +1690,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: white;
   margin: 15px 0px;
 }
+@media only screen and (max-width: 955px) {
+  .contacto-JeA .div-iconos p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos p {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contacto-JeA .div-iconos p {
+    font-size: 16px;
+  }
+}
 .contacto-JeA .div-iconos strong {
   font-weight: bold;
 }
 
 .contenedor-imagen-formulario {
   padding: 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario {
+    padding: 40px 10px;
+  }
 }
 .contenedor-imagen-formulario .contenedor-imagen {
   background-image: url(../img/contacto.1.jpg);
@@ -1668,8 +1726,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-height: 750px;
   margin-right: 50px;
 }
+@media only screen and (max-width: 1000px) {
+  .contenedor-imagen-formulario .contenedor-imagen {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario .contenedor-imagen {
+    display: none;
+  }
+}
 .contenedor-imagen-formulario .contenedor-formulario {
   margin-left: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-imagen-formulario .contenedor-formulario {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario .contenedor-formulario {
+    margin-left: 0px;
+  }
 }
 .contenedor-imagen-formulario .contenedor-formulario h2 {
   font-family: "Nunito";
@@ -1678,6 +1756,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 32px;
   line-height: 44px;
   color: #02503E;
+}
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario h2 {
+    font-size: 28px;
+  }
 }
 .contenedor-imagen-formulario .contenedor-formulario p {
   margin-top: 24px;
@@ -1692,6 +1775,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   line-height: 27px;
   color: #02503E;
 }
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario p,
+  .contenedor-imagen-formulario .contenedor-formulario label {
+    font-size: 16px;
+  }
+}
 .contenedor-imagen-formulario .contenedor-formulario input,
 .contenedor-imagen-formulario .contenedor-formulario textarea {
   background-color: transparent;
@@ -1703,6 +1792,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   line-height: 22px;
   padding: 14px;
   resize: none;
+}
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario input,
+  .contenedor-imagen-formulario .contenedor-formulario textarea {
+    font-size: 16px;
+  }
 }
 
 .jumbotron6 {
@@ -2073,6 +2168,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   margin-top: 24px;
   color: #02503E;
   font-weight: 600;
+}
+@media only screen and (max-width: 955px) {
+  .boton-enviar {
+    font-size: 14px;
+    padding: 5px 54px;
+  }
 }
 
 .btn-flag {

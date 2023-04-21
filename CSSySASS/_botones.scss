@@ -33,6 +33,11 @@
     margin-top: 24px;
     color: #02503E;
     font-weight: 600;
+
+    @media only screen and (max-width: 955px) {
+        font-size: 14px;
+        padding: 5px 54px;
+    }
 }
 
 //Oportunidades
