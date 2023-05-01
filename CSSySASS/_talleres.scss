@@ -24,13 +24,7 @@
             font-family: $tipografia-nunito;
             margin: 0px 50px
         }
-
-        .titulo1b {
-            color: $color-white;
-            font-size: 30px;
-            font-weight: 200;
-            font-family: $tipografia-nunito-sans;
-        }
+        
     }
 }
 
@@ -116,40 +110,142 @@
     }
 }
 
-.pregunta {
-    padding-top: 62px;
-    text-align: center;
+@media only screen and (max-width: 800px) {
+    .jumbotron5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/talleres.responsive.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 340px;
+        
+        .cuadro-translucido {
+            width: 100%;
+            max-width: 800px;
+            max-height: 115px;
+            translate: 0% 100%;
+            padding: 0px;
+            margin-left:0.5px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-    @media only screen and (max-width: 855px) {
-        padding: 40px !important;
-    }
+            .titulo-talleres {
+                line-height: 16px;
+                font-size: 26px;
+                font-weight: 800;
+                padding-top: 0px;
+                font-family: $tipografia-nunito;
+                color: $color-white;
+            }
 
-    .pregunta-preboton {
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        font-weight: 400;
-
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
         }
     }
 
-    .boton-pregunta {
-        width: 305px;
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        padding: 14px 80px;
-        border: 0px;
-        border-radius: 100px;
-        background-color: $color-green-pastel;
-        margin: 24px 0 92px 0;
-        color: $color-green-oscuro;
-        font-weight: 600;
+    .cuadro-dividido {
+        padding: 40px;
+        text-align: center;
+    
+        .contenedor-texto {
+            p{
+                font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: $tipografia-nunito;
+            min-width: 330px;
+            height: 160px;
+            padding: 20px;
+    
+            strong {
+                color: $color-green-medio;
+            }
+            }
+        }
+    
+        .contenedor-cuadros-divididos {
+            border: 2px solid $color-green-medio;
+            border-radius: 16px;
+            margin-top: 80px;
+    
+            button {
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                margin: 0;
+                cursor: pointer;
+                font-family: $tipografia-nunito;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+            }
+    
+            .boton-escuelas {
+                color: #5BBA47;
+                border-bottom: 8px solid #5BBA4790;
+            }
+    
+            .boton-universidades {
+                color: $color-orange-oscuro;
+                border-bottom: 8px solid #FAC31390;
+            }
+    
+            .boton-organizaciones {
+                color: $color-red-oscuro;
+                border-bottom: 8px solid #ED1C2490;
+            }
+        }
+    
+        #descripcion {
+            padding: 48px 20px 58px 20px;
+    
+            #contenido {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+    
+    .contenedor-cuadros-textofoto {
+        /* display: flex; */
+        
+        .row{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            .texto {
+                order: 2;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                background-color: rgba(250, 195, 19, 0.2);
+                padding: 30px;
+                min-width: 445px;
+                min-height: 160px;
+        
+                p
+                strong {
+                    color: $color-white;
+                    background-color: $color-orange-oscuro;
+                }
+            }
+            .foto {
+                order: 1;
+                background-image: url(../img/talleres.2.jpg);
+                background-size: cover;
 
-        @media only screen and (max-width: 855px) {
-            font-size: 14px;
-            width: 152px;
-            padding: 6px 20px !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-position: center;
+                min-width: 445px;
+                height: 340px;
+            }
         }
     }
 }

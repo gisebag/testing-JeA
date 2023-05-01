@@ -94,3 +94,42 @@
     }
 
 }
+//preguntas y boton de contacto al final de cada hoja
+.pregunta {
+    padding-top: 62px;
+    text-align: center;
+
+    @media only screen and (max-width: 855px) {
+        padding: 40px !important;
+    }
+
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        font-weight: 400;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+        }
+    }
+
+    .boton-pregunta a{
+        text-decoration: none;
+        width: 305px;
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: $color-green-pastel;
+        margin: 24px 0 92px 0;
+        color: $color-green-oscuro;
+        font-weight: 600;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+            width: 152px;
+            padding: 6px 20px !important;
+        }
+    }
+}

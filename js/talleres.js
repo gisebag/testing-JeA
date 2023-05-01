@@ -23,7 +23,7 @@ btnUniversidades.addEventListener ('click', ()=> {
     btnUniversidades.style.borderBottom = "16px solid #FAC313";
     btnOrganizaciones.style.borderBottom = "8px solid #ED1C2490";
     descripcion.style.backgroundColor = "#FAC31320";
-    contenido.innerHTML = 'Ofrecemos la oportunidad de realizar una o varias sesiones sobre ciudadanía activa, cambio social y <strong style="color:#F26123">búsqueda de oportunidades educativas/laborales/voluntariados/emprendimiento</strong> para universitarios.';
+    contenido.innerHTML = 'Ofrecemos la oportunidad de realizar una o varias sesiones sobre ciudadanía activa, cambio social y <strong style="color:#F26123">búsqueda de oportunidades educativas/laborales/ voluntariados/emprendimiento</strong> para universitarios.';
 })
 
 btnOrganizaciones.addEventListener ('click', ()=> {
