@@ -2,6 +2,26 @@
 
 //index 
 
+
+.boton-conocenos{
+    background-color: $color-white;
+    color: $color-black;
+    border: 3px solid $color-green-oscuro;
+    border-radius: 25px;
+    padding: 5px 40px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+    font-family: $tipografia-poppins;
+}
+
+.boton-conocenos:hover{
+    background-color: $color-white;
+    color: $color-black;
+    border: 3px solid $color-green-oscuro;
+    cursor: pointer;
+}
+
 //boton verde agua
 .clickPositivo{
     background-color: $color-green-pastel;
@@ -19,7 +39,23 @@
     transition: 0.7s;
 }
 
-
+.boton-negativo{
+    background-color: $color-green-oscuro;
+    color: $color-white;
+    border: 3px solid $color-white;
+    border-radius: 25px;
+    padding: 5px 40px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 30px;
+    font-family: $tipografia-poppins;
+}
+.boton-negativo:hover{
+    border: 3px solid $color-white;
+    font-size: 24px;
+    color: $color-white;
+    cursor: pointer;
+}
 
 
 //boton de enviar en contacto

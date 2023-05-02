@@ -64,17 +64,17 @@
 /* Presentacion portada */
 .presentacion {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   text-align: center;
 }
 .presentacion .jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/sobre\ jea.1.jpg);
+  background-image: url(/img/sobre-jea.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
+  height: 400px;
 }
 .presentacion .jumbotron .titulo1 {
   color: #02503E;
@@ -92,7 +92,8 @@
 
 /* seccion 1 del index - espacio JEA */
 .espacio {
-  margin: 10px;
+  margin: 0px;
+  width: 100%;
 }
 .espacio .objetivos-div {
   display: flex;
@@ -126,11 +127,14 @@
 }
 
 .titulo2 {
-  color: #009876;
+  color: #02503E;
   text-align: center;
   margin-top: 80px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
+  font-family: "Nunito";
+  font-weight: 400;
+}
+.titulo2 strong {
+  font-size: 800;
 }
 
 .titulos3 {
@@ -158,30 +162,25 @@
 .img-conocer-jea {
   width: 720px;
   height: 430px;
-  background-image: url(../img/sobre\ jea.2.jpg);
+  background-image: url(../img/sobre-jea.2.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 25px;
 }
-.img-conocer-jea .grupoImg {
+
+.contiene-foto-y-sobre-jea {
+  margin-left: 32px;
+}
+
+.contiene-text-grupo {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin: 0;
 }
-
-.prueb1 {
-  /* background-color: #ED1C24; */
+.contiene-text-grupo .prueb1 {
   width: 100%;
 }
-
-.prueb2 {
-  /* background-color: blueviolet; */
-  width: 100%;
-  height: 100%;
-}
-
-.grupo-texto-sobre-jea {
+.contiene-text-grupo .prueb1 .grupo-texto-sobre-jea {
   font-size: 20px;
   font-weight: 700;
   padding: 10px;
@@ -190,72 +189,40 @@
   letter-spacing: 0.5px;
 }
 
-.boton-conocenos {
-  background-color: #f9f9f9;
-  color: rgb(10, 10, 10);
-  border: 3px solid #02503E;
-  border-radius: 25px;
-  padding: 5px 40px;
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 30px;
-  font-family: "Poppins", sans-serif;
-}
-
-.boton-conocenos:hover {
-  background-color: #f9f9f9;
-  color: rgb(10, 10, 10);
-  border: 4px solid #02503E;
-  font-size: 26px;
-}
-
 .recuadro-verde {
   background-color: #02503E;
-  width: 1276px;
+  width: 1100px;
   height: 730px;
   padding-top: 10px;
   margin: 80px 0;
   border-radius: 25px;
 }
-.recuadro-verde .recuadro-texto {
-  padding: 10px;
-  font-family: "Nunito Sans", sans-serif;
+.recuadro-verde .contiene-cards-index {
+  width: 100%;
 }
-.recuadro-verde .card {
+.recuadro-verde .contiene-cards-index .kit-card {
+  display: flex;
+}
+.recuadro-verde .contiene-cards-index .kit-card .card {
   font-weight: 400;
   font-size: 20px;
-  width: 350px;
+  width: 300px;
   height: 380px;
   border-radius: 25px;
   margin: 20px;
 }
-.recuadro-verde .card1 {
+.recuadro-verde .contiene-cards-index .kit-card .card .recuadro-texto {
+  padding: 10px;
+  font-family: "Nunito";
+}
+.recuadro-verde .contiene-cards-index .kit-card .card1 {
   background-color: #F6EBC8;
 }
-.recuadro-verde .card2 {
+.recuadro-verde .contiene-cards-index .kit-card .card2 {
   background-color: #DBF8D7;
 }
-.recuadro-verde .card3 {
+.recuadro-verde .contiene-cards-index .kit-card .card3 {
   background-color: #FDE8E9;
-}
-
-.boton-negativo {
-  background-color: #02503E;
-  color: #f9f9f9;
-  border: 3px solid #f9f9f9;
-  border-radius: 25px;
-  padding: 5px 40px;
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: 30px;
-  font-family: "Poppins", sans-serif;
-}
-
-.boton-negativo:hover {
-  border: 3px solid #f9f9f9;
-  font-size: 26px;
-  color: #f9f9f9;
-  transition: 0.7s;
 }
 
 .color1 {
@@ -295,6 +262,195 @@
   width: 100%;
 }
 
+.carrousel {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+.carrousel .carrousel-items {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 30px 0px;
+}
+.carrousel .carrousel-items .carrousel-item {
+  margin: 10px;
+  min-width: 150px;
+  max-width: 150px;
+  height: 150px;
+}
+.carrousel .carrousel-items .carrousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carrousel .carrousel-items .carrousel-item :hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/sobre-jea.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    min-width: 445px;
+  }
+  .jumbotron .container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 115px;
+    translate: 0% 100%;
+    padding: 0px;
+    margin-left: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron .container .titulo-bienvenido {
+    line-height: 36px;
+    font-size: 26px;
+    font-weight: 800;
+    padding-top: 0px;
+    font-family: "Nunito";
+    color: #02503E;
+  }
+  .titulo2 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #02503E;
+    text-align: center;
+    margin-top: 40px;
+    font-family: "Nunito";
+    font-weight: 400;
+    padding: 10px;
+  }
+  .titulo2 strong {
+    font-size: 900;
+  }
+  .objetivos-div {
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    flex-direction: row;
+  }
+  .objetivos-div .caja-objetivo {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    width: 230px;
+    max-height: 300px;
+  }
+  .objetivos-div .caja-objetivo .titulos3 {
+    color: #02503E;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+  }
+  .objetivos-div .caja-objetivo .texto-complemento-objetivos {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Nunito";
+    color: #02503E;
+  }
+  .carrousel {
+    padding: 0px 15px;
+    height: 200px;
+  }
+  .carrousel .carrousel-items .carrousel-item {
+    margin: 10px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+  }
+  .contiene-foto-y-sobre-jea {
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .contiene-foto-y-sobre-jea .img-conocer-jea {
+    max-height: 240px;
+    max-width: 400px;
+    background-image: url(../img/sobre-jea.2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contiene-foto-y-sobre-jea .varios {
+    padding: 10px;
+    margin: 10px 10px 10px 0px;
+  }
+  .contiene-foto-y-sobre-jea .varios .contiene-text-grupo {
+    width: 400px;
+    margin: 0;
+  }
+  .contiene-foto-y-sobre-jea .varios .contiene-text-grupo .prueb1 p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 800;
+    max-height: 240px;
+  }
+  .recuadro-verde {
+    background-color: #02503E;
+    width: 100%;
+    height: 520px;
+    padding-top: 10px;
+    margin: 40px 0;
+    border-radius: 0;
+  }
+  .recuadro-verde .titulo-negativo {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+  .recuadro-verde .contiene-cards-index {
+    display: flex;
+    flex-direction: row;
+  }
+  .recuadro-verde .contiene-cards-index .kit-card {
+    display: flex;
+  }
+  .recuadro-verde .contiene-cards-index .kit-card .card {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 180px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+  .recuadro-verde .contiene-cards-index .kit-card .card .titulos3 {
+    font-size: 16px;
+    line-height: 20px;
+    height: 50px;
+  }
+  .recuadro-verde .contiene-cards-index .kit-card .card .recuadro-texto {
+    padding: 10px;
+    font-family: "Nunito";
+  }
+  .recuadro-verde .contiene-cards-index .card1 {
+    background-color: #F6EBC8;
+  }
+  .recuadro-verde .contiene-cards-index .card2 {
+    background-color: #DBF8D7;
+  }
+  .recuadro-verde .contiene-cards-index .card3 {
+    background-color: #FDE8E9;
+  }
+}
 /* footer */
 footer .logo-footer {
   width: 100px;
@@ -1100,9 +1256,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 16px;
     line-height: 22px;
   }
-  .contenedor-cuadros-textofoto {
-    /* display: flex; */
-  }
   .contenedor-cuadros-textofoto .row {
     display: flex;
     justify-content: center;
@@ -1627,6 +1780,25 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 
+.boton-conocenos {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-conocenos:hover {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  cursor: pointer;
+}
+
 .clickPositivo {
   background-color: #DBF8D7;
   border-radius: 25px;
@@ -1642,6 +1814,25 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 24px;
   color: rgb(10, 10, 10);
   transition: 0.7s;
+}
+
+.boton-negativo {
+  background-color: #02503E;
+  color: #f9f9f9;
+  border: 3px solid #f9f9f9;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-negativo:hover {
+  border: 3px solid #f9f9f9;
+  font-size: 24px;
+  color: #f9f9f9;
+  cursor: pointer;
 }
 
 .boton-enviar {
@@ -2258,6 +2449,25 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     display: none;
   }
 }
+.boton-conocenos {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-conocenos:hover {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  cursor: pointer;
+}
+
 .clickPositivo {
   background-color: #DBF8D7;
   border-radius: 25px;
@@ -2273,6 +2483,25 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 24px;
   color: rgb(10, 10, 10);
   transition: 0.7s;
+}
+
+.boton-negativo {
+  background-color: #02503E;
+  color: #f9f9f9;
+  border: 3px solid #f9f9f9;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-negativo:hover {
+  border: 3px solid #f9f9f9;
+  font-size: 24px;
+  color: #f9f9f9;
+  cursor: pointer;
 }
 
 .boton-enviar {
