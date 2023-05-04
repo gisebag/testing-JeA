@@ -2,7 +2,7 @@
 /* Presentacion portada */
 .presentacion{
     width: 100%;
-    /* height: auto; */
+    
     text-align: center;
     
     .jumbotron{
@@ -34,33 +34,14 @@
 
 
 /* seccion 1 del index - espacio JEA */
-.espacio{
-    margin: 0px;
-    width: 100%;
-    .objetivos-div{
-        display: flex;
-        /* justify-content: space-evenly; */
-        justify-content:center;
-        margin-top: 40px;
-        text-align: center;
-        flex-direction: row;
-        
-    }
 
-    .texto-complemento-objetivos{
-        font-weight: 400;
-        font-size: 20px;
-        font-family: $tipografia-nunito-sans;
-    }
-    .caja-objetivo{
-        padding: 40px 20px;
-        border-radius: 10px;
-        font-size: 25px;
-        margin: 20px;
-        width: 300px;
-        height: 400px;
-    }
-    
+
+ //objetivos
+
+.objetivo-section{
+    display: flex;
+    justify-content: center ;
+
     .rojo{
         border: solid $color-red-oscuro 3px;
     }
@@ -70,9 +51,115 @@
     .amarillo{
         border: solid $color-yellow-oscuro 3px;
     }
+    .overflow {
+        
+
+        overflow-x: scroll;
+        
+        width: 100vw;
+        overflow-y: hidden;
+        white-space: nowrap;
+        
+        display: flex;
+        justify-content: center;
     
-    
+        
+        margin: 20px;
+
+        .overflow-item{
+            width: 300px;
+            height: 400px;
+            border-radius: 25px;
+            margin: 10px;
+            
+            
+            h3{
+                text-align: center;
+                
+            }
+            .titulo-rojo{
+                color: $color-red-oscuro;
+            }
+            .titulo-verde{
+                color: $color-green-oscuro;
+            }
+            .titulo-amarillo{
+                color: $color-yellow-oscuro;
+            }
+            
+            .texto-complemento-objetivos{
+                width: 240px;
+                height: 200px;
+                /*text-align:left; */
+                padding: 10px;
+                margin-left: 25px;
+
+                font-weight: 400;
+                font-size: 20px;
+                font-family: $tipografia-nunito-sans;
+            }
+            
+        }
+        
+    }
+
+    .overflow-item img{
+        margin-left: 100px !important;
+        width: 80px;
+        height: 80px;
+        border-radius: 25px;
+        margin: 10px;
+        margin-top: 30px;
+        
+    }
+
 }
+
+
+@media only screen and (max-width: 800px){
+    .objetivo-section{
+        .overflow {
+            
+            overflow-x:scroll;
+            /* -webkit-overflow-scrolling: touch; */
+            overflow-y: hidden;
+            white-space: nowrap;
+            
+            display: inline-block;
+            
+            margin: 10px;
+        }
+        
+        .overflow-item {
+            
+            display: inline-block;
+            list-style: none;
+            margin-right: 10px;
+            max-width: 250px;
+            height: 450px !important;
+
+            .texto-complemento-objetivos{
+                width: 180px !important;
+                height: 280px;
+                text-align:left;
+                padding: 10px;
+                font-size: 14px;
+
+                margin-left: 0px;
+            }
+
+            img{
+                margin-left: 75px !important;
+            }
+        }
+        
+        
+    }
+    
+
+}
+
+
 
 .titulo2{
     strong{
@@ -321,39 +408,7 @@
     }
 
 
-    .objetivos-div{
-        display: flex;
-        /* justify-content: space-evenly; */
-        justify-content:center;
-        margin-top: 20px;
-        text-align: center;
-        flex-direction: row;
-        
-        
-        .caja-objetivo{
-            padding: 10px;
-            border-radius: 10px;
-            
-            margin: 5px;
-            width: 230px;
-            max-height: 300px;
     
-            .titulos3{
-                color: $color-green-oscuro;
-                font-size: 20px;
-                line-height: 28px;
-                font-family: $tipografia-nunito-sans;
-                font-weight: 800;
-            }
-            .texto-complemento-objetivos{
-                font-weight: 400;
-                font-size: 14px;
-                font-family: $tipografia-nunito;
-                color: $color-green-oscuro;
-            }
-        }
-    
-    }
     .carrousel{
         padding: 0px 15px;
         height: 200px;
