@@ -44,7 +44,7 @@
                 margin-top: 10px;
             }
         }
-        
+
         .contacto-mail {
             @media only screen and (max-width: 768px) {
                 margin-top: 30px;
@@ -171,5 +171,21 @@
         }
 
         //el btn enviar esta en _botones.scss
+    }
+}
+
+.bg-popup {
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100rem;
+    .popup-container {
+        .popup {
+            width: 680px;
+            height: 440px;
+            background-color: white;
+            top: 50%;
+            right: 50%;
+        }
     }
 }

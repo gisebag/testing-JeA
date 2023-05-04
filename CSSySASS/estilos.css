@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: rgb(159, 14, 96) 2px solid;
+  border: rgb(159, 14, 96) 1px solid;
 }
 
 /* navbar */
@@ -15,8 +15,7 @@
 }
 
 .navbar .icono-nav {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   width: 70px;
   height: 70px;
 }
@@ -283,8 +282,7 @@
 .carrousel .carrousel-items .carrousel-item img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .carrousel .carrousel-items .carrousel-item :hover {
   transform: scale(1.2);
@@ -1379,8 +1377,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: #DBF8D7;
   border-radius: 30px 0px 0px 30px;
   background-image: url(../img/iconos-colaboraciones.png);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-der {
   background-image: url(../img/colaboraciones.2.jpg);
@@ -2106,6 +2103,20 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-imagen-formulario .contenedor-formulario textarea {
     font-size: 16px;
   }
+}
+
+.bg-popup {
+  top: 0px;
+  background-color: black;
+  width: 100%;
+  height: 100rem;
+}
+.bg-popup .popup-container .popup {
+  width: 680px;
+  height: 440px;
+  background-color: white;
+  top: 50%;
+  right: 50%;
 }
 
 .jumbotron6 {
@@ -2840,4 +2851,6 @@ body {
 
 header {
   background-color: #EDFEFB !important;
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
