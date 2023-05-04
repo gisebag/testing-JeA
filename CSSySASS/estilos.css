@@ -349,8 +349,8 @@
     background-image: url(../img/sobre-jea.1.jpg);
     background-size: cover;
     background-position: center;
-    height: 240px;
-    min-width: 445px;
+    max-height: 250px;
+    min-width: 300px;
   }
   .jumbotron .container {
     width: 100%;
@@ -364,6 +364,7 @@
     align-items: center;
   }
   .jumbotron .container .titulo-bienvenido {
+    margin-top: -30px;
     line-height: 36px;
     font-size: 26px;
     font-weight: 800;
@@ -402,8 +403,8 @@
     margin: 0;
   }
   .contiene-foto-y-sobre-jea .img-conocer-jea {
-    max-height: 240px;
-    max-width: 400px;
+    max-height: 250px;
+    min-width: 300px;
     background-image: url(../img/sobre-jea.2.jpg);
     background-position: center;
     background-size: cover;
@@ -417,7 +418,7 @@
     margin: 10px 10px 10px 0px;
   }
   .contiene-foto-y-sobre-jea .varios .contiene-text-grupo {
-    width: 400px;
+    min-width: 300px;
     margin: 0;
   }
   .contiene-foto-y-sobre-jea .varios .contiene-text-grupo .prueb1 p {

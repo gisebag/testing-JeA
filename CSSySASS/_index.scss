@@ -367,8 +367,8 @@
         background-image: url(../img/sobre-jea.1.jpg);
         background-size: cover;
         background-position: center;
-        height: 240px;
-        min-width:445px ;
+        max-height: 250px;
+        min-width:300px ;
         
         .container {
             width: 100%;
@@ -382,6 +382,7 @@
             align-items: center;
 
             .titulo-bienvenido {
+                margin-top: -30px;
                 line-height: 36px;
                 font-size: 26px;
                 font-weight: 800;
@@ -429,8 +430,8 @@
             margin: 0;
         .img-conocer-jea{
             
-            max-height: 240px;
-            max-width:400px ;
+            max-height: 250px;
+            min-width:300px ;
             background-image: url(../img/sobre-jea.2.jpg);
             background-position: center;
             background-size: cover;
@@ -445,7 +446,7 @@
             margin: 10px 10px 10px 0px;
             
             .contiene-text-grupo{
-                width:400px ;
+                min-width:300px ;
                 margin: 0;
                 .prueb1 p{
                     
