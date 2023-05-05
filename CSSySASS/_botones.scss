@@ -3,7 +3,7 @@
 //index 
 
 
-.boton-conocenos{
+.boton-conocenos {
     background-color: $color-white;
     color: $color-black;
     border: 3px solid $color-green-oscuro;
@@ -15,7 +15,7 @@
     font-family: $tipografia-poppins;
 }
 
-.boton-conocenos:hover{
+.boton-conocenos:hover {
     background-color: $color-white;
     color: $color-black;
     border: 3px solid $color-green-oscuro;
@@ -23,7 +23,7 @@
 }
 
 //boton verde agua
-.clickPositivo{
+.clickPositivo {
     background-color: $color-green-pastel;
     border-radius: 25px;
     padding: 5px 40px;
@@ -31,7 +31,8 @@
     font-weight: 400;
     font-family: $tipografia-poppins;
 }
-.clickPositivo:hover{
+
+.clickPositivo:hover {
     border: 3px solid $color-green-pastel;
     background-color: $color-green-pastel;
     font-size: 24px;
@@ -39,7 +40,7 @@
     transition: 0.7s;
 }
 
-.boton-negativo{
+.boton-negativo {
     background-color: $color-green-oscuro;
     color: $color-white;
     border: 3px solid $color-white;
@@ -50,88 +51,122 @@
     margin-top: 30px;
     font-family: $tipografia-poppins;
 }
-.boton-negativo:hover{
+
+.boton-negativo:hover {
     border: 3px solid $color-white;
     font-size: 24px;
     color: $color-white;
     cursor: pointer;
 }
 
+.boton-default {
+    font-size: 24px;
+    font-family: $tipografia-poppins;
+    width: 304px;
+    height: 64px;
+    padding: auto;
+    border-radius: 100px;
+    margin-top: 24px;
+    font-weight: 600;
 
-//boton de enviar en contacto
-.boton-enviar {
+    @media only screen and (max-width: 955px) {
+        font-size: 14px;
+        width: 152px;
+        height: 32px;
+    }
+}
+
+.boton-default-basico {
+    border: 0px;
+    background-color: $color-green-pastel-2;
+    color: $color-green-oscuro;
+}
+
+.boton-default-sin_fondo-invertido {
+    border: 3px solid $color-white;
+    background-color: transparent;
+    color: $color-white;
+
+    @media only screen and (max-width: 855px) {
+        display: none;
+    }
+}
+
+//boton de enviar en contacto -- SE REEMPLAZA POR boton-default
+/* .boton-enviar {
     font-size: 24px;
     font-family: $tipografia-poppins;
     padding: 14px 114px;
     border: 0px;
     border-radius: 100px;
-    background-color: #DEF1DA;
+    background-color: $color-green-pastel-2;
     margin-top: 24px;
-    color: #02503E;
+    color: $color-green-oscuro;
     font-weight: 600;
 
     @media only screen and (max-width: 955px) {
         font-size: 14px;
         padding: 5px 54px;
     }
-}
+} */
 
 //Oportunidades
-.btn-flag{
+.btn-flag {
     background-color: $color-white;
     border-radius: 25px;
     border: $color-green-oscuro 2px solid;
-    
+
     font-family: $tipografia-poppins;
     font-weight: 500;
     font-size: 20px;
-    line-height:30px;
+    line-height: 30px;
     text-align: center;
-    
+
     margin: 15px;
     display: flex;
     /* --bs-btn-hover-border-color:none */
 
-    a{
+    a {
         color: $color-green-oscuro !important;
         text-decoration: none;
-        list-style-type:none;
-        
+        list-style-type: none;
+
     }
 }
 
-.btn-flag:hover{
+.btn-flag:hover {
     border: $color-green-oscuro 2px solid;
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 1023px){
-    btn-flag{
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+    btn-flag {
         background-color: $color-white;
         border-radius: 25px;
         border: $color-green-oscuro 2px solid;
-        
+
         font-family: $tipografia-poppins;
         font-weight: 500;
         font-size: 14px;
-        line-height:20px;
+        line-height: 20px;
         text-align: center;
-        
+
         margin: 15px;
         display: flex;
         /* --bs-btn-hover-border-color:none */
-    
-        a{
+
+        a {
             color: $color-green-oscuro !important;
             text-decoration: none;
-            list-style-type:none;
-            
+            list-style-type: none;
+
         }
     }
 
 }
+
 //preguntas y boton de contacto al final de cada hoja
-.pregunta {
+/* .pregunta {
     padding-top: 62px;
     text-align: center;
 
@@ -149,7 +184,7 @@
         }
     }
 
-    .boton-pregunta a{
+    .boton-pregunta a {
         text-decoration: none;
         width: 305px;
         font-size: 24px;
@@ -168,4 +203,4 @@
             padding: 6px 20px !important;
         }
     }
-}
+} */

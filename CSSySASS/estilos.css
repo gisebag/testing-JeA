@@ -1310,6 +1310,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     height: 340px;
   }
 }
+.no-link {
+  text-decoration: none;
+}
+
 .jumbotron4 {
   display: flex;
   justify-content: center;
@@ -1410,18 +1414,26 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 
 .pregunta {
+  padding: 80px 0px;
+  /* .boton-pregunta {
+      padding: 14px 80px;
+      border: 0px;
+      border-radius: 100px;
+      background-color: $color-green-pastel;
+      margin: 0px 24px;
+      color: $color-green-oscuro;
+      font-weight: 600;
+  } */
+}
+.pregunta .pregunta-preboton {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
-  padding: 80px 0px;
+  font-weight: 400;
 }
-.pregunta .boton-pregunta {
-  padding: 14px 80px;
-  border: 0px;
-  border-radius: 100px;
-  background-color: #DBF8D7;
-  margin: 0px 24px;
-  color: #02503E;
-  font-weight: 600;
+@media only screen and (max-width: 955px) {
+  .pregunta .pregunta-preboton {
+    font-size: 16px;
+  }
 }
 
 .jumbotron3 {
@@ -1856,24 +1868,57 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   cursor: pointer;
 }
 
-.boton-enviar {
+.boton-default {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
-  padding: 14px 114px;
-  border: 0px;
+  width: 304px;
+  height: 64px;
+  padding: auto;
   border-radius: 100px;
-  background-color: #DEF1DA;
   margin-top: 24px;
-  color: #02503E;
   font-weight: 600;
 }
 @media only screen and (max-width: 955px) {
-  .boton-enviar {
+  .boton-default {
     font-size: 14px;
-    padding: 5px 54px;
+    width: 152px;
+    height: 32px;
   }
 }
 
+.boton-default-basico {
+  border: 0px;
+  background-color: #DEF1DA;
+  color: #02503E;
+}
+
+.boton-default-sin_fondo-invertido {
+  border: 3px solid #f9f9f9;
+  background-color: transparent;
+  color: #f9f9f9;
+}
+@media only screen and (max-width: 855px) {
+  .boton-default-sin_fondo-invertido {
+    display: none;
+  }
+}
+
+/* .boton-enviar {
+    font-size: 24px;
+    font-family: $tipografia-poppins;
+    padding: 14px 114px;
+    border: 0px;
+    border-radius: 100px;
+    background-color: $color-green-pastel-2;
+    margin-top: 24px;
+    color: $color-green-oscuro;
+    font-weight: 600;
+
+    @media only screen and (max-width: 955px) {
+        font-size: 14px;
+        padding: 5px 54px;
+    }
+} */
 .btn-flag {
   background-color: #f9f9f9;
   border-radius: 25px;
@@ -1917,46 +1962,44 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     list-style-type: none;
   }
 }
-.pregunta {
-  padding-top: 62px;
-  text-align: center;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta {
-    padding: 40px !important;
-  }
-}
-.pregunta .pregunta-preboton {
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta .pregunta-preboton {
-    font-size: 16px;
-  }
-}
-.pregunta .boton-pregunta a {
-  text-decoration: none;
-  width: 305px;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding: 14px 80px;
-  border: 0px;
-  border-radius: 100px;
-  background-color: #DBF8D7;
-  margin: 24px 0 92px 0;
-  color: #02503E;
-  font-weight: 600;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta .boton-pregunta a {
-    font-size: 16px;
-    width: 152px;
-    padding: 6px 20px !important;
-  }
-}
+/* .pregunta {
+    padding-top: 62px;
+    text-align: center;
 
+    @media only screen and (max-width: 855px) {
+        padding: 40px !important;
+    }
+
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        font-weight: 400;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+        }
+    }
+
+    .boton-pregunta a {
+        text-decoration: none;
+        width: 305px;
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: $color-green-pastel;
+        margin: 24px 0 92px 0;
+        color: $color-green-oscuro;
+        font-weight: 600;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+            width: 152px;
+            padding: 6px 20px !important;
+        }
+    }
+} */
 .contacto-JeA {
   width: 100%;
   background-color: #02503E;
@@ -2594,24 +2637,57 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   cursor: pointer;
 }
 
-.boton-enviar {
+.boton-default {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
-  padding: 14px 114px;
-  border: 0px;
+  width: 304px;
+  height: 64px;
+  padding: auto;
   border-radius: 100px;
-  background-color: #DEF1DA;
   margin-top: 24px;
-  color: #02503E;
   font-weight: 600;
 }
 @media only screen and (max-width: 955px) {
-  .boton-enviar {
+  .boton-default {
     font-size: 14px;
-    padding: 5px 54px;
+    width: 152px;
+    height: 32px;
   }
 }
 
+.boton-default-basico {
+  border: 0px;
+  background-color: #DEF1DA;
+  color: #02503E;
+}
+
+.boton-default-sin_fondo-invertido {
+  border: 3px solid #f9f9f9;
+  background-color: transparent;
+  color: #f9f9f9;
+}
+@media only screen and (max-width: 855px) {
+  .boton-default-sin_fondo-invertido {
+    display: none;
+  }
+}
+
+/* .boton-enviar {
+    font-size: 24px;
+    font-family: $tipografia-poppins;
+    padding: 14px 114px;
+    border: 0px;
+    border-radius: 100px;
+    background-color: $color-green-pastel-2;
+    margin-top: 24px;
+    color: $color-green-oscuro;
+    font-weight: 600;
+
+    @media only screen and (max-width: 955px) {
+        font-size: 14px;
+        padding: 5px 54px;
+    }
+} */
 .btn-flag {
   background-color: #f9f9f9;
   border-radius: 25px;
@@ -2655,46 +2731,44 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     list-style-type: none;
   }
 }
-.pregunta {
-  padding-top: 62px;
-  text-align: center;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta {
-    padding: 40px !important;
-  }
-}
-.pregunta .pregunta-preboton {
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta .pregunta-preboton {
-    font-size: 16px;
-  }
-}
-.pregunta .boton-pregunta a {
-  text-decoration: none;
-  width: 305px;
-  font-size: 24px;
-  font-family: "Poppins", sans-serif;
-  padding: 14px 80px;
-  border: 0px;
-  border-radius: 100px;
-  background-color: #DBF8D7;
-  margin: 24px 0 92px 0;
-  color: #02503E;
-  font-weight: 600;
-}
-@media only screen and (max-width: 855px) {
-  .pregunta .boton-pregunta a {
-    font-size: 16px;
-    width: 152px;
-    padding: 6px 20px !important;
-  }
-}
+/* .pregunta {
+    padding-top: 62px;
+    text-align: center;
 
+    @media only screen and (max-width: 855px) {
+        padding: 40px !important;
+    }
+
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        font-weight: 400;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+        }
+    }
+
+    .boton-pregunta a {
+        text-decoration: none;
+        width: 305px;
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        padding: 14px 80px;
+        border: 0px;
+        border-radius: 100px;
+        background-color: $color-green-pastel;
+        margin: 24px 0 92px 0;
+        color: $color-green-oscuro;
+        font-weight: 600;
+
+        @media only screen and (max-width: 855px) {
+            font-size: 16px;
+            width: 152px;
+            padding: 6px 20px !important;
+        }
+    }
+} */
 .jumbotron7 {
   display: flex;
   justify-content: center;
@@ -2833,6 +2907,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {
   margin: 50px;
+  /* .boton-default-sin_fondo_invertido {
+      padding: 14px 47px;
+      border: 3px solid #ffffff;
+      border-radius: 100px;
+      background-color: transparent;
+      font-family: "Poppins";
+      color: #ffffff;
+      transition: color border 0.5s ease-in-out;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 304px;
+      height: 64px;
+
+      @media only screen and (max-width: 855px) {
+          display: none;
+      }
+  } */
 }
 @media only screen and (max-width: 975px) {
   .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {
@@ -2870,29 +2966,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: black;
   font-weight: 600;
   background-color: #f9f9f9;
-}
-.secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .boton-default-sin_fondo_invertido {
-  padding: 14px 47px;
-  border: 3px solid #ffffff;
-  border-radius: 100px;
-  background-color: transparent;
-  font-family: "Poppins";
-  color: #ffffff;
-  transition: color border 0.5s ease-in-out;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  width: 304px;
-  height: 64px;
-}
-@media only screen and (max-width: 855px) {
-  .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .boton-default-sin_fondo_invertido {
-    display: none;
-  }
 }
 .secciones-pilares_historia .recuadro-historia .recuadro-fotos img {
   width: 500px;

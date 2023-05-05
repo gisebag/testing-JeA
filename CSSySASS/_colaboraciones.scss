@@ -120,11 +120,19 @@
 
 
 .pregunta {
-    font-size: 24px;
-    font-family: $tipografia-poppins;
     padding: 80px 0px;
 
-    .boton-pregunta {
+    .pregunta-preboton {
+        font-size: 24px;
+        font-family: $tipografia-poppins;
+        font-weight: 400;
+
+        @media only screen and (max-width: 955px) {
+            font-size: 16px;
+        }
+    }
+
+    /* .boton-pregunta {
         padding: 14px 80px;
         border: 0px;
         border-radius: 100px;
@@ -132,5 +140,5 @@
         margin: 0px 24px;
         color: $color-green-oscuro;
         font-weight: 600;
-    }
+    } */
 }
