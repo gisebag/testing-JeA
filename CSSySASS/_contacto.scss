@@ -183,16 +183,21 @@
   height: 100rem;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px 20px;
 
   .popup-contenido {
     background-color: #fefefe;
     margin: 110px auto;
     padding: 10px 20px;
     border: 1px solid #888;
-    width: 680px;
+    max-width: 680px;
     height: 440px;
     position: relative;
     text-align: center;
+
+    @media only screen and (max-width: 955px) {
+      height: 280px;
+    }
 
     .cerrar {
       color: #aaa;
@@ -209,18 +214,32 @@
     }
 
     img {
-        margin: 45px auto;
+      margin: 35px auto;
+      width: 96px;
+      height: 105px;
+
+      @media only screen and (max-width: 955px) {
+        margin: 45px auto 10px;
+        width: 46px;
+        height: 52px;
+      }
     }
 
     p {
-        font-family: $tipografia-poppins;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 36px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: $color-green-oscuro;
-        margin: auto 80px;
+      font-family: $tipografia-poppins;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $color-green-oscuro;
+      margin: auto 80px;
+
+      @media only screen and (max-width: 955px) {
+        font-size: 14px;
+        line-height: 21px;
+        margin: auto 20px;
       }
+    }
   }
 }
