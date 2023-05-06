@@ -582,23 +582,22 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   padding: 32px 82px;
 }
 
-.boton-default-sin_fondo {
-  padding: 14px 47px;
-  border: 3px solid #02503E;
-  border-radius: 100px;
-  background-color: transparent;
-  font-family: "Poppins";
-  color: #02503E;
-  transition: color border 0.5s ease-in-out;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
+/* .boton-default-sin_fondo {
+    padding: 14px 47px;
+    border: 3px solid $color-green-oscuro;
+    border-radius: 100px;
+    background-color: transparent;
+    font-family: 'Poppins';
+    color: $color-green-oscuro;
+    transition: color border 0.5s ease-in-out;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+} */
 .contenedor-tarjetas {
   max-width: 1440px;
   margin: auto;
@@ -1903,6 +1902,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 
+.boton-default-sin_fondo {
+  border: 3px solid #02503E;
+  background-color: transparent;
+  color: #02503E;
+  transition: color border 0.5s ease-in-out;
+}
+
 /* .boton-enviar {
     font-size: 24px;
     font-family: $tipografia-poppins;
@@ -2670,6 +2676,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .boton-default-sin_fondo-invertido {
     display: none;
   }
+}
+
+.boton-default-sin_fondo {
+  border: 3px solid #02503E;
+  background-color: transparent;
+  color: #02503E;
+  transition: color border 0.5s ease-in-out;
 }
 
 /* .boton-enviar {
