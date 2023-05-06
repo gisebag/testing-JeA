@@ -30,14 +30,15 @@
     font-size: 22px;
     font-weight: 400;
     font-family: $tipografia-poppins;
+    @media only screen and (max-width: 800px){
+        font-size: 16px;
+    }
 }
 
 .clickPositivo:hover {
-    border: 3px solid $color-green-pastel;
     background-color: $color-green-pastel;
-    font-size: 24px;
     color: $color-black;
-    transition: 0.7s;
+    cursor: pointer;
 }
 
 .boton-negativo {
@@ -122,13 +123,13 @@
     background-color: $color-white;
     border-radius: 25px;
     border: $color-green-oscuro 2px solid;
-
+    
     font-family: $tipografia-poppins;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-
+    
     margin: 15px;
     display: flex;
     /* --bs-btn-hover-border-color:none */
@@ -137,7 +138,7 @@
         color: $color-green-oscuro !important;
         text-decoration: none;
         list-style-type: none;
-
+        
     }
 }
 
@@ -151,22 +152,22 @@
         background-color: $color-white;
         border-radius: 25px;
         border: $color-green-oscuro 2px solid;
-
+        
         font-family: $tipografia-poppins;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
         text-align: center;
-
+        
         margin: 15px;
         display: flex;
         /* --bs-btn-hover-border-color:none */
-
+    
         a {
             color: $color-green-oscuro !important;
             text-decoration: none;
             list-style-type: none;
-
+            
         }
     }
 

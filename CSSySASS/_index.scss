@@ -240,60 +240,223 @@
 
 //boton en _botones.scss
 
-.recuadro-verde{
-    background-color: $color-green-oscuro;
-    width: 1100px;
-    height: 730px;
-    padding-top: 10px;
-    margin: 80px 0;
-    border-radius: 25px;
+//recuadro verde
 
-    .contiene-cards-index{
-        width:100%;
+.fondo-verde{
+    margin-left: 60px;
+    width: 90vw;
+    height: 600px;
+    background: $color-green-oscuro;
+    border-radius: 16px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
-        .kit-card{
-            display: flex;
-            .card{
-                font-weight: 400;
-                font-size: 20px;
-                width: 300px;
-                height: 380px;
-                border-radius: 25px;
-                margin: 20px;
+
+    .titulo-negativo{
+        color: $color-white;
+        text-align: center;
+        margin: 30px  ;
+    }
+    .overflow2 {
+    
+        white-space: nowrap;
         
-                .recuadro-texto{
-                    padding: 10px;
-                    font-family: $tipografia-nunito;
+        display: flex;
+        justify-content: center;
+    
+        margin: 10px;
+    
+        .overflow-item {
+            width: 300px;
+            height: 350px;    
+            margin: 10px;
+            border-radius: 16px;
+
+            .titulo3{
+                font-size: 800;
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .texto-complemento-recuadro{
+                width:260px;
+                height:195px;
+                text-align:left;
+                padding: 10px;
+                margin: 18px;
+            
+                font-family: $tipografia-nunito;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 27px;
+                
+                text-align: left;
+            
+                
+            }
+            
+            .contiene-btn{
+                display: flex;
+                justify-content: center;
+                
+                
+            }
+            .boton-negativo{
+                background-color: $color-green-oscuro;
+                color: $color-white;
+                border: 3px solid $color-white;
+                border-radius: 50px;
+                padding: 5px 40px;
+                font-size: 24px;
+                font-weight: 400;
+                
+                width: 304px;
+                height: 64px;
+                left: 946px;
+            }
+            .boton-negativo:hover{
+                background-color:$color-green-oscuro;
+                color: $color-white;
+                border: 3px solid $color-white;
+                border-radius: 50px;
+                padding: 5px 40px;
+                font-size: 24px;
+                font-weight: 400;
+                
+                width: 304px;
+                height: 64px;
+                left: 946px;
+                cursor: pointer;
+            }
+        }
+
+        .titulo-recuadro-orange {
+            color: $color-orange-oscuro;
+            text-align: center;
+        }
+        .titulo-recuadro-green {
+            color: $color-green-oscuro;
+            height: 90px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .titulo-recuadro-red {
+            color: $color-red-oscuro;
+            height: 90px;
+            text-align: center;
+            padding-top: 20px;
+        }
+        .orange{
+            background: $color-orange-pastel;
+        }
+        .green{
+            background: $color-green-pastel;
+        }
+        .red{
+            background: $color-red-pastel;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 900px){
+
+    .fondo-verde{
+        margin-left:  5px;
+
+        .overflow2 {
+            height: 430px;
+            overflow-x:scroll;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            
+            white-space: nowrap;
+            
+            display: block;
+            
+            .overflow-item {
+                width: 220px;
+                height: 330px;
+                display: inline-block;
+                margin: 10px;
+                /* list-style: none; */
+                /* margin-right: 10px; */
+                /* max-width: 250px; */
+
+                h3{
+                    font-size: 16px;
+                    
                 }
+                .texto-complemento-recuadro{
+                    width: 180px;
+                    height: 220px;
+                    text-align:left;
+                
+                    font-family: $tipografia-nunito;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    
+                    text-align: left;
+                
+                    }
+
+                    .boton-negativo{
+                        background-color: $color-green-oscuro;
+                        color: $color-white;
+                        border: 3px solid $color-white;
+                        border-radius: 50px;
+                        padding: 5px 40px;
+                        font-size: 14px !important;
+                        font-weight: 400;
+                        
+                        width:152px;
+                        height:32px;
+                        left: 11px;
+                    }
+                    .boton-negativo:hover{
+                        background-color: $color-green-oscuro;
+                        color:$color-white;
+                        border: 3px solid $color-white;
+                        border-radius: 50px;
+                        padding: 5px 40px;
+                        font-size: 14px;
+                        font-weight: 400;
+                        
+                        width:152px;
+                        height: 32px;
+                        left: 11px;
+                        cursor: pointer;
+                    }
             }
-            .card1{
-                background-color: $color-orange-pastel;
+            
+            .titulo-recuadro-orange {
+                text-align: center;
+                font-size: 16px;
             }
-            .card2{
-                background-color: $color-green-pastel;
+            .titulo-recuadro-green {
+                height: 40px;
+                text-align: center;
+                padding-top:10px;
+                font-size: 16px;
             }
-            .card3{
-                background-color: $color-red-pastel;
+            .titulo-recuadro-red {
+                color: $color-red-oscuro;
+                height: 40px;
+                text-align: center;
+                padding-top: 20px;
+                font-size: 16px;
             }
+            
         }
     }
     
 
-    
-
 }
-
 
 //boton negativo en _botones.scss
-.color1{
-    color: $color-orange-oscuro;
-}
-.color2{
-    color: $color-green-oscuro;
-}
-.color3{
-    color: $color-red-oscuro;
-}
+
 
 .ancho{
     height: 100px;
@@ -316,9 +479,22 @@
     font-size: 24px;
     margin-top: 10px;
 }
+
+.contiene-texto-contactanos{
+    @media only screen and (max-width: 800px){
+        flex-wrap: none;
+    }
+}
 .div-contactanos{
     margin-bottom: 50px;
-    width: 100%;
+    width: 250px;
+    @media only screen and (max-width: 800px){
+        display: block;
+        margin: 10px;
+        width: 90%;
+        flex-wrap: nowrap;
+    }
+
 }
 
 //CAROUSEL
@@ -409,7 +585,7 @@
     }
 
 
-    
+    //carrousel
     .carrousel{
         padding: 0px 15px;
         height: 200px;
@@ -460,64 +636,6 @@
             }
         }
     }
-    //recuadro verde
-    .recuadro-verde{
-        background-color: $color-green-oscuro;
-        width: 100%;
-        height: 520px;
-        padding-top: 10px;
-        margin: 40px 0;
-        border-radius: 0;
-
-        .titulo-negativo{
-            font-size: 18px;
-            line-height: 22px;
-            font-weight: 700;
-        }           
-        .contiene-cards-index{
-            display:flex;
-            flex-direction: row;
-            
-            
-            .kit-card{
-                display: flex;
-                
-                .card{
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
-                    width: 180px;
-                    height: 300px;
-                    border-radius: 25px;
-                    margin: 10px;
-        
-                    .titulos3{
-                        font-size: 16px;
-                        line-height: 20px;
-                        height: 50px;
-                    }
-        
-                    .recuadro-texto{
-                        padding: 10px;
-                        font-family: $tipografia-nunito;
-                    }
-                }
-                
-            }
-
-        .card1{
-            background-color: $color-orange-pastel;
-        }
-        .card2{
-            background-color: $color-green-pastel;
-        }
-        .card3{
-            background-color: $color-red-pastel;
-        }
-    }
-        
     
-        
-    }
     
 }
