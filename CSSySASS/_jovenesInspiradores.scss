@@ -86,8 +86,6 @@
             }
         }
     }
-
-
 }
 
 .contenedor-titulo {
@@ -132,23 +130,6 @@
     }
     
 }
-
-/* .boton-default-sin_fondo {
-    padding: 14px 47px;
-    border: 3px solid $color-green-oscuro;
-    border-radius: 100px;
-    background-color: transparent;
-    font-family: 'Poppins';
-    color: $color-green-oscuro;
-    transition: color border 0.5s ease-in-out;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-} */
 
 
 @mixin tarjetas_jovenes_izq ($color-fondo, $url-imagen, $color-texto) {
