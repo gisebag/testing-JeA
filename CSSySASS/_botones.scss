@@ -61,15 +61,16 @@
 }
 
 .boton-default {
-    font-size: 24px;
+    font-size: 20px;
     font-family: $tipografia-poppins;
-    width: 304px;
-    height: 64px;
+    width: 280px;
+    height: 60px;
     padding: auto;
     border-radius: 100px;
     margin-top: 24px;
     font-weight: 600;
-
+    
+    
     @media only screen and (max-width: 955px) {
         font-size: 14px;
         width: 152px;
@@ -77,10 +78,16 @@
     }
 }
 
+
 .boton-default-basico {
     border: 0px;
     background-color: $color-green-pastel-2;
-    color: $color-green-oscuro;
+    
+    a{
+        text-decoration: none !important;
+        color: $color-green-oscuro !important;
+    }
+    
 }
 
 .boton-default-sin_fondo-invertido {

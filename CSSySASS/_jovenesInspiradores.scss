@@ -8,30 +8,86 @@
     background-image: url(../img/Jovenes_que_inspiran.jpg);
     background-size: cover;
     background-position: center;
-    height: 390px;
+    height: 494px;
 
     .cuadro-translucido {
-        width: 430px;
-        height: 391px;
-        background: rgb(2, 80, 62);
+        width: 500px;
+        height: 100%;
+        background: $color-green-oscuro;
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
+        padding: 88px 32px 88px 82px;
 
-        .titulo1 {
+        .titulo-JeA {
             color: $color-white;
-            font-size: 60px;
-            font-weight: 700;
+            font-size: 64px;
+            font-weight: 800;
             font-family: $tipografia-nunito;
             padding-top: 40px;
+            margin: 0px;
         }
 
-        .inspiran {
-            color: $color-white;
-            font-size: 30px;
-            font-weight: 200;
-            font-family: $tipografia-nunito-sans;
+        div {
+            .titulo1 {
+                color: $color-white;
+                font-size: 52px;
+                font-weight: 700;
+                font-family: $tipografia-nunito;
+
+                strong {
+                    font-weight: 700;
+                }
+            }
+
+            .inspiran {
+                color: $color-white;
+                font-size: 30px;
+                font-weight: 200;
+                font-family: $tipografia-nunito-sans;
+            }
         }
     }
+}
+
+@media only screen and (max-width: 800px) {
+    .jumbotron2 {
+        height: 240px;
+
+        .cuadro-translucido {
+            width: 100%;
+            max-width: 800px;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .titulo-JeA {
+                font-size: 28px;
+                font-weight: 800;
+                padding-top: 0px;
+            }
+
+            div {
+                margin-left: 8px;
+
+                .titulo1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+
+                }
+
+                .inspiran {
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+
 }
 
 .contenedor-titulo {
@@ -55,8 +111,26 @@
 
 .color-bg-vector {
     background-color: $color-green-claro;
-    padding: 32px 82px;
+    padding: 32px 20px;
+    margin: 0 20px;
 
+}
+
+.contenedor-vectores{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 100%;
+
+    .vectores{
+        background-image: url(../img/Group-jov-insp-vector.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 722px;
+        height: 71px;
+    }
+    
 }
 
 /* .boton-default-sin_fondo {

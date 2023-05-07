@@ -8,24 +8,51 @@
     background-image: url(../img/oportunidades.1.jpg);
     background-size: cover;
     background-position: center;
-    height: 370px;
+    height: 494px;
 
     .cuadro-translucido {
-        max-width: 590px;
-        height: 370px;
-        background:$color-green-oscuro;
-        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
+        width: 600px;
+        height: 100%;
+        background: $color-green-oscuro;
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
+        padding: 88px 32px 88px 82px;
 
-        .titulo1 {
+        .titulo-JeA {
             color: $color-white;
-            font-size: 60px;
-            font-weight: 700;
+            font-size: 64px;
+            font-weight: 800;
             font-family: $tipografia-nunito;
-            margin: 0px 50px
+            padding-top: 40px;
+            margin: 0px;
+
         }
 
-        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .jumbotron6 {
+        height: 240px;
+
+        .cuadro-translucido {
+            width: 100%;
+            max-width: 100%;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .titulo-JeA {
+                font-size: 28px;
+                font-weight: 800;
+                padding-top: 0px;
+            }
+
+            
+        }
     }
 }
 
@@ -245,27 +272,9 @@
     background-position: center;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 1023px){
+@media only screen and (min-width: 320px) and (max-width: 1023px){
     
-    .jumbotron6{
-        width: 360px;
-        height: 240px;
-        background-size: cover;
-        background-position:right;
-
-        .cuadro-translucido{
-            height: 80px;
-            text-align: start;
-            width: 360px;
-
-            .titulo1 {
-                margin: 0px;
-                font-size: 24px;
-                line-height: 16px;
-                font-weight: 800;
-            }
-        }
-    }
+    
 
     .contenedor-titulo{
         width: 320px;

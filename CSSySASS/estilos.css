@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: rgb(159, 14, 96) 2px solid;  */
 }
 
 /* navbar */
@@ -201,15 +200,6 @@
 }
 
 /* seccion SINERGIAS */
-.contenedor-vectores {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0px;
-}
-.contenedor-vectores .vectores {
-  margin: 15px;
-}
-
 .img-conocer-jea {
   width: 720px;
   height: 430px;
@@ -236,7 +226,8 @@
   font-weight: 700;
   padding: 10px;
   font-family: "Nunito Sans", sans-serif;
-  text-align: justify;
+  text-align: start;
+  line-height: 30px;
   letter-spacing: 0.5px;
 }
 
@@ -633,29 +624,72 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-image: url(../img/Jovenes_que_inspiran.jpg);
   background-size: cover;
   background-position: center;
-  height: 390px;
+  height: 494px;
 }
 .jumbotron2 .cuadro-translucido {
-  width: 430px;
-  height: 391px;
-  background: rgb(2, 80, 62);
+  width: 500px;
+  height: 100%;
+  background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
-.jumbotron2 .cuadro-translucido .titulo1 {
+.jumbotron2 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
   padding-top: 40px;
+  margin: 0px;
 }
-.jumbotron2 .cuadro-translucido .inspiran {
+.jumbotron2 .cuadro-translucido div .titulo1 {
+  color: #f9f9f9;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+.jumbotron2 .cuadro-translucido div .titulo1 strong {
+  font-weight: 700;
+}
+.jumbotron2 .cuadro-translucido div .inspiran {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
   font-family: "Nunito Sans", sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron2 {
+    height: 240px;
+  }
+  .jumbotron2 .cuadro-translucido {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron2 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+  .jumbotron2 .cuadro-translucido div {
+    margin-left: 8px;
+  }
+  .jumbotron2 .cuadro-translucido div .titulo1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .jumbotron2 .cuadro-translucido div .inspiran {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
 .contenedor-titulo {
   margin: 0px 150px;
   margin-top: 50px;
@@ -676,7 +710,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 
 .color-bg-vector {
   background-color: #EDFEFB;
-  padding: 32px 82px;
+  padding: 32px 20px;
+  margin: 0 20px;
+}
+
+.contenedor-vectores {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  width: 100%;
+}
+.contenedor-vectores .vectores {
+  background-image: url(../img/Group-jov-insp-vector.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 722px;
+  height: 71px;
 }
 
 /* .boton-default-sin_fondo {
@@ -1204,23 +1254,48 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-image: url(../img/talleres.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 390px;
+  height: 494px;
 }
 .jumbotron5 .cuadro-translucido {
-  max-width: 430px;
-  height: 391px;
+  width: 500px;
+  height: 100%;
   background: #02503E;
-  background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
-.jumbotron5 .cuadro-translucido .titulo1 {
+.jumbotron5 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
-  margin: 0px 50px;
+  padding-top: 40px;
+  margin: 0px;
+}
+.jumbotron5 .cuadro-translucido .titulo-JeA strong {
+  font-weight: 700;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron5 {
+    height: 240px;
+  }
+  .jumbotron5 .cuadro-translucido {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron5 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+}
 .cuadro-dividido {
   padding: 80px 80px 60px 80px;
   text-align: center;
@@ -1417,29 +1492,72 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-image: url(../img/colaboraciones.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 390px;
+  height: 494px;
 }
 .jumbotron4 .cuadro-translucido {
-  max-width: 430px;
-  height: 391px;
+  width: 500px;
+  height: 100%;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
-.jumbotron4 .cuadro-translucido .titulo1 {
+.jumbotron4 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
   padding-top: 40px;
+  margin: 0px;
 }
-.jumbotron4 .cuadro-translucido .titulo1b {
+.jumbotron4 .cuadro-translucido div .titulo1 {
+  color: #f9f9f9;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+.jumbotron4 .cuadro-translucido div .titulo1 strong {
+  font-weight: 700;
+}
+.jumbotron4 .cuadro-translucido div .inspiran {
   color: #f9f9f9;
   font-size: 30px;
   font-weight: 200;
   font-family: "Nunito Sans", sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron4 {
+    height: 240px;
+  }
+  .jumbotron4 .cuadro-translucido {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron4 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+  .jumbotron4 .cuadro-translucido div {
+    margin-left: 8px;
+  }
+  .jumbotron4 .cuadro-translucido div .titulo1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .jumbotron4 .cuadro-translucido div .inspiran {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
 .seccion-cuadro-dividido .cuadro-dividido {
   position: relative;
   margin: 80px 82px 24px 82px;
@@ -1496,13 +1614,17 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   padding: 80px 81px 70px 81px;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-izq {
-  width: 630px;
-  height: 660px;
+  width: 100%;
   background-color: #DBF8D7;
   border-radius: 30px 0px 0px 30px;
+}
+.seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-izq .icono-izq {
   background-image: url(../img/iconos-colaboraciones.png);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 525px;
+  height: 576px;
 }
 .seccion-cuadro-grande-dividido .cuadros-grandes-divididos .cuadro-grande-der {
   background-image: url(../img/colaboraciones.2.jpg);
@@ -1969,10 +2091,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 
 .boton-default {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
-  width: 304px;
-  height: 64px;
+  width: 280px;
+  height: 60px;
   padding: auto;
   border-radius: 100px;
   margin-top: 24px;
@@ -1989,7 +2111,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .boton-default-basico {
   border: 0px;
   background-color: #DEF1DA;
-  color: #02503E;
+}
+.boton-default-basico a {
+  text-decoration: none !important;
+  color: #02503E !important;
 }
 
 .boton-default-sin_fondo-invertido {
@@ -2355,23 +2480,45 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-image: url(../img/oportunidades.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 370px;
+  height: 494px;
 }
 .jumbotron6 .cuadro-translucido {
-  max-width: 590px;
-  height: 370px;
+  width: 600px;
+  height: 100%;
   background: #02503E;
-  background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
-.jumbotron6 .cuadro-translucido .titulo1 {
+.jumbotron6 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
-  margin: 0px 50px;
+  padding-top: 40px;
+  margin: 0px;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron6 {
+    height: 240px;
+  }
+  .jumbotron6 .cuadro-translucido {
+    width: 100%;
+    max-width: 100%;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron6 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+}
 .becas {
   /* background-color: beige; */
   display: flex;
@@ -2543,24 +2690,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-position: center;
 }
 
-@media only screen and (min-width: 360px) and (max-width: 1023px) {
-  .jumbotron6 {
-    width: 360px;
-    height: 240px;
-    background-size: cover;
-    background-position: right;
-  }
-  .jumbotron6 .cuadro-translucido {
-    height: 80px;
-    text-align: start;
-    width: 360px;
-  }
-  .jumbotron6 .cuadro-translucido .titulo1 {
-    margin: 0px;
-    font-size: 24px;
-    line-height: 16px;
-    font-weight: 800;
-  }
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .contenedor-titulo {
     width: 320px;
   }
@@ -2748,10 +2878,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 
 .boton-default {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
-  width: 304px;
-  height: 64px;
+  width: 280px;
+  height: 60px;
   padding: auto;
   border-radius: 100px;
   margin-top: 24px;
@@ -2768,7 +2898,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .boton-default-basico {
   border: 0px;
   background-color: #DEF1DA;
-  color: #02503E;
+}
+.boton-default-basico a {
+  text-decoration: none !important;
+  color: #02503E !important;
 }
 
 .boton-default-sin_fondo-invertido {

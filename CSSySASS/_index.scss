@@ -186,16 +186,7 @@
 
 /* seccion SINERGIAS */
 
-.contenedor-vectores{
-    display: flex;
-    justify-content: center;
-    margin: 40px 0px;
 
-    .vectores{
-        margin: 15px;
-    }
-    
-}
 
 
 .img-conocer-jea{
@@ -231,7 +222,8 @@
             font-weight: 700;
             padding: 10px;
             font-family: $tipografia-nunito-sans;
-            text-align: justify;
+            text-align: start;
+            line-height: 30px;
             letter-spacing: 0.5px;
         }
     }
