@@ -72,16 +72,49 @@
   background-image: url(/img/sobre-jea.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 600px;
 }
-.presentacion .jumbotron .titulo1 {
+.presentacion .jumbotron .titulo-bienvenido {
   color: #02503E;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 800;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito";
   font-style: normal;
+  padding-top: 50px;
 }
 
+@media only screen and (max-width: 800px) {
+  .jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/sobre-jea.1.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 150px;
+    min-width: 320px;
+  }
+  .jumbotron .container {
+    width: 100%;
+    max-width: 800px;
+    max-height: 115px;
+    translate: 0% 100%;
+    padding: 0px;
+    margin-left: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron .container .titulo-bienvenido {
+    margin-top: -30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 0px;
+    font-family: "Nunito";
+    color: #02503E;
+  }
+}
 .relleno {
   background-color: #02503E;
   color: #f9f9f9;
@@ -148,7 +181,7 @@
   margin-top: 30px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 320px) and (max-width: 800px) {
   .objetivo-section .overflow {
     overflow-x: scroll;
     /* -webkit-overflow-scrolling: touch; */
@@ -161,19 +194,22 @@
     display: inline-block;
     list-style: none;
     margin-right: 10px;
-    max-width: 250px;
-    height: 450px !important;
+    max-width: 200px;
+    height: 300px !important;
+  }
+  .objetivo-section .overflow-item .titulos3 {
+    font-size: 18px !important;
   }
   .objetivo-section .overflow-item .texto-complemento-objetivos {
     width: 180px !important;
     height: 280px;
     text-align: left;
-    padding: 10px;
-    font-size: 14px;
+    padding: 5px;
+    font-size: 14px !important;
     margin-left: 0px;
   }
   .objetivo-section .overflow-item img {
-    margin-left: 75px !important;
+    margin-left: 60px !important;
   }
 }
 .titulo2 {
@@ -201,12 +237,13 @@
 
 /* seccion SINERGIAS */
 .img-conocer-jea {
-  width: 720px;
-  height: 430px;
+  width: 580px;
+  height: 400px;
   background-image: url(../img/sobre-jea.2.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 25px;
+  margin-left: 50px;
 }
 
 .contiene-foto-y-sobre-jea {
@@ -330,12 +367,17 @@
   background: #FDE8E9;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 320px) and (max-width: 900px) {
   .fondo-verde {
+    margin: 0;
+    height: 550px;
     margin-left: 5px;
   }
+  .fondo-verde .titulo-negativo {
+    font-size: 18px;
+  }
   .fondo-verde .overflow2 {
-    height: 430px;
+    height: 420px;
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -344,7 +386,7 @@
   }
   .fondo-verde .overflow2 .overflow-item {
     width: 220px;
-    height: 330px;
+    height: 280px;
     display: inline-block;
     margin: 10px;
     /* list-style: none; */
@@ -377,13 +419,6 @@
     left: 11px;
   }
   .fondo-verde .overflow2 .overflow-item .boton-negativo:hover {
-    background-color: #02503E;
-    color: #f9f9f9;
-    border: 3px solid #f9f9f9;
-    border-radius: 50px;
-    padding: 5px 40px;
-    font-size: 14px;
-    font-weight: 400;
     width: 152px;
     height: 32px;
     left: 11px;
@@ -392,11 +427,12 @@
   .fondo-verde .overflow2 .titulo-recuadro-orange {
     text-align: center;
     font-size: 16px;
+    align-items: center;
   }
   .fondo-verde .overflow2 .titulo-recuadro-green {
     height: 40px;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     font-size: 16px;
   }
   .fondo-verde .overflow2 .titulo-recuadro-red {
@@ -474,37 +510,7 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 800px) {
-  .jumbotron {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/sobre-jea.1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-height: 250px;
-    min-width: 300px;
-  }
-  .jumbotron .container {
-    width: 100%;
-    max-width: 800px;
-    max-height: 115px;
-    translate: 0% 100%;
-    padding: 0px;
-    margin-left: 0.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .jumbotron .container .titulo-bienvenido {
-    margin-top: -30px;
-    line-height: 36px;
-    font-size: 26px;
-    font-weight: 800;
-    padding-top: 0px;
-    font-family: "Nunito";
-    color: #02503E;
-  }
+@media only screen and (min-width: 320px) and (max-width: 800px) {
   .titulo2 {
     font-size: 16px;
     line-height: 22px;
@@ -536,8 +542,9 @@
     margin: 0;
   }
   .contiene-foto-y-sobre-jea .img-conocer-jea {
-    max-height: 250px;
-    min-width: 300px;
+    height: 200px;
+    width: 320px;
+    min-width: 200px;
     background-image: url(../img/sobre-jea.2.jpg);
     background-position: center;
     background-size: cover;
@@ -545,6 +552,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
   }
   .contiene-foto-y-sobre-jea .varios {
     padding: 10px;

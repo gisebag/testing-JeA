@@ -12,18 +12,53 @@
         background-image: url(/img/sobre-jea.1.jpg);
         background-size: cover;
         background-position: center;
-        height: 400px;
+        height: 600px;
 
-        .titulo1{
+        .titulo-bienvenido{
             color: $color-green-oscuro;
-            font-size: 80px;
+            font-size: 70px;
             font-weight: 800;
-            font-family: $tipografia-nunito-sans;
+            font-family: $tipografia-nunito;
             font-style: normal;
-            
+            padding-top: 50px;
         }
     }
     
+}
+@media only screen and (max-width: 800px){
+    .jumbotron {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/sobre-jea.1.jpg);
+        background-size: cover;
+        background-position: center;
+        max-height: 150px;
+        min-width:320px ;
+        
+        .container {
+            width: 100%;
+            max-width: 800px;
+            max-height: 115px;
+            translate: 0% 100%;
+            padding: 0px;
+            margin-left:0.5px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .titulo-bienvenido {
+                margin-top: -30px;
+                line-height: 30px;
+                font-size: 20px;
+                font-weight: 400;
+                padding-top: 0px;
+                font-family: $tipografia-nunito;
+                color: $color-green-oscuro;
+            }
+    
+        }
+    }
 }
 
 .relleno{
@@ -116,7 +151,7 @@
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (min-width: 320px) and (max-width: 800px){
     .objetivo-section{
         .overflow {
             
@@ -135,21 +170,24 @@
             display: inline-block;
             list-style: none;
             margin-right: 10px;
-            max-width: 250px;
-            height: 450px !important;
+            max-width: 200px;
+            height: 300px !important;
 
+            .titulos3{
+                font-size: 18px !important;
+            }
             .texto-complemento-objetivos{
                 width: 180px !important;
                 height: 280px;
                 text-align:left;
-                padding: 10px;
-                font-size: 14px;
+                padding: 5px;
+                font-size: 14px !important;
 
                 margin-left: 0px;
             }
 
             img{
-                margin-left: 75px !important;
+                margin-left: 60px !important;
             }
         }
         
@@ -190,13 +228,13 @@
 
 
 .img-conocer-jea{
-    width: 720px;
-    height: 430px;
+    width: 580px;
+    height: 400px;
     background-image: url(../img/sobre-jea.2.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 25px;
-
+    margin-left: 50px;
 }
 
 
@@ -352,13 +390,17 @@
     }
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (min-width: 320px) and (max-width: 900px){
 
     .fondo-verde{
+        margin: 0;
+        height: 550px;
         margin-left:  5px;
-
+        .titulo-negativo{
+            font-size: 18px;
+        }
         .overflow2 {
-            height: 430px;
+            height: 420px;
             overflow-x:scroll;
             overflow-y: hidden;
             -webkit-overflow-scrolling: touch;
@@ -369,7 +411,7 @@
             
             .overflow-item {
                 width: 220px;
-                height: 330px;
+                height: 280px;
                 display: inline-block;
                 margin: 10px;
                 /* list-style: none; */
@@ -408,14 +450,7 @@
                         left: 11px;
                     }
                     .boton-negativo:hover{
-                        background-color: $color-green-oscuro;
-                        color:$color-white;
-                        border: 3px solid $color-white;
-                        border-radius: 50px;
-                        padding: 5px 40px;
-                        font-size: 14px;
-                        font-weight: 400;
-                        
+                                                
                         width:152px;
                         height: 32px;
                         left: 11px;
@@ -426,11 +461,13 @@
             .titulo-recuadro-orange {
                 text-align: center;
                 font-size: 16px;
+                align-items: center;
             }
             .titulo-recuadro-green {
                 height: 40px;
                 text-align: center;
-                padding-top:10px;
+                padding-top:20px;
+                
                 font-size: 16px;
             }
             .titulo-recuadro-red {
@@ -527,40 +564,8 @@
 
 
 
-@media only screen and (max-width: 800px) {
-    .jumbotron {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/sobre-jea.1.jpg);
-        background-size: cover;
-        background-position: center;
-        max-height: 250px;
-        min-width:300px ;
-        
-        .container {
-            width: 100%;
-            max-width: 800px;
-            max-height: 115px;
-            translate: 0% 100%;
-            padding: 0px;
-            margin-left:0.5px ;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .titulo-bienvenido {
-                margin-top: -30px;
-                line-height: 36px;
-                font-size: 26px;
-                font-weight: 800;
-                padding-top: 0px;
-                font-family: $tipografia-nunito;
-                color: $color-green-oscuro;
-            }
-
-        }
-    }
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    
 
     .titulo2{
         strong{
@@ -598,15 +603,17 @@
             margin: 0;
         .img-conocer-jea{
             
-            max-height: 250px;
-            min-width:300px ;
+            height: 200px;
+            width: 320px;
+            min-width:200px ;
             background-image: url(../img/sobre-jea.2.jpg);
             background-position: center;
             background-size: cover;
             border-radius: 25px;
             display: flex;
             justify-content: center;
-            align-items: center;        
+            align-items: center;    
+            margin: 0;    
         }
 
         .varios{
