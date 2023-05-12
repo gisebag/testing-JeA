@@ -1,203 +1,472 @@
 @import "_coloresyTipografias";
 
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .jumbotron4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/colaboraciones.1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 494px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/colaboraciones.1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 494px;
 
-    .cuadro-translucido {
-        width: 500px;
-        height: 100%;
-        background: $color-green-oscuro;
-        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
-        text-align: start;
-        padding: 88px 32px 88px 82px;
+  .cuadro-translucido {
+    width: 500px;
+    height: 100%;
+    background: rgb(2, 80, 62);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 80, 62, 1) 0%,
+      rgba(2, 80, 62, 0.709) 75%
+    );
+    text-align: start;
+    padding: 88px 32px 88px 82px;
 
-        .titulo-JeA {
-            color: $color-white;
-            font-size: 64px;
-            font-weight: 800;
-            font-family: $tipografia-nunito;
-            padding-top: 40px;
-            margin: 0px;
-        }
-
-        div {
-            .titulo1 {
-                color: $color-white;
-                font-size: 52px;
-                font-weight: 700;
-                font-family: $tipografia-nunito;
-
-                strong {
-                    font-weight: 700;
-                }
-            }
-
-            .inspiran {
-                color: $color-white;
-                font-size: 30px;
-                font-weight: 200;
-                font-family: $tipografia-nunito-sans;
-            }
-        }
+    .titulo-JeA {
+      color: $color-white;
+      font-size: 64px;
+      font-weight: 800;
+      font-family: $tipografia-nunito;
+      padding-top: 40px;
+      margin: 0px;
     }
+
+    div {
+      .titulo1 {
+        color: $color-white;
+        font-size: 52px;
+        font-weight: 700;
+        font-family: $tipografia-nunito;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+
+      .inspiran {
+        color: $color-white;
+        font-size: 30px;
+        font-weight: 200;
+        font-family: $tipografia-nunito-sans;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .jumbotron4 {
-        height: 240px;
+  .jumbotron4 {
+    height: 240px;
 
-        .cuadro-translucido {
-            width: 100%;
-            max-width: 800px;
-            max-height: 80px;
-            translate: 0% 100%;
-            padding: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .cuadro-translucido {
+      width: 100%;
+      max-width: 800px;
+      max-height: 80px;
+      translate: 0% 100%;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-            .titulo-JeA {
-                font-size: 28px;
-                font-weight: 800;
-                padding-top: 0px;
-            }
+      .titulo-JeA {
+        font-size: 28px;
+        font-weight: 800;
+        padding-top: 0px;
+      }
 
-            div {
-                margin-left: 8px;
+      div {
+        margin-left: 8px;
 
-                .titulo1 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin: 0px;
+        .titulo1 {
+          font-size: 18px;
+          font-weight: 500;
+          margin: 0px;
 
-                }
-
-                .inspiran {
-                    font-size: 16px;
-                    font-weight: 200;
-                }
-            }
+          strong {
+            color: $color-green-oscuro;
+            background-color: $color-white;
+            font-weight: 900;
+          }
         }
+
+        .inspiran {
+          font-size: 16px;
+          font-weight: 200;
+        }
+      }
     }
+  }
 }
 
 .seccion-cuadro-dividido {
-    .cuadro-dividido {
-        position: relative;
-        margin: 80px 82px 24px 82px;
+  .cuadro-dividido {
+    position: relative;
+    margin: 80px auto 24px auto;
+    padding: 0px 60px;
 
-        .cuadro-izq {
-            background-color: $color-green-pastel;
-            color: $color-green-oscuro;
-            padding: 48px 120px 48px 48px;
-            text-align: end;
-            border-radius: 30px 0px 0px 30px;
-
-            
-            
-        }
-
-        .cuadro-der {
-            background-color: $color-green-oscuro;
-            color: $color-green-claro;
-            padding: 48px 48px 48px 120px;
-            text-align: start;
-            border-radius: 0px 30px 30px 0px;
-        }
-
-        .texto-grande {
-            font-size: 48px;
-            letter-spacing: 0.02em;
-            line-height: 32px;
-        }
-
-        .texto-chico {
-            font-size: 24px;
-            letter-spacing: 0.02rem;
-            line-height: 32px;
-        }
-
-        .cuadro-imagen {
-            background-color: $color-white;
-            max-width: 200px;
-            max-height: 200px;
-            aspect-ratio: 1 / 1;
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
+    @media only screen and (max-width: 580px) {
+      padding: 0px 30px;
     }
 
-    .texto-debajo-cuadros {
+    .cuadro-izq {
+      background-color: $color-green-pastel;
+      color: $color-green-oscuro;
+      padding: 48px 0px 48px 48px;
+      text-align: end;
+      border-radius: 30px 0px 0px 30px;
+      max-width: 638px;
+
+      @media only screen and (max-width: 920px) {
+        padding: 30px 0px 30px 30px;
+      }
+
+      @media only screen and (max-width: 767px) {
         text-align: center;
-        font-size: 32px;
-        color: $color-green-oscuro;
-        margin-bottom: 48px;
-        line-height: 44px;
+        padding: 32px 48px 16px 48px;
+        border-radius: 30px 30px 0px 0px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      @media only screen and (max-width: 600px) {
+        height: 160px;
+        padding: 28px 40px 14px 40px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        padding: 24px 32px 12px 32px;
+      }
     }
+
+    .vacio-cuadro-izq {
+      background-color: $color-green-pastel;
+      max-width: 120px;
+      min-width: 120px;
+
+      @media only screen and (max-width: 1147px) {
+        max-width: 105px;
+        min-width: 105px;
+      }
+
+      @media only screen and (max-width: 1017px) {
+        max-width: 90px;
+        min-width: 90px;
+      }
+
+      @media only screen and (max-width: 890px) {
+        max-width: 80px;
+        min-width: 80px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        max-width: 638px;
+        height: 80px;
+      }
+    }
+
+    .vacio-cuadro-der {
+      background-color: $color-green-oscuro;
+      max-width: 120px;
+      min-width: 120px;
+
+      @media only screen and (max-width: 1147px) {
+        max-width: 105px;
+        min-width: 105px;
+      }
+
+      @media only screen and (max-width: 1017px) {
+        max-width: 90px;
+        min-width: 90px;
+      }
+
+      @media only screen and (max-width: 890px) {
+        max-width: 80px;
+        min-width: 80px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        max-width: 638px;
+        height: 80px;
+      }
+    }
+
+    .cuadro-der {
+      background-color: $color-green-oscuro;
+      color: $color-green-claro;
+      padding: 48px 48px 48px 0px;
+      text-align: start;
+      border-radius: 0px 30px 30px 0px;
+      max-width: 638px;
+
+      @media only screen and (max-width: 920px) {
+        padding: 30px 30px 30px 0px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        text-align: center;
+        padding: 16px 48px 32px 48px;
+        border-radius: 0px 0px 30px 30px;
+        height: 180px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        height: 160px;
+        padding: 14px 40px 28px 40px;
+      }
+
+      @media only screen and (max-width: 500px) {
+        padding: 12px 32px 24px 32px;
+      }
+    }
+
+    .texto-grande {
+      font-size: 48px;
+      letter-spacing: 0.02em;
+      line-height: 32px;
+      font-family: $tipografia-nunito;
+      margin: 0px;
+
+      strong {
+        font-weight: 900;
+      }
+
+      @media only screen and (max-width: 1292px) {
+        font-size: 40px;
+        line-height: 32px;
+      }
+
+      @media only screen and (max-width: 1147px) {
+        font-size: 32px;
+        line-height: 30px;
+      }
+
+      @media only screen and (max-width: 1017px) {
+        font-size: 26px;
+        line-height: 29px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 32px;
+        line-height: 30px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 26px;
+        line-height: 29px;
+      }
+
+      @media only screen and (max-width: 440px) {
+        font-size: 20px;
+        line-height: 27.28px;
+      }
+    }
+
+    .texto-chico {
+      font-size: 24px;
+      letter-spacing: 0.02rem;
+      line-height: 32px;
+      font-family: $tipografia-nunito;
+      margin: 5px 0px 0px 0px;
+
+      strong {
+        font-weight: 900;
+      }
+
+      @media only screen and (max-width: 1292px) {
+        font-size: 21px;
+        line-height: 29px;
+      }
+
+      @media only screen and (max-width: 1195px) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      @media only screen and (max-width: 1147px) {
+        font-size: 19px;
+        line-height: 26px;
+      }
+
+      @media only screen and (max-width: 1017px) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 19px;
+        line-height: 26px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+
+      @media only screen and (max-width: 440px) {
+        font-size: 14px;
+        line-height: 19.1px;
+      }
+    }
+
+    .cuadro-imagen {
+      background-color: $color-white;
+      max-width: 200px;
+      max-height: 200px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+
+      @media only screen and (max-width: 1147px) {
+        max-width: 180px;
+        max-height: 180px;
+      }
+
+      @media only screen and (max-width: 1017px) {
+        max-width: 160px;
+        max-height: 160px;
+      }
+
+      @media only screen and (max-width: 890px) {
+        max-width: 140px;
+        max-height: 140px;
+      }
+
+      img {
+        width: 150px;
+
+        @media only screen and (max-width: 1147px) {
+          width: 130px;
+        }
+
+        @media only screen and (max-width: 1017px) {
+          width: 115px;
+        }
+
+        @media only screen and (max-width: 890px) {
+          width: 105px;
+        }
+      }
+    }
+  }
+}
+
+.texto-debajo-cuadros {
+  text-align: center;
+  font-size: 32px;
+  color: $color-green-oscuro;
+  margin-bottom: 48px;
+  line-height: 44px;
+
+  @media only screen and (max-width: 1140px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  @media only screen and (max-width: 580px) {
+    font-size: 16px;
+    line-height: 21.82px;
+  }
 }
 
 .seccion-cuadro-grande-dividido {
-    background-color: $color-green-oscuro;
+  background-color: $color-green-oscuro;
 
-    .cuadros-grandes-divididos {
-        padding: 80px 81px 70px 81px;
+  @media only screen and (max-width: 767px) {
+    padding: 0px !important;
+  }
 
-        .cuadro-grande-izq {
-            width: 100%;
-            background-color: $color-green-pastel;
-            border-radius: 30px 0px 0px 30px;
+  .cuadros-grandes-divididos {
+    padding: 80px 81px 70px 81px;
+    margin: 0px;
 
-            .icono-izq{
-                background-image: url(../img/iconos-colaboraciones.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                width: 525px;
-                height: 576px;
-            }
-        }
-
-        .cuadro-grande-der {
-            background-image: url(../img/colaboraciones.2.jpg);
-            background-size: cover;
-            border-radius: 0px 30px 30px 0px;
-        }
+    @media only screen and (max-width: 767px) {
+      padding: 60px 0px 50px 0px;
+      margin: 0px !important;
     }
+
+    @media only screen and (max-width: 450px) {
+      padding: 40px 0px 30px 0px;
+      margin: 0px !important;
+    }
+
+    .cuadro-grande-izq {
+      width: 630px;
+      height: 660px;
+      background-color: $color-green-pastel;
+      border-radius: 30px 0px 0px 30px;
+
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        height: 80px;
+        border-radius: 0px;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* para mejorar el rendimiento en dispositivos iOS */
+        scroll-snap-align: start;
+      }
+
+      .icono-izq {
+        @media only screen and (max-width: 767px) {
+          display: flex;
+          flex-wrap: nowrap;
+        }
+        svg {
+          margin: 5px;
+
+          @media only screen and (max-width: 1280px) {
+            width: 75px;
+            height: 75px;
+          }
+
+          @media only screen and (max-width: 1050px) {
+            width: 65px;
+            height: 65px;
+          }
+        }
+      }
+    }
+
+    .cuadro-grande-der {
+      border-radius: 0px 30px 30px 0px;
+      background-image: url(../img/colaboraciones.2.jpg);
+      background-size: cover;
+      background-position: center center;
+
+      @media only screen and (max-width: 767px) {
+        margin: 20px 10px 0px 10px;
+        width: 90%;
+        height: 343px;
+        border-radius: 0px 0px 30px 30px;
+      }
+    }
+  }
 }
 
-
 .pregunta {
-    padding: 80px 0px;
+  padding: 80px 0px;
 
-    .pregunta-preboton {
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        font-weight: 400;
+  .pregunta-preboton {
+    font-size: 24px;
+    font-family: $tipografia-poppins;
+    font-weight: 400;
 
-        @media only screen and (max-width: 955px) {
-            font-size: 16px;
-        }
+    @media only screen and (max-width: 955px) {
+      font-size: 16px;
     }
-
-    /* .boton-pregunta {
-        padding: 14px 80px;
-        border: 0px;
-        border-radius: 100px;
-        background-color: $color-green-pastel;
-        margin: 0px 24px;
-        color: $color-green-oscuro;
-        font-weight: 600;
-    } */
+  }
 }
