@@ -2414,10 +2414,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .boton-default-basico {
   border: 0px;
   background-color: #DEF1DA;
-}
-.boton-default-basico a {
-  text-decoration: none !important;
-  color: #02503E !important;
+  color: #02503E;
 }
 
 .boton-default-sin_fondo-invertido {
@@ -2438,102 +2435,103 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   transition: color border 0.5s ease-in-out;
 }
 
-/* .boton-enviar {
-    font-size: 24px;
-    font-family: $tipografia-poppins;
-    padding: 14px 114px;
-    border: 0px;
-    border-radius: 100px;
-    background-color: $color-green-pastel-2;
-    margin-top: 24px;
-    color: $color-green-oscuro;
-    font-weight: 600;
-
-    @media only screen and (max-width: 955px) {
-        font-size: 14px;
-        padding: 5px 54px;
-    }
-} */
-.btn-flag {
-  background-color: #f9f9f9;
-  border-radius: 25px;
-  border: #02503E 2px solid;
+.boton-programas {
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  text-align: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
   margin: 15px;
-  display: flex;
-  /* --bs-btn-hover-border-color:none */
 }
-.btn-flag a {
-  color: #02503E !important;
-  text-decoration: none;
-  list-style-type: none;
+@media only screen and (max-width: 767px) {
+  .boton-programas {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+.boton-banderas {
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 160px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
+  margin-top: 15px;
+}
+.boton-banderas:hover {
+  border: 2px solid #F26123;
+  background-color: #F26123;
+  color: white;
+}
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  .boton-banderas {
+    width: 140px;
+    height: 35px;
+    font-size: 17px;
+  }
+}
+
+/* .btn-flag {
+    background-color: $color-white;
+    border-radius: 25px;
+    border: $color-green-oscuro 2px solid;
+
+    color: $color-green-oscuro !important;
+    font-family: $tipografia-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    list-style-type: none;
+
+    margin: 15px;
+    display: flex;
+    /*--bs-btn-hover-border-color:none
+
+
 }
 
 .btn-flag:hover {
-  border: #02503E 2px solid;
-}
+    border: $color-green-oscuro 2px solid;
+} 
+
 
 @media only screen and (min-width: 360px) and (max-width: 1023px) {
-  btn-flag {
-    background-color: #f9f9f9;
-    border-radius: 25px;
-    border: #02503E 2px solid;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    margin: 15px;
-    display: flex;
-    /* --bs-btn-hover-border-color:none */
-  }
-  btn-flag a {
-    color: #02503E !important;
-    text-decoration: none;
-    list-style-type: none;
-  }
-}
-/* .pregunta {
-    padding-top: 62px;
-    text-align: center;
+    btn-flag {
+        background-color: $color-white;
+        border-radius: 25px;
+        border: $color-green-oscuro 2px solid;
 
-    @media only screen and (max-width: 855px) {
-        padding: 40px !important;
-    }
-
-    .pregunta-preboton {
-        font-size: 24px;
         font-family: $tipografia-poppins;
-        font-weight: 400;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
 
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
+        margin: 15px;
+        display: flex;
+        /* --bs-btn-hover-border-color:none
+
+        a {
+            color: $color-green-oscuro !important;
+            text-decoration: none;
+            list-style-type: none;
+
         }
     }
 
-    .boton-pregunta a {
-        text-decoration: none;
-        width: 305px;
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        padding: 14px 80px;
-        border: 0px;
-        border-radius: 100px;
-        background-color: $color-green-pastel;
-        margin: 24px 0 92px 0;
-        color: $color-green-oscuro;
-        font-weight: 600;
-
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
-            width: 152px;
-            padding: 6px 20px !important;
-        }
-    }
 } */
 .contacto-JeA {
   width: 100%;
@@ -2930,6 +2928,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: #642869;
   border-radius: 50%;
   margin: 10px;
+  width: 120px;
 }
 .programa .programa-logos .img-programa {
   width: 160px;
@@ -2978,7 +2977,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   /* border: 2px solid rgb(141, 47, 255); */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   margin: 15px 160px;
   margin-bottom: 150px;
 }
@@ -3201,10 +3200,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .boton-default-basico {
   border: 0px;
   background-color: #DEF1DA;
-}
-.boton-default-basico a {
-  text-decoration: none !important;
-  color: #02503E !important;
+  color: #02503E;
 }
 
 .boton-default-sin_fondo-invertido {
@@ -3225,102 +3221,103 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   transition: color border 0.5s ease-in-out;
 }
 
-/* .boton-enviar {
-    font-size: 24px;
-    font-family: $tipografia-poppins;
-    padding: 14px 114px;
-    border: 0px;
-    border-radius: 100px;
-    background-color: $color-green-pastel-2;
-    margin-top: 24px;
-    color: $color-green-oscuro;
-    font-weight: 600;
-
-    @media only screen and (max-width: 955px) {
-        font-size: 14px;
-        padding: 5px 54px;
-    }
-} */
-.btn-flag {
-  background-color: #f9f9f9;
-  border-radius: 25px;
-  border: #02503E 2px solid;
+.boton-programas {
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
-  text-align: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
   margin: 15px;
-  display: flex;
-  /* --bs-btn-hover-border-color:none */
 }
-.btn-flag a {
-  color: #02503E !important;
-  text-decoration: none;
-  list-style-type: none;
+@media only screen and (max-width: 767px) {
+  .boton-programas {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+.boton-banderas {
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 160px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
+  margin-top: 15px;
+}
+.boton-banderas:hover {
+  border: 2px solid #F26123;
+  background-color: #F26123;
+  color: white;
+}
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  .boton-banderas {
+    width: 140px;
+    height: 35px;
+    font-size: 17px;
+  }
+}
+
+/* .btn-flag {
+    background-color: $color-white;
+    border-radius: 25px;
+    border: $color-green-oscuro 2px solid;
+
+    color: $color-green-oscuro !important;
+    font-family: $tipografia-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    list-style-type: none;
+
+    margin: 15px;
+    display: flex;
+    /*--bs-btn-hover-border-color:none
+
+
 }
 
 .btn-flag:hover {
-  border: #02503E 2px solid;
-}
+    border: $color-green-oscuro 2px solid;
+} 
+
 
 @media only screen and (min-width: 360px) and (max-width: 1023px) {
-  btn-flag {
-    background-color: #f9f9f9;
-    border-radius: 25px;
-    border: #02503E 2px solid;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    margin: 15px;
-    display: flex;
-    /* --bs-btn-hover-border-color:none */
-  }
-  btn-flag a {
-    color: #02503E !important;
-    text-decoration: none;
-    list-style-type: none;
-  }
-}
-/* .pregunta {
-    padding-top: 62px;
-    text-align: center;
+    btn-flag {
+        background-color: $color-white;
+        border-radius: 25px;
+        border: $color-green-oscuro 2px solid;
 
-    @media only screen and (max-width: 855px) {
-        padding: 40px !important;
-    }
-
-    .pregunta-preboton {
-        font-size: 24px;
         font-family: $tipografia-poppins;
-        font-weight: 400;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
 
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
+        margin: 15px;
+        display: flex;
+        /* --bs-btn-hover-border-color:none
+
+        a {
+            color: $color-green-oscuro !important;
+            text-decoration: none;
+            list-style-type: none;
+
         }
     }
 
-    .boton-pregunta a {
-        text-decoration: none;
-        width: 305px;
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        padding: 14px 80px;
-        border: 0px;
-        border-radius: 100px;
-        background-color: $color-green-pastel;
-        margin: 24px 0 92px 0;
-        color: $color-green-oscuro;
-        font-weight: 600;
-
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
-            width: 152px;
-            padding: 6px 20px !important;
-        }
-    }
 } */
 .jumbotron7 {
   display: flex;

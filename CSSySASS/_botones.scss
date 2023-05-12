@@ -30,7 +30,8 @@
     font-size: 22px;
     font-weight: 400;
     font-family: $tipografia-poppins;
-    @media only screen and (max-width: 800px){
+
+    @media only screen and (max-width: 800px) {
         font-size: 16px;
     }
 }
@@ -69,8 +70,8 @@
     border-radius: 100px;
     margin-top: 24px;
     font-weight: 600;
-    
-    
+
+
     @media only screen and (max-width: 955px) {
         font-size: 14px;
         width: 152px;
@@ -82,12 +83,7 @@
 .boton-default-basico {
     border: 0px;
     background-color: $color-green-pastel-2;
-    
-    a{
-        text-decoration: none !important;
-        color: $color-green-oscuro !important;
-    }
-    
+    color: $color-green-oscuro;
 }
 
 .boton-default-sin_fondo-invertido {
@@ -107,51 +103,79 @@
     transition: color border 0.5s ease-in-out;
 }
 
-//boton de enviar en contacto -- SE REEMPLAZA POR boton-default
-/* .boton-enviar {
-    font-size: 24px;
-    font-family: $tipografia-poppins;
-    padding: 14px 114px;
-    border: 0px;
-    border-radius: 100px;
-    background-color: $color-green-pastel-2;
-    margin-top: 24px;
-    color: $color-green-oscuro;
-    font-weight: 600;
-
-    @media only screen and (max-width: 955px) {
-        font-size: 14px;
-        padding: 5px 54px;
-    }
-} */
-
 //Oportunidades
-.btn-flag {
+.boton-programas {
+    justify-content: center;
+    align-items: center;
+    font-family: $tipografia-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    border-radius: 100px;
+    color: $color-green-oscuro;
+    border: 2px solid $color-green-oscuro;
+    margin: 15px;
+
+    @media only screen and (max-width: 767px) {
+            width: 140px;
+            height: 32px;
+
+            font-size: 16px;
+    }
+}
+
+.boton-banderas {
+    justify-content: center;
+    align-items: center;
+    font-family: $tipografia-poppins;
+    font-weight: 500;
+    font-size: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 100px;
+    color: $color-green-oscuro;
+    border: 2px solid $color-green-oscuro;
+    margin-top: 15px;
+
+    &:hover {
+        border: 2px solid $color-orange-oscuro;
+        background-color: $color-orange-oscuro;
+        color: white;
+    }
+
+    @media only screen and (min-width: 360px) and (max-width: 1023px) {
+            width: 140px;
+            height: 35px;
+
+            font-size: 17px;
+    }
+}
+
+/* .btn-flag {
     background-color: $color-white;
     border-radius: 25px;
     border: $color-green-oscuro 2px solid;
     
+    color: $color-green-oscuro !important;
     font-family: $tipografia-poppins;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+
+    list-style-type: none;
     
     margin: 15px;
     display: flex;
-    /* --bs-btn-hover-border-color:none */
+    /*--bs-btn-hover-border-color:none
 
-    a {
-        color: $color-green-oscuro !important;
-        text-decoration: none;
-        list-style-type: none;
-        
-    }
+
 }
 
 .btn-flag:hover {
     border: $color-green-oscuro 2px solid;
-}
+} 
 
 
 @media only screen and (min-width: 360px) and (max-width: 1023px) {
@@ -168,7 +192,7 @@
         
         margin: 15px;
         display: flex;
-        /* --bs-btn-hover-border-color:none */
+        /* --bs-btn-hover-border-color:none
     
         a {
             color: $color-green-oscuro !important;
@@ -178,44 +202,4 @@
         }
     }
 
-}
-
-//preguntas y boton de contacto al final de cada hoja
-/* .pregunta {
-    padding-top: 62px;
-    text-align: center;
-
-    @media only screen and (max-width: 855px) {
-        padding: 40px !important;
-    }
-
-    .pregunta-preboton {
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        font-weight: 400;
-
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
-        }
-    }
-
-    .boton-pregunta a {
-        text-decoration: none;
-        width: 305px;
-        font-size: 24px;
-        font-family: $tipografia-poppins;
-        padding: 14px 80px;
-        border: 0px;
-        border-radius: 100px;
-        background-color: $color-green-pastel;
-        margin: 24px 0 92px 0;
-        color: $color-green-oscuro;
-        font-weight: 600;
-
-        @media only screen and (max-width: 855px) {
-            font-size: 16px;
-            width: 152px;
-            padding: 6px 20px !important;
-        }
-    }
 } */

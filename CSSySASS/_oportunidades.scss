@@ -51,46 +51,46 @@
                 padding-top: 0px;
             }
 
-            
+
         }
     }
 }
 
-.becas{
+.becas {
     /* background-color: beige; */
     display: flex;
     margin: 50px 150px;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    
-    .fondo-becas{
+
+    .fondo-becas {
         display: flex; //es para poner al lado los @
         background-color: $color-green-pastel-2;
         border-radius: 30px;
 
-        .imag-titulos{
+        .imag-titulos {
             display: flex;
             position: relative;
-                        
+
             width: 450px;
             height: 450px;
             background-image: url(../img/oportunidades.2.jpg);
             background-size: cover;
             background-position: center;
             border-radius: 30px;
-    
-    
-            .titulo-opo{
+
+
+            .titulo-opo {
                 position: absolute;
                 bottom: -10px;
-    
+
                 text-align: center;
                 width: 100%;
-                padding:30px;
+                padding: 30px;
                 border-bottom-left-radius: 30px;
-                border-bottom-right-radius:30px;
-                
+                border-bottom-right-radius: 30px;
+
                 height: 100px;
                 color: $color-white;
                 font-size: 26px;
@@ -99,47 +99,47 @@
                 background: linear-gradient(90deg, $color-green-medio 0%, rgba(14, 128, 102, 0.626) 75%);
             }
         }
-        
-        .content-texto-becas{
+
+        .content-texto-becas {
             border-radius: 30px;
             background-color: $color-green-pastel-2;
             width: 750px;
             height: 450px;
-            
-            
-            .titulo-becas{
+
+
+            .titulo-becas {
                 font-family: $tipografia-nunito;
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 60px;
-    
+
                 background-color: $color-green-medio;
                 color: $color-white;
                 width: 150px;
                 padding: 5px;
                 text-align: center;
-    
+
                 margin-top: 10px;
                 margin-left: 45px;
             }
-                
-            .becas-ajuste{
+
+            .becas-ajuste {
                 display: flex;
                 padding: 10px;
-                
-    
-                    ul{
-                        /* background-color: chartreuse; */
-                        width: 50%;
-                
-                
-                    li{
-                        list-style-type:none;
+
+
+                ul {
+                    /* background-color: chartreuse; */
+                    width: 50%;
+
+
+                    li {
+                        list-style-type: none;
                         /* border: 2px solid red; */
-                    
-                    
-        
-                        a{
+
+
+
+                        a {
                             text-decoration: none;
                             color: $color-green-oscuro;
                             font-size: 24px;
@@ -150,16 +150,16 @@
                         }
                     }
                 }
-            
+
             }
-                
-            
+
+
         }
     }
-    
+
 }
 
-.programa{
+.programa {
     border: 3px solid $color-green-medio;
     border-radius: 25px;
     margin: 20px;
@@ -168,37 +168,39 @@
     width: 1200px;
     height: 250px;
     display: flex;
-    
-    
 
-    h3{
+
+
+    h3 {
         color: $color-green-medio;
         /* border: 2px solid greenyellow; */
         padding: 5%;
-        padding-right:150px;
+        padding-right: 150px;
     }
 
-    .programa-logos{
+    .programa-logos {
         /* border: 2px solid blue; */
         display: flex;
         align-items: flex-end;
-        div{
-            
-            /* border: 2px solid red; */
-            padding:10px 30px;
-            
 
+        div {
+            /* border: 2px solid red; */
+            padding: 10px 30px;
         }
-        .img-especial{
+
+        .img-especial {
             background-color: #642869;
             border-radius: 50%;
             margin: 10px;
+            width: 120px;
         }
-        .img-programa{
+
+        .img-programa {
             width: 160px;
             height: 100px;
         }
-        button{
+
+        button {
             display: flex;
             text-align: center;
         }
@@ -206,80 +208,83 @@
 }
 
 
-.titulo-flag{
+.titulo-flag {
     margin-top: 125px;
     margin: 90px;
-    padding:10px 60px;
-    
-    .titulo-voluntariado{
+    padding: 10px 60px;
+
+    .titulo-voluntariado {
         font-family: $tipografia-nunito;
         font-weight: 800;
         font-size: 32px;
         line-height: 60px;
-    
+
         background-color: $color-green-medio;
         color: $color-white;
         width: 250px;
         padding: 5px;
         text-align: center;
-    
-                margin-top: 10px;
-                margin-left: 110px;
+
+        margin-top: 10px;
+        margin-left: 110px;
     }
-    .text-flag{
+
+    .text-flag {
         /* border: 2px solid rgb(141, 47, 255); */
 
         font-family: $tipografia-nunito;
         font-size: 24px;
         font-weight: 400px;
         line-height: 32px;
-        
+
         width: 80%;
         padding: 20px;
         margin-top: 30px;
         margin-left: 110px;
-        
-    
-        span{
+
+
+        span {
             font-weight: 800;
-            color:$color-green-medio;
-            
+            color: $color-green-medio;
+
         }
     }
 
-    
+
 }
 
-.container-group{
+.container-group {
     /* border: 2px solid rgb(141, 47, 255); */
 
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
-    
-    justify-content: center;
+
+    justify-content: start;
 
     margin: 15px 160px;
     margin-bottom: 150px;
-    .flag{
+
+    .flag {
         padding: 20px;
     }
 }
 
-.img-flag{
+.img-flag {
     width: 160px;
     height: 98px;
     background-size: cover;
     background-position: center;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1023px){
-    
-    
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
 
-    .contenedor-titulo{
+
+
+    .contenedor-titulo {
         width: 320px;
-        
-        h2{ //ver porque no me funciona ajustar
+
+        h2 {
+            //ver porque no me funciona ajustar
 
             display: none;
             /* box-sizing: 0;
@@ -287,23 +292,23 @@
             font-weight: 400;
             line-height: 18px;
             margin: 0; */
-            
+
             /* text-align: center; */
 
         }
     }
 
     //becas
-    .becas{
+    .becas {
         margin: 10px;
-        
-        .fondo-becas{
+
+        .fondo-becas {
             flex-direction: column;
 
-            .imag-titulos{
+            .imag-titulos {
                 width: 350px;
 
-                .titulo-opo{
+                .titulo-opo {
                     font-family: $tipografia-poppins;
                     font-size: 16px;
                     font-weight: 600;
@@ -313,26 +318,27 @@
 
                 }
             }
-        
-            .content-texto-becas{
+
+            .content-texto-becas {
                 width: 350px;
                 height: 34rem;
-                
-                .titulo-becas{
+
+                .titulo-becas {
                     font-weight: 800;
                     font-size: 24px;
                     line-height: 30px;
                 }
 
-                .becas-ajuste{
+                .becas-ajuste {
                     flex-direction: column;
 
                     ul {
                         width: 300px;
-                        
+
                     }
-                    ul li a{
-                        
+
+                    ul li a {
+
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 22px;
@@ -346,106 +352,110 @@
         }
     }
 
-    .programa{
+    .programa {
         flex-direction: column;
 
         border: 3px solid $color-green-medio;
         border-radius: 25px;
         margin: 10px;
-        
+
         margin-top: 40px;
-        
+
         padding: 10px;
         width: 340px;
         height: auto;
-        
-        
-        
-    
-        h3{
+
+
+
+
+        h3 {
             color: $color-green-medio;
             /* border: 2px solid greenyellow; */
             padding: 10px;
             text-align: center;
-            
+
         }
-    
-        .programa-logos{
+
+        .programa-logos {
             /* border: 2px solid blue; */
             flex-direction: column;
-            align-items:center;
-            div{
-                
-                border: 2px solid red; 
-                padding:15px 10px;
-                
-            } 
+            align-items: center;
 
-            .img-especial{
+            div {
+
+                border: 2px solid red;
+                padding: 15px 10px;
+
+            }
+
+            .img-especial {
                 background-color: #642869;
                 border-radius: 50%;
                 margin: 10px;
             }
-            .img-programa{
+
+            .img-programa {
                 width: 100px;
                 height: 80px;
             }
-            button{
+
+            button {
                 /* display: flex; */
                 text-align: center;
                 align-content: center;
             }
         }
     }
-    
-    .titulo-flag{
+
+    .titulo-flag {
         flex-direction: column;
-        
+
 
         margin-top: 15px;
         margin: 00px;
-        padding:5px; 
-        
-        .titulo-voluntariado{
+        padding: 5px;
+
+        .titulo-voluntariado {
             font-family: $tipografia-nunito;
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
-        
+
             background-color: $color-green-medio;
             color: $color-white;
             width: 200px;
             padding: 5px;
             text-align: center;
-        
-            margin-top:10px;
+
+            margin-top: 10px;
             margin-left: 0px;
         }
-        .text-flag{
+
+        .text-flag {
             /* border: 2px solid rgb(141, 47, 255); */
-    
+
             font-family: $tipografia-nunito;
             font-size: 14px;
             font-weight: 400;
             line-height: 22px;
-            
+
             width: 100%;
             padding: 10px;
             margin: 0px;
-            
-        
-            span{
+
+
+            span {
                 font-weight: 800;
-                color:$color-green-medio;
-                
+                color: $color-green-medio;
+
             }
         }
-    
-        
+
+
     }
 
 
-    .container-group{
+    .container-group {
         display: none;
     }
 
