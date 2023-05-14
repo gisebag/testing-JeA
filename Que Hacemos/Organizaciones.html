@@ -114,7 +114,7 @@
     <section class="seccion-tarjetas container-fluid row justify-content-center">
         <div class="contenedor-tarjetas row justify-content-center">
             <div class="tarjetas1 row justify-content-center align-items-center">
-                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center" id="tarjeta-imagen-1">
                     <svg height="2.5em" viewBox="0 0 2609 512" color="red.brand" theme="[object Object]"
                         class="corgi__sc-aauoja-0 iwQgRi">
                         <path
@@ -122,68 +122,98 @@
                             fill="red" fill-rule="evenodd"></path>
                     </svg>
                 </div>
-                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center" id="tarjeta-descripcion-1">
                     <div>
-                        <div class="texto-resaltado d-inline fw-bolder">Change.org </div>es la plataforma más grande del
+                        <a class="text-decoration-none" href="https://www.change.org/"><div class="texto-resaltado d-inline texto-organizacion">Change.org</div></a> es la plataforma más grande del
                         mundo, utilizan la tecnología para <div class="texto-resaltado d-inline fw-bold">empoderar a sus
                             usuarios,</div> promoviendo que inicien campañas, movilicen a sus seguidores y trabajen con
                         las personas responsables de adoptar decisiones para lograr soluciones
                     </div>
                 </div>
+                <div class="position-absolute posicion-boton">
+                    <button class="boton-ver-mas" id="boton-ver-mas-1">Ver más</button>
+                </div>
+                <div class="position-absolute posicion-cerrar">
+                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-1">&times;</button>
+                </div>
             </div>
-            <div class="tarjetas2 row justify-content-center align-items-center">
-                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center">
+            <div class="tarjetas2 row justify-content-center align-items-center position-relative">
+                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center" id="tarjeta-imagen-2">
                     <img src="../img/ecohouse.png" alt="ecohouse logo">
                 </div>
-                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center" id="tarjeta-descripcion-2">
                     <div>
-                        <div class="texto-resaltado d-inline fw-bolder">Ecohouse </div>es una organización sin fines de
+                        <a class="text-decoration-none" href="https://ecohouse.org.ar/"><div class="texto-resaltado d-inline texto-organizacion">Ecohouse</div></a> es una organización sin fines de
                         lucro de <div class="texto-resaltado d-inline fw-bold">Acción para la Sostenibilidad</div>
                         especialista en desarrollar programas e iniciativas de <div
                             class="texto-resaltado d-inline fw-bold">educación, política, comunicación, consultoría y
                             restauración ecológica.</div>
                     </div>
                 </div>
+                <div class="position-absolute posicion-boton">
+                    <button class="boton-ver-mas" id="boton-ver-mas-2">Ver más</button>
+                </div>
+                <div class="position-absolute posicion-cerrar">
+                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-2">&times;</button>
+                </div>
             </div>
             <div class="tarjetas3 row justify-content-center align-items-center">
-                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center" id="tarjeta-imagen-3">
                     <img src="../img/AFSlogo.png" alt="AFS logo">
                 </div>
-                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center">
-                    <div>
-                        <div class="texto-resaltado d-inline fw-bolder">AFS Programas Interculturales </div>es una
+                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center" id="tarjeta-descripcion-3">
+                    <div class="tarjeta-larga-afs">
+                        <a class="text-decoration-none" href="https://afs.org/"><div class="texto-resaltado d-inline texto-organizacion">AFS Programas Interculturales</div></a> es una
                         organización internacional, voluntaria, no gubernamental, sin fines de lucro, que <div
                             class="texto-resaltado d-inline fw-bold">proporciona oportunidades de aprendizaje
                             intercultural</div> para ayudar a las personas a desarrollar el conocimiento, las
                         habilidades y el entendimiento necesarios para crear un mundo más justo y pacífico.
                     </div>
                 </div>
-            </div>
-            <div class="tarjetas4 row justify-content-center align-items-center">
-                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center">
-                    <img src="../img/logo-techo.png" alt="Techo logo">
+                <div class="position-absolute posicion-boton">
+                    <button class="boton-ver-mas" id="boton-ver-mas-3">Ver más</button>
                 </div>
-                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center">
-                    <div>
-                        <div class="texto-resaltado d-inline fw-bolder">Techo </div>es una organización conformada por
-                        jóvenes voluntarios y voluntarias junto con habitantes de asentamientos populares de América
-                        Latina. Mediante nuestra acción conjunta, <div class="texto-resaltado d-inline fw-bold">
-                            trabajamos en superar la situación de pobreza</div> en la que viven millones de personas.
-                    </div>
+                <div class="position-absolute posicion-cerrar">
+                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-3">&times;</button>
                 </div>
             </div>
             <div class="tarjetas5 row justify-content-center align-items-center">
-                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center" id="tarjeta-imagen-5">
                     <img src="../img/HundrEDlogo.jpeg" alt=" logo">
                 </div>
-                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center" id="tarjeta-descripcion-5">
                     <div>
-                        <div class="texto-resaltado d-inline fw-bolder">HundrED </div>persigue ayudar a cada niño a
+                        <a class="text-decoration-none" href="https://hundred.org/"><div class="texto-resaltado d-inline texto-organizacion">HundrED</div></a> persigue ayudar a cada niño a
                         prosperar entregándole <div class="texto-resaltado d-inline fw-bold">acceso a una educación de
                             calidad</div>. A través de innovaciones educativas quieren transformar los sistemas
                         escolares y equipar a los estudiantes con las habilidades necesarias para prosperar como
                         ciudadanos del mundo.
                     </div>
+                </div>
+                <div class="position-absolute posicion-boton">
+                    <button class="boton-ver-mas" id="boton-ver-mas-5">Ver más</button>
+                </div>
+                <div class="position-absolute posicion-cerrar">
+                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-5">&times;</button>
+                </div>
+            </div>
+            <div class="tarjetas4 row justify-content-center align-items-center">
+                <div class="tarjeta tarjeta-imagen col-md-3 row justify-content-center align-items-center" id="tarjeta-imagen-4">
+                    <img src="../img/logo-techo.png" alt="Techo logo">
+                </div>
+                <div class="tarjeta tarjeta-descripcion col-md-3 row justify-content-center align-items-center" id="tarjeta-descripcion-4">
+                    <div>
+                        <a class="text-decoration-none" href="https://techo.org/"><div class="texto-resaltado d-inline texto-organizacion">Techo</div></a> es una organización conformada por
+                        jóvenes voluntarios y voluntarias junto con habitantes de asentamientos populares de América
+                        Latina. Mediante nuestra acción conjunta, <div class="texto-resaltado d-inline fw-bold">
+                            trabajamos en superar la situación de pobreza</div> en la que viven millones de personas.
+                    </div>
+                </div>
+                <div class="position-absolute posicion-boton">
+                    <button class="boton-ver-mas" id="boton-ver-mas-4">Ver más</button>
+                </div>
+                <div class="position-absolute posicion-cerrar">
+                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-4">&times;</button>
                 </div>
             </div>
         </div>
