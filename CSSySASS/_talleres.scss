@@ -17,43 +17,17 @@
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
         padding: 88px 32px 88px 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        .titulo-JeA {
+        .titulo-JeA,
+        p {
             color: $color-white;
             font-size: 64px;
             font-weight: 800;
             font-family: $tipografia-nunito;
-            padding-top: 40px;
             margin: 0px;
-
-            strong {
-                font-weight: 700;
-            }
-        }
-
-    }
-}
-@media only screen and (max-width: 800px) {
-    .jumbotron5 {
-        height: 240px;
-
-        .cuadro-translucido {
-            width: 100%;
-            max-width: 800px;
-            max-height: 80px;
-            translate: 0% 100%;
-            padding: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .titulo-JeA {
-                font-size: 28px;
-                font-weight: 800;
-                padding-top: 0px;
-            }
-
-            
         }
     }
 }
@@ -61,6 +35,8 @@
 .cuadro-dividido {
     padding: 80px 80px 60px 80px;
     text-align: center;
+    max-width: 1920px;
+    margin: auto;
 
     .contenedor-texto {
         font-style: normal;
@@ -105,6 +81,14 @@
             color: $color-red-oscuro;
             border-bottom: 8px solid #ED1C2490;
         }
+
+        .botones {
+            display: inline-block;
+        }
+
+        .botones-movil {
+            display: none !important;
+        }
     }
 
     #descripcion {
@@ -120,6 +104,8 @@
 }
 
 .contenedor-cuadros-textofoto {
+    max-width: 1740px;
+
     .texto {
         font-style: normal;
         font-weight: 400;
@@ -128,77 +114,83 @@
         background-color: rgba(250, 195, 19, 0.2);
         padding: 84px 38px 84px 78px;
 
-        p
-        strong {
+        p strong {
             color: $color-white;
             background-color: $color-orange-oscuro;
         }
     }
+
     .foto {
         background-image: url(../img/talleres.2.jpg);
         background-size: cover;
+        background-position: center center;
+        min-width: 300px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 955px) {
     .jumbotron5 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(../img/talleres.responsive.jpg);
-        background-size: cover;
-        background-position: center;
-        height: 340px;
-        
+        height: 240px;
+
         .cuadro-translucido {
             width: 100%;
-            max-width: 800px;
-            max-height: 115px;
+            max-width: 955px;
+            max-height: 80px;
             translate: 0% 100%;
-            padding: 0px;
-            margin-left:0.5px ;
-            display: flex;
-            justify-content: center;
+            padding: 0px 16px;
+            flex-direction: row;
             align-items: center;
+            justify-content: start;
 
-            .titulo-talleres {
-                line-height: 16px;
-                font-size: 26px;
+            .titulo-JeA,
+            p {
+                font-size: 28px;
                 font-weight: 800;
                 padding-top: 0px;
-                font-family: $tipografia-nunito;
-                color: $color-white;
+                margin: 0px 5px;
             }
+
 
         }
     }
 
     .cuadro-dividido {
-        padding: 40px;
+        padding: 20px 20px 40px 20px;
         text-align: center;
-    
+
         .contenedor-texto {
-            p{
+            p {
                 font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 22px;
-            font-family: $tipografia-nunito;
-            min-width: 330px;
-            height: 160px;
-            padding: 20px;
-    
-            strong {
-                color: $color-green-medio;
-            }
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                font-family: $tipografia-nunito;
+                min-height: 160px;
+                padding: 20px;
+
+                strong {
+                    color: $color-green-medio;
+                }
             }
         }
-    
+
         .contenedor-cuadros-divididos {
-            border: 2px solid $color-green-medio;
+            border: 1px solid $color-green-medio;
             border-radius: 16px;
-            margin-top: 80px;
-    
+            margin-top: 20px;
+            overflow: hidden;
+
+            .botones {
+                display: none !important;
+            }
+
+            .botones-movil {
+                display: inline-block !important;
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+            }
+
             button {
                 background-color: transparent;
                 border: none;
@@ -210,27 +202,29 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 16px;
+                max-width: 955px;
             }
-    
+
             .boton-escuelas {
                 color: #5BBA47;
-                border-bottom: 8px solid #5BBA4790;
+                border-bottom: 4px solid #5BBA4790;
             }
-    
+
             .boton-universidades {
                 color: $color-orange-oscuro;
-                border-bottom: 8px solid #FAC31390;
+                border-bottom: 4px solid #FAC31390;
             }
-    
+
             .boton-organizaciones {
                 color: $color-red-oscuro;
-                border-bottom: 8px solid #ED1C2490;
+                border-bottom: 4px solid #ED1C2490;
             }
         }
-    
+
         #descripcion {
+            display: none;
             padding: 48px 20px 58px 20px;
-    
+
             #contenido {
                 font-style: normal;
                 font-weight: 400;
@@ -239,14 +233,14 @@
             }
         }
     }
-    
+
     .contenedor-cuadros-textofoto {
-        
-        
-        .row{
+        .row {
             display: flex;
-                justify-content: center;
-                align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             .texto {
                 order: 2;
                 font-style: normal;
@@ -255,26 +249,21 @@
                 line-height: 22px;
                 background-color: rgba(250, 195, 19, 0.2);
                 padding: 30px;
-                min-width: 445px;
+
                 min-height: 160px;
-        
-                p
+
                 strong {
                     color: $color-white;
                     background-color: $color-orange-oscuro;
                 }
             }
+
             .foto {
                 order: 1;
                 background-image: url(../img/talleres.2.jpg);
                 background-size: cover;
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-position: center;
-                min-width: 445px;
-                height: 340px;
+                min-height: 340px;
             }
         }
     }
