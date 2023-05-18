@@ -13,7 +13,7 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../CSSySASS/estilos.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,7 +28,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
 
-                <a class="navbar-brand row align-items-center ms-4" href="../index.html"><img class="icono-nav col" src="../img/logo-JEA-1.png" alt="jea"> 
+                <a class="navbar-brand row align-items-center ms-4" href="../index.html"><img class="icono-nav col"
+                        src="../img/logo-JEA-1.png" alt="jea">
                     <div class="col fw-bold">
                         <div class="jovenes">JÓVENES</div>
                         <div class="enaccion">EN ACCIÓN</div>
@@ -45,15 +46,18 @@
                             <a class="nav-link nav-color" href="../index.html">Sobre JeA</a>
                         </li>
                         <li class="nav-item dropdown">
-                            
-                            <a class="nav-link dropdown-toggle nav-color" href="../Que Hacemos/JovenesInspiradores.html" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+
+                            <a class="nav-link dropdown-toggle nav-color" href="../Que Hacemos/JovenesInspiradores.html"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ¿Qué hacemos?
                             </a>
                             <ul class="dropdown-menu submenu">
-                                <li><a class="dropdown-item submenu-color" href="../Que Hacemos/JovenesInspiradores.html">Jóvenes Inspiradores</a></li>
-                                <li><a class="dropdown-item submenu-color" href="../Que Hacemos/Organizaciones.html">Organizaciones</a></li>
-                                <li><a class="dropdown-item submenu-color" href="../Que Hacemos/Colaboraciones.html">Colaboraciones</a></li>
+                                <li><a class="dropdown-item submenu-color"
+                                        href="../Que Hacemos/JovenesInspiradores.html">Jóvenes Inspiradores</a></li>
+                                <li><a class="dropdown-item submenu-color"
+                                        href="../Que Hacemos/Organizaciones.html">Organizaciones</a></li>
+                                <li><a class="dropdown-item submenu-color"
+                                        href="../Que Hacemos/Colaboraciones.html">Colaboraciones</a></li>
                             </ul>
                         </li>
                         <li class="nav-item ">
@@ -75,13 +79,12 @@
     </header>
     <!----------- Barra de navegación ------------->
     <!----------- presentacion talleres ------------->
-    
+
     <section class="presentacion">
         <div class="jumbotron5 jumbotron-fluid d-block img-fluid mx-auto d-block position-relative">
-
             <div class="container cuadro-translucido position-absolute top-50 start-0 translate-middle-y">
-                <h1 class="titulo-JeA">Talleres <br> <strong>JeA</strong></h1>
-                
+                <h1 class="titulo-JeA">Talleres </h1>
+                <p>JeA</p>
             </div>
         </div>
     </section>
@@ -96,7 +99,7 @@
                     ODS,
                     etc.</strong></p>
         </div>
-        <div class="contenedor-cuadros-divididos">
+        <div class="contenedor-cuadros-divididos" id="cuadros-divididos">
             <div class="botones d-flex justify-content-around">
                 <button class="boton-escuelas container" id="escuelas">
                     Escuelas
@@ -109,8 +112,27 @@
                 </button>
             </div>
             <div id="descripcion">
-                <p id="contenido">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan magna vel mauris
-                    blandit, et sagittis elit commodo. </p>
+                <p id="contenido"></p>
+            </div>
+            <div class="botones-movil d-flex flex-column gap-0 p">
+                <button class="boton-escuelas container" id="escuelas-movil">
+                    Escuelas
+                </button>
+                <div id="descripcion-escuelas" class="">
+                    <p id="contenido">Ofrecemos la oportunidad de realizar una o varias sesiones sobre ciudadanía activa, cambio social e inteligencia emocional (entre otras cosas) <strong style="color:#5BBA47">para jóvenes entre 12 y 18 años.</strong> </p>
+                </div>
+                <button class="boton-universidades container" id="universidades-movil">
+                    Universidades
+                </button>
+                <div id="descripcion-universidades" class="d-none">
+                    <p id="contenido">Ofrecemos la oportunidad de realizar una o varias sesiones sobre ciudadanía activa, cambio social y <strong style="color:#F26123">búsqueda de oportunidades educativas/laborales/ voluntariados/emprendimiento</strong> para universitarios. </p>
+                </div>
+                <button class="boton-organizaciones container" id="organizaciones-movil">
+                    Organizaciones
+                </button>
+                <div id="descripcion-organizaciones" class="d-none">
+                    <p id="contenido"><strong style="color:#ED1C24">Hablemos de las competencias interculturales necesarias para el mundo de hoy.</strong> Si eres una empresa, una institución o una ONG contáctanos para ver las posibilidades de colaboración. </p>
+                </div>
             </div>
         </div>
     </section>
@@ -118,14 +140,13 @@
     <!-- cuadro dividido 2 -->
     <section class="contenedor-cuadros-textofoto container-fluid">
         <div class="row">
-            <div class="texto col-7">
+            <div class="texto col">
                 <p><strong>Nuestra propuesta se adapta a las necesidades de las instituciones.</strong> ¿Necesitan un
                     enfoque de orientación
                     vocacional? ¿Hincapié sobre el bullying? ¿Incentivo para la adquisición de becas/oportunidades?
                 </p>
             </div>
-            <div class="foto col-5">
-
+            <div class="foto col">
             </div>
         </div>
     </section>
@@ -134,7 +155,8 @@
     <section class="pregunta">
         <div class="text-align-center d-flex flex-column align-items-center">
             <h2 class="pregunta-preboton">Para llegar a un acuerdo sobre lo que buscan y lo que ofrecemos</h2>
-            <a href="../Contacto/contacto.html"><button class="boton-default boton-default-basico">Contáctanos</button></a>
+            <a href="../Contacto/contacto.html"><button
+                    class="boton-default boton-default-basico">Contáctanos</button></a>
         </div>
     </section>
     <!----------- pregunta y boton Contacto ------------->
@@ -211,7 +233,7 @@
     </footer>
     <!-- Footer -->
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
