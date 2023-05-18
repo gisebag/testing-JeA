@@ -1409,27 +1409,33 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-family: "Nunito";
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     max-width: 955px;
   }
   .cuadro-dividido .contenedor-cuadros-divididos .boton-escuelas {
     color: #5BBA47;
+    background-color: rgba(91, 186, 71, 0.5647058824);
     border-bottom: 4px solid rgba(91, 186, 71, 0.5647058824);
   }
   .cuadro-dividido .contenedor-cuadros-divididos .boton-universidades {
     color: #F26123;
+    background-color: rgba(250, 195, 19, 0.5647058824);
     border-bottom: 4px solid rgba(250, 195, 19, 0.5647058824);
   }
   .cuadro-dividido .contenedor-cuadros-divididos .boton-organizaciones {
     color: #ED1C24;
+    background-color: rgba(237, 28, 36, 0.5647058824);
     border-bottom: 4px solid rgba(237, 28, 36, 0.5647058824);
   }
   .cuadro-dividido #descripcion {
     display: none;
-    padding: 48px 20px 58px 20px;
   }
-  .cuadro-dividido #descripcion #contenido {
+  .cuadro-dividido #descripcion-escuelas, .cuadro-dividido #descripcion-universidades, .cuadro-dividido #descripcion-organizaciones {
+    padding: 15px;
+  }
+  .cuadro-dividido #descripcion-escuelas #contenido, .cuadro-dividido #descripcion-universidades #contenido, .cuadro-dividido #descripcion-organizaciones #contenido {
+    margin: 0px;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

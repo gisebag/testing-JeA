@@ -200,32 +200,39 @@
                 font-family: $tipografia-nunito;
                 font-style: normal;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 16px;
                 max-width: 955px;
             }
 
             .boton-escuelas {
                 color: #5BBA47;
+                background-color: #5BBA4790;
                 border-bottom: 4px solid #5BBA4790;
             }
-
+            
             .boton-universidades {
                 color: $color-orange-oscuro;
+                background-color: #FAC31390;
                 border-bottom: 4px solid #FAC31390;
             }
-
+            
             .boton-organizaciones {
                 color: $color-red-oscuro;
+                background-color: #ED1C2490;
                 border-bottom: 4px solid #ED1C2490;
             }
         }
 
         #descripcion {
             display: none;
-            padding: 48px 20px 58px 20px;
+        }
+
+        #descripcion-escuelas, #descripcion-universidades, #descripcion-organizaciones {
+            padding: 15px;
 
             #contenido {
+                margin: 0px;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px;

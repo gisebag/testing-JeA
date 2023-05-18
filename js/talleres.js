@@ -14,6 +14,7 @@ const mediaQuery = window.matchMedia('(min-width: 956px)');
 
 window.addEventListener('load', () => {
     descripcion.style.backgroundColor = "#5BBA4720";
+    descripcionEscuelasMovil.style.backgroundColor = "#5BBA4720";
     contenido.innerHTML = 'Ofrecemos la oportunidad de realizar una o varias sesiones sobre ciudadanía activa, cambio social e inteligencia emocional (entre otras cosas) <strong style="color:#5BBA47">para jóvenes entre 12 y 18 años.</strong>';
     if (mediaQuery.matches) {
         btnEscuelas.style.borderBottom = "16px solid #5BBA47";
@@ -53,11 +54,8 @@ let ToggleEscuelas = false;
 let ToggleUniversidades = true;
 let ToggleOrganizaciones = true;
 
-/* Agregar que cuando se clickee sobre un botón que cierre los otros cuadros si alguno está abierto con Toggle = false */
-
 btnEscuelasMovil.addEventListener('click', () => {
     ToggleEscuelas = !ToggleEscuelas;
-    console.log(ToggleEscuelas);
     if (ToggleEscuelas) {
         btnEscuelasMovil.style.borderBottom = "4px solid #5BBA4790";
         descripcionEscuelasMovil.classList.remove('d-block');
@@ -65,12 +63,17 @@ btnEscuelasMovil.addEventListener('click', () => {
     } else {
         btnEscuelasMovil.style.borderBottom = "8px solid #5BBA47";
         cuadrosDivididos.style.border = "1px solid #009876";
+        descripcionEscuelasMovil.style.backgroundColor = "#5BBA4720";
         descripcionEscuelasMovil.classList.add('d-block');
         descripcionEscuelasMovil.classList.remove('d-none');
-        ToggleUniversidades = !ToggleUniversidades;
+        if (!ToggleUniversidades) {
+            ToggleUniversidades = !ToggleUniversidades;
+        }
         descripcionUniversidadesMovil.classList.add('d-none');
         btnUniversidadesMovil.style.borderBottom = "4px solid #FAC31390";
-        ToggleOrganizaciones = !ToggleOrganizaciones;
+        if (!ToggleOrganizaciones) {
+            ToggleOrganizaciones = !ToggleOrganizaciones;
+        }
         descripcionOrganizacionesMovil.classList.add('d-none');
         btnOrganizacionesMovil.style.borderBottom = "4px solid #ED1C2490";
     }
@@ -78,7 +81,6 @@ btnEscuelasMovil.addEventListener('click', () => {
 
 btnUniversidadesMovil.addEventListener('click', () => {
     ToggleUniversidades = !ToggleUniversidades;
-    console.log(ToggleUniversidades);
     if (ToggleUniversidades) {
         btnUniversidadesMovil.style.borderBottom = "4px solid #FAC31390";
         descripcionUniversidadesMovil.classList.remove('d-block');
@@ -86,12 +88,17 @@ btnUniversidadesMovil.addEventListener('click', () => {
     } else {
         btnUniversidadesMovil.style.borderBottom = "8px solid #FAC313";
         cuadrosDivididos.style.border = "1px solid #FAC313B2";
+        descripcionUniversidadesMovil.style.backgroundColor = "#FAC31320";
         descripcionUniversidadesMovil.classList.add('d-block');
         descripcionUniversidadesMovil.classList.remove('d-none');
-        ToggleEscuelas = !ToggleEscuelas;
+        if (!ToggleEscuelas) {
+            ToggleEscuelas = !ToggleEscuelas;
+        }
         descripcionEscuelasMovil.classList.add('d-none');
         btnEscuelasMovil.style.borderBottom = "4px solid #5BBA4790";
-        ToggleOrganizaciones = !ToggleOrganizaciones;
+        if (!ToggleOrganizaciones) {
+            ToggleOrganizaciones = !ToggleOrganizaciones;
+        }
         descripcionOrganizacionesMovil.classList.add('d-none');
         btnOrganizacionesMovil.style.borderBottom = "4px solid #ED1C2490";
     }
@@ -99,7 +106,6 @@ btnUniversidadesMovil.addEventListener('click', () => {
 
 btnOrganizacionesMovil.addEventListener('click', () => {
     ToggleOrganizaciones = !ToggleOrganizaciones;
-    console.log(ToggleOrganizaciones);
     if (ToggleOrganizaciones) {
         btnOrganizacionesMovil.style.borderBottom = "4px solid #ED1C2490";
         descripcionOrganizacionesMovil.classList.remove('d-block');
@@ -107,12 +113,17 @@ btnOrganizacionesMovil.addEventListener('click', () => {
     } else {
         btnOrganizacionesMovil.style.borderBottom = "8px solid #ED1C24";
         cuadrosDivididos.style.border = "1px solid #ED1C24B2";
+        descripcionOrganizacionesMovil.style.backgroundColor = "#ED1C2420";
         descripcionOrganizacionesMovil.classList.add('d-block');
         descripcionOrganizacionesMovil.classList.remove('d-none');
-        ToggleEscuelas = !ToggleEscuelas;
+        if (!ToggleEscuelas) {
+            ToggleEscuelas = !ToggleEscuelas;
+        }
         descripcionEscuelasMovil.classList.add('d-none');
         btnEscuelasMovil.style.borderBottom = "4px solid #5BBA4790";
-        ToggleUniversidades = !ToggleUniversidades;
+        if (!ToggleUniversidades) {
+            ToggleUniversidades = !ToggleUniversidades;
+        }
         descripcionUniversidadesMovil.classList.add('d-none');
         btnUniversidadesMovil.style.borderBottom = "4px solid #FAC31390";
     }
