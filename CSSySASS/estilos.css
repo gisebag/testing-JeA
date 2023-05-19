@@ -1417,19 +1417,19 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     color: #5BBA47;
     background-color: rgba(91, 186, 71, 0.1882352941);
     border-bottom: 4px solid rgba(91, 186, 71, 0.5647058824);
-    padding: 10px 0px;
+    padding: 12px 0px;
   }
   .cuadro-dividido .contenedor-cuadros-divididos .boton-universidades {
     color: #F26123;
     background-color: rgba(250, 195, 19, 0.1882352941);
     border-bottom: 4px solid #FAC313;
-    padding: 10px 0px;
+    padding: 12px 0px;
   }
   .cuadro-dividido .contenedor-cuadros-divididos .boton-organizaciones {
     color: #ED1C24;
     background-color: rgba(237, 28, 36, 0.1882352941);
     border-bottom: 4px solid rgba(237, 28, 36, 0.5647058824);
-    padding: 10px 0px;
+    padding: 12px 0px;
   }
   .cuadro-dividido #descripcion {
     display: none;
