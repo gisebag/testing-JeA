@@ -14,7 +14,8 @@
 }
 
 .navbar .icono-nav {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 70px;
   height: 70px;
 }
@@ -502,7 +503,8 @@
 .carrousel .carrousel-items .carrousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .carrousel .carrousel-items .carrousel-item :hover {
   transform: scale(1.2);
@@ -3101,8 +3103,9 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
   .jumbotron6 .cuadro-translucido .titulo-JeA {
     font-size: 28px;
-    font-weight: 800;
+    font-weight: 500;
     padding-top: 0px;
+    padding-left: 50px;
   }
 }
 .becas {
@@ -3611,23 +3614,73 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-image: url(../img/quiénes\ somos.1.jpg);
   background-size: cover;
   background-position: center;
-  height: 370px;
+  height: 494px;
 }
 .jumbotron7 .cuadro-translucido {
-  max-width: 590px;
-  height: 370px;
+  max-width: 500px;
+  height: 100%;
   background: #02503E;
-  background: linear-gradient(90deg, #02503E 0%, rgba(2, 80, 62, 0.709) 75%);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
+  padding: 88px 32px 88px 82px;
 }
 .jumbotron7 .cuadro-translucido .titulo1 {
-  color: #f9f9f9;
-  font-size: 60px;
+  color: #f9f9f9 !important;
+  font-size: 52px;
   font-weight: 700;
   font-family: "Nunito";
-  margin: 0px 50px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  .jumbotron7 {
+    min-width: 320px;
+    height: 240px;
+  }
+  .jumbotron7 .cuadro-translucido {
+    min-width: 320px;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron7 .cuadro-translucido .titulo1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+    color: #f9f9f9 !important;
+    padding-left: 50px;
+  }
+}
+/* .jumbotron7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/quiénes\ somos.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 370px;
+
+    .cuadro-translucido {
+        max-width: 590px;
+        height: 370px;
+        background: $color-green-oscuro;
+        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
+        text-align: start;
+
+        .titulo1 {
+            color: $color-white;
+            font-size: 60px;
+            font-weight: 700;
+            font-family: $tipografia-nunito;
+            margin: 0px 50px
+        }
+
+
+    }
+} */
 .titulo-quienes-somos {
   font-family: "Nunito";
   color: #02503E;
@@ -3838,6 +3891,4 @@ body {
 
 header {
   background-color: #EDFEFB !important;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
