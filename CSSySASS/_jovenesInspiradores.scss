@@ -49,13 +49,14 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     .jumbotron2 {
         height: 240px;
 
         .cuadro-translucido {
-            width: 100%;
-            max-width: 800px;
+            min-width: 320px !important;
+            /* width: 100%; */
+            max-width: 100vw;
             max-height: 80px;
             translate: 0% 100%;
             padding: 0px;
@@ -127,8 +128,17 @@
         background-size: contain;
         width: 722px;
         height: 71px;
+
+        @media only screen and (min-width: 320px) {
+            width: 300px !important;
+        }
     }
     
+    @media only screen and (min-width: 320px) and (max-width: 500px){
+        min-width: 300px;
+        max-width: 100vw;
+        display: inline-block;
+    }
 }
 
 

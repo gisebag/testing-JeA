@@ -138,12 +138,6 @@
     border: 2px solid $color-green-oscuro;
     margin-top: 15px;
 
-    &:hover {
-        border: 2px solid $color-orange-oscuro;
-        background-color: $color-orange-oscuro;
-        color: white;
-    }
-
     @media only screen and (min-width: 360px) and (max-width: 1023px) {
             width: 140px;
             height: 35px;
@@ -152,54 +146,8 @@
     }
 }
 
-/* .btn-flag {
-    background-color: $color-white;
-    border-radius: 25px;
-    border: $color-green-oscuro 2px solid;
-    
-    color: $color-green-oscuro !important;
-    font-family: $tipografia-poppins;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-
-    list-style-type: none;
-    
-    margin: 15px;
-    display: flex;
-    /*--bs-btn-hover-border-color:none
-
-
+.boton-banderas:hover {
+    border: 2px solid $color-orange-oscuro;
+    background-color: $color-orange-oscuro;
+    color: white;
 }
-
-.btn-flag:hover {
-    border: $color-green-oscuro 2px solid;
-} 
-
-
-@media only screen and (min-width: 360px) and (max-width: 1023px) {
-    btn-flag {
-        background-color: $color-white;
-        border-radius: 25px;
-        border: $color-green-oscuro 2px solid;
-        
-        font-family: $tipografia-poppins;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        
-        margin: 15px;
-        display: flex;
-        /* --bs-btn-hover-border-color:none
-    
-        a {
-            color: $color-green-oscuro !important;
-            text-decoration: none;
-            list-style-type: none;
-            
-        }
-    }
-
-} */
