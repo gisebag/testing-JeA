@@ -49,45 +49,49 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
     .jumbotron2 {
-        height: 240px;
-
-        .cuadro-translucido {
-            min-width: 320px !important;
-            /* width: 100%; */
-            max-width: 100vw;
-            max-height: 80px;
-            translate: 0% 100%;
-            padding: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .titulo-JeA {
-                font-size: 28px;
-                font-weight: 800;
-                padding-top: 0px;
-            }
-
-            div {
-                margin-left: 8px;
-
-                .titulo1 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin: 0px;
-
-                }
-
-                .inspiran {
-                    font-size: 16px;
-                    font-weight: 200;
-                }
-            }
+      height: 240px;
+  
+      .cuadro-translucido {
+        width: 100%;
+        max-width: 800px;
+        max-height: 80px;
+        translate: 0% 100%;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .titulo-JeA {
+          font-size: 28px;
+          font-weight: 800;
+          padding-top: 0px;
         }
+  
+        div {
+          margin-left: 8px;
+  
+          .titulo1 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0px;
+  
+            strong {
+              color: $color-green-oscuro;
+              background-color: $color-white;
+              font-weight: 900;
+            }
+          }
+  
+          .inspiran {
+            font-size: 16px;
+            font-weight: 200;
+          }
+        }
+      }
     }
-}
+  }
 
 .contenedor-titulo {
     margin: 0px 150px;

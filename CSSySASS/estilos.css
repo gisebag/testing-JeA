@@ -664,14 +664,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-family: "Nunito Sans", sans-serif;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .jumbotron2 {
     height: 240px;
   }
   .jumbotron2 .cuadro-translucido {
-    min-width: 320px !important;
-    /* width: 100%; */
-    max-width: 100vw;
+    width: 100%;
+    max-width: 800px;
     max-height: 80px;
     translate: 0% 100%;
     padding: 0px;
@@ -691,6 +690,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 18px;
     font-weight: 500;
     margin: 0px;
+  }
+  .jumbotron2 .cuadro-translucido div .titulo1 strong {
+    color: #02503E;
+    background-color: #f9f9f9;
+    font-weight: 900;
   }
   .jumbotron2 .cuadro-translucido div .inspiran {
     font-size: 16px;
@@ -3037,41 +3041,44 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 494px;
 }
 .jumbotron6 .cuadro-translucido {
+  margin: 0px;
   width: 600px;
   height: 100%;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
   padding: 88px 32px 88px 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .jumbotron6 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
   font-size: 64px;
   font-weight: 800;
   font-family: "Nunito";
-  padding-top: 40px;
   margin: 0px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 992px) {
+@media only screen and (max-width: 955px) {
   .jumbotron6 {
     height: 240px;
   }
   .jumbotron6 .cuadro-translucido {
-    /* width: 100%; */
-    min-width: 320px !important;
+    width: 100%;
+    max-width: 955px;
     max-height: 80px;
     translate: 0% 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    padding: 0px 16px;
+    flex-direction: row;
     align-items: center;
+    justify-content: start;
   }
   .jumbotron6 .cuadro-translucido .titulo-JeA {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 800;
     padding-top: 0px;
-    padding-left: 50px;
+    margin: 0px 5px;
   }
 }
 .becas {
@@ -3576,43 +3583,74 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 494px;
 }
 .jumbotron7 .cuadro-translucido {
-  max-width: 500px;
+  margin: 0px;
+  width: 500px;
   height: 100%;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
   padding: 88px 32px 88px 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.jumbotron7 .cuadro-translucido .titulo1 {
-  color: #f9f9f9 !important;
-  font-size: 52px;
-  font-weight: 700;
+.jumbotron7 .cuadro-translucido .titulo-JeA {
+  color: #f9f9f9;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
+  margin: 0px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (max-width: 955px) {
   .jumbotron7 {
-    min-width: 320px;
     height: 240px;
   }
   .jumbotron7 .cuadro-translucido {
-    min-width: 320px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 955px;
     max-height: 80px;
     translate: 0% 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    padding: 0px 16px;
+    flex-direction: row;
     align-items: center;
+    justify-content: start;
   }
-  .jumbotron7 .cuadro-translucido .titulo1 {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0px;
-    color: #f9f9f9 !important;
-    padding-left: 50px;
+  .jumbotron7 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+    margin: 0px 5px;
   }
 }
+/* @media only screen and (min-width: 320px) and (max-width: 800px) {
+    .jumbotron7 {
+        min-width: 320px;
+        height: 240px;
+
+        .cuadro-translucido {
+            min-width: 320px;
+            max-width: 800px;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                .titulo1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+                    color: $color-white !important;
+                    padding-left: 50px;
+
+                }
+
+
+        }
+    }
+} */
 /* .jumbotron7 {
     display: flex;
     justify-content: center;

@@ -11,45 +11,46 @@
     height: 494px;
 
     .cuadro-translucido {
+        margin: 0px;
         width: 600px;
         height: 100%;
         background: $color-green-oscuro;
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
         padding: 88px 32px 88px 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .titulo-JeA {
             color: $color-white;
             font-size: 64px;
             font-weight: 800;
             font-family: $tipografia-nunito;
-            padding-top: 40px;
             margin: 0px;
-
         }
-
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 992px) {
+@media only screen and (max-width: 955px) {
     .jumbotron6 {
         height: 240px;
 
         .cuadro-translucido {
-            /* width: 100%; */
-            min-width: 320px !important;
+            width: 100%;
+            max-width: 955px;
             max-height: 80px;
             translate: 0% 100%;
-            padding: 0px;
-            display: flex;
-            justify-content: center;
+            padding: 0px 16px;
+            flex-direction: row;
             align-items: center;
+            justify-content: start;
 
             .titulo-JeA {
                 font-size: 28px;
-                font-weight: 500;
+                font-weight: 800;
                 padding-top: 0px;
-                padding-left: 50px;
+                margin: 0px 5px;
             }
 
 
