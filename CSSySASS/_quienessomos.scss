@@ -4,6 +4,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image:  url(../img/quiénes\ somos.1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 494px;
+
+    .cuadro-translucido {
+        max-width: 500px;
+        height: 100%;
+        background: $color-green-oscuro;
+        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
+        text-align: start;
+        padding: 88px 32px 88px 82px;
+
+
+        
+            .titulo1 {
+                color: $color-white !important;
+                font-size: 52px;
+                font-weight: 700;
+                font-family: $tipografia-nunito;
+
+            }
+
+        
+        
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+    .jumbotron7 {
+        min-width: 320px;
+        height: 240px;
+
+        .cuadro-translucido {
+            min-width: 320px;
+            max-width: 800px;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+                .titulo1 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0px;
+                    color: $color-white !important;
+                    padding-left: 50px;
+
+                }
+
+            
+        }
+    }
+}
+
+
+
+/* .jumbotron7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/quiénes\ somos.1.jpg);
     background-size: cover;
     background-position: center;
@@ -26,7 +89,7 @@
 
 
     }
-}
+} */
 
 .titulo-quienes-somos {
     font-family: $tipografia-nunito;
