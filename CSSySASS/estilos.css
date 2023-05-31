@@ -666,14 +666,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-family: "Nunito Sans", sans-serif;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .jumbotron2 {
     height: 240px;
   }
   .jumbotron2 .cuadro-translucido {
-    min-width: 320px !important;
-    /* width: 100%; */
-    max-width: 100vw;
+    width: 100%;
+    max-width: 800px;
     max-height: 80px;
     translate: 0% 100%;
     padding: 0px;
@@ -693,6 +692,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 18px;
     font-weight: 500;
     margin: 0px;
+  }
+  .jumbotron2 .cuadro-translucido div .titulo1 strong {
+    color: #02503E;
+    background-color: #f9f9f9;
+    font-weight: 900;
   }
   .jumbotron2 .cuadro-translucido div .inspiran {
     font-size: 16px;
@@ -3034,41 +3038,44 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 494px;
 }
 .jumbotron6 .cuadro-translucido {
+  margin: 0px;
   width: 600px;
   height: 100%;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
   padding: 88px 32px 88px 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .jumbotron6 .cuadro-translucido .titulo-JeA {
   color: #f9f9f9;
   font-size: 64px;
   font-weight: 800;
   font-family: "Nunito";
-  padding-top: 40px;
   margin: 0px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 992px) {
+@media only screen and (max-width: 955px) {
   .jumbotron6 {
     height: 240px;
   }
   .jumbotron6 .cuadro-translucido {
-    /* width: 100%; */
-    min-width: 320px !important;
+    width: 100%;
+    max-width: 955px;
     max-height: 80px;
     translate: 0% 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    padding: 0px 16px;
+    flex-direction: row;
     align-items: center;
+    justify-content: start;
   }
   .jumbotron6 .cuadro-translucido .titulo-JeA {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 800;
     padding-top: 0px;
-    padding-left: 50px;
+    margin: 0px 5px;
   }
 }
 .becas {
@@ -3097,7 +3104,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (min-width: 320px) and (max-width: 800px) {
   .becas .fondo-becas .imag-titulos {
     max-width: 300px;
-    /* max-height: 350px; */
   }
 }
 .becas .fondo-becas .imag-titulos .titulo-opo {
@@ -3162,13 +3168,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 .becas .fondo-becas .content-texto-becas .becas-ajuste ul {
-  /* background-color: chartreuse; */
   width: 50%;
   margin: 0;
 }
 .becas .fondo-becas .content-texto-becas .becas-ajuste ul li {
   list-style-type: none;
-  /* border: 2px solid red; */
 }
 .becas .fondo-becas .content-texto-becas .becas-ajuste ul li a {
   text-decoration: none;
@@ -3177,53 +3181,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-family: "Nunito";
   font-weight: 400px;
   line-height: 36px;
-  /* background-color: rgba(139, 0, 76, 0.736); */
-}
-
-.programa {
-  border: 3px solid #009876;
-  border-radius: 25px;
-  margin: 20px;
-  margin-left: 150px;
-  padding: 20px;
-  width: 1200px;
-  height: 250px;
-  display: flex;
-}
-@media only screen and (min-width: 320px) and (max-width: 800px) {
-  .programa {
-    width: 300px !important;
-    margin: 0;
-  }
-}
-.programa h3 {
-  color: #009876;
-  /* border: 2px solid greenyellow; */
-  padding: 5%;
-  padding-right: 150px;
-}
-.programa .programa-logos {
-  /* border: 2px solid blue; */
-  display: flex;
-  align-items: flex-end;
-}
-.programa .programa-logos div {
-  /* border: 2px solid red; */
-  padding: 10px 30px;
-}
-.programa .programa-logos .img-especial {
-  background-color: #642869;
-  border-radius: 50%;
-  margin: 10px;
-  width: 120px;
-}
-.programa .programa-logos .img-programa {
-  width: 160px;
-  height: 100px;
-}
-.programa .programa-logos button {
-  display: flex;
-  text-align: center;
 }
 
 .titulo-flag {
@@ -3245,7 +3202,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   margin-left: 110px;
 }
 .titulo-flag .text-flag {
-  /* border: 2px solid rgb(141, 47, 255); */
   font-family: "Nunito";
   font-size: 24px;
   font-weight: 400px;
@@ -3261,7 +3217,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 
 .container-group {
-  /* border: 2px solid rgb(141, 47, 255); */
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -3276,7 +3231,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     white-space: nowrap;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* display: inline-block; */
     margin: 10px;
   }
 }
@@ -3342,45 +3296,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     text-align: left;
     margin: 15px 0;
   }
-  .programa {
-    flex-direction: column;
-    border: 3px solid #009876;
-    border-radius: 25px;
-    margin: 10px;
-    margin-top: 40px;
-    padding: 10px;
-    width: 340px;
-    height: auto;
-  }
-  .programa h3 {
-    color: #009876;
-    /* border: 2px solid greenyellow; */
-    padding: 10px;
-    text-align: center;
-  }
-  .programa .programa-logos {
-    /* border: 2px solid blue; */
-    flex-direction: column;
-    align-items: center;
-  }
-  .programa .programa-logos div {
-    /* border: 2px solid red; */
-    padding: 15px 10px;
-  }
-  .programa .programa-logos .img-especial {
-    background-color: #642869;
-    border-radius: 50%;
-    margin: 10px;
-  }
-  .programa .programa-logos .img-programa {
-    width: 100px;
-    height: 80px;
-  }
-  .programa .programa-logos button {
-    /* display: flex; */
-    text-align: center;
-    align-content: center;
-  }
   .titulo-flag {
     flex-direction: column;
     margin-top: 15px;
@@ -3401,7 +3316,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     margin-left: 0px;
   }
   .titulo-flag .text-flag {
-    /* border: 2px solid rgb(141, 47, 255); */
     font-family: "Nunito";
     font-size: 14px;
     font-weight: 400;
@@ -3415,6 +3329,60 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     color: #009876;
   }
 }
+.programa {
+  text-align: center;
+  max-width: 1200px;
+  border: 3px solid #009876;
+  border-radius: 25px;
+  margin: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* @media (min-width: 992px) {
+      h3 {
+          margin-bottom: 0;
+      }
+
+  } */
+}
+.programa h3 {
+  /* margin-bottom: 20px; */
+  color: #009876;
+  padding: 20px;
+  font-size: 800;
+  max-width: 400px;
+}
+.programa .programa-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+}
+.programa .programa-logos .text-center {
+  margin: 10px;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.programa .programa-logos .text-center .img-programa {
+  width: 150px;
+  height: 100px;
+}
+.programa .programa-logos .text-center .img-especial {
+  width: 100px;
+  height: auto;
+  background-color: #642869;
+}
+@media only screen and (max-width: 955px) {
+  .programa .programa {
+    min-width: 300px !important;
+    margin: 10px !important;
+  }
+}
+
 .boton-conocenos {
   background-color: #f9f9f9;
   color: rgb(10, 10, 10);
@@ -3573,70 +3541,46 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 494px;
 }
 .jumbotron7 .cuadro-translucido {
-  max-width: 500px;
+  margin: 0px;
+  width: 500px;
   height: 100%;
   background: #02503E;
   background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
   text-align: start;
   padding: 88px 32px 88px 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .jumbotron7 .cuadro-translucido .titulo1 {
-  color: #f9f9f9 !important;
-  font-size: 52px;
-  font-weight: 700;
+  color: #f9f9f9;
+  font-size: 64px;
+  font-weight: 800;
   font-family: "Nunito";
+  margin: 0px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (max-width: 955px) {
   .jumbotron7 {
-    min-width: 320px;
     height: 240px;
   }
   .jumbotron7 .cuadro-translucido {
-    min-width: 320px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 955px;
     max-height: 80px;
     translate: 0% 100%;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
+    padding: 0px 16px;
+    flex-direction: row;
     align-items: center;
+    justify-content: start;
   }
   .jumbotron7 .cuadro-translucido .titulo1 {
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0px;
-    color: #f9f9f9 !important;
-    padding-left: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 0px;
+    margin: 0px 5px;
   }
 }
-/* .jumbotron7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/quiénes\ somos.1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 370px;
-
-    .cuadro-translucido {
-        max-width: 590px;
-        height: 370px;
-        background: $color-green-oscuro;
-        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
-        text-align: start;
-
-        .titulo1 {
-            color: $color-white;
-            font-size: 60px;
-            font-weight: 700;
-            font-family: $tipografia-nunito;
-            margin: 0px 50px
-        }
-
-
-    }
-} */
 .titulo-quienes-somos {
   font-family: "Nunito";
   color: #02503E;
@@ -3751,28 +3695,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {
   margin: 50px;
-  /* .boton-default-sin_fondo_invertido {
-      padding: 14px 47px;
-      border: 3px solid #ffffff;
-      border-radius: 100px;
-      background-color: transparent;
-      font-family: "Poppins";
-      color: #ffffff;
-      transition: color border 0.5s ease-in-out;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 24px;
-      line-height: 36px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      width: 304px;
-      height: 64px;
-
-      @media only screen and (max-width: 855px) {
-          display: none;
-      }
-  } */
 }
 @media only screen and (max-width: 975px) {
   .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {

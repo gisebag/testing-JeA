@@ -1,5 +1,6 @@
 @import "_coloresyTipografias";
 
+
 .jumbotron7 {
     display: flex;
     justify-content: center;
@@ -10,86 +11,53 @@
     height: 494px;
 
     .cuadro-translucido {
-        max-width: 500px;
+        margin: 0px;
+        width: 500px;
         height: 100%;
         background: $color-green-oscuro;
         background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
         text-align: start;
         padding: 88px 32px 88px 82px;
-
-
-        
-            .titulo1 {
-                color: $color-white !important;
-                font-size: 52px;
-                font-weight: 700;
-                font-family: $tipografia-nunito;
-
-            }
-
-        
-        
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 800px) {
-    .jumbotron7 {
-        min-width: 320px;
-        height: 240px;
-
-        .cuadro-translucido {
-            min-width: 320px;
-            max-width: 800px;
-            max-height: 80px;
-            translate: 0% 100%;
-            padding: 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-                .titulo1 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin: 0px;
-                    color: $color-white !important;
-                    padding-left: 50px;
-
-                }
-
-            
-        }
-    }
-}
-
-
-
-/* .jumbotron7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/quiénes\ somos.1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 370px;
-
-    .cuadro-translucido {
-        max-width: 590px;
-        height: 370px;
-        background: $color-green-oscuro;
-        background: linear-gradient(90deg, $color-green-oscuro 0%, rgba(2, 80, 62, 0.709) 75%);
-        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         .titulo1 {
             color: $color-white;
-            font-size: 60px;
-            font-weight: 700;
+            font-size: 64px;
+            font-weight: 800;
             font-family: $tipografia-nunito;
-            margin: 0px 50px
+            margin: 0px;
         }
-
-
     }
-} */
+}
+
+@media only screen and (max-width: 955px) {
+    .jumbotron7 {
+        height: 240px;
+
+        .cuadro-translucido {
+            width: 100%;
+            max-width: 955px;
+            max-height: 80px;
+            translate: 0% 100%;
+            padding: 0px 16px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: start;
+
+            .titulo1 {
+                font-size: 28px;
+                font-weight: 600;
+                padding-top: 0px;
+                margin: 0px 5px;
+            }
+
+
+        }
+    }
+}
+
 
 .titulo-quienes-somos {
     font-family: $tipografia-nunito;
@@ -252,29 +220,6 @@
                 }
             }
 
-            //SE REEMPLAZA POR BOTON-DEFAULT
-            /* .boton-default-sin_fondo_invertido {
-                padding: 14px 47px;
-                border: 3px solid #ffffff;
-                border-radius: 100px;
-                background-color: transparent;
-                font-family: "Poppins";
-                color: #ffffff;
-                transition: color border 0.5s ease-in-out;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 36px;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                width: 304px;
-                height: 64px;
-
-                @media only screen and (max-width: 855px) {
-                    display: none;
-                }
-            } */
         }
 
         .recuadro-fotos {
