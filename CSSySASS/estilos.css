@@ -759,11 +759,20 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .div-tarjetas-margin {
   margin: 30px 50px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .div-tarjetas-margin {
+    margin: 20px 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .div-tarjetas-margin {
+    margin: 20px 20px;
+  }
+}
 .contenedor-tarjetas .col-sm-6 {
   padding: 0px;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
-  height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
@@ -794,23 +803,50 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven {
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -818,6 +854,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -828,7 +874,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   aspect-ratio: 1/1;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der {
-  height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
@@ -859,6 +904,18 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -874,8 +931,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -883,6 +955,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .tarjeta-descripcion {
   opacity: 1;
@@ -893,7 +975,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   aspect-ratio: 1/1;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
-  height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
@@ -924,23 +1005,50 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #F26123;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven {
   color: #F26123;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -948,6 +1056,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -958,7 +1076,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   aspect-ratio: 1/1;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der {
-  height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
@@ -989,6 +1106,18 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -1004,8 +1133,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -1013,6 +1157,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .tarjeta-descripcion {
   opacity: 1;
@@ -1022,8 +1176,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 100px;
   aspect-ratio: 1/1;
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
+  background-position: 0% 15%;
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
-  height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
@@ -1054,23 +1210,50 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #02503E;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven {
   color: #02503E;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -1078,6 +1261,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -1088,7 +1281,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   aspect-ratio: 1/1;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der {
-  height: 477px;
   border-radius: 0px 30px 30px 0px;
   padding: 32px 34px 32px 32px;
   margin: 10px;
@@ -1119,6 +1311,18 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -1134,8 +1338,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -1143,6 +1362,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .tarjeta-descripcion {
   opacity: 1;
@@ -1152,8 +1381,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   height: 100px;
   aspect-ratio: 1/1;
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
+  background-position: 100% 20%;
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
-  height: 477px;
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
   margin: 10px;
@@ -1184,23 +1415,50 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-size: 16px;
   line-height: 22px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion {
+    font-size: 0.9em;
+    padding: 40px 20px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion {
+    font-size: 0.8em;
+    padding: 30px 20px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven {
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 27px;
 }
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 0.9em;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
   margin-top: 32px;
+}
+@media only screen and (max-width: 1050px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
+    margin-top: 26px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
   font-family: "Nunito";
@@ -1208,6 +1466,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media only screen and (max-width: 1190px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 0.9em;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
   opacity: 1;

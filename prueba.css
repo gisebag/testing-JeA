@@ -1,0 +1,33 @@
+.container .row .parent-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.container .row .parent-div .child-div {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+.container .row .parent-div .child-div:nth-child(odd) {
+  margin-right: 20px;
+}
+@media (max-width: 800px) {
+  .container .row .parent-div .child-div {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .container .row .parent-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 800px) {
+  .container .row .col-md-6, .container .row .col-lg-3 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=prueba.css.map */
