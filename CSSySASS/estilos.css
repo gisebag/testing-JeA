@@ -780,7 +780,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-tarjeta-1 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Viviane Ogou.png");
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -865,8 +865,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-logo {
+  max-width: 240px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-default {
   width: 100px;
@@ -881,7 +907,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-tarjeta-2 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Eyal Weintraub.png");
   background-size: cover;
   border-radius: 0px 20px 20px 0px;
@@ -921,10 +947,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: white;
   color: #02503E;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven {
   color: #02503E;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
@@ -932,12 +958,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   line-height: 27px;
 }
 @media only screen and (max-width: 1190px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 960px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
   }
 }
@@ -946,7 +972,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 1050px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
-    margin-top: 26px;
+    margin-top: 24px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
@@ -966,8 +992,36 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+  max-height: 80px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
+  max-width: 240px;
+  max-height: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-default {
   width: 100px;
@@ -982,7 +1036,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Yael Crupnicoff.png");
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -1067,13 +1121,42 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-logo {
+  max-width: 240px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-default {
   width: 100px;
   height: 100px;
   aspect-ratio: 1/1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
+  background-position: 85% 0%;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der {
   border-radius: 0px 30px 30px 0px;
@@ -1083,7 +1166,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Luisa Romero.png");
   background-size: cover;
   border-radius: 0px 20px 20px 0px;
@@ -1123,10 +1206,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: white;
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven {
   color: #ED1C24;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
@@ -1134,12 +1217,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   line-height: 27px;
 }
 @media only screen and (max-width: 1190px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 960px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
   }
 }
@@ -1148,7 +1231,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 1050px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
-    margin-top: 26px;
+    margin-top: 24px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
@@ -1168,8 +1251,36 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+  max-height: 80px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
+  max-width: 240px;
+  max-height: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-default {
   width: 100px;
@@ -1187,7 +1298,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-tarjeta-1 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Álvaro Carrasco.png");
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -1272,8 +1383,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-logo {
+  max-width: 240px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-default {
   width: 100px;
@@ -1288,7 +1425,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Daniela Ancira.png");
   background-size: cover;
   border-radius: 0px 20px 20px 0px;
@@ -1328,10 +1465,10 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   background-color: white;
   color: #F26123;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven {
   color: #F26123;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
@@ -1339,12 +1476,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   line-height: 27px;
 }
 @media only screen and (max-width: 1190px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
   }
 }
 @media only screen and (max-width: 960px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .row .div-dialogo-joven .dialogo-joven {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
   }
 }
@@ -1353,7 +1490,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 1050px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
-    margin-top: 26px;
+    margin-top: 24px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
@@ -1373,8 +1510,36 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+  max-height: 80px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
+  max-width: 240px;
+  max-height: 100px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-default {
   width: 100px;
@@ -1392,7 +1557,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-tarjeta-1 {
   height: 300px;
-  width: 325px;
+  max-width: 325px;
   background-image: url("../img/Federico López.png");
   background-size: cover;
   border-radius: 20px 0px 0px 20px;
@@ -1477,8 +1642,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 0.9em;
   }
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .imagen-logo {
+  max-width: 200px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .imagen-logo {
+    max-width: 160px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .imagen-logo {
+    max-width: 140px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
   opacity: 1;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-logo {
+  max-width: 240px;
+}
+@media only screen and (max-width: 1200px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-logo {
+    max-width: 180px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-logo {
+    max-width: 160px;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-default {
   width: 100px;
@@ -1494,14 +1685,20 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   text-align: center;
   transition: background-color 0.5s ease-in-out;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row {
-  height: 100%;
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der svg circle {
+  transition: stroke 0.5s ease-in-out; /* Transición para la propiedad stroke */
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row .logo-entrevistas {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der svg path {
+  transition: fill 0.5s ease-in-out, stroke 0.5s ease-in-out; /* Transiciones para las propiedades fill y stroke */
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der svg .fondo-circulo {
+  transition: fill 0.5s ease-in-out, stroke 0.5s ease-in-out;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .logo-entrevistas {
   height: 145px;
   width: 238px;
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-der .row .texto-entrevistas {
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .texto-entrevistas {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -1511,8 +1708,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #02503E;
   transition: color 0.5s ease-in-out;
 }
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der .boton-default-sin_fondo {
+  transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover {
   background-color: #02503E;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover svg circle {
+  stroke: #ffffff;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover svg .fondo-circulo {
+  fill: #02503E;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-der:hover .texto-entrevistas {
   color: white;
