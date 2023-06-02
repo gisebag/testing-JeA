@@ -121,8 +121,8 @@
     <!-- tarjetas -->
     <section class="contenedor-tarjetas">
         <div class="div-tarjetas-margin">
-            <div class="row justify-content-center">
-                <div class="col-md-12 row justify-content-center">
+            <div class="d-none d-md-block m-0 row justify-content-center">
+                <div class="col-md-12 m-0 row justify-content-center">
                     <!-- tarj 1 -->
                     <div class="col-md mt-3 me-3 p-4 tarjeta-joven-inspira-1-izq row">
                         <div class="col imagen-tarjeta-1">
@@ -186,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 row justify-content-center">
+                <div class="col-md-12 m-0 row justify-content-center">
                     <!-- tarj 3 -->
                     <div class="col-md mt-3 me-3 p-4 tarjeta-joven-inspira-2-izq row">
                         <div class="col imagen-tarjeta-1">
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 row justify-content-center">
+                <div class="col-md-12 m-0 row justify-content-center">
                     <!-- tarj 5 -->
                     <div class="col-md mt-3 me-3 p-4 tarjeta-joven-inspira-3-izq row">
                         <div class="col imagen-tarjeta-1">
@@ -315,7 +315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 row justify-content-center">
+                <div class="col-md-12 m-0 row justify-content-center">
                     <!-- tarj 7 -->
                     <div class="col-md mt-3 me-3 p-4 tarjeta-joven-inspira-4-izq row">
                         <div class="col imagen-tarjeta-1">
@@ -382,15 +382,16 @@
                     </div>
                 </div>
             </div>
-            <div class="container carousel-jovenes">
-                <div class="row justify-content-center">
-                  <div class="col-12 row justify-content-center">
-                    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                      <div class="carousel-inner">
-                        <div class="carousel-item active col-md-12 row justify-content-center">
+            <!-- CAROUSEL CELULAR/TABLET -->
+            <div class="d-block d-md-none m-0 carousel-jovenes">
+                <div class="row justify-content-center p-0">
+                  <div class="col-12 row justify-content-center p-0">
+                    <div id="carouselExample" class="carousel slide p-0" data-bs-ride="carousel">
+                      <div class="carousel-inner p-0">
+                        <div class="carousel-item active p-0 col-md-12 row justify-content-center">
                           <!-- tarj 1 -->
                           <div class="p-4 tarjeta-joven-inspira-1-izq row">
-                              <div class="col-6 imagen-tarjeta-1">
+                              <div class="col-12 col-sm imagen-tarjeta-1">
                                   <div class="tarjeta tarjeta-descripcion row justify-content-center align-items-center">
                                       <div>
                                           <div class="texto-resaltado d-inline fw-bold">Puerta de África</div> es una
@@ -400,7 +401,7 @@
                                       </div>
                                   </div>
                               </div>
-                              <div class="col div-dialogo-joven">
+                              <div class="col-12 col-sm div-dialogo-joven">
                                   <p class="m-0"><strong class="dialogo-joven">“Mi objetivo es implicar a la diáspora africana en
                                           el
                                           proceso
@@ -408,29 +409,22 @@
                                           continente africano, fomentar los procesos de participación de la juventud y
                                           contribuir al desarrollo sostenible”.</strong> | España</p>
                               </div>
-                              <div class="d-flex row-md align-items-center div-descripcion-logo">
-                                  <div class="col text-center">
+                              <div class="align-items-center div-descripcion-logo">
+                                  <div class="text-center">
                                       <p class="descripcion-joven">Viviane Ogou es una estudiante y activista, quien fundó
                                           Puerta de África para
                                           contribuir al desarrollo global.</p>
                                   </div>
-                                  <div class="col text-center">
+                                  <div class="text-center">
                                     <img src="../img/puertadeafrica.png" class="imagen-logo" alt="Logo Puerta de Africa">
                                 </div>
                               </div>
                           </div>
                         </div>
-                        <div class="carousel-item col-md-12 row justify-content-center">
+                        <div class="carousel-item p-0 col-md-12 row justify-content-center">
                             <!-- tarj 2 -->
                             <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-1-der row">
-                                <div class="col div-dialogo-joven">
-                                    <p class="m-0"><strong class="dialogo-joven">“Sumarse a un proyecto colectivo es la mejor acción
-                                            individual que podes llegar a
-                                            hacer, es sumarte a ser parte de algo más grande, de un colectivo, una
-                                            organización”.</strong>
-                                        | Argentina</p>
-                                </div>
-                                <div class="col imagen-tarjeta-2">
+                                <div class="col-12 col-sm imagen-tarjeta-2">
                                     <div class="tarjeta tarjeta-descripcion row justify-content-center align-items-center">
                                         <div>
                                             <div class="texto-resaltado d-inline fw-bold">Jóvenes por el Clima </div>es
@@ -441,14 +435,21 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row align-items-center div-descripcion-logo">
-                                    <div class="col text-center">
-                                        <img src="../img/jovxelclima.png" class="imagen-logo" alt="Logo Jovenes por el Clima">
-                                    </div>
+                                <div class="col-12 col-sm div-dialogo-joven">
+                                    <p class="m-0"><strong class="dialogo-joven">“Sumarse a un proyecto colectivo es la mejor acción
+                                            individual que podes llegar a
+                                            hacer, es sumarte a ser parte de algo más grande, de un colectivo, una
+                                            organización”.</strong>
+                                        | Argentina</p>
+                                </div>
+                                <div class="align-items-center div-descripcion-logo">
                                     <div class="col">
                                         <p class="descripcion-joven">Eyal Weintraub es estudiante de Ciencia Política y
                                             Co-Fundador de Jóvenes por el
                                             Clima Argentina.</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="../img/jovxelclima.png" class="imagen-logo" alt="Logo Jovenes por el Clima">
                                     </div>
                                 </div>
                             </div>
@@ -526,9 +527,10 @@
     <section class="pregunta">
         <div class="text-center d-sm-flex justify-content-center align-items-center d-block">
             <h2 class="pregunta-preboton mx-sm-3 text-center text-md-end">¿Quiéres conocer más?</h2>
-            <div class="mx-sm-3 row justify-content-center d-sm-block">
-                <a class="text-decoration-none" href="../Contacto/contacto.html"><button
-                        class="boton-default boton-default-basico m-sm-0">Contáctanos</button></a>
+            <div class="m-0 mx-sm-3 row justify-content-center d-sm-block">
+                <a class="text-decoration-none" href="../Contacto/contacto.html">
+                    <button class="boton-default boton-default-basico m-sm-0">Contáctanos</button>
+                </a>
             </div>
         </div>
     </section>
