@@ -189,11 +189,9 @@
             img{
                 margin-left: 60px !important;
             }
-        }
+        }     
         
-        
-    }
-    
+    }    
 
 }
 
@@ -223,9 +221,6 @@
 
 
 /* seccion SINERGIAS */
-
-
-
 
 .img-conocer-jea{
     width: 580px;
@@ -266,9 +261,6 @@
         }
     }
 }
-
-
-//boton en _botones.scss
 
 //recuadro verde
 
@@ -414,10 +406,7 @@
                 height: 280px;
                 display: inline-block;
                 margin: 10px;
-                /* list-style: none; */
-                /* margin-right: 10px; */
-                /* max-width: 250px; */
-
+                
                 h3{
                     font-size: 16px;
                     
@@ -484,9 +473,6 @@
 
 }
 
-//boton negativo en _botones.scss
-
-
 .ancho{
     height: 100px;
 }
@@ -500,7 +486,6 @@
     font-size: 32px;
 }
 
-//btn contactanos en sass botones
 
 .titulo4{
     font-family: $tipografia-poppins;
@@ -559,10 +544,6 @@
     }
 
 }
-
-
-
-
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
     
@@ -635,6 +616,5 @@
             }
         }
     }
-    
-    
+        
 }
