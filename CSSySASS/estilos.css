@@ -623,6 +623,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     font-size: 12px;
 } */
 /* jovenes inspiradores */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .jumbotron2 {
   display: flex;
   justify-content: center;
@@ -799,7 +804,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
     border-radius: 0px;
-    height: 450px;
+    height: 480px;
     max-width: 450px;
     margin: auto;
   }
@@ -807,19 +812,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 575px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
     border-radius: 0px;
-    height: 480px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
-    border-radius: 0px;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 328px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
-    border-radius: 0px;
-    height: 520px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -887,6 +880,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: auto;
     border-radius: 0px;
     right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion .texto-resaltado {
@@ -895,7 +889,8 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #ED1C24;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-cerrar {
-  right: 0px;
+  top: 0px;
+  right: 20px;
   font-size: 50px;
   text-align: end;
   padding: 0px 20px;
@@ -926,18 +921,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
-    line-height: 17px;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     line-height: 17px;
   }
 }
@@ -952,11 +950,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
     margin-top: 12px;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
-    margin-top: 8px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
@@ -996,7 +989,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-boton {
-  width: 95%;
+  width: 100%;
   text-align: center;
   margin-top: 8px;
 }
@@ -1014,6 +1007,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-logo {
   max-width: 240px;
 }
@@ -1027,22 +1025,40 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 160px;
   }
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-default {
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1/1;
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der {
   border-radius: 0px 30px 30px 0px;
-  padding: 32px 34px 32px 32px;
+  padding: 32px;
   margin: 10px;
   background-color: #DBF8D7;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der {
     border-radius: 0px;
-    height: 550px;
-    margin: 0px;
+    height: 480px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der {
+    border-radius: 0px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-tarjeta-2 {
@@ -1059,6 +1075,15 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     height: 250px;
     max-width: 200px;
     border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-tarjeta-2 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
+    border-radius: 20px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
@@ -1068,7 +1093,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  padding: 60px 30px;
+  padding: 50px 25px;
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
@@ -1093,14 +1118,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
     font-size: 12px;
-    border-radius: 20px;
     padding: auto;
+    border-radius: 0px;
+    right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion .texto-resaltado {
-  font-weight: 700;
+  font-weight: 600;
   background-color: white;
   color: #02503E;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .posicion-cerrar {
+  top: 0px;
+  right: 20px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven {
   color: #02503E;
@@ -1110,7 +1149,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-style: normal;
   font-size: 20px;
   line-height: 27px;
-  height: 200px;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven strong {
   font-weight: 800;
@@ -1118,16 +1156,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
@@ -1168,7 +1218,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
   max-width: 200px;
-  max-height: 80px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
@@ -1180,17 +1229,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 140px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .imagen-logo {
-    max-width: 120px;
-  }
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .posicion-boton {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #02503E;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #02503E;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
   max-width: 240px;
-  max-height: 100px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
@@ -1202,6 +1266,25 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 160px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .ocultar {
+  opacity: 0 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-logo {
+  max-height: 80px;
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-logo {
+    max-height: 60px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
   border-radius: 30px 0px 0px 30px;
   padding: 32px;
@@ -1211,7 +1294,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
     border-radius: 0px;
-    height: 450px;
+    height: 480px;
     max-width: 450px;
     margin: auto;
   }
@@ -1219,19 +1302,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 575px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
     border-radius: 0px;
-    height: 480px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
-    border-radius: 0px;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 328px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
-    border-radius: 0px;
-    height: 520px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1299,6 +1370,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: auto;
     border-radius: 0px;
     right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion .texto-resaltado {
@@ -1307,7 +1379,8 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #F26123;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-cerrar {
-  right: 0px;
+  top: 0px;
+  right: 20px;
   font-size: 50px;
   text-align: end;
   padding: 0px 20px;
@@ -1338,18 +1411,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
-    line-height: 17px;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     line-height: 17px;
   }
 }
@@ -1364,11 +1440,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
     margin-top: 12px;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
-    margin-top: 8px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
@@ -1408,7 +1479,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-boton {
-  width: 95%;
+  width: 100%;
   text-align: center;
   margin-top: 8px;
 }
@@ -1426,6 +1497,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-logo {
   max-width: 240px;
 }
@@ -1439,25 +1515,43 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 160px;
   }
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-default {
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1/1;
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
   background-position: 85% 0%;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der {
   border-radius: 0px 30px 30px 0px;
-  padding: 32px 34px 32px 32px;
+  padding: 32px;
   margin: 10px;
   background-color: #FDE8E9;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der {
     border-radius: 0px;
-    height: 550px;
-    margin: 0px;
+    height: 480px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der {
+    border-radius: 0px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
@@ -1474,6 +1568,15 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     height: 250px;
     max-width: 200px;
     border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
+    border-radius: 20px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
@@ -1483,7 +1586,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  padding: 60px 30px;
+  padding: 50px 25px;
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
@@ -1508,14 +1611,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
     font-size: 12px;
-    border-radius: 20px;
     padding: auto;
+    border-radius: 0px;
+    right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion .texto-resaltado {
-  font-weight: 700;
+  font-weight: 600;
   background-color: white;
   color: #ED1C24;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .posicion-cerrar {
+  top: 0px;
+  right: 20px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven {
   color: #ED1C24;
@@ -1525,7 +1642,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-style: normal;
   font-size: 20px;
   line-height: 27px;
-  height: 200px;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven strong {
   font-weight: 800;
@@ -1533,16 +1649,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
@@ -1583,7 +1711,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
   max-width: 200px;
-  max-height: 80px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
@@ -1595,17 +1722,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 140px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .imagen-logo {
-    max-width: 120px;
-  }
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .posicion-boton {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #ED1C24;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ED1C24;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
   max-width: 240px;
-  max-height: 100px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
@@ -1616,6 +1758,17 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
     max-width: 160px;
   }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
   background-position: 0% 15%;
@@ -1629,7 +1782,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
     border-radius: 0px;
-    height: 450px;
+    height: 480px;
     max-width: 450px;
     margin: auto;
   }
@@ -1637,19 +1790,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 575px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
     border-radius: 0px;
-    height: 480px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
-    border-radius: 0px;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 328px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
-    border-radius: 0px;
-    height: 520px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1717,6 +1858,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: auto;
     border-radius: 0px;
     right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion .texto-resaltado {
@@ -1725,7 +1867,8 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #02503E;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-cerrar {
-  right: 0px;
+  top: 0px;
+  right: 20px;
   font-size: 50px;
   text-align: end;
   padding: 0px 20px;
@@ -1756,18 +1899,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
-    line-height: 17px;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     line-height: 17px;
   }
 }
@@ -1782,11 +1928,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
     margin-top: 12px;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
-    margin-top: 8px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
@@ -1826,7 +1967,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-boton {
-  width: 95%;
+  width: 100%;
   text-align: center;
   margin-top: 8px;
 }
@@ -1844,6 +1985,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-logo {
   max-width: 240px;
 }
@@ -1857,22 +2003,40 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 160px;
   }
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-default {
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1/1;
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der {
   border-radius: 0px 30px 30px 0px;
-  padding: 32px 34px 32px 32px;
+  padding: 32px;
   margin: 10px;
   background-color: #F6EBC8;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der {
     border-radius: 0px;
-    height: 550px;
-    margin: 0px;
+    height: 480px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der {
+    border-radius: 0px;
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
@@ -1889,6 +2053,15 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     height: 250px;
     max-width: 200px;
     border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
+    border-radius: 20px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
@@ -1898,7 +2071,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: absolute;
-  padding: 60px 30px;
+  padding: 50px 25px;
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
@@ -1923,14 +2096,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
     font-size: 12px;
-    border-radius: 20px;
     padding: auto;
+    border-radius: 0px;
+    right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion .texto-resaltado {
-  font-weight: 700;
+  font-weight: 600;
   background-color: white;
   color: #F26123;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .posicion-cerrar {
+  top: 0px;
+  right: 20px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven {
   color: #F26123;
@@ -1940,7 +2127,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   font-style: normal;
   font-size: 20px;
   line-height: 27px;
-  height: 200px;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven strong {
   font-weight: 800;
@@ -1948,16 +2134,28 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
@@ -1998,7 +2196,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
   max-width: 200px;
-  max-height: 80px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
@@ -2010,17 +2207,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 140px;
   }
 }
-@media only screen and (max-width: 900px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .imagen-logo {
-    max-width: 120px;
-  }
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .posicion-boton {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #F26123;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #F26123;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
   max-width: 240px;
-  max-height: 100px;
 }
 @media only screen and (max-width: 1200px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
@@ -2031,6 +2243,17 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
     max-width: 160px;
   }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
   background-position: 100% 20%;
@@ -2044,7 +2267,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
     border-radius: 0px;
-    height: 450px;
+    height: 480px;
     max-width: 450px;
     margin: auto;
   }
@@ -2052,19 +2275,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 575px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
     border-radius: 0px;
-    height: 480px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
-    border-radius: 0px;
-    height: 500px;
-  }
-}
-@media only screen and (max-width: 328px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
-    border-radius: 0px;
-    height: 520px;
+    height: 450px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -2132,6 +2343,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: auto;
     border-radius: 0px;
     right: 0px;
+    top: -10px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion .texto-resaltado {
@@ -2140,7 +2352,8 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   color: #ED1C24;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-cerrar {
-  right: 0px;
+  top: 0px;
+  right: 20px;
   font-size: 50px;
   text-align: end;
   padding: 0px 20px;
@@ -2171,18 +2384,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     font-size: 14px;
-    line-height: 17px;
   }
 }
 @media only screen and (max-width: 576px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     line-height: 17px;
   }
 }
@@ -2197,11 +2413,6 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
     margin-top: 12px;
-  }
-}
-@media only screen and (max-width: 568px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
-    margin-top: 8px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
@@ -2241,7 +2452,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-boton {
-  width: 95%;
+  width: 100%;
   text-align: center;
   margin-top: 8px;
 }
@@ -2259,6 +2470,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
   opacity: 1;
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
+    opacity: 0;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-logo {
   max-width: 240px;
 }
@@ -2272,10 +2488,16 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     max-width: 160px;
   }
 }
-.contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-default {
-  width: 100px;
-  height: 100px;
-  aspect-ratio: 1/1;
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .imagen-logo {
+    max-width: 140px;
+  }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .mostrar {
+  opacity: 1 !important;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .ocultar {
+  opacity: 0 !important;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-der {
   height: 477px;

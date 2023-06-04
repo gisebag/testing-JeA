@@ -1,6 +1,11 @@
 /* jovenes inspiradores */
 @import "_coloresyTipografias";
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .jumbotron2 {
     display: flex;
     justify-content: center;
@@ -153,24 +158,14 @@
 
     @media only screen and (max-width: 900px) {
         border-radius: 0px;
-        height: 450px; 
+        height: 480px; 
         max-width: 450px;
         margin: auto;
     }
 
     @media only screen and (max-width: 575px) {
         border-radius: 0px;
-        height: 480px; 
-    }
-
-    @media only screen and (max-width: 440px) {
-        border-radius: 0px;
-        height: 500px; 
-    }
-
-    @media only screen and (max-width: 328px) {
-        border-radius: 0px;
-        height: 520px; 
+        height: 450px; 
     }
 
     .imagen-descripcion-dialogo {
@@ -235,6 +230,7 @@
             padding: auto;
             border-radius: 0px;
             right: 0px;
+            top: -10px;
         }
 
         .texto-resaltado {
@@ -245,7 +241,8 @@
     }
 
     .posicion-cerrar {
-        right: 0px;
+        top: 0px;
+        right: 20px;
         font-size: 50px;
         text-align: end;
         padding: 0px 20px;
@@ -277,20 +274,20 @@
 
             @media only screen and (max-width: 960px) {
                 font-size: 0.9em;
-                line-height: 20px;
+                line-height: 22px;
             }
 
             @media only screen and (max-width: 900px) {
                 font-size: 14px;
-                line-height: 17px;
             }
 
             @media only screen and (max-width: 576px) {
                 font-size: 12px;
-                line-height: 17px;
             }
 
-
+            @media only screen and (max-width: 380px) {
+                line-height: 17px;
+            }
         }
     }
 
@@ -305,12 +302,8 @@
             margin-top: 12px;
         }
 
-        @media only screen and (max-width: 568px) {
-            margin-top: 8px;
-        }
-
         .descripcion-joven {
-            font-family: 'Nunito';
+            font-family: $tipografia-nunito;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -344,7 +337,7 @@
     }
 
     .posicion-boton {
-        width: 95%;
+        width: 100%;
         text-align: center;
         margin-top: 8px;
 
@@ -365,6 +358,10 @@
 
         .tarjeta-descripcion {
             opacity: 1;
+
+            @media only screen and (max-width: 900px) {
+                opacity: 0;
+            }
         }
 
         .imagen-logo {
@@ -377,27 +374,43 @@
             @media only screen and (max-width: 1000px) {
                 max-width: 160px;
             }
-        }
 
-        .imagen-default {
-            width: 100px;
-            height: 100px;
-            aspect-ratio: 1 / 1;
+            @media only screen and (max-width: 900px) {
+                max-width: 140px;
+            }
         }
     }
 
+    .mostrar {
+        opacity: 1 !important;
+    }
+    .ocultar {
+        opacity: 0 !important;
+    }
 }
 
 @mixin tarjetas_jovenes_der ($color-fondo, $url-imagen, $color-texto) {
     border-radius: 0px 30px 30px 0px;
-    padding: 32px 34px 32px 32px;
+    padding: 32px;
     margin: 10px;
     background-color: $color-fondo;
 
     @media only screen and (max-width: 900px) {
         border-radius: 0px;
-        height: 550px;
-        margin: 0px; 
+        height: 480px;
+        max-width: 450px;
+        margin: auto; 
+    }
+
+    @media only screen and (max-width: 575px) {
+        border-radius: 0px;
+        height: 450px; 
+    }
+
+    .imagen-descripcion-dialogo {
+        @media only screen and (max-width: 900px) {
+            position: relative;
+        }
     }
 
     .imagen-tarjeta-2 {
@@ -413,6 +426,14 @@
             height: 250px;
             max-width: 200px;
             border-radius: 20px;
+            position: static;
+        }
+        
+        @media only screen and (max-width: 576px) {
+            margin: 0px auto;
+            height: 200px;
+            max-width: 150px;
+            border-radius: 20px;
         }
     }
 
@@ -421,13 +442,13 @@
         border-radius: 0px 20px 20px 0px;
         background-color: $color-texto;
         opacity: 0;
-        transition: opacity 0.5s ease-in-out; //transicion para que pase de opacidad 0 a 1
+        transition: opacity 0.5s ease-in-out;
         position: absolute;
-        padding: 60px 30px;
+        padding: 50px 25px;
         width: 100%;
         height: 100%;
         aspect-ratio: 1 / 1;
-        font-family: 'Nunito';
+        font-family: $tipografia-nunito;
         font-style: normal;
         font-weight: 200;
         font-size: 16px;
@@ -445,14 +466,30 @@
         
         @media only screen and (max-width: 900px) {
             font-size: 12px;
-            border-radius: 20px;
             padding: auto;
+            border-radius: 0px;
+            right: 0px;
+            top: -10px;
         }
 
         .texto-resaltado {
-            font-weight: 700;
+            font-weight: 600;
             background-color: white;
             color: $color-texto;
+        }
+    }
+
+    .posicion-cerrar {
+        top: 0px;
+        right: 20px;
+        font-size: 50px;
+        text-align: end;
+        padding: 0px 20px;
+
+        .cerrar-tarjeta {
+            background-color: transparent;
+            border: 0px solid white;
+            color: white;
         }
     }
 
@@ -464,7 +501,6 @@
             font-style: normal;
             font-size: 20px;
             line-height: 27px;
-            height: 200px;
 
             strong {
                 font-weight: 800;
@@ -472,14 +508,24 @@
 
             @media only screen and (max-width: 1190px) {
                 font-size: 1em;
+                line-height: 24px;
             }
 
             @media only screen and (max-width: 960px) {
                 font-size: 0.9em;
+                line-height: 22px;
             }
 
             @media only screen and (max-width: 900px) {
                 font-size: 14px;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+
+            @media only screen and (max-width: 380px) {
+                line-height: 17px;
             }
         }
     }
@@ -496,7 +542,7 @@
         }
 
         .descripcion-joven {
-            font-family: 'Nunito';
+            font-family: $tipografia-nunito;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -518,7 +564,6 @@
 
         .imagen-logo {
             max-width: 200px;
-            max-height: 80px;
 
             @media only screen and (max-width: 1200px) {
                 max-width: 160px;
@@ -527,22 +572,38 @@
             @media only screen and (max-width: 1000px) {
                 max-width: 140px;
             }
+        }
+    }
 
-            @media only screen and (max-width: 900px) {
-                max-width: 120px;
-            }
+    .posicion-boton {
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
+
+        .boton-ver-mas {
+            width: 150px;
+            height: 30px;
+            border: 2px solid $color-texto;
+            border-radius: 100px;
+            font-family: $tipografia-poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            color: $color-texto;
         }
     }
 
     &:hover {
-
         .tarjeta-descripcion {
             opacity: 1;
+            
+            @media only screen and (max-width: 900px) {
+                opacity: 0;
+            }
         }
 
         .imagen-logo {
             max-width: 240px;
-            max-height: 100px;
 
             @media only screen and (max-width: 1200px) {
                 max-width: 180px;
@@ -551,7 +612,18 @@
             @media only screen and (max-width: 1000px) {
                 max-width: 160px;
             }
+            
+            @media only screen and (max-width: 900px) {
+                max-width: 140px;
+            }
         }
+    }
+    
+    .mostrar {
+        opacity: 1 !important;
+    }
+    .ocultar {
+        opacity: 0 !important;
     }
 }
 
@@ -597,6 +669,13 @@
 
     .tarjeta-joven-inspira-1-der {
         @include tarjetas_jovenes_der ($color-fondo: $color-green-pastel, $url-imagen: '../img/Eyal Weintraub.png', $color-texto: $color-green-oscuro);
+
+        .imagen-logo {
+            max-height: 80px;
+            @media only screen and (max-width: 900px) {
+                max-height: 60px;
+            }
+        }
     }
 
     .tarjeta-joven-inspira-2-izq {
