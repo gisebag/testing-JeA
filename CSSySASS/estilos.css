@@ -774,8 +774,21 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     margin: 0px;
   }
 }
-.contenedor-tarjetas .col-sm-6 {
-  padding: 0px;
+.contenedor-tarjetas .div-tarjetas-margin .grid-tarjetas {
+  display: block;
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .div-tarjetas-margin .grid-tarjetas {
+    display: none;
+  }
+}
+.contenedor-tarjetas .div-tarjetas-margin .carousel-jovenes {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .div-tarjetas-margin .carousel-jovenes {
+    display: block;
+  }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
   border-radius: 30px 0px 0px 30px;
@@ -786,7 +799,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
     border-radius: 0px;
-    height: 550px;
+    height: 450px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
+    border-radius: 0px;
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
+    border-radius: 0px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq {
+    border-radius: 0px;
+    height: 520px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-tarjeta-1 {
@@ -794,13 +832,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-width: 325px;
   background-image: url("../img/Viviane Ogou.png");
   background-size: cover;
-  border-radius: 20px 0px 0px 20px;
   position: relative;
+  border-radius: 20px 0px 0px 20px;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-tarjeta-1 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
+    border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .imagen-tarjeta-1 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
     border-radius: 20px;
   }
 }
@@ -833,10 +881,29 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion {
+    font-size: 12px;
+    padding: auto;
+    border-radius: 0px;
+    right: 0px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-cerrar {
+  right: 0px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven {
   color: #ED1C24;
@@ -844,18 +911,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
@@ -867,6 +950,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 @media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 568px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo {
     margin-top: 8px;
   }
@@ -890,6 +978,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -905,6 +994,22 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-1-izq .div-descripcion-logo .imagen-logo {
     max-width: 140px;
   }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-boton {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-izq .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #ED1C24;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ED1C24;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -950,8 +1055,9 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .imagen-tarjeta-2 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
     border-radius: 20px;
   }
 }
@@ -984,6 +1090,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion {
+    font-size: 12px;
+    border-radius: 20px;
+    padding: auto;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -995,9 +1108,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+  height: 200px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
@@ -1007,6 +1123,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
@@ -1019,7 +1140,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
@@ -1041,6 +1162,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-1-der .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1089,7 +1211,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
     border-radius: 0px;
-    height: 550px;
+    height: 450px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
+    border-radius: 0px;
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
+    border-radius: 0px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq {
+    border-radius: 0px;
+    height: 520px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
@@ -1097,13 +1244,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-width: 325px;
   background-image: url("../img/Yael Crupnicoff.png");
   background-size: cover;
-  border-radius: 20px 0px 0px 20px;
   position: relative;
+  border-radius: 20px 0px 0px 20px;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
+    border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .imagen-tarjeta-1 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
     border-radius: 20px;
   }
 }
@@ -1136,10 +1293,29 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion {
+    font-size: 12px;
+    padding: auto;
+    border-radius: 0px;
+    right: 0px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #F26123;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-cerrar {
+  right: 0px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven {
   color: #F26123;
@@ -1147,18 +1323,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
@@ -1170,6 +1362,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 @media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 568px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo {
     margin-top: 8px;
   }
@@ -1193,6 +1390,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1208,6 +1406,22 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-2-izq .div-descripcion-logo .imagen-logo {
     max-width: 140px;
   }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-boton {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-izq .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #F26123;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #F26123;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -1256,8 +1470,9 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .imagen-tarjeta-2 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
     border-radius: 20px;
   }
 }
@@ -1290,6 +1505,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion {
+    font-size: 12px;
+    border-radius: 20px;
+    padding: auto;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -1301,9 +1523,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+  height: 200px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
@@ -1313,6 +1538,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
@@ -1325,7 +1555,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
@@ -1347,6 +1577,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-2-der .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1398,7 +1629,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
     border-radius: 0px;
-    height: 550px;
+    height: 450px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
+    border-radius: 0px;
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
+    border-radius: 0px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq {
+    border-radius: 0px;
+    height: 520px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-tarjeta-1 {
@@ -1406,13 +1662,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-width: 325px;
   background-image: url("../img/Álvaro Carrasco.png");
   background-size: cover;
-  border-radius: 20px 0px 0px 20px;
   position: relative;
+  border-radius: 20px 0px 0px 20px;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-tarjeta-1 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
+    border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .imagen-tarjeta-1 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
     border-radius: 20px;
   }
 }
@@ -1445,10 +1711,29 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion {
+    font-size: 12px;
+    padding: auto;
+    border-radius: 0px;
+    right: 0px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #02503E;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-cerrar {
+  right: 0px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven {
   color: #02503E;
@@ -1456,18 +1741,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
@@ -1479,6 +1780,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 @media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 568px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo {
     margin-top: 8px;
   }
@@ -1502,6 +1808,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1517,6 +1824,22 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-3-izq .div-descripcion-logo .imagen-logo {
     max-width: 140px;
   }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-boton {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-izq .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #02503E;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #02503E;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-izq:hover .tarjeta-descripcion {
   opacity: 1;
@@ -1562,8 +1885,9 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .imagen-tarjeta-2 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
     border-radius: 20px;
   }
 }
@@ -1596,6 +1920,13 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion {
+    font-size: 12px;
+    border-radius: 20px;
+    padding: auto;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .tarjeta-descripcion .texto-resaltado {
   font-weight: 700;
   background-color: white;
@@ -1607,9 +1938,12 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+  height: 200px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
@@ -1619,6 +1953,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
@@ -1631,7 +1970,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
@@ -1653,6 +1992,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-3-der .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1704,7 +2044,32 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
     border-radius: 0px;
-    height: 550px;
+    height: 450px;
+    max-width: 450px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
+    border-radius: 0px;
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
+    border-radius: 0px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq {
+    border-radius: 0px;
+    height: 520px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-descripcion-dialogo {
+    position: relative;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-tarjeta-1 {
@@ -1712,13 +2077,23 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-width: 325px;
   background-image: url("../img/Federico López.png");
   background-size: cover;
-  border-radius: 20px 0px 0px 20px;
   position: relative;
+  border-radius: 20px 0px 0px 20px;
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-tarjeta-1 {
-    margin: auto;
-    max-width: 300px;
+    margin: 0px auto;
+    height: 250px;
+    max-width: 200px;
+    border-radius: 20px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .imagen-tarjeta-1 {
+    margin: 0px auto;
+    height: 200px;
+    max-width: 150px;
     border-radius: 20px;
   }
 }
@@ -1751,10 +2126,29 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion {
+    font-size: 12px;
+    padding: auto;
+    border-radius: 0px;
+    right: 0px;
+  }
+}
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .tarjeta-descripcion .texto-resaltado {
   font-weight: 600;
   background-color: white;
   color: #ED1C24;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-cerrar {
+  right: 0px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven {
   color: #ED1C24;
@@ -1762,18 +2156,34 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
   font-size: 20px;
   line-height: 27px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven strong {
+  font-weight: 800;
 }
 @media only screen and (max-width: 1190px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     font-size: 1em;
+    line-height: 24px;
   }
 }
 @media only screen and (max-width: 960px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
     font-size: 0.9em;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-dialogo-joven .dialogo-joven {
+    font-size: 12px;
+    line-height: 17px;
   }
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
@@ -1785,6 +2195,11 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   }
 }
 @media only screen and (max-width: 900px) {
+  .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 568px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo {
     margin-top: 8px;
   }
@@ -1808,6 +2223,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .descripcion-joven {
+    font-size: 12px;
     text-align: center;
   }
 }
@@ -1823,6 +2239,22 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   .contenedor-tarjetas .tarjeta-joven-inspira-4-izq .div-descripcion-logo .imagen-logo {
     max-width: 140px;
   }
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-boton {
+  width: 95%;
+  text-align: center;
+  margin-top: 8px;
+}
+.contenedor-tarjetas .tarjeta-joven-inspira-4-izq .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #ED1C24;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ED1C24;
 }
 .contenedor-tarjetas .tarjeta-joven-inspira-4-izq:hover .tarjeta-descripcion {
   opacity: 1;

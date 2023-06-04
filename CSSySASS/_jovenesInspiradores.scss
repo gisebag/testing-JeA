@@ -116,7 +116,6 @@
     background-color: $color-green-claro;
     padding: 32px 20px;
     margin: 0 20px;
-
 }
 
 .contenedor-vectores {
@@ -154,7 +153,30 @@
 
     @media only screen and (max-width: 900px) {
         border-radius: 0px;
-        height: 550px; 
+        height: 450px; 
+        max-width: 450px;
+        margin: auto;
+    }
+
+    @media only screen and (max-width: 575px) {
+        border-radius: 0px;
+        height: 480px; 
+    }
+
+    @media only screen and (max-width: 440px) {
+        border-radius: 0px;
+        height: 500px; 
+    }
+
+    @media only screen and (max-width: 328px) {
+        border-radius: 0px;
+        height: 520px; 
+    }
+
+    .imagen-descripcion-dialogo {
+        @media only screen and (max-width: 900px) {
+            position: relative;
+        }
     }
 
     .imagen-tarjeta-1 {
@@ -162,12 +184,21 @@
         max-width: 325px;
         background-image: url($url-imagen);
         background-size: cover;
-        border-radius: 20px 0px 0px 20px;
         position: relative;
+        border-radius: 20px 0px 0px 20px;
 
         @media only screen and (max-width: 900px) {
-            margin: auto;
-            max-width: 300px;
+            margin: 0px auto;
+            height: 250px;
+            max-width: 200px;
+            border-radius: 20px;
+            position: static;
+        }
+
+        @media only screen and (max-width: 576px) {
+            margin: 0px auto;
+            height: 200px;
+            max-width: 150px;
             border-radius: 20px;
         }
     }
@@ -198,11 +229,31 @@
             font-size: 0.8em;
             padding: 30px 20px;
         }
+        
+        @media only screen and (max-width: 900px) {
+            font-size: 12px;
+            padding: auto;
+            border-radius: 0px;
+            right: 0px;
+        }
 
         .texto-resaltado {
             font-weight: 600;
             background-color: white;
             color: $color-texto;
+        }
+    }
+
+    .posicion-cerrar {
+        right: 0px;
+        font-size: 50px;
+        text-align: end;
+        padding: 0px 20px;
+
+        .cerrar-tarjeta {
+            background-color: transparent;
+            border: 0px solid white;
+            color: white;
         }
     }
 
@@ -212,17 +263,34 @@
         .dialogo-joven {
             font-family: $tipografia-nunito;
             font-style: normal;
-            font-weight: 800;
             font-size: 20px;
             line-height: 27px;
 
+            strong {
+                font-weight: 800;
+            }
+
             @media only screen and (max-width: 1190px) {
                 font-size: 1em;
+                line-height: 24px;
             }
 
             @media only screen and (max-width: 960px) {
                 font-size: 0.9em;
+                line-height: 20px;
             }
+
+            @media only screen and (max-width: 900px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            @media only screen and (max-width: 576px) {
+                font-size: 12px;
+                line-height: 17px;
+            }
+
+
         }
     }
 
@@ -234,6 +302,10 @@
         }
 
         @media only screen and (max-width: 900px) {
+            margin-top: 12px;
+        }
+
+        @media only screen and (max-width: 568px) {
             margin-top: 8px;
         }
 
@@ -253,6 +325,7 @@
             }
 
             @media only screen and (max-width: 900px) {
+                font-size: 12px;
                 text-align: center;
             }
         }
@@ -268,7 +341,24 @@
                 max-width: 140px;
             }
         }
-        
+    }
+
+    .posicion-boton {
+        width: 95%;
+        text-align: center;
+        margin-top: 8px;
+
+        .boton-ver-mas {
+            width: 150px;
+            height: 30px;
+            border: 2px solid $color-texto;
+            border-radius: 100px;
+            font-family: $tipografia-poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            color: $color-texto;
+        }
     }
 
     &:hover {
@@ -319,8 +409,9 @@
         position: relative; //posicion relativa para que aparezca la tarjeta-descripcion en el mismo lugar
 
         @media only screen and (max-width: 900px) {
-            margin: auto;
-            max-width: 300px;
+            margin: 0px auto;
+            height: 250px;
+            max-width: 200px;
             border-radius: 20px;
         }
     }
@@ -351,6 +442,12 @@
             font-size: 0.8em;
             padding: 30px 20px;
         }
+        
+        @media only screen and (max-width: 900px) {
+            font-size: 12px;
+            border-radius: 20px;
+            padding: auto;
+        }
 
         .texto-resaltado {
             font-weight: 700;
@@ -361,12 +458,17 @@
 
     .div-dialogo-joven {
         color: $color-texto;
+
         .dialogo-joven {
             font-family: $tipografia-nunito;
             font-style: normal;
-            font-weight: 800;
             font-size: 20px;
             line-height: 27px;
+            height: 200px;
+
+            strong {
+                font-weight: 800;
+            }
 
             @media only screen and (max-width: 1190px) {
                 font-size: 1em;
@@ -374,6 +476,10 @@
 
             @media only screen and (max-width: 960px) {
                 font-size: 0.9em;
+            }
+
+            @media only screen and (max-width: 900px) {
+                font-size: 14px;
             }
         }
     }
@@ -386,7 +492,7 @@
         }
 
         @media only screen and (max-width: 900px) {
-            margin-top: 8px;
+            margin-top: 12px;
         }
 
         .descripcion-joven {
@@ -405,6 +511,7 @@
             }
 
             @media only screen and (max-width: 900px) {
+                font-size: 12px;
                 text-align: center;
             }
         }
@@ -466,10 +573,22 @@
         @media only screen and (max-width: 900px) {
             margin: 0px;    
         }
-    }
 
-    .col-sm-6 {
-        padding: 0px;
+        .grid-tarjetas {
+            display: block;
+
+            @media only screen and (max-width: 900px) {
+                display: none;   
+            }
+        }
+
+        .carousel-jovenes {
+            display: none;
+
+            @media only screen and (max-width: 900px) {
+                display: block;   
+            }
+        }
     }
 
     .tarjeta-joven-inspira-1-izq {

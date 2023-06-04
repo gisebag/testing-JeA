@@ -121,7 +121,7 @@
     <!-- tarjetas -->
     <section class="contenedor-tarjetas">
         <div class="div-tarjetas-margin">
-            <div class="d-none d-md-block m-0 row justify-content-center">
+            <div class="grid-tarjetas m-0 row justify-content-center">
                 <div class="col-md-12 m-0 row justify-content-center">
                     <!-- tarj 1 -->
                     <div class="col-md mt-3 me-3 p-4 tarjeta-joven-inspira-1-izq row">
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="col div-dialogo-joven">
-                            <p class="m-0"><strong class="dialogo-joven">“Mi objetivo es implicar a la diáspora africana en
+                            <p class="m-0 dialogo-joven"><strong>“Mi objetivo es implicar a la diáspora africana en
                                     el
                                     proceso
                                     de desarrollo del
@@ -157,7 +157,7 @@
                     <!-- tarj 2 -->
                     <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-1-der row">
                         <div class="col div-dialogo-joven">
-                            <p class="m-0"><strong class="dialogo-joven">“Sumarse a un proyecto colectivo es la mejor acción
+                            <p class="m-0 dialogo-joven"><strong>“Sumarse a un proyecto colectivo es la mejor acción
                                     individual que podes llegar a
                                     hacer, es sumarte a ser parte de algo más grande, de un colectivo, una
                                     organización”.</strong>
@@ -201,7 +201,7 @@
                             </div>
                         </div>
                         <div class="col div-dialogo-joven">
-                            <p><strong class="dialogo-joven">“Tenemos que sentarnos a dialogar con los adultos y
+                            <p class="dialogo-joven"><strong>“Tenemos que sentarnos a dialogar con los adultos y
                                     construir el futuro desde ahora. No estar en la idea de que los jóvenes
                                     somos el
                                     futuro, sino entender que podemos ser el presente”.</strong> | Argentina</p>
@@ -220,7 +220,7 @@
                     <!-- tarj 4 -->
                     <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-2-der row">
                         <div class="col div-dialogo-joven">
-                            <p><strong class="dialogo-joven">“Utilizamos el turismo sostenible como un medio
+                            <p class="dialogo-joven"><strong>“Utilizamos el turismo sostenible como un medio
                                     para
                                     lograr conectar a las comunidades con turistas, para ello es necesario
                                     generar
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                         <div class="col div-dialogo-joven">
-                            <p><strong class="dialogo-joven">“Hoy estamos generando una ciudadanía digital y
+                            <p class="dialogo-joven"><strong>“Hoy estamos generando una ciudadanía digital y
                                     tenemos
                                     obligaciones. Es importante ser igual de éticos, responsables y empáticos;
                                     como
@@ -285,7 +285,7 @@
                     <!-- tarj 6 -->
                     <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-3-der row">
                         <div class="col div-dialogo-joven">
-                            <p><strong class="dialogo-joven">“¿De qué sirven las cárceles si la gente que está
+                            <p class="dialogo-joven"><strong>“¿De qué sirven las cárceles si la gente que está
                                     allí
                                     sigue cometiendo delitos? El chiste es que sean verdaderos centros de
                                     reinserción social donde encontrar nuevas oportunidades de vida”.</strong>
@@ -330,7 +330,7 @@
                             </div>
                         </div>
                         <div class="col div-dialogo-joven">
-                            <p><strong class="dialogo-joven">“Si tienes una idea, aunque no tengas la capacidad
+                            <p class="dialogo-joven"><strong>“Si tienes una idea, aunque no tengas la capacidad
                                     de desarrollarla, inténtalo; rodéate de gente que sepa hacer lo que
                                     necesitas y hazlo posible”.</strong> | España</p>
                         </div>
@@ -383,16 +383,17 @@
                 </div>
             </div>
             <!-- CAROUSEL CELULAR/TABLET -->
-            <div class="d-block d-md-none m-0 carousel-jovenes">
+            <div class="m-0 carousel-jovenes">
                 <div class="row justify-content-center p-0">
                   <div class="col-12 row justify-content-center p-0">
                     <div id="carouselExample" class="carousel slide p-0" data-bs-ride="carousel">
                       <div class="carousel-inner p-0">
                         <div class="carousel-item active p-0 col-md-12 row justify-content-center">
                           <!-- tarj 1 -->
-                          <div class="p-4 tarjeta-joven-inspira-1-izq row">
-                              <div class="col-12 col-sm imagen-tarjeta-1">
-                                  <div class="tarjeta tarjeta-descripcion row justify-content-center align-items-center">
+                          <div class="p-4 tarjeta-joven-inspira-1-izq">
+                            <div class="row imagen-descripcion-dialogo p-3">
+                              <div class="col imagen-tarjeta-1">
+                                  <div class="tarjeta tarjeta-descripcion m-0 row justify-content-center align-items-center">
                                       <div>
                                           <div class="texto-resaltado d-inline fw-bold">Puerta de África</div> es una
                                           organización sin ánimo de lucro que promueve la investigación en asuntos
@@ -400,49 +401,58 @@
                                               class="texto-resaltado d-inline fw-bold"> empoderamiento juvenil. </div>
                                       </div>
                                   </div>
+                                  <div class="position-absolute posicion-cerrar">
+                                    <button class="cerrar-tarjeta d-none" id="cerrar-tarjeta-5">&times;</button>
+                                  </div>
                               </div>
-                              <div class="col-12 col-sm div-dialogo-joven">
-                                  <p class="m-0"><strong class="dialogo-joven">“Mi objetivo es implicar a la diáspora africana en
+                              <div class="col div-dialogo-joven">
+                                  <p class="m-0 dialogo-joven"><strong>“Mi objetivo es implicar a la diáspora africana en
                                           el
                                           proceso
                                           de desarrollo del
                                           continente africano, fomentar los procesos de participación de la juventud y
                                           contribuir al desarrollo sostenible”.</strong> | España</p>
                               </div>
+                            </div>
                               <div class="align-items-center div-descripcion-logo">
                                   <div class="text-center">
-                                      <p class="descripcion-joven">Viviane Ogou es una estudiante y activista, quien fundó
+                                      <p class="descripcion-joven mb-2">Viviane Ogou es una estudiante y activista, quien fundó
                                           Puerta de África para
                                           contribuir al desarrollo global.</p>
                                   </div>
                                   <div class="text-center">
                                     <img src="../img/puertadeafrica.png" class="imagen-logo" alt="Logo Puerta de Africa">
-                                </div>
+                                  </div>
+                              </div>
+                              <div class="posicion-boton">
+                                <button class="boton-ver-mas" id="boton-ver-mas-5">Ver más</button>
                               </div>
                           </div>
                         </div>
-                        <div class="carousel-item p-0 col-md-12 row justify-content-center">
+                        <!-- <div class="carousel-item p-0 col-md-12 row justify-content-center"> -->
                             <!-- tarj 2 -->
-                            <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-1-der row">
-                                <div class="col-12 col-sm imagen-tarjeta-2">
-                                    <div class="tarjeta tarjeta-descripcion row justify-content-center align-items-center">
-                                        <div>
-                                            <div class="texto-resaltado d-inline fw-bold">Jóvenes por el Clima </div>es
-                                            un movimiento social político encabezado por la juventud indignada por la
-                                            inacción de los gobiernos ante las<div class="texto-resaltado d-inline fw-bold">
-                                                consecuencias del cambio
-                                                climático. </div>
+                            <!-- <div class="col-md mt-3 ms-3 p-4 tarjeta-joven-inspira-1-der">
+                                <div class="row">
+                                    <div class="col-12 col-sm imagen-tarjeta-2">
+                                        <div class="tarjeta tarjeta-descripcion row justify-content-center align-items-center">
+                                            <div>
+                                                <div class="texto-resaltado d-inline fw-bold">Jóvenes por el Clima </div>es
+                                                un movimiento social político encabezado por la juventud indignada por la
+                                                inacción de los gobiernos ante las<div class="texto-resaltado d-inline fw-bold">
+                                                    consecuencias del cambio
+                                                    climático. </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="col-12 col-sm div-dialogo-joven">
+                                        <p class="m-0 dialogo-joven"><strong>“Sumarse a un proyecto colectivo es la mejor acción
+                                                individual que podes llegar a
+                                                hacer, es sumarte a ser parte de algo más grande, de un colectivo, una
+                                                organización”.</strong>
+                                            | Argentina</p>
+                                    </div>
                                 </div>
-                                <div class="col-12 col-sm div-dialogo-joven">
-                                    <p class="m-0"><strong class="dialogo-joven">“Sumarse a un proyecto colectivo es la mejor acción
-                                            individual que podes llegar a
-                                            hacer, es sumarte a ser parte de algo más grande, de un colectivo, una
-                                            organización”.</strong>
-                                        | Argentina</p>
-                                </div>
-                                <div class="align-items-center div-descripcion-logo">
+                                <div class="col-12 align-items-center div-descripcion-logo">
                                     <div class="col">
                                         <p class="descripcion-joven">Eyal Weintraub es estudiante de Ciencia Política y
                                             Co-Fundador de Jóvenes por el
@@ -453,7 +463,8 @@
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                        </div> -->
+                       <!--  </div> -->
                         <!-- <div class="carousel-item col-md-12 row justify-content-center">
                           
                         </div>
@@ -472,7 +483,6 @@
                         <div class="carousel-item col-md-12 row justify-content-center">
                           
                         </div> -->
-                      </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
