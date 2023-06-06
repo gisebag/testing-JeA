@@ -1,5 +1,5 @@
 /* BOTONES TARJETAS */
-for (let i = 1; i < 6; i++) {
+for (let i = 1; i < 8; i++) {
     const botonVerMas = document.getElementById(`boton-ver-mas-${i}`);
     const tarjetaDescripcion = document.getElementById(`tarjeta-descripcion-${i}`);
     const botonCerrarTarjeta = document.getElementById(`cerrar-tarjeta-${i}`);
