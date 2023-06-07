@@ -1,259 +1,263 @@
 @import "_coloresyTipografias";
 
-
 .jumbotron7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/quiénes\ somos.1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 494px;
+
+  .cuadro-translucido {
+    margin: 0px;
+    width: 500px;
+    height: 100%;
+    background: $color-green-oscuro;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 80, 62, 1) 0%,
+      rgba(2, 80, 62, 0.709) 75%
+    );
+    text-align: start;
+    padding: 88px 32px 88px 82px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image:  url(../img/quiénes\ somos.1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 494px;
 
-    .cuadro-translucido {
-        margin: 0px;
-        width: 500px;
-        height: 100%;
-        background: $color-green-oscuro;
-        background: linear-gradient(90deg, rgba(2, 80, 62, 1) 0%, rgba(2, 80, 62, 0.709) 75%);
-        text-align: start;
-        padding: 88px 32px 88px 82px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        .titulo1 {
-            color: $color-white;
-            font-size: 64px;
-            font-weight: 800;
-            font-family: $tipografia-nunito;
-            margin: 0px;
-        }
+    .titulo1 {
+      color: $color-white;
+      font-size: 64px;
+      font-weight: 800;
+      font-family: $tipografia-nunito;
+      margin: 0px;
     }
+  }
 }
 
 @media only screen and (max-width: 955px) {
-    .jumbotron7 {
-        height: 240px;
+  .jumbotron7 {
+    height: 240px;
 
-        .cuadro-translucido {
-            width: 100%;
-            max-width: 955px;
-            max-height: 80px;
-            translate: 0% 100%;
-            padding: 0px 16px;
-            flex-direction: row;
-            align-items: center;
-            justify-content: start;
+    .cuadro-translucido {
+      width: 100%;
+      max-width: 955px;
+      max-height: 80px;
+      translate: 0% 100%;
+      padding: 0px 16px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
 
-            .titulo1 {
-                font-size: 28px;
-                font-weight: 600;
-                padding-top: 0px;
-                margin: 0px 5px;
-            }
-
-
-        }
+      .titulo1 {
+        font-size: 28px;
+        font-weight: 600;
+        padding-top: 0px;
+        margin: 0px 5px;
+      }
     }
+  }
 }
 
-
 .titulo-quienes-somos {
-    font-family: $tipografia-nunito;
-    color: $color-green-oscuro;
-    font-size: 36px;
-    padding: 10px 30px;
-    text-align: center;
-    margin: 30px 60px;
+  font-family: $tipografia-nunito;
+  color: $color-green-oscuro;
+  font-size: 36px;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 30px 60px;
 
-    @media only screen and (max-width: 855px) {
-        font-size: 20px;
-        margin: 16px 40px !important;
-    }
+  @media only screen and (max-width: 855px) {
+    font-size: 20px;
+    margin: 16px 40px !important;
+  }
 }
 
 .secciones-pilares_historia {
-    max-width: 1300px;
-    margin: auto;
+  max-width: 1300px;
+  margin: auto;
 
-    .recuadro-pilares {
+  .recuadro-pilares {
+    .ancho {
+      height: 100px;
 
-        .recuadro-texto {
-            font-weight: 700;
-            padding: 10px;
-            font-family: $tipografia-nunito;
-            font-size: 20px;
-
-            @media only screen and (max-width: 950px) {
-                font-size: 16px;
-            }
-
-            .relleno-green {
-                background-color: $color-green-oscuro;
-                color: $color-white;
-                padding: 0 5px;
-            }
-
-            .relleno-yellow {
-                background-color: $color-orange-oscuro;
-                color: $color-white;
-                padding: 0 5px;
-            }
-
-            .relleno-red {
-                background-color: $color-red-oscuro;
-                color: $color-white;
-                padding: 0 5px;
-            }
-        }
-
-        .card {
-            font-size: 18px;
-            height: 410px;
-            max-width: 408px;
-            border-radius: 25px;
-
-            @media only screen and (max-width: 1150px) {
-                height: 480px;
-            }
-
-            @media only screen and (max-width: 950px) {
-                height: 408px;
-            }
-
-            @media only screen and (max-width: 820px) {
-                height: 450px;
-            }
-
-            @media only screen and (max-width: 768px) {
-                height: 310px;
-            }
-
-            @media only screen and (max-width: 375px) {
-                height: 340px;
-            }
-        }
-
-        .card-A {
-            background-color: $color-green-pastel;
-            border-color: $color-green-pastel;
-        }
-
-        .card-B {
-            background-color: $color-orange-pastel;
-            border-color: $color-orange-pastel;
-
-        }
-
-        .card-C {
-            background-color: $color-red-pastel;
-            border-color: $color-red-pastel;
-        }
-
-        .titulo-pilar {
-            font-size: 36px;
-            font-family: $tipografia-nunito;
-            font-weight: 800;
-
-            @media only screen and (max-width: 950px) {
-                font-size: 24px;
-            }
-        }
-
-        .titulo-pilar-1 {
-
-            color: $color-green-oscuro;
-        }
-
-        .titulo-pilar-2 {
-            color: $color-orange-oscuro;
-        }
-
-        .titulo-pilar-3 {
-            color: $color-red-oscuro;
-        }
+      @media only screen and (max-width: 840px) {
+        height: 70px;
+      }
     }
 
-    .recuadro-historia {
+    .recuadro-texto {
+      font-weight: 700;
+      padding: 10px;
+      font-family: $tipografia-nunito;
+      font-size: 20px;
+
+      @media only screen and (max-width: 950px) {
+        font-size: 16px;
+      }
+
+      .relleno-green {
         background-color: $color-green-oscuro;
-        border-radius: 16px;
-        max-width: 1280px;
+        color: $color-white;
+        padding: 0 5px;
+      }
 
-        .recuadro-texto-historia {
-            margin: 50px;
+      .relleno-yellow {
+        background-color: $color-orange-oscuro;
+        color: $color-white;
+        padding: 0 5px;
+      }
 
-            @media only screen and (max-width: 975px) {
-                margin: 20px;
-                margin-top: 50px;
-            }
-
-            h3 {
-                color: $color-white;
-                font-family: $tipografia-nunito;
-                font-size: 36px;
-                font-weight: 800;
-            }
-
-            .texto-historia {
-                color: $color-white;
-                min-width: 100px;
-                font-family: $tipografia-nunito;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 28px;
-
-                @media only screen and (max-width: 1200px) {
-                    font-size: 18px;
-                    line-height: 23px;
-                }
-
-                @media only screen and (max-width: 855px) {
-                    font-size: 16px;
-                    line-height: 18px;
-                }
-
-                span {
-                    color: black;
-                    font-weight: 600;
-                    background-color: $color-white;
-                }
-            }
-
-        }
-
-        .recuadro-fotos {
-            img {
-                width: 500px;
-                border-radius: 16px;
-            }
-
-            @media only screen and (max-width: 855px) {
-                display: none;
-            }
-        }
-
-        .recuadro-flecha-abajo {
-            display: none;
-
-            @media only screen and (max-width: 855px) {
-                display: block;
-            }
-        }
-
-        .recuadro-flecha-arriba,
-        .recuadro-flecha-abajo {
-            .boton-flecha {
-                border: none;
-                width: 100%;
-                background-color: $color-green-oscuro;
-
-                .img-flecha {
-                    background-color: $color-green-oscuro;
-                    width: 25px;
-                    height: 25px;
-                }
-            }
-        }
+      .relleno-red {
+        background-color: $color-red-oscuro;
+        color: $color-white;
+        padding: 0 5px;
+      }
     }
+
+    .card {
+      font-size: 18px;
+      height: 410px;
+      max-width: 408px;
+      border-radius: 25px;
+
+      @media only screen and (max-width: 1150px) {
+        height: 480px;
+      }
+
+      @media only screen and (max-width: 950px) {
+        height: 408px;
+      }
+
+      @media only screen and (max-width: 820px) {
+        height: 450px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 310px;
+      }
+
+      @media only screen and (max-width: 375px) {
+        height: 340px;
+      }
+    }
+
+    .card-A {
+      background-color: $color-green-pastel;
+      border-color: $color-green-pastel;
+    }
+
+    .card-B {
+      background-color: $color-orange-pastel;
+      border-color: $color-orange-pastel;
+    }
+
+    .card-C {
+      background-color: $color-red-pastel;
+      border-color: $color-red-pastel;
+    }
+
+    .titulo-pilar {
+      font-size: 36px;
+      font-family: $tipografia-nunito;
+      font-weight: 800;
+
+      @media only screen and (max-width: 950px) {
+        font-size: 24px;
+      }
+    }
+
+    .titulo-pilar-1 {
+      color: $color-green-oscuro;
+    }
+
+    .titulo-pilar-2 {
+      color: $color-orange-oscuro;
+    }
+
+    .titulo-pilar-3 {
+      color: $color-red-oscuro;
+    }
+  }
+
+  .recuadro-historia {
+    background-color: $color-green-oscuro;
+    border-radius: 16px;
+    max-width: 1280px;
+
+    .recuadro-texto-historia {
+      margin: 50px;
+
+      @media only screen and (max-width: 975px) {
+        margin: 20px;
+        margin-top: 50px;
+      }
+
+      h3 {
+        color: $color-white;
+        font-family: $tipografia-nunito;
+        font-size: 36px;
+        font-weight: 800;
+      }
+
+      .texto-historia {
+        color: $color-white;
+        min-width: 100px;
+        font-family: $tipografia-nunito;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+
+        @media only screen and (max-width: 1200px) {
+          font-size: 18px;
+          line-height: 23px;
+        }
+
+        @media only screen and (max-width: 855px) {
+          font-size: 16px;
+          line-height: 18px;
+        }
+
+        span {
+          color: black;
+          font-weight: 600;
+          background-color: $color-white;
+        }
+      }
+    }
+
+    .recuadro-fotos {
+      img {
+        width: 500px;
+        border-radius: 16px;
+      }
+
+      @media only screen and (max-width: 855px) {
+        display: none;
+      }
+    }
+
+    .recuadro-flecha-abajo {
+      display: none;
+
+      @media only screen and (max-width: 855px) {
+        display: block;
+      }
+    }
+
+    .recuadro-flecha-arriba,
+    .recuadro-flecha-abajo {
+      .boton-flecha {
+        border: none;
+        width: 100%;
+        background-color: $color-green-oscuro;
+
+        .img-flecha {
+          background-color: $color-green-oscuro;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
 }

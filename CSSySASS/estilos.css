@@ -439,10 +439,6 @@
     font-size: 16px;
   }
 }
-.ancho {
-  height: 100px;
-}
-
 .titulo-negativo {
   color: #f9f9f9;
   text-align: center;
@@ -4724,6 +4720,14 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
   max-width: 1300px;
   margin: auto;
 }
+.secciones-pilares_historia .recuadro-pilares .ancho {
+  height: 100px;
+}
+@media only screen and (max-width: 840px) {
+  .secciones-pilares_historia .recuadro-pilares .ancho {
+    height: 70px;
+  }
+}
 .secciones-pilares_historia .recuadro-pilares .recuadro-texto {
   font-weight: 700;
   padding: 10px;
@@ -4771,7 +4775,7 @@ footer .col-footer .imagen-footer svg, footer .col-footer-img .imagen-footer svg
     height: 450px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .secciones-pilares_historia .recuadro-pilares .card {
     height: 310px;
   }
