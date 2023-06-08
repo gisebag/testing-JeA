@@ -31,6 +31,11 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
+@media only screen and (min-width: 992px) and (max-width: 1012px) {
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+}
 
 .especial {
   font-weight: bold;
@@ -195,7 +200,7 @@
   }
   .objetivo-section .overflow-item .texto-complemento-objetivos {
     width: 160px !important;
-    height: 280px;
+    height: 140px !important;
     text-align: center;
     padding: 5px;
     font-size: 14px !important;
@@ -263,14 +268,12 @@
 }
 
 .fondo-verde {
-  margin-left: 60px;
   width: 90vw;
   height: 600px;
   background: #02503E;
   border-radius: 16px;
   padding-top: 15px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin: 50px auto !important;
 }
 .fondo-verde .titulo-negativo {
   color: #f9f9f9;

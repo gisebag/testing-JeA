@@ -148,7 +148,7 @@
 @media only screen and (min-width: 320px) and (max-width: 800px){
     .objetivo-section{
         .overflow {
-
+            
             overflow-x:scroll;
             /* -webkit-overflow-scrolling: touch; */
             overflow-y: hidden;
@@ -170,7 +170,7 @@
 
             .texto-complemento-objetivos{
                 width: 160px !important;
-                height: 280px;
+                height: 140px !important;
                 text-align: center;
                 padding: 5px;
                 font-size: 14px !important;
@@ -253,14 +253,12 @@
 //recuadro verde
 
 .fondo-verde{
-    margin-left: 60px;
     width: 90vw;
     height: 600px;
     background: $color-green-oscuro;
     border-radius: 16px;
     padding-top: 15px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 50px auto !important;
 
 
     .titulo-negativo{
