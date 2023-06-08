@@ -194,14 +194,14 @@
     font-size: 18px !important;
   }
   .objetivo-section .overflow-item .texto-complemento-objetivos {
-    width: 180px !important;
+    width: 160px !important;
     height: 280px;
-    text-align: left;
+    text-align: center;
     padding: 5px;
     font-size: 14px !important;
-    margin-left: 0px;
+    margin: auto !important;
   }
-  .objetivo-section .overflow-item img {
+  .objetivo-section .overflow-item svg {
     margin-left: 60px !important;
   }
 }
@@ -502,7 +502,7 @@
     line-height: 22px;
     color: #02503E;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     font-family: "Nunito";
     font-weight: 400;
     padding: 10px;
