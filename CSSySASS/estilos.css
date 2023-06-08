@@ -117,7 +117,7 @@
 .relleno {
   background-color: #02503E;
   color: #f9f9f9;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 /* seccion 1 del index - espacio JEA */
@@ -125,13 +125,16 @@
   display: flex;
   justify-content: center;
 }
-.objetivo-section .rojo {
+.objetivo-section .borde-rojo {
+  border-radius: 8px !important;
   border: solid #ED1C24 3px;
 }
-.objetivo-section .verde {
+.objetivo-section .borde-verde {
+  border-radius: 8px !important;
   border: solid #009876 3px;
 }
-.objetivo-section .amarillo {
+.objetivo-section .borde-amarillo {
+  border-radius: 8px !important;
   border: solid #FAC313 3px;
 }
 .objetivo-section .overflow {
@@ -152,15 +155,6 @@
 .objetivo-section .overflow .overflow-item h3 {
   text-align: center;
 }
-.objetivo-section .overflow .overflow-item .titulo-rojo {
-  color: #ED1C24;
-}
-.objetivo-section .overflow .overflow-item .titulo-verde {
-  color: #02503E;
-}
-.objetivo-section .overflow .overflow-item .titulo-amarillo {
-  color: #FAC313;
-}
 .objetivo-section .overflow .overflow-item .texto-complemento-objetivos {
   width: 240px;
   height: 200px;
@@ -171,7 +165,7 @@
   font-size: 20px;
   font-family: "Nunito Sans", sans-serif;
 }
-.objetivo-section .overflow-item img {
+.objetivo-section .overflow-item svg {
   margin-left: 100px !important;
   width: 80px;
   height: 80px;
@@ -225,7 +219,7 @@
 .titulos3 {
   color: #02503E;
   font-size: 36px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito";
   font-weight: 800;
 }
 
@@ -242,7 +236,6 @@
   background-position: center;
   background-size: cover;
   border-radius: 25px;
-  margin-left: 50px;
 }
 
 .contiene-foto-y-sobre-jea {
@@ -259,12 +252,14 @@
 }
 .contiene-text-grupo .prueb1 .grupo-texto-sobre-jea {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito";
   text-align: start;
-  line-height: 30px;
-  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+.contiene-text-grupo .prueb1 strong {
+  color: #02503E;
 }
 
 .fondo-verde {

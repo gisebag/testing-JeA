@@ -64,7 +64,7 @@
 .relleno{
     background-color: $color-green-oscuro;
     color: $color-white;
-    padding: 0 15px;
+    padding: 0 5px;
 }
 
 
@@ -77,13 +77,16 @@
     display: flex;
     justify-content: center ;
 
-    .rojo{
+    .borde-rojo{
+        border-radius: 8px !important;
         border: solid $color-red-oscuro 3px;
     }
-    .verde{
+    .borde-verde{
+        border-radius: 8px !important;
         border: solid $color-green-medio 3px;
     }
-    .amarillo{
+    .borde-amarillo{
+        border-radius: 8px !important;
         border: solid $color-yellow-oscuro 3px;
     }
     .overflow {
@@ -112,15 +115,6 @@
                 text-align: center;
                 
             }
-            .titulo-rojo{
-                color: $color-red-oscuro;
-            }
-            .titulo-verde{
-                color: $color-green-oscuro;
-            }
-            .titulo-amarillo{
-                color: $color-yellow-oscuro;
-            }
             
             .texto-complemento-objetivos{
                 width: 240px;
@@ -138,7 +132,7 @@
         
     }
 
-    .overflow-item img{
+    .overflow-item svg{
         margin-left: 100px !important;
         width: 80px;
         height: 80px;
@@ -190,12 +184,8 @@
                 margin-left: 60px !important;
             }
         }     
-        
     }    
-
 }
-
-
 
 .titulo2{
     strong{
@@ -207,10 +197,11 @@
     font-family: $tipografia-nunito;
     font-weight: 400;
 }
+
 .titulos3{
     color: $color-green-oscuro;
     font-size: 36px;
-    font-family: $tipografia-nunito-sans;
+    font-family: $tipografia-nunito;
     font-weight: 800;
 }
 
@@ -229,9 +220,8 @@
     background-position: center;
     background-size: cover;
     border-radius: 25px;
-    margin-left: 50px;
+    
 }
-
 
 .contiene-foto-y-sobre-jea{
     margin-left: 32px;
@@ -239,25 +229,25 @@
 }
 
 .contiene-text-grupo{
-    
     width: 100%;
     height: 100%;
     margin: 0;
-    
 
     .prueb1{
-        
         width: 100%;
     
 
         .grupo-texto-sobre-jea{
             font-size: 20px;
-            font-weight: 700;
+            font-weight: 600;
             padding: 10px;
-            font-family: $tipografia-nunito-sans;
+            font-family: $tipografia-nunito;
             text-align: start;
-            line-height: 30px;
-            letter-spacing: 0.5px;
+            line-height: 28px;
+        }
+
+        strong {
+            color: $color-green-oscuro;
         }
     }
 }
