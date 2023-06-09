@@ -567,6 +567,58 @@
     max-height: 240px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .contenedor-recuadro-verde {
+    overflow: auto;
+  }
+}
+.contenedor-recuadro-verde .recuadro-verde {
+  max-width: 1300px;
+  min-width: 740px;
+  background-color: #02503E;
+  border-radius: 16px;
+  padding: 80px;
+  margin: auto;
+}
+.contenedor-recuadro-verde .recuadro-verde .pregunta-recuadro {
+  color: #f9f9f9;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 32px;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-acciones {
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 16px;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-acciones h3 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 20px;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-acciones p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 20px;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-jovenes {
+  background-color: #F6EBC8;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-organizaciones {
+  background-color: #DBF8D7;
+}
+.contenedor-recuadro-verde .recuadro-verde .conjunto-tarjetas .tarjeta-boton .tarjeta-colaboraciones {
+  background-color: #FDE8E9;
+}
+
 /* footer */
 footer .logo-footer {
   width: 100px;
