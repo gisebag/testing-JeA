@@ -56,7 +56,14 @@
     }
 }
 
-
+.titulo{
+    padding: 50px 60px;
+    text-align: center;
+    font-family: $tipografia-nunito;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
 
 .becas {
     /* background-color: beige; */
@@ -258,8 +265,11 @@
         margin: 0;
 
         .titulo {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 20px;
+            padding: 20px;
+            text-align: center;
+            font-weight: 400;
         }
     }
 
@@ -415,12 +425,14 @@
         }
     }
 
-    @media only screen and (max-width: 955px)  {
+}
+
+
+@media only screen and (max-width: 955px)  {
         
-        .programa{
-            min-width: 300px !important;
-            margin: 10px !important;
-            
-        }
+    .programa{
+        min-width: 300px !important;
+        margin: 10px !important;
+        
     }
 }
