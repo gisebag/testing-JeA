@@ -25,10 +25,19 @@ footer {
         .imagen-footer {
             .enlace-imagen-footer {
                 text-decoration: none;
-            }
 
-            svg {
-                margin:0px 4px;
+                .logo-tiktok{
+                    margin-right: 8px;
+                    width: 24px;
+                }
+
+                .logo-instagram{
+                    width: 30px;
+                }
+
+                .logo-linkedin{
+                    width: 50px;
+                }
             }
         }
     }
@@ -51,10 +60,33 @@ footer {
     
             .col-footer-img {
                 .imagen-footer {
-                    svg {
-                        width: 16px;
+                    .logo-tiktok{
+                        margin-right: 7px !important;
+                        width: 16px !important;
+                    }
+    
+                    .logo-instagram{
+                        width: 18px !important;
+                    }
+    
+                    .logo-linkedin{
+                        width: 32px !important;
                     }
                 }
             }
+    }
+
+    @media only screen and (max-width: 423px) {
+        .col-footer-img {
+            .imagen-footer {
+                .logo-tiktok{
+                    margin-left: 5px;
+                }
+
+                .logo-linkedin{
+                    margin-top: 5px;
+                }
+            }
+        }    
     }
 }
