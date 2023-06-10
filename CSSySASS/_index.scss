@@ -1,4 +1,5 @@
 @import "_coloresyTipografias";
+
 /* Presentacion portada */
 .presentacion{
     width: 100%;
@@ -69,10 +70,7 @@
 
 
 /* seccion 1 del index - espacio JEA */
-
-
  //objetivos
-
 .objetivo-section{
     display: flex;
     justify-content: center ;
@@ -90,18 +88,12 @@
         border: solid $color-yellow-oscuro 3px;
     }
     .overflow {
-        
-
         overflow-x: scroll;
-        
         width: 100vw;
         overflow-y: hidden;
         white-space: nowrap;
-        
         display: flex;
         justify-content: center;
-    
-        
         margin: 20px;
 
         .overflow-item{
@@ -110,26 +102,20 @@
             border-radius: 25px;
             margin: 10px;
             
-            
             h3{
-                text-align: center;
-                
+                text-align: center; 
             }
             
             .texto-complemento-objetivos{
                 width: 240px;
                 height: 200px;
-                /*text-align:left; */
                 padding: 10px;
                 margin-left: 25px;
-
                 font-weight: 400;
                 font-size: 20px;
                 font-family: $tipografia-nunito-sans;
             }
-            
         }
-        
     }
 
     .overflow-item svg{
@@ -139,18 +125,14 @@
         border-radius: 25px;
         margin: 10px;
         margin-top: 30px;
-        
     }
-
 }
 
 
 @media only screen and (min-width: 320px) and (max-width: 800px){
     .objetivo-section{
         .overflow {
-            
             overflow-x:scroll;
-            /* -webkit-overflow-scrolling: touch; */
             overflow-y: hidden;
             white-space: nowrap;
             display: inline-block;
@@ -208,9 +190,7 @@
     height: 80px;
 }
 
-
 /* seccion SINERGIAS */
-
 .img-conocer-jea{
     width: 580px;
     height: 400px;
@@ -218,12 +198,10 @@
     background-position: center;
     background-size: cover;
     border-radius: 25px;
-    
 }
 
 .contiene-foto-y-sobre-jea{
     margin-left: 32px;
-    
 }
 
 .contiene-text-grupo{
@@ -250,249 +228,6 @@
     }
 }
 
-//recuadro verde
-
-.fondo-verde{
-    width: 90vw;
-    height: 600px;
-    background: $color-green-oscuro;
-    border-radius: 16px;
-    padding-top: 15px;
-    margin: 50px auto !important;
-
-
-    .titulo-negativo{
-        color: $color-white;
-        text-align: center;
-        margin: 30px  ;
-    }
-    .overflow2 {
-    
-        white-space: nowrap;
-        
-        display: flex;
-        justify-content: center;
-    
-        margin: 10px;
-    
-        .overflow-item {
-            width: 300px;
-            height: 350px;    
-            margin: 10px;
-            border-radius: 16px;
-
-            .titulo3{
-                font-size: 800;
-                padding: 20px;
-                text-align: center;
-            }
-            
-            .texto-complemento-recuadro{
-                width:260px;
-                height:195px;
-                text-align:left;
-                padding: 10px;
-                margin: 18px;
-            
-                font-family: $tipografia-nunito;
-                font-size: 20px;
-                font-weight: 400;
-                line-height: 27px;
-                
-                text-align: left;
-            
-                
-            }
-            
-            .contiene-btn{
-                display: flex;
-                justify-content: center;
-                
-                
-            }
-            .boton-negativo{
-                background-color: $color-green-oscuro;
-                color: $color-white;
-                border: 3px solid $color-white;
-                border-radius: 50px;
-                padding: 5px 40px;
-                font-size: 24px;
-                font-weight: 400;
-                
-                width: 304px;
-                height: 64px;
-                left: 946px;
-            }
-            .boton-negativo:hover{
-                background-color:$color-green-oscuro;
-                color: $color-white;
-                border: 3px solid $color-white;
-                border-radius: 50px;
-                padding: 5px 40px;
-                font-size: 24px;
-                font-weight: 400;
-                
-                width: 304px;
-                height: 64px;
-                left: 946px;
-                cursor: pointer;
-            }
-        }
-
-        .titulo-recuadro-orange {
-            color: $color-orange-oscuro;
-            text-align: center;
-        }
-        .titulo-recuadro-green {
-            color: $color-green-oscuro;
-            height: 90px;
-            text-align: center;
-            padding-top: 20px;
-        }
-        .titulo-recuadro-red {
-            color: $color-red-oscuro;
-            height: 90px;
-            text-align: center;
-            padding-top: 20px;
-        }
-        .orange{
-            background: $color-orange-pastel;
-        }
-        .green{
-            background: $color-green-pastel;
-        }
-        .red{
-            background: $color-red-pastel;
-        }
-        
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 900px){
-
-    .fondo-verde{
-        margin: 0;
-        height: 550px;
-        margin-left:  5px;
-        .titulo-negativo{
-            font-size: 18px;
-        }
-        .overflow2 {
-            height: 420px;
-            overflow-x:scroll;
-            overflow-y: hidden;
-            -webkit-overflow-scrolling: touch;
-            
-            white-space: nowrap;
-            
-            display: block;
-            
-            .overflow-item {
-                width: 220px;
-                height: 280px;
-                display: inline-block;
-                margin: 10px;
-                
-                h3{
-                    font-size: 16px;
-                    
-                }
-                .texto-complemento-recuadro{
-                    width: 180px;
-                    height: 220px;
-                    text-align:left;
-                
-                    font-family: $tipografia-nunito;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 20px;
-                    
-                    text-align: left;
-                
-                    }
-
-                    .boton-negativo{
-                        background-color: $color-green-oscuro;
-                        color: $color-white;
-                        border: 3px solid $color-white;
-                        border-radius: 50px;
-                        padding: 5px 40px;
-                        font-size: 14px !important;
-                        font-weight: 400;
-                        
-                        width:152px;
-                        height:32px;
-                        left: 11px;
-                    }
-                    .boton-negativo:hover{
-                                                
-                        width:152px;
-                        height: 32px;
-                        left: 11px;
-                        cursor: pointer;
-                    }
-            }
-            
-            .titulo-recuadro-orange {
-                text-align: center;
-                font-size: 16px;
-                align-items: center;
-            }
-            .titulo-recuadro-green {
-                height: 40px;
-                text-align: center;
-                padding-top:20px;
-                
-                font-size: 16px;
-            }
-            .titulo-recuadro-red {
-                color: $color-red-oscuro;
-                height: 40px;
-                text-align: center;
-                padding-top: 20px;
-                font-size: 16px;
-            }
-            
-        }
-    }
-    
-
-}
-
-.titulo-negativo{
-    color: $color-white;
-    text-align: center;
-    margin: 50px 0px;
-    font-family: $tipografia-nunito-sans;
-    font-weight: 700;
-    font-size: 32px;
-}
-
-
-.titulo4{
-    font-family: $tipografia-poppins;
-    font-weight: 400;
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-.contiene-texto-contactanos{
-    @media only screen and (max-width: 800px){
-        flex-wrap: none;
-    }
-}
-.div-contactanos{
-    margin-bottom: 50px;
-    width: 250px;
-    @media only screen and (max-width: 800px){
-        display: block;
-        margin: 10px;
-        width: 90%;
-        flex-wrap: nowrap;
-    }
-
-}
-
 //CAROUSEL
 .carrousel{
     height: 300px;
@@ -506,29 +241,26 @@
         overflow-y: hidden;
         padding: 30px 0px;
 
-
         .carrousel-item{
             margin: 10px;
             min-width:150px;
             max-width: 150px;
             height: 150px;
         }
+
         .carrousel-item img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            
+            object-fit: cover; 
         }
         
         .carrousel-item :hover{
             transform: scale(1.2);
         }
     }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-    
     .titulo2{
         font-size: 16px;
         line-height: 22px;
@@ -544,12 +276,12 @@
         }
     }
 
-
     //carrousel
     .carrousel{
         padding: 0px 15px;
         height: 200px;
     }
+
     .carrousel .carrousel-items .carrousel-item{
         margin: 10px;
         min-width:100px;
@@ -560,12 +292,11 @@
     .contiene-foto-y-sobre-jea{
             padding: auto;
             display: flex;
-
             justify-content: center;
             align-items: center;
             margin: 0;
-        .img-conocer-jea{
-            
+
+        .img-conocer-jea{   
             height: 200px;
             width: 320px;
             min-width:200px ;
@@ -586,17 +317,210 @@
             .contiene-text-grupo{
                 min-width:300px ;
                 margin: 0;
+
                 .prueb1 p{
-                    
                     font-size: 14px;
                     line-height: 20px;
                     font-weight: 800;
                     max-height: 240px;
-                    
+                }  
+            }
+        }
+    }    
+}
+
+.contenedor-recuadro-verde {
+    @media only screen and (max-width: 768px) {
+        margin: 0px !important;
+    }
+
+    .recuadro-verde {
+        max-width: 1300px;
+        min-width: 740px;
+        background-color: $color-green-oscuro;
+        border-radius: 16px;
+        padding: 80px;
+        margin: auto;
+
+        @media only screen and (max-width: 1023px) {
+            padding: 65px;
+        }
+
+        @media only screen and (max-width: 850px) {
+            padding: 50px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            padding: 40px;
+            border-radius: 0px;
+            min-width: 0px;
+        }
+
+        .pregunta-recuadro {
+            color: $color-white;
+            text-align: center;
+            font-family: $tipografia-nunito;
+            font-weight: 700;
+            font-size: 32px;
+            margin-bottom: 50px;
+
+            @media only screen and (max-width: 1023px) {
+                font-size: 28px;
+                margin-bottom: 40px;
+            }
+
+            @media only screen and (max-width: 850px) {
+                font-size: 24px;
+                margin-bottom: 35px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .conjunto-tarjetas {
+            @media only screen and (max-width: 768px) {
+                overflow: auto;
+                justify-content: start !important;
+            }
+
+            .tarjeta-boton {
+                .tarjeta-acciones {
+                    width: 300px;
+                    height: 350px;
+                    margin: 10px;
+                    border-radius: 16px;
+                    padding: 20px;
+
+                    @media only screen and (max-width: 1023px) {
+                        width: 250px;
+                        margin: 8px;
+                        padding: 18px;
+                    }
+
+                    @media only screen and (max-width: 850px) {
+                        width: 220px;
+                        height: 280px;
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                        width: 220px;
+                        height: 220px;
+                        padding: 16px;
+                    }
+
+                    h3 {
+                        font-family: $tipografia-nunito;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 36px;
+                        line-height: 40px;
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+
+                        @media only screen and (max-width: 1023px) {
+                            font-size: 30px;
+                        }
+
+                        @media only screen and (max-width: 850px) {
+                            font-size: 24px;
+                            line-height: 30px;
+                            height: 60px;
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 16px;
+                            justify-content: center;
+                            height: 40px;
+                        }
+                    }
+
+                    p {
+                        font-family: $tipografia-nunito;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        margin-top: 20px;
+
+                        @media only screen and (max-width: 1023px) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                        @media only screen and (max-width: 850px) {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .titulo-jovenes {
+                        color: $color-orange-oscuro;
+                    }
+
+                    .titulo-organizaciones {
+                        color: $color-green-oscuro;
+                    }
+
+                    .titulo-colaboraciones {
+                        color: $color-red-oscuro;
+                    }
                 }
-                
+
+                .tarjeta-jovenes {
+                    background-color: $color-orange-pastel;
+                }
+
+                .tarjeta-organizaciones {
+                    background-color: $color-green-pastel;
+                }
+
+                .tarjeta-colaboraciones {
+                    background-color: $color-red-pastel;
+                }
+
+                .boton-negativo {
+                    background-color: $color-green-oscuro;
+                    color: $color-white;
+                    border: 3px solid $color-white;
+                    border-radius: 50px;
+                    padding: 5px 40px;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 40px;
+                    width: 304px;
+                    height: 64px;
+
+                    @media only screen and (max-width: 1023px) {
+                        padding: 4px 30px;
+                        font-size: 18px;
+                        width: 250px;
+                        height: 54px;
+                    }
+
+                    @media only screen and (max-width: 850px) {
+                        font-size: 16px;
+                        width: 200px;
+                        height: 46px;
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 14px;
+                        margin-top: 35px;
+                        width: 152px;
+                        height: 32px;
+                    }
+                }
             }
         }
     }
-        
 }
