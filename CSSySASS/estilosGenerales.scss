@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@import "_navbar";
+@import "_footer";
+@import "_coloresyTipografias";
+@import "_botones";
+
+body{
+    background-color: $color-fondo-portada;
+}
+header{
+    background-color:$color-green-claro !important;
+}
+

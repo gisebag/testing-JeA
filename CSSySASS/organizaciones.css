@@ -1,0 +1,663 @@
+.jumbotron3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/organizaciones.1.png);
+  background-size: cover;
+  background-position: center;
+  height: 494px;
+}
+.jumbotron3 .cuadro-translucido {
+  width: 500px;
+  height: 100%;
+  background: rgb(2, 80, 62);
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
+  text-align: start;
+  padding: 88px 32px 88px 82px;
+}
+.jumbotron3 .cuadro-translucido .titulo-JeA {
+  color: #f9f9f9;
+  font-size: 64px;
+  font-weight: 800;
+  font-family: "Nunito";
+  padding-top: 40px;
+  margin: 0px;
+}
+.jumbotron3 .cuadro-translucido div .titulo1 {
+  color: #f9f9f9;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: "Nunito";
+}
+.jumbotron3 .cuadro-translucido div .titulo1 strong {
+  font-weight: 700;
+}
+.jumbotron3 .cuadro-translucido div .inspiran {
+  color: #f9f9f9;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  .jumbotron3 {
+    height: 240px;
+  }
+  .jumbotron3 .cuadro-translucido {
+    width: 100%;
+    max-width: 800px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jumbotron3 .cuadro-translucido .titulo-JeA {
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 0px;
+  }
+  .jumbotron3 .cuadro-translucido div {
+    margin-left: 8px;
+  }
+  .jumbotron3 .cuadro-translucido div .titulo1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px;
+  }
+  .jumbotron3 .cuadro-translucido div .titulo1 strong {
+    color: #02503E;
+    background-color: #f9f9f9;
+    font-weight: 900;
+  }
+  .jumbotron3 .cuadro-translucido div .inspiran {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+.descripcion {
+  text-align: center;
+  font-family: "Nunito";
+  padding: 90px 0px;
+  background-color: #EDFEFB;
+}
+.descripcion .cuadro-descripcion-pregunta {
+  max-width: 1000px;
+}
+.descripcion .cuadro-descripcion-pregunta h3 {
+  font-size: 24px;
+  color: #02503E;
+}
+@media only screen and (max-width: 955px) {
+  .descripcion .cuadro-descripcion-pregunta h3 {
+    font-size: 16px;
+  }
+}
+
+.seccion-tarjetas {
+  margin: 0px;
+  padding: 0px;
+}
+.seccion-tarjetas .contenedor-tarjetas {
+  margin: 80px 0px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 350px;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  border: 4px solid #ED1C24;
+  background-color: #ED1C24;
+  margin: 12px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta {
+    font-size: 14px;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta .tarjeta-larga-afs {
+    padding-top: 30px;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta .texto-resaltado {
+  color: #ED1C24;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta .texto-organizacion {
+  font-weight: 900;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta-imagen {
+  background-color: #FDE8E9;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  padding: 95px 75px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .tarjeta-descripcion {
+  font-family: "Nunito";
+  background-color: #ED1C24;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width: 772px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1:hover {
+    border: 4px solid #ED1C24;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1:hover .tarjeta-imagen {
+    opacity: 0;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1:hover .tarjeta-descripcion {
+    opacity: 1;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .mostrar {
+  opacity: 1;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .ocultar {
+  opacity: 0;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-boton {
+  padding: 0px;
+  top: 85%;
+  text-align: center;
+  display: none;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #ED1C24;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ED1C24;
+}
+@media only screen and (max-width: 771px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-boton {
+    display: inline-block;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-cerrar {
+  top: -15px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 350px;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  border: 4px solid #10936E;
+  background-color: #10936E;
+  margin: 12px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta {
+    font-size: 14px;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta .tarjeta-larga-afs {
+    padding-top: 30px;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta .texto-resaltado {
+  color: #10936E;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta .texto-organizacion {
+  font-weight: 900;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta-imagen {
+  background-color: #DEF1DA;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  padding: 95px 75px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .tarjeta-descripcion {
+  font-family: "Nunito";
+  background-color: #10936E;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width: 772px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2:hover {
+    border: 4px solid #10936E;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2:hover .tarjeta-imagen {
+    opacity: 0;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2:hover .tarjeta-descripcion {
+    opacity: 1;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .mostrar {
+  opacity: 1;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .ocultar {
+  opacity: 0;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-boton {
+  padding: 0px;
+  top: 85%;
+  text-align: center;
+  display: none;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #10936E;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #10936E;
+}
+@media only screen and (max-width: 771px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-boton {
+    display: inline-block;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-cerrar {
+  top: -15px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 350px;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  border: 4px solid #FAC313;
+  background-color: #F26123;
+  margin: 12px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta {
+    font-size: 14px;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta .tarjeta-larga-afs {
+    padding-top: 30px;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta .texto-resaltado {
+  color: #F26123;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta .texto-organizacion {
+  font-weight: 900;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta-imagen {
+  background-color: #FEF3D0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  padding: 95px 75px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .tarjeta-descripcion {
+  font-family: "Nunito";
+  background-color: #F26123;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width: 772px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3:hover {
+    border: 4px solid #F26123;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3:hover .tarjeta-imagen {
+    opacity: 0;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3:hover .tarjeta-descripcion {
+    opacity: 1;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .mostrar {
+  opacity: 1;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .ocultar {
+  opacity: 0;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-boton {
+  padding: 0px;
+  top: 85%;
+  text-align: center;
+  display: none;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #FAC313;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FAC313;
+}
+@media only screen and (max-width: 771px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-boton {
+    display: inline-block;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-cerrar {
+  top: -15px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 350px;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  border: 4px solid #FAC313;
+  background-color: #F26123;
+  margin: 12px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta {
+    font-size: 14px;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta .tarjeta-larga-afs {
+    padding-top: 30px;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta .texto-resaltado {
+  color: #F26123;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta .texto-organizacion {
+  font-weight: 900;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta-imagen {
+  background-color: #FEF3D0;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  padding: 95px 75px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .tarjeta-descripcion {
+  font-family: "Nunito";
+  background-color: #F26123;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width: 772px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4:hover {
+    border: 4px solid #F26123;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4:hover .tarjeta-imagen {
+    opacity: 0;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4:hover .tarjeta-descripcion {
+    opacity: 1;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .mostrar {
+  opacity: 1;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .ocultar {
+  opacity: 0;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-boton {
+  padding: 0px;
+  top: 85%;
+  text-align: center;
+  display: none;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #FAC313;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FAC313;
+}
+@media only screen and (max-width: 771px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-boton {
+    display: inline-block;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-cerrar {
+  top: -15px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 350px;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 24px;
+  border: 4px solid #ED1C24;
+  background-color: #ED1C24;
+  margin: 12px;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  color: #f9f9f9;
+  font-size: 18px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta {
+    font-size: 14px;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta .tarjeta-larga-afs {
+    padding-top: 30px;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta .texto-resaltado {
+  color: #ED1C24;
+  background-color: #f9f9f9;
+  font-weight: 700;
+  padding: 0px 3px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta .texto-organizacion {
+  font-weight: 900;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta-imagen {
+  background-color: #FDE8E9;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  padding: 95px 75px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .tarjeta-descripcion {
+  font-family: "Nunito";
+  background-color: #ED1C24;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+@media only screen and (min-width: 772px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5:hover {
+    border: 4px solid #ED1C24;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5:hover .tarjeta-imagen {
+    opacity: 0;
+  }
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5:hover .tarjeta-descripcion {
+    opacity: 1;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .mostrar {
+  opacity: 1;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .ocultar {
+  opacity: 0;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-boton {
+  padding: 0px;
+  top: 85%;
+  text-align: center;
+  display: none;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-boton .boton-ver-mas {
+  width: 150px;
+  height: 30px;
+  border: 2px solid #ED1C24;
+  border-radius: 100px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #ED1C24;
+}
+@media only screen and (max-width: 771px) {
+  .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-boton {
+    display: inline-block;
+  }
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-cerrar {
+  top: -15px;
+  font-size: 50px;
+  text-align: end;
+  padding: 0px 20px;
+}
+.seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-cerrar .cerrar-tarjeta {
+  background-color: transparent;
+  border: 0px solid white;
+  color: white;
+}
+
+.carrusel-div {
+  background-color: #f9f9f9;
+  position: relative;
+  padding: 40px 80px;
+}
+.carrusel-div .carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  width: 90%;
+  padding: 0px;
+}
+.carrusel-div .carrusel .elemento {
+  flex: 1 0 auto;
+  margin: 0 10px;
+  background-color: #ED1C24;
+  border-radius: 16px;
+  width: 300px;
+  height: 200px;
+}
+.carrusel-div .carrusel .primer-elemento {
+  margin: 0 10px 0 0;
+}
+.carrusel-div .carrusel::-webkit-scrollbar {
+  height: 0px;
+}
+.carrusel-div .flecha-izquierda svg {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  cursor: pointer;
+}
+.carrusel-div .flecha-derecha svg {
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  .carrusel-div {
+    padding: 40px 0px;
+  }
+  .carrusel-div .flechas {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=organizaciones.css.map */
