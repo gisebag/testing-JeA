@@ -1,0 +1,242 @@
+@charset "UTF-8";
+.jumbotron7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/quiénes\ somos.1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 494px;
+}
+.jumbotron7 .cuadro-translucido {
+  margin: 0px;
+  width: 500px;
+  height: 100%;
+  background: #02503E;
+  background: linear-gradient(90deg, rgb(2, 80, 62) 0%, rgba(2, 80, 62, 0.709) 75%);
+  text-align: start;
+  padding: 88px 32px 88px 82px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jumbotron7 .cuadro-translucido .titulo1 {
+  color: #f9f9f9;
+  font-size: 64px;
+  font-weight: 800;
+  font-family: "Nunito";
+  margin: 0px;
+}
+
+@media only screen and (max-width: 955px) {
+  .jumbotron7 {
+    height: 240px;
+  }
+  .jumbotron7 .cuadro-translucido {
+    width: 100%;
+    max-width: 955px;
+    max-height: 80px;
+    translate: 0% 100%;
+    padding: 0px 16px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+  .jumbotron7 .cuadro-translucido .titulo1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 0px;
+    margin: 0px 5px;
+  }
+}
+.titulo-quienes-somos {
+  font-family: "Nunito";
+  color: #02503E;
+  font-size: 36px;
+  padding: 10px 30px;
+  text-align: center;
+  margin: 30px 60px;
+}
+@media only screen and (max-width: 855px) {
+  .titulo-quienes-somos {
+    font-size: 20px;
+    margin: 16px 40px !important;
+  }
+}
+
+.secciones-pilares_historia {
+  max-width: 1300px;
+  margin: auto;
+}
+.secciones-pilares_historia .recuadro-pilares .ancho {
+  height: 100px;
+}
+@media only screen and (max-width: 840px) {
+  .secciones-pilares_historia .recuadro-pilares .ancho {
+    height: 70px;
+  }
+}
+.secciones-pilares_historia .recuadro-pilares .recuadro-texto {
+  font-weight: 700;
+  padding: 10px;
+  font-family: "Nunito";
+  font-size: 20px;
+}
+@media only screen and (max-width: 950px) {
+  .secciones-pilares_historia .recuadro-pilares .recuadro-texto {
+    font-size: 16px;
+  }
+}
+.secciones-pilares_historia .recuadro-pilares .recuadro-texto .relleno-green {
+  background-color: #02503E;
+  color: #f9f9f9;
+  padding: 0 5px;
+}
+.secciones-pilares_historia .recuadro-pilares .recuadro-texto .relleno-yellow {
+  background-color: #F26123;
+  color: #f9f9f9;
+  padding: 0 5px;
+}
+.secciones-pilares_historia .recuadro-pilares .recuadro-texto .relleno-red {
+  background-color: #ED1C24;
+  color: #f9f9f9;
+  padding: 0 5px;
+}
+.secciones-pilares_historia .recuadro-pilares .card {
+  font-size: 18px;
+  height: 410px;
+  max-width: 408px;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 1150px) {
+  .secciones-pilares_historia .recuadro-pilares .card {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .secciones-pilares_historia .recuadro-pilares .card {
+    height: 408px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .secciones-pilares_historia .recuadro-pilares .card {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .secciones-pilares_historia .recuadro-pilares .card {
+    height: 310px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .secciones-pilares_historia .recuadro-pilares .card {
+    height: 340px;
+  }
+}
+.secciones-pilares_historia .recuadro-pilares .card-A {
+  background-color: #DBF8D7;
+  border-color: #DBF8D7;
+}
+.secciones-pilares_historia .recuadro-pilares .card-B {
+  background-color: #F6EBC8;
+  border-color: #F6EBC8;
+}
+.secciones-pilares_historia .recuadro-pilares .card-C {
+  background-color: #FDE8E9;
+  border-color: #FDE8E9;
+}
+.secciones-pilares_historia .recuadro-pilares .titulo-pilar {
+  font-size: 36px;
+  font-family: "Nunito";
+  font-weight: 800;
+}
+@media only screen and (max-width: 950px) {
+  .secciones-pilares_historia .recuadro-pilares .titulo-pilar {
+    font-size: 24px;
+  }
+}
+.secciones-pilares_historia .recuadro-pilares .titulo-pilar-1 {
+  color: #02503E;
+}
+.secciones-pilares_historia .recuadro-pilares .titulo-pilar-2 {
+  color: #F26123;
+}
+.secciones-pilares_historia .recuadro-pilares .titulo-pilar-3 {
+  color: #ED1C24;
+}
+.secciones-pilares_historia .recuadro-historia {
+  background-color: #02503E;
+  border-radius: 16px;
+  max-width: 1280px;
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {
+  margin: 50px;
+}
+@media only screen and (max-width: 975px) {
+  .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia {
+    margin: 20px;
+    margin-top: 50px;
+  }
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-texto-historia h3 {
+  color: #f9f9f9;
+  font-family: "Nunito";
+  font-size: 36px;
+  font-weight: 800;
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia {
+  color: #f9f9f9;
+  min-width: 100px;
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media only screen and (max-width: 1200px) {
+  .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media only screen and (max-width: 855px) {
+  .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia span {
+  color: black;
+  font-weight: 600;
+  background-color: #f9f9f9;
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-fotos img {
+  width: 500px;
+  border-radius: 16px;
+}
+@media only screen and (max-width: 855px) {
+  .secciones-pilares_historia .recuadro-historia .recuadro-fotos {
+    display: none;
+  }
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-flecha-abajo {
+  display: none;
+}
+@media only screen and (max-width: 855px) {
+  .secciones-pilares_historia .recuadro-historia .recuadro-flecha-abajo {
+    display: block;
+  }
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-flecha-arriba .boton-flecha,
+.secciones-pilares_historia .recuadro-historia .recuadro-flecha-abajo .boton-flecha {
+  border: none;
+  width: 100%;
+  background-color: #02503E;
+}
+.secciones-pilares_historia .recuadro-historia .recuadro-flecha-arriba .boton-flecha .img-flecha,
+.secciones-pilares_historia .recuadro-historia .recuadro-flecha-abajo .boton-flecha .img-flecha {
+  background-color: #02503E;
+  width: 25px;
+  height: 25px;
+}
+
+/*# sourceMappingURL=quienesSomos.css.map */

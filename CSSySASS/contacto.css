@@ -1,0 +1,390 @@
+.boton-conocenos {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-conocenos:hover {
+  background-color: #f9f9f9;
+  color: rgb(10, 10, 10);
+  border: 3px solid #02503E;
+  cursor: pointer;
+}
+
+.clickPositivo {
+  background-color: #DBF8D7;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  .clickPositivo {
+    font-size: 16px;
+  }
+}
+
+.clickPositivo:hover {
+  background-color: #DBF8D7;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+}
+
+.boton-negativo {
+  background-color: #02503E;
+  color: #f9f9f9;
+  border: 3px solid #f9f9f9;
+  border-radius: 25px;
+  padding: 5px 40px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.boton-negativo:hover {
+  border: 3px solid #f9f9f9;
+  font-size: 24px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.boton-default {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 280px;
+  height: 60px;
+  padding: auto;
+  border-radius: 100px;
+  margin-top: 24px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 955px) {
+  .boton-default {
+    font-size: 14px;
+    width: 152px;
+    height: 32px;
+  }
+}
+
+.boton-default-basico {
+  border: 0px;
+  background-color: #DEF1DA;
+  color: #02503E;
+}
+
+.boton-default-sin_fondo-invertido {
+  border: 3px solid #f9f9f9;
+  background-color: transparent;
+  color: #f9f9f9;
+}
+@media only screen and (max-width: 855px) {
+  .boton-default-sin_fondo-invertido {
+    display: none;
+  }
+}
+
+.boton-default-sin_fondo {
+  border: 3px solid #02503E;
+  background-color: transparent;
+  color: #02503E;
+  transition: color border 0.5s ease-in-out;
+}
+
+.boton-programas {
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 140px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
+  margin: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .boton-programas {
+    width: 140px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+.boton-banderas {
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 160px;
+  height: 40px;
+  border-radius: 100px;
+  color: #02503E;
+  border: 2px solid #02503E;
+  margin-top: 15px;
+}
+@media only screen and (min-width: 360px) and (max-width: 1023px) {
+  .boton-banderas {
+    width: 140px;
+    height: 35px;
+    font-size: 17px;
+  }
+}
+
+.boton-banderas:hover {
+  border: 2px solid #F26123;
+  background-color: #F26123;
+  color: white;
+}
+
+.contacto-JeA {
+  width: 100%;
+  background-color: #02503E;
+  padding: 80px 0px;
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA {
+    padding: 40px 0px;
+  }
+}
+.contacto-JeA .div-texto {
+  margin: auto;
+  max-width: 800px;
+  min-height: 80px;
+}
+.contacto-JeA .div-texto p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #02503E;
+  padding: 24px 0px;
+}
+@media only screen and (max-width: 955px) {
+  .contacto-JeA .div-texto p {
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contacto-JeA .div-texto p {
+    font-size: 20px;
+  }
+}
+.contacto-JeA .div-iconos {
+  margin-top: 55px;
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-rrss {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-mail {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos .contacto-whatsapp {
+    margin-top: 30px;
+  }
+}
+.contacto-JeA .div-iconos p {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  margin: 15px 0px;
+}
+@media only screen and (max-width: 955px) {
+  .contacto-JeA .div-iconos p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contacto-JeA .div-iconos p {
+    margin: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contacto-JeA .div-iconos p {
+    font-size: 16px;
+  }
+}
+.contacto-JeA .div-iconos strong {
+  font-weight: bold;
+}
+
+.contenedor-imagen-formulario {
+  padding: 80px;
+  max-width: 1440px;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario {
+    padding: 40px 10px;
+  }
+}
+.contenedor-imagen-formulario .contenedor-imagen {
+  background-image: url(../img/contacto.1.jpg);
+  background-size: cover;
+  border-radius: 16px;
+  max-height: 750px;
+  margin-right: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-imagen-formulario .contenedor-imagen {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario .contenedor-imagen {
+    display: none;
+  }
+}
+.contenedor-imagen-formulario .contenedor-formulario {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  .contenedor-imagen-formulario .contenedor-formulario {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contenedor-imagen-formulario .contenedor-formulario {
+    margin-left: 0px;
+  }
+}
+.contenedor-imagen-formulario .contenedor-formulario h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #02503E;
+}
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario h2 {
+    font-size: 28px;
+  }
+}
+.contenedor-imagen-formulario .contenedor-formulario p {
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+.contenedor-imagen-formulario .contenedor-formulario p,
+.contenedor-imagen-formulario .contenedor-formulario label {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #02503E;
+}
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario p,
+  .contenedor-imagen-formulario .contenedor-formulario label {
+    font-size: 16px;
+  }
+}
+.contenedor-imagen-formulario .contenedor-formulario input,
+.contenedor-imagen-formulario .contenedor-formulario textarea {
+  background-color: transparent;
+  border: 1px solid #02503E;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 14px;
+  resize: none;
+}
+@media only screen and (max-width: 955px) {
+  .contenedor-imagen-formulario .contenedor-formulario input,
+  .contenedor-imagen-formulario .contenedor-formulario textarea {
+    font-size: 16px;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100rem;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0px 20px;
+}
+.popup .popup-contenido {
+  background-color: #fefefe;
+  margin: 110px auto;
+  padding: 10px 20px;
+  border: 1px solid #888;
+  max-width: 680px;
+  height: 440px;
+  position: relative;
+  text-align: center;
+}
+@media only screen and (max-width: 955px) {
+  .popup .popup-contenido {
+    height: 280px;
+  }
+}
+.popup .popup-contenido .cerrar {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.popup .popup-contenido .cerrar:hover,
+.popup .popup-contenido .cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup .popup-contenido img {
+  margin: 35px auto;
+  width: 96px;
+  height: 105px;
+}
+@media only screen and (max-width: 955px) {
+  .popup .popup-contenido img {
+    margin: 45px auto 10px;
+    width: 46px;
+    height: 52px;
+  }
+}
+.popup .popup-contenido p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02503E;
+  margin: auto 80px;
+}
+@media only screen and (max-width: 955px) {
+  .popup .popup-contenido p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: auto 20px;
+  }
+}
+
+/*# sourceMappingURL=contacto.css.map */

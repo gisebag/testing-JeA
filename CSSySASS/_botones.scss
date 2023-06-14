@@ -1,8 +1,6 @@
 @import "_coloresyTipografias";
 
 //index 
-
-
 .boton-conocenos {
     background-color: $color-white;
     color: $color-black;
@@ -150,4 +148,18 @@
     border: 2px solid $color-orange-oscuro;
     background-color: $color-orange-oscuro;
     color: white;
+}
+
+.pregunta {
+    padding: 80px 0px;
+  
+    .pregunta-preboton {
+      font-size: 24px;
+      font-family: $tipografia-poppins;
+      font-weight: 400;
+  
+      @media only screen and (max-width: 955px) {
+        font-size: 16px;
+      }
+    }
 }
