@@ -136,13 +136,13 @@
             overflow-x: scroll;
             overflow-y: hidden;
             flex-wrap: wrap;
-            margin: 10px;
+            margin: 5px;
         }
         
         .overflow-item {
             display: inline-block;
             list-style: none;
-            margin-right: 10px;
+            margin: 5px !important;
             max-width: 200px;
             height: 300px !important;
             text-align: start;
