@@ -100,7 +100,7 @@
     padding: 90px 0px;
     background-color: $color-green-claro;
 
-    
+
 
     .cuadro-descripcion-pregunta {
         max-width: 1000px;
@@ -163,6 +163,7 @@
     .tarjeta-imagen {
         background-color: $fondo-principal;
         opacity: 1;
+        z-index: 0;
         transition: opacity 0.5s ease-in-out;
         padding: 95px 75px;
     }
@@ -171,6 +172,7 @@
         font-family: $tipografia-nunito;
         background-color: $fondo-secundario;
         opacity: 0;
+        z-index: -1;
         transition: opacity 0.5s ease-in-out;
     }
 
@@ -180,10 +182,12 @@
 
             .tarjeta-imagen {
                 opacity: 0;
+                z-index: -1;
             }
 
             .tarjeta-descripcion {
                 opacity: 1;
+                z-index: 0;
             }
         }
     }
@@ -191,6 +195,7 @@
     .mostrar {
         opacity: 1;
     }
+
     .ocultar {
         opacity: 0;
     }
@@ -277,15 +282,70 @@
         .elemento {
             flex: 1 0 auto;
             margin: 0 10px;
-            background-color: $color-red-oscuro;
             border-radius: 16px;
             width: 300px;
             height: 200px;
-
         }
 
         .primer-elemento {
             margin: 0 10px 0 0;
+            background-image: url(../img/fotos-carousel-organizaciones/img-01.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .segundo-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-02.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tercer-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-03.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cuarto-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-04.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .quinto-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-05.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .sexto-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-06.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .septimo-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-07.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .octavo-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-08.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .noveno-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-09.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .decimo-elemento {
+            background-image: url(../img/fotos-carousel-organizaciones/img-10.jpg);
+            background-size: cover;
+            background-position: center;
         }
     }
 
