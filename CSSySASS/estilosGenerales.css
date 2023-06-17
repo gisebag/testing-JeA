@@ -81,18 +81,17 @@ footer .col-footer .letra-footer, footer .col-footer-img .letra-footer {
   font-weight: 300;
   font-size: 14px;
 }
+footer .col-footer .logo-email, footer .col-footer-img .logo-email {
+  display: none;
+}
 footer .col-footer .imagen-footer .enlace-imagen-footer, footer .col-footer-img .imagen-footer .enlace-imagen-footer {
   text-decoration: none;
-}
-footer .col-footer .imagen-footer .enlace-imagen-footer .logo-tiktok, footer .col-footer-img .imagen-footer .enlace-imagen-footer .logo-tiktok {
-  margin-right: 8px;
-  width: 24px;
 }
 footer .col-footer .imagen-footer .enlace-imagen-footer .logo-instagram, footer .col-footer-img .imagen-footer .enlace-imagen-footer .logo-instagram {
   width: 30px;
 }
 footer .col-footer .imagen-footer .enlace-imagen-footer .logo-linkedin, footer .col-footer-img .imagen-footer .enlace-imagen-footer .logo-linkedin {
-  width: 50px;
+  width: 47px;
 }
 @media only screen and (max-width: 1000px) {
   footer .logo-footer {
@@ -105,23 +104,19 @@ footer .col-footer .imagen-footer .enlace-imagen-footer .logo-linkedin, footer .
   footer .col-footer .letra-footer, footer .col-footer-img .letra-footer {
     font-size: 10px;
   }
-  footer .col-footer-img .imagen-footer .logo-tiktok {
-    margin-right: 7px !important;
-    width: 16px !important;
-  }
   footer .col-footer-img .imagen-footer .logo-instagram {
     width: 18px !important;
   }
   footer .col-footer-img .imagen-footer .logo-linkedin {
-    width: 32px !important;
+    width: 28px !important;
   }
 }
-@media only screen and (max-width: 423px) {
-  footer .col-footer-img .imagen-footer .logo-tiktok {
-    margin-left: 5px;
+@media only screen and (max-width: 520px) {
+  footer .letra-footer-email {
+    display: none !important;
   }
-  footer .col-footer-img .imagen-footer .logo-linkedin {
-    margin-top: 5px;
+  footer .logo-email {
+    display: inline-block !important;
   }
 }
 

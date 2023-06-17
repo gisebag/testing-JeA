@@ -21,22 +21,21 @@ footer {
             font-weight: 300;
             font-size: 14px;
         }
+
+        .logo-email {
+            display: none;
+        }
     
         .imagen-footer {
             .enlace-imagen-footer {
                 text-decoration: none;
-
-                .logo-tiktok{
-                    margin-right: 8px;
-                    width: 24px;
-                }
 
                 .logo-instagram{
                     width: 30px;
                 }
 
                 .logo-linkedin{
-                    width: 50px;
+                    width: 47px;
                 }
             }
         }
@@ -60,33 +59,24 @@ footer {
     
             .col-footer-img {
                 .imagen-footer {
-                    .logo-tiktok{
-                        margin-right: 7px !important;
-                        width: 16px !important;
-                    }
-    
                     .logo-instagram{
                         width: 18px !important;
                     }
     
                     .logo-linkedin{
-                        width: 32px !important;
+                        width: 28px !important;
                     }
                 }
             }
     }
 
-    @media only screen and (max-width: 423px) {
-        .col-footer-img {
-            .imagen-footer {
-                .logo-tiktok{
-                    margin-left: 5px;
-                }
+    @media only screen and (max-width: 520px) {
+        .letra-footer-email {
+            display: none !important;
+        }
 
-                .logo-linkedin{
-                    margin-top: 5px;
-                }
-            }
-        }    
+        .logo-email {
+            display: inline-block !important;
+        }
     }
 }
