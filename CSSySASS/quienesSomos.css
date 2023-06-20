@@ -196,20 +196,20 @@
 @media only screen and (max-width: 1200px) {
   .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia {
     font-size: 18px;
-    line-height: 23px;
+    line-height: 25px;
   }
 }
 @media only screen and (max-width: 855px) {
   .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 21px;
   }
 }
 .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia p {
   margin: 0px;
 }
 .secciones-pilares_historia .recuadro-historia .recuadro-texto-historia .texto-historia span {
-  color: black;
+  color: #02503E;
   font-weight: 600;
   background-color: #f9f9f9;
 }

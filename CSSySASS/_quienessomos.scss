@@ -210,12 +210,12 @@
 
         @media only screen and (max-width: 1200px) {
           font-size: 18px;
-          line-height: 23px;
+          line-height: 25px;
         }
 
         @media only screen and (max-width: 855px) {
           font-size: 16px;
-          line-height: 18px;
+          line-height: 21px;
         }
 
         /* Agregado esta propiedad 'p' con la ultima modificacion recuadro historia */
@@ -224,7 +224,7 @@
         }
         
         span {
-          color: black;
+          color: $color-green-oscuro;
           font-weight: 600;
           background-color: $color-white;
         }

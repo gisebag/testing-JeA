@@ -148,7 +148,7 @@
   }
   .cuadro-dividido .contenedor-cuadros-divididos {
     border: 1px solid #009876;
-    border-radius: 16px;
+    border-radius: 8px;
     margin-top: 20px;
     overflow: hidden;
   }
