@@ -171,9 +171,11 @@
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .mostrar {
   opacity: 1;
+  z-index: 0;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .ocultar {
   opacity: 0;
+  z-index: -1;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas1 .posicion-boton {
   padding: 0px;
@@ -277,9 +279,11 @@
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .mostrar {
   opacity: 1;
+  z-index: 0;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .ocultar {
   opacity: 0;
+  z-index: -1;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas2 .posicion-boton {
   padding: 0px;
@@ -383,9 +387,11 @@
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .mostrar {
   opacity: 1;
+  z-index: 0;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .ocultar {
   opacity: 0;
+  z-index: -1;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas3 .posicion-boton {
   padding: 0px;
@@ -489,9 +495,11 @@
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .mostrar {
   opacity: 1;
+  z-index: 0;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .ocultar {
   opacity: 0;
+  z-index: -1;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas4 .posicion-boton {
   padding: 0px;
@@ -595,9 +603,11 @@
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .mostrar {
   opacity: 1;
+  z-index: 0;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .ocultar {
   opacity: 0;
+  z-index: -1;
 }
 .seccion-tarjetas .contenedor-tarjetas .tarjetas5 .posicion-boton {
   padding: 0px;
