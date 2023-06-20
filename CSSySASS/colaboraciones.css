@@ -258,7 +258,7 @@
 }
 @media only screen and (max-width: 440px) {
   .seccion-cuadro-dividido .cuadro-dividido .texto-grande {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 27.28px;
   }
 }
@@ -306,12 +306,6 @@
   .seccion-cuadro-dividido .cuadro-dividido .texto-chico {
     font-size: 16px;
     line-height: 23px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .seccion-cuadro-dividido .cuadro-dividido .texto-chico {
-    font-size: 14px;
-    line-height: 19.1px;
   }
 }
 .seccion-cuadro-dividido .cuadro-dividido .cuadro-imagen {
