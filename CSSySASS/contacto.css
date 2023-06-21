@@ -146,6 +146,20 @@
   color: white;
 }
 
+.pregunta {
+  padding: 80px 0px;
+}
+.pregunta .pregunta-preboton {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width: 955px) {
+  .pregunta .pregunta-preboton {
+    font-size: 16px;
+  }
+}
+
 .contacto-JeA {
   width: 100%;
   background-color: #02503E;
@@ -238,8 +252,9 @@
   }
 }
 .contenedor-imagen-formulario .contenedor-imagen {
-  background-image: url(../img/contacto.1.jpg);
+  background-image: url(../img/contacto-1.webp);
   background-size: cover;
+  background-position: center center;
   border-radius: 16px;
   max-height: 750px;
   margin-right: 50px;
