@@ -55,12 +55,19 @@
   font-size: 24px;
   line-height: 36px;
   font-weight: 400;
+  max-width: 1200px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .titulo {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
 }
 
 .becas {
   /* background-color: beige; */
   display: flex;
-  margin: 50px 150px;
+  margin: 0px auto 50px auto;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
@@ -77,10 +84,20 @@
   height: 450px;
   background-image: url(../img/oportunidades.2.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   border-radius: 30px;
 }
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  .becas .fondo-becas .imag-titulos {
+    width: 370px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .becas .fondo-becas .imag-titulos {
+    width: 500px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .becas .fondo-becas .imag-titulos {
     max-width: 300px;
   }
@@ -100,7 +117,12 @@
   font-family: "Nunito";
   background: linear-gradient(90deg, #009876 0%, rgba(14, 128, 102, 0.626) 75%);
 }
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  .becas .fondo-becas .imag-titulos .titulo-opo {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .becas .fondo-becas .imag-titulos .titulo-opo {
     font-size: 14px;
     height: 80px;
@@ -113,7 +135,17 @@
   width: 750px;
   height: 450px;
 }
-@media only screen and (min-width: 320px) and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  .becas .fondo-becas .content-texto-becas {
+    width: 650px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .becas .fondo-becas .content-texto-becas {
+    width: 500px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
   .becas .fondo-becas .content-texto-becas {
     width: 300px !important;
     margin: 0;
@@ -139,7 +171,6 @@
 }
 .becas .fondo-becas .content-texto-becas .becas-ajuste {
   display: flex;
-  padding: 10px;
 }
 @media only screen and (min-width: 320px) and (max-width: 800px) {
   .becas .fondo-becas .content-texto-becas .becas-ajuste {
@@ -162,12 +193,15 @@
   line-height: 36px;
 }
 
-.titulo-flag {
-  margin-top: 125px;
-  margin: 90px;
-  padding: 10px 60px;
+.container-flag {
+  max-width: 1100px;
 }
-.titulo-flag .titulo-voluntariado {
+.container-flag .titulo-flag {
+  margin-top: 125px;
+  margin: 40px auto;
+  padding: 10px 15px;
+}
+.container-flag .titulo-flag .titulo-voluntariado {
   font-family: "Nunito";
   font-weight: 800;
   font-size: 32px;
@@ -178,19 +212,15 @@
   padding: 5px;
   text-align: center;
   margin-top: 10px;
-  margin-left: 110px;
 }
-.titulo-flag .text-flag {
+.container-flag .titulo-flag .text-flag {
   font-family: "Nunito";
   font-size: 24px;
   font-weight: 400px;
   line-height: 32px;
-  width: 80%;
-  padding: 20px;
   margin-top: 30px;
-  margin-left: 110px;
 }
-.titulo-flag .text-flag span {
+.container-flag .titulo-flag .text-flag span {
   font-weight: 800;
   color: #009876;
 }
@@ -199,7 +229,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin: 15px 160px;
+  margin: 15px auto;
   margin-bottom: 150px;
 }
 @media only screen and (min-width: 320px) and (max-width: 800px) {
@@ -237,7 +267,7 @@
     font-weight: 400;
   }
   .becas {
-    margin: 10px;
+    margin: 0px auto 30px auto;
   }
   .becas .fondo-becas {
     flex-direction: column;
@@ -245,7 +275,7 @@
     margin: 0px;
   }
   .becas .fondo-becas .imag-titulos {
-    width: 350px;
+    width: 750px;
   }
   .becas .fondo-becas .imag-titulos .titulo-opo {
     font-family: "Poppins", sans-serif;
@@ -256,20 +286,27 @@
     text-align: left;
   }
   .becas .fondo-becas .content-texto-becas {
-    width: 350px;
-    height: 34rem;
+    width: 750px;
+    height: auto;
+    padding: 10px;
   }
   .becas .fondo-becas .content-texto-becas .titulo-becas {
     font-weight: 800;
     font-size: 24px;
     line-height: 30px;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) and (max-width: 800px) {
   .becas .fondo-becas .content-texto-becas .becas-ajuste {
     flex-direction: column;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .becas .fondo-becas .content-texto-becas .becas-ajuste ul {
     width: 300px;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .becas .fondo-becas .content-texto-becas .becas-ajuste ul li a {
     font-size: 16px;
     font-weight: 400;
@@ -278,6 +315,8 @@
     text-align: left;
     margin: 15px 0;
   }
+}
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
   .titulo-flag {
     flex-direction: column;
     margin-top: 15px;
@@ -316,7 +355,7 @@
   max-width: 1200px;
   border: 3px solid #009876;
   border-radius: 25px;
-  margin: 150px;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
