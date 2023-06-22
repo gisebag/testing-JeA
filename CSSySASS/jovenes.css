@@ -1716,11 +1716,6 @@
 }
 @media only screen and (max-width: 900px) {
   .contenedor-tarjetas .tarjeta-joven-inspira-4-der {
-    border-radius: 30px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .contenedor-tarjetas .tarjeta-joven-inspira-4-der {
     border-radius: 0px;
   }
 }

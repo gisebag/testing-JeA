@@ -125,10 +125,9 @@
             width: 750px;
             height: 450px;
 
-            @media only screen and (min-width: 320px) and (max-width: 576px) {
+            @media only screen and (min-width: 320px) and (max-width: 800px) {
                 width: 300px !important;
                 margin: 0;
-
             }
 
             .texto-becas {
@@ -142,16 +141,13 @@
                 font-weight: 800;
                 font-size: 32px;
                 line-height: 60px;
-
                 background-color: $color-green-medio;
                 color: $color-white;
                 width: 150px;
                 padding: 5px;
                 text-align: center;
-
                 margin-top: 10px;
                 margin-left: 45px;
-
             }
 
             .becas-ajuste {
@@ -163,7 +159,6 @@
                 }
 
                 ul {
-                    
                     width: 50%;
                     margin: 0;
 
@@ -183,7 +178,6 @@
             }
         }
     }
-
 }
 
 .titulo-flag {
@@ -280,7 +274,7 @@
         .fondo-becas {
             flex-direction: column;
             min-width: 280px;
-            margin: 0;
+            margin: 0px;
 
             .imag-titulos {
                 width: 350px;
