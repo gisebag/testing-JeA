@@ -5,27 +5,57 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $telefono = $_POST["Teléfono"];
   $mensaje = $_POST["Mensaje"];
   
-  $destinatario = "joa_carre21@hotmail.com";
+  $destinatario = "hola@jovenaccion.com";
   $asunto = "Nuevo mensaje jovenaccion.com";
-  $cuerpo = "Nombre y Apellido: " . $nombre . "\n"
-          . "E-mail: " . $email . "\n"
-          . "Telefono: " . $telefono . "\n"
-          . "Mensaje: " . $mensaje;
+  $cuerpo = "<html>
+                <head>
+                  <title>Nuevo mensaje jovenaccion.com</title>
+                  <style>
+                    body {
+                      font-family: Arial, sans-serif;
+                      color: #000;
+                    }
+                    h1 {
+                      color: #02503E;
+                      font-size: 24px;
+                      font-weight: bold;
+                    }
+                    p {
+                      margin-bottom: 10px;
+                      font-size: 20px;
+                    }
+                    }
+                  </style>
+                </head>
+                <body>
+                  <h1>Información de contacto</h1>
+                  <p><strong>Nombre y Apellido:</strong> $nombre</p>
+                  <p><strong>E-mail:</strong> $email</p>
+                  <p><strong>Teléfono:</strong> $telefono</p>
+                  <p><strong>Mensaje:</strong></br>$mensaje</p>
+                </body>
+              </html>";
+
+  // Cabeceras adicionales
+  $headers = "From: Web JeA <u528719221@srv990.main-hosting.eu>" . "\r\n";
+  $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
 
   // Enviar el correo
-  $resultado = mail($destinatario, $asunto, $cuerpo);
+  $resultado = mail($destinatario, $asunto, $cuerpo, $headers);
 
   if ($resultado) {
-    echo '<div style="background-color: #02503E; color: #000; padding: 10px; text-align: center;">
-    <h4">Gracias por completar el formulario.</h4>
-    <p>Nos pondremos en contacto contigo pronto.</p>
-    <p>Redirigiendo en 3 segundos...</p>
-  </div>';
-    header("refresh:3;url=https://jovenaccion.com/Contacto/contacto.html");
+    echo '<div style="background-color: #02503E; color: #000; padding: 10px; text-align: center; height: 100%; margin: 0px;">
+    <p style="color: #FFF; font-size: 36px;></p>
+    <p style="color: #FFF; font-size: 36px;>Gracias por completar el formulario.<br/>Nos pondremos en contacto contigo pronto.<br/><br/>Redirigiendo en 5 segundos...</p>
+    </div>';
+    header("refresh:5;url=https://jovenaccion.com/Contacto/contacto.html");
     exit();
   } else {
-    echo "Hubo un error al enviar el formulario. Por favor, intenta nuevamente. Serás redirigido en 3 segundos...";
-    header("refresh:3;url=https://jovenaccion.com/Contacto/contacto.html");
+    echo '<div style="background-color: #02503E; color: #000; padding: 10px; text-align: center; height: 100%; margin: 0px;">
+    <p style="color: #FFF; font-size: 36px;></p>
+    <p style="color: #FFF; font-size: 36px;>Hubo un error al enviar el formulario.<br/>Por favor, intenta nuevamente.<br/><br/>Redirigiendo en 5 segundos...</p>
+    </div>';
+    header("refresh:5;url=https://jovenaccion.com/Contacto/contacto.html");
     exit();
   }
 }
