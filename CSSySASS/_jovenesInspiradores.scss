@@ -141,6 +141,12 @@
             line-height: 19.1px;
             margin: 8px 10px;
         }
+
+        .titulo-jovenes-2 {
+            @media only screen and (max-width: 900px) {
+                display: none;
+            }
+        }
     }
 }
 
@@ -157,6 +163,10 @@
     flex-wrap: wrap;
     margin: 20px 0px;
     width: 100%;
+
+    @media only screen and (max-width: 900px) {
+        display: none;
+    }
 
     .vectores {
         max-width: 600px;

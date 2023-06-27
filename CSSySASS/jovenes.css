@@ -132,6 +132,11 @@
     margin: 8px 10px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contenedor-titulo-jovenes .titulo-jovenes .titulo-jovenes-2 {
+    display: none;
+  }
+}
 
 .color-bg-vector {
   background-color: #EDFEFB;
@@ -146,6 +151,11 @@
   flex-wrap: wrap;
   margin: 20px 0px;
   width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .contenedor-vectores {
+    display: none;
+  }
 }
 .contenedor-vectores .vectores {
   max-width: 600px;
